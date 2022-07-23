@@ -3,6 +3,9 @@
 ---
 
 
-Various notes that should be public
+# This is just a bunch of files for easy access. 
 
-[[Prep Notes/2022 07 25 Monday prep|2022 07 25 Monday prep]]
+
+## Instructions for students
+
+[[Prep Notes/2022 07 25 Monday Class Instructions|2022 07 25 Monday Class Instructions]]
