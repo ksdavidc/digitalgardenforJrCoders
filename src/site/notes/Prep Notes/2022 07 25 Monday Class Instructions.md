@@ -11,7 +11,7 @@
 
 ### KITTY BLOCK
 
-<div style="blocks">
+<div class="blocks">
 
 
 1. FIRST WE ARE GOING TO CREAT A GAME LOOP. 
