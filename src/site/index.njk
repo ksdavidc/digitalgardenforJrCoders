@@ -3,7 +3,7 @@
   <head>
     <title>{{ collections.gardenEntry[0].fileSlug }}</title>
     {%include "components/pageheader.njk"%}
-    <! --> manually included for scratchblocks <-->
+<!--> manually included for scratchblocks <-->
     <script type="text/javascript" src="scratchblocks.min.js"></script>
   </head>
   <body class="theme-{{meta.baseTheme}} markdown-preview-view">
@@ -13,5 +13,13 @@
         {{garden.templateContent | link | highlight | safe }}
       {%- endfor -%}
     </div>
+    
+    <script>
+scratchblocks.renderMatching('pre.blocks', {
+  style:     'scratch3',   // Optional, defaults to 'scratch2'.
+  languages: ['en', 'de'], // Optional, defaults to ['en'].
+  scale: 1,                // Optional, defaults to 1
+});
+</script>
   </body>
 </html>
