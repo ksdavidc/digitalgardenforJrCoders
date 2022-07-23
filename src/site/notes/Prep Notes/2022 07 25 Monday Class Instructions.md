@@ -11,6 +11,7 @@
 
 ### KITTY BLOCK
 
+<div style="blocks">
 
 
 1. FIRST WE ARE GOING TO CREAT A GAME LOOP. 
@@ -256,3 +257,5 @@ repeat (10)
 end
 hide
 delete this clone
+
+</div>
