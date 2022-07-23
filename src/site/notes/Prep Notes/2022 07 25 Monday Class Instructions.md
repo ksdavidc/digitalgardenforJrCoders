@@ -11,6 +11,8 @@
 
 ### KITTY BLOCK
 
+{:.blocks}
+
 1. FIRST WE ARE GOING TO CREAT A GAME LOOP. 
 THEN WE CAN REPLAY THE GAME AT THE END. 
 
@@ -253,4 +255,4 @@ repeat (10)
     wait (0) seconds
 end
 hide
-delete this clone>
+delete this clone
