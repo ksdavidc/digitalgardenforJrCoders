@@ -6,21 +6,33 @@
 
 <style>
 
-text.sb3-label {
+div.scratchblocks text.sb3-label {
     color: darkred;
     fill: white;
     font-family: Times New Roman;
     font-size: medium;
 }
 
-.sb3-obsolete {
-    fill: transparent;
+div.scratchblocks path.sb3-obsolete {
+    fill: bisque;
     stroke: transparent;
+    margin: 2em;
+    padding: 0;
 }
 
-:is(.markdown-preview-view,.markdown-rendered) pre {
-    background-color: ; 
+
+div.scratchblocks path.sb3-obsolete ~ text.sb3-label {
+    color: blue;
+    fill: blue;
+    font-size: 11pt;
 }
+
+
+
+:is(.markdown-preview-view,.markdown-rendered) div.scratchblocks  pre {
+    background-color: bisque; 
+}
+
 </style>
 
 
