@@ -106,7 +106,10 @@ so add this onto the show block:
 broadcast [move updraft v] 
 
 Why a broadcast, instead of just putting the code here?
-Because then it will act on both the updraft AND the clone at the same time. This stack is only working on the mother (we deleted the leftover clones at the top...). 
+Because then it will act on both 
+the updraft AND the clone at the same time. 
+This stack is only working on the mother 
+{because we deleted the leftover clones at the top...}
 
 
 2. Before we do the code to move the updraft and its shadow, let's make the shadow clone look right.  To control the shadow-clone one of these blocks: 
