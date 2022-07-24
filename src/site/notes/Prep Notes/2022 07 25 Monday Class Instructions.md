@@ -4,39 +4,6 @@
 
 
 
-<style>
-
-div.scratchblocks text.sb3-label {
-    color: blue;
-    fill: blue;
-    /* font-family: sans-serif; */
-    font-size: 11pt;
-    font-weight: bolder;
-}
-
-
-div.scratchblocks path.sb3-obsolete {
-    fill: bisque;
-    stroke: transparent;
-}
-
-
-div.scratchblocks path.sb3-obsolete ~ text.sb3-label {
-    color: black;
-    fill: black;
-    font-family: "Times New Roman", serif;
-    font-size: 12pt;
-}
-
-
-
-:is(.markdown-preview-view,.markdown-rendered) div.blocks  pre {
-    background-color: bisque; 
-}
-
-</style>
-
-
 ## July 25th
 
 ## PREP
@@ -88,8 +55,9 @@ Now go to the updraft sprite and follow the next set of directions
 1. After this block:
 clear graphic effects
 we are going to insert some blocks here. 
-First, we delete any clones that might be left over from the last time the game was played. Add this: 
-{note there is NOTHING in the not block}
+First, we delete any clones that might be left over 
+from the last time the game was played. 
+Add this: {note there is NOTHING in the not block}
 if <not <>> then
     delete this clone
 end
@@ -112,7 +80,9 @@ This stack is only working on the mother
 {because we deleted the leftover clones at the top...}
 
 
-2. Before we do the code to move the updraft and its shadow, let's make the shadow clone look right.  To control the shadow-clone one of these blocks: 
+2. Before we do the code to move the updraft and its shadow,
+let's make the shadow clone look right.  
+To control the shadow-clone one of these blocks: 
 when I start as a clone
 We want the clones to look like shadows, so we do a couple of things:
 1. put the clone behind the mother updraft
@@ -128,7 +98,9 @@ and then finally, we make sure it is showing:
 show
 
 
-Now, at alse we can make the updraft and its shadow move. Remember this stack is working on both of them, so they will always both move together.
+Now, at last we can make the updraft and its shadow move. 
+Remember this stack is working on both of them, 
+so they will always both move together.
 First we create the partner to the broadcast above, that is the receive block:
 when I receive [move updraft v]
 We want to keep them moving up until either:
