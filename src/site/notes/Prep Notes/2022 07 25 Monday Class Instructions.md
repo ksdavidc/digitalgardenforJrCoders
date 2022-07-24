@@ -19,7 +19,7 @@ text.sb3-label {
 }
 
 :is(.markdown-preview-view,.markdown-rendered) pre {
-    background-color: black; 
+    background-color: ; 
 }
 </style>
 
@@ -151,14 +151,6 @@ end
 hide
 delete this clone
 
-what is this?
-if <(USEMETHOD) = [2]> then
-            Method2::custom
-        else
-            if <(USEMETHOD) = [3]> then
-                // []::custom
-                Method3::custom
-            else
 
 ```
 
