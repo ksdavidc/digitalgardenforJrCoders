@@ -10,4 +10,33 @@ body {
     //  h1 {
     //   color: black;
     //  }
+    
+div.scratchblocks text.sb3-label {
+    color: blue;
+    fill: blue;
+    /* font-family: sans-serif; */
+    font-size: 11pt;
+    font-weight: bolder;
+}
+
+
+div.scratchblocks path.sb3-obsolete {
+    fill: bisque;
+    stroke: transparent;
+}
+
+
+div.scratchblocks path.sb3-obsolete ~ text.sb3-label {
+    color: black;
+    fill: black;
+    font-family: "Times New Roman", serif;
+    font-size: 12pt;
+}
+
+
+
+:is(.markdown-preview-view,.markdown-rendered) div.blocks  pre {
+    background-color: bisque; 
+}
+
 }
