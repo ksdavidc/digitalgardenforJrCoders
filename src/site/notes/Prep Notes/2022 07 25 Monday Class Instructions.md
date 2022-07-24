@@ -33,7 +33,7 @@ AND MOVE ALL 5 OF THESE BLOCKS,
 ONTO THE  {when I receive \[Game Loop v\] } 
 broadcast [add music v]
 broadcast [choose difficulty v] and wait
-wait until %3C(DIFFICULTY) %3E [0]>
+wait until <(DIFFICULTY) > [0]>
 broadcast [Countdown v] and wait
 broadcast [Start v] and wait
 THEN WE ARE GOING TO ADD TWO BLOCKS ON THE END...
@@ -52,9 +52,10 @@ YOU CAN SEE HERE WHAT THIS WILL LOOK LIKE
 THEN GO TO UPDRAFT SPRITE FOR MORE DIRECTIONS
 
 ```
+{: .blocks}
 
 ### UPDRAFT block
-
+```
 1. AFTER THIS BLOCK
 clear graphic effects
 FIRST WE DELETE ALL CLONES. ADD THIS: 
@@ -129,5 +130,6 @@ end
 hide
 delete this clone
 
+```
 
 </div>
