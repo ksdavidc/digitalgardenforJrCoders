@@ -20,6 +20,7 @@ THEN WE CAN REPLAY THE GAME AT THE END.
 TO DO THAT WE WILL DIVIDE THIS MAIN GAME STACK INTO TWO STACKS. 
 
 FIRST FIND THIS BLOCK:
+When green flag clicked
 broadcast [initialize v] and wait
 and AFTER IT PUT THIS BLOCK:
 broadcast [Game Loop v]
