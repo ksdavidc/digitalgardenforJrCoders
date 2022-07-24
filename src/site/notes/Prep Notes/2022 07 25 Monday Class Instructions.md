@@ -52,9 +52,10 @@ YOU CAN SEE HERE WHAT THIS WILL LOOK LIKE
 THEN GO TO UPDRAFT SPRITE FOR MORE DIRECTIONS
 
 ```
-{: .blocks}
 
 ### UPDRAFT block
+
+
 ```
 1. AFTER THIS BLOCK
 clear graphic effects
