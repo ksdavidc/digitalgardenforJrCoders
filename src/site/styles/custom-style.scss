@@ -39,4 +39,8 @@ div.scratchblocks path.sb3-obsolete ~ text.sb3-label {
     background-color: bisque; 
 }
 
+:where(.markdown-preview-view,.markdown-rendered) div.blocks  pre {
+    background-color: bisque; 
+}
+    
 }
