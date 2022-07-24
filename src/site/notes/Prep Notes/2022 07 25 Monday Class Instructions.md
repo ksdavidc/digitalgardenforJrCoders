@@ -167,4 +167,4 @@ delete this clone
 
 </div>
 
-[[scratchblocks.min.js| visual version of these notes]]
+[[scratchblocks.min.js| visual version of these notes ]]
