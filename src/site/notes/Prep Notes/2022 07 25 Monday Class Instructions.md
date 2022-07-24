@@ -7,28 +7,25 @@
 <style>
 
 div.scratchblocks text.sb3-label {
-    color: darkred;
+    color: blue;
     fill: blue;
-    /* font-family: Times New Roman, serif; */
-    font-size: 12pt;
+    /* font-family: sans-serif; */
+    font-size: 11pt;
     font-weight: bolder;
-    /* letter-spacing: 1px; */
 }
 
 
 div.scratchblocks path.sb3-obsolete {
     fill: bisque;
     stroke: transparent;
-    margin: 2em;
-    padding: 0;
 }
 
 
 div.scratchblocks path.sb3-obsolete ~ text.sb3-label {
     color: black;
     fill: black;
-    font-size: small;
-    font-family: "Times New Roman", serif;;
+    font-family: "Times New Roman", serif;
+    font-size: 12pt;
 }
 
 
