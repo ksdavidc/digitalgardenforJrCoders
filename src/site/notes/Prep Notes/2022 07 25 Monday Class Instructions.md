@@ -4,6 +4,25 @@
 
 
 
+<style>
+
+text.sb3-label {
+    color: darkred;
+    fill: white;
+    font-family: Times New Roman;
+    font-size: medium;
+}
+
+.sb3-obsolete {
+    fill: transparent;
+    stroke: transparent;
+}
+
+:is(.markdown-preview-view,.markdown-rendered) pre {
+    background-color: black; 
+}
+</style>
+
 
 ## July 25th
 
