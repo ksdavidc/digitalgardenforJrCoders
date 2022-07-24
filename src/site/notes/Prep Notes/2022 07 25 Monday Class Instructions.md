@@ -8,10 +8,13 @@
 
 div.scratchblocks text.sb3-label {
     color: darkred;
-    fill: white;
-    font-family: Times New Roman;
-    font-size: medium;
+    fill: blue;
+    /* font-family: Times New Roman, serif; */
+    font-size: 12pt;
+    font-weight: bolder;
+    /* letter-spacing: 1px; */
 }
+
 
 div.scratchblocks path.sb3-obsolete {
     fill: bisque;
@@ -22,9 +25,10 @@ div.scratchblocks path.sb3-obsolete {
 
 
 div.scratchblocks path.sb3-obsolete ~ text.sb3-label {
-    color: blue;
-    fill: blue;
-    font-size: 11pt;
+    color: black;
+    fill: black;
+    font-size: small;
+    font-family: "Times New Roman", serif;;
 }
 
 
@@ -45,43 +49,38 @@ div.scratchblocks path.sb3-obsolete ~ text.sb3-label {
 <div class="blocks">
 
 ```
-1. FIRST WE ARE GOING TO CREAT A GAME LOOP. 
-THEN WE CAN REPLAY THE GAME AT THE END. 
+1. First we are going to creat a game loop. 
+then we can replay the game at the end. 
 
-TO DO THAT WE WILL DIVIDE THIS MAIN GAME STACK INTO TWO STACKS. 
+To do that we will divide this main game stack into two stacks. 
 
-FIRST FIND THIS BLOCK:
+first find this block:
 When green flag clicked
 broadcast [initialize v] and wait
 and AFTER IT PUT THIS BLOCK:
 broadcast [Game Loop v]
 
-THEN WE MAKE A NEW STACK, WHICH WILL BE THE GAME LOOP. 
-THIS IS WHERE WE RESTART THE GAME FROM. 
-USE THIS BLOCK:
+Then we make a new stack, which will be the game loop. 
+This is where we restart the game from. 
+Add this block:
 when I receive [Game Loop v]
-AND MOVE ALL 5 OF THESE BLOCKS, 
-{they are from the green flag above} 
-ONTO THE  {when I receive \[Game Loop v\] } 
+And move all 5 of these blocks, 
+{**they are from the green flag above**} 
+onto the  {when I receive \[Game Loop v\] } 
 broadcast [add music v]
 broadcast [choose difficulty v] and wait
 wait until <(DIFFICULTY) > [0]>
 broadcast [Countdown v] and wait
 broadcast [Start v] and wait
-THEN WE ARE GOING TO ADD TWO BLOCKS ON THE END...
-1. THE FIRST WILL MAKE A LANDING EFFECT, AND REPLAY IF YOU TELL IT TO
+Then we are going to add two blocks on the end...
+1. The first will make a landing effect, and replay if you tell it to
 broadcast [Landed v] and wait
-2. THEN, IF YOU DON'T REPLAY,
-THIS BLOCK WILL MAKE THE GAME REALLY OVER:
+2. Then, if you don't replay,
+this block will make the game really over:
 broadcast [Game Over v]
 
 
-YOU CAN SEE HERE WHAT THIS WILL LOOK LIKE
-{YOU HAVE TO SCROLL AT THE RIGHT TO LOOK FOR THE GREEN FLAG AND GAME LOOP STACKS}
-
-[at this link:](https://apple502j.github.io/parse-sb3-blocks/demo?pid=711622549&locale=en&sprite=KItty)
-
-THEN GO TO UPDRAFT SPRITE FOR MORE DIRECTIONS
+Now go to the updraft sprite and follow the next set of directions
 
 ```
 
@@ -89,72 +88,72 @@ THEN GO TO UPDRAFT SPRITE FOR MORE DIRECTIONS
 
 
 ```
-1. AFTER THIS BLOCK
+1. After this block:
 clear graphic effects
-FIRST WE DELETE ALL CLONES. ADD THIS: 
+we are going to insert some blocks here. 
+First, we delete any clones that might be left over from the last time the game was played. Add this: 
 {note there is NOTHING in the not block}
 if <not <>> then
     delete this clone
 end
-THEN WE GO TO THE FRONT AND CHOOSE A RANDOM POSITION AND CREATE A CLONE. THE CLONE IS A SHADOW.
+Then we make the updraft go to the front:
 go to [front v] layer
+at some random position: 
 go to [random position v]
+When it is there, create a clone. This "shadow-clone" is the updraft's shadow.
 create clone of [myself v]
-KEEP THIS BLOCK:
+Keep this block that was there before:
 show
-WE ALSO WANT THE UPDRAFT TO MOVE AROUND THE SCREEN, 
-SO ADD THIS ONTO THE END:
+We also want the updraft to move around the screen, 
+so add this onto the show block:
 broadcast [move updraft v] 
-WHY BROADCAST? BECAUSE THEN IT WILL ACT ON THE CLONE ALSO.
 
-USE THIS LINK TO SEE THE RESULT 
-{AGAIN, LOOK FOR THE RIGHT BLOCKS.}
-[this link](https://apple502j.github.io/parse-sb3-blocks/demo?pid=711622549&locale=en&sprite=Updraft)
+Why a broadcast, instead of just putting the code here?
+Because then it will act on both the updraft AND the clone at the same time. This stack is only working on the mother (we deleted the leftover clones at the top...). 
 
 
-2. NOW WE WANT THE CLONES TO LOOK LIKE SHADOWS.
-ADD THIS
+2. Before we do the code to move the updraft and its shadow, let's make the shadow clone look right.  To control the shadow-clone one of these blocks: 
 when I start as a clone
-PUT THE CLONE BEHIND THE MOTHER UPDRAFT
+We want the clones to look like shadows, so we do a couple of things:
+1. put the clone behind the mother updraft
 go [backward v] (1) layers
-MAKE IT BLACK
+2. Make it black like a shadow:
 set [brightness v] effect to (-100)::looks
-BUT A LITTLE TRANSPARENT
+3. but add a little transparency:
 set [ghost v] effect to (75)::looks
-OFFSET IT A LITTLE
+we offset it a little bit, so it looks like a shadow
 change x by (2)
 change y by (-2)
-MAKE SURE IT SHOWS
+and then finally, we make sure it is showing:
 show
 
 
-NOW WE CAN MAKE IT MOVE. START A NEW STACK:
+Now, at alse we can make the updraft and its shadow move. Remember this stack is working on both of them, so they will always both move together.
+First we create the partner to the broadcast above, that is the receive block:
 when I receive [move updraft v]
-KEEP MOVING UP UNTIL IT HITS THE TOP OR THE ROUND IS OVER
-INSIDE THE WHEN LOOP:
+We want to keep them moving up until either:
+a) they they the top OR
+b) the round is over
 repeat until <<(y position) > [186]> or <(ROUND OVER) = [1]>>
-MOVE IT UP
+You might have to adjust the "186" depending on the size of your updraft. Inside this loop:
+We move up:
     change y by (.5)
-
-IF IT IS TOUCHING THE KITTY
+If they are touching the kitty
     if <touching [KItty v]?> then
-
-LETS MAKE IT FADE OUT 
+we make them fade out :
         broadcast [fade out updraft v]
-
-WE ARE DONE WITH THIS ROUND
+And then we are done with this round, so we stop the code.
         stop [this script v]
-
-{REPEAT LOOP} ENDS
+The {repeat loop} ends
     end
 
-{WHEN I RECEIVE} LOOP ENDS
+The {when I receive} loop ends
 end
-HIDE THE UPDRAFT 
+Lastly, we hide the updraft. This may not be necessary here...
 hide
 
 
-HERE WE DO THE FADEOUT:
+This is the stack that does the fadeout:
 when I receive [fade out updraft v]
 repeat (10)
     change [ghost v] effect by (10)::looks
