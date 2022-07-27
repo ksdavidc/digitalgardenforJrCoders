@@ -130,7 +130,6 @@ as the first block on the
 when I receive [choose difficulty v]
 stack.
 
-```
 
 
 
