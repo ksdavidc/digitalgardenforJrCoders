@@ -9,3 +9,5 @@
 ## Instructions for students:
 
 [[Prep Notes/2022 07 25 Monday Class Instructions|2022 07 25 Monday Class Instructions]]
+
+[[Prep Notes/2022 08 01 Instructions|2022 08 01 Instructions]]
