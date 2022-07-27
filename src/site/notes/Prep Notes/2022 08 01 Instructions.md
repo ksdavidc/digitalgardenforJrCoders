@@ -16,7 +16,8 @@ to make sure the cloud hides when the round is over:
 hide
 
 We want a bit of a see-through effect
-so the player is looking through the cloud:
+so the player is looking through the cloud.
+Add this stack:
 when I receive [initialize v]
 set [ghost v] effect to (25)::looks
 hide
@@ -61,18 +62,7 @@ add this as a new stack
 when I receive [Landed v]
 wait (0.05) seconds
 When we land, we create a little dance:
-*** MAKE THIS YOURSELF ***
-*** use blocks like:
-		change x by
-		change y by
-		repeat
-		change .... effect
-		change size 
-		go to
-		glide
-		or any thing else you like
-***
-Then add this below the dance
+ending dance::custom
 reset timer
 wait (0) seconds
 repeat until <<mouse down?> or <<key [space v] pressed?> or <(timer) > [8]>>>
@@ -85,6 +75,20 @@ if <<mouse down?> or <key [space v] pressed?>> then
     hide variable [DIFFICULTY SAY v]
     say []
 end
+
+define ending dance
+*** MAKE THIS YOURSELF ***
+*** use blocks like:
+		change x by
+		change y by
+		repeat
+		change .... effect
+		change size 
+		go to
+		glide
+		or any thing else you like
+***
+
 
 and this new stack:
 when I receive [Announce Score v]
