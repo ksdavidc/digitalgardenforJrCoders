@@ -3,6 +3,9 @@
 ---
 
 
+## Instructions for Monday, August 1st
+
+
 <div class="blocks">
 
 ```
