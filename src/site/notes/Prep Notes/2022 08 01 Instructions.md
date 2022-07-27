@@ -108,3 +108,30 @@ stop [all v]
 
 ```
 
+### difficulty
+
+```
+
+create a new  my block
+define position difficulty
+
+
+take these four blocks from  initialize stack:
+go to x: (-200) y: (100)
+clear graphic effects
+set size to (400) %
+hide
+and put them on the position difficulty stack
+
+add one of these: 
+position difficulty::custom
+on the initialize stack and 
+as the first block on the 
+when I receive [choose difficulty v]
+stack.
+
+
+
+
+
+```
