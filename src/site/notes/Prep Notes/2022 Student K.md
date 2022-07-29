@@ -166,14 +166,21 @@ draw health ((2) * (SPIDER HP))::custom
 
 ADD (a second receive 15 stack)
 when I receive [15 v]
+set pen (color v) to ({my color})
+set pen size to (20)
 forever
     erase all
     broadcast [draw healths v]
 end
 
+ADD: 
 define draw health (health)
-set pen size to (20)
 go to x: (starting x) y: (starting y)
+pen down
+point in direction (90)
+move (health::custom) steps
+pen up
+
 
 ```
 
