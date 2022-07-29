@@ -10,7 +10,7 @@
 
 [[Prep Notes/2022 07 25 Monday Class Instructions|2022 07 25 Monday Class Instructions]]
 
-[[Prep Notes/2022 08 01 Instructions|2022 08 01 Instructions]]
+[[Prep Notes/2022 Monday Class|2022 Monday Class]]
 
-[[Prep Notes/2022 07 29 Student K|2022 07 29 Student K]]
+[[Prep Notes/2022 Student K|2022 Student K]]
 
