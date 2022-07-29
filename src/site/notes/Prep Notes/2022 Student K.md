@@ -164,9 +164,9 @@ ADD
 when I receive [draw healths v]
 draw health ((2) * (SPIDER HP))::custom
 
-ADD (a second receive 15 stack)
+ADD {a second receive 15 stack}
 when I receive [15 v]
-set pen (color v) to ({my color})
+set pen (color v) to ((my color))
 set pen size to (20)
 forever
     erase all
