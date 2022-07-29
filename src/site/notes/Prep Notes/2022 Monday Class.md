@@ -13,6 +13,8 @@
 	- [[Prep Notes/2022 Monday Class#July 25th|UPDRAFT SPRITE]]
 
 
+<div class="blocks">
+
 
 ## Monday, 08 01 
 
@@ -38,7 +40,7 @@ hide
 ```
 
 
-<div class="blocks">
+
 
 
 ### GROUND SPRITE
