@@ -2,9 +2,17 @@
 {"dg-publish":true,"permalink":"/prep-notes/2022-monday-class/","dgHomeLink":true,"dgPassFrontmatter":false}
 ---
 
+```toc
+style: bullet
+min_depth: 1
+max_depth: 6
+title: **Table of Contents**
+allow_inconsistent_headings: true
+delimiter: |
+varied_style: false
+```
 
-## Monday, August 1st
-
+## Monday, 08 01 
 
 <div class="blocks">
 
@@ -29,7 +37,8 @@ hide
 
 ```
 
-### Ground sprite
+### GROUND SPRITE
+
 
 ```
 remove this
@@ -108,7 +117,7 @@ stop [all v]
 
 ```
 
-### difficulty
+### DIFFICULTY SPRITE
 
 ```
 
@@ -135,13 +144,11 @@ stack.
 
 ```
 
+</div>
 
+## July 25th
 
-# July 25th
-
-## PREP
-
-### KITTY BLOCK
+### KITTY SPRITE
 
 <div class="blocks">
 
@@ -181,7 +188,7 @@ Now go to the updraft sprite and follow the next set of directions
 
 ```
 
-### UPDRAFT block
+### UPDRAFT SPRITE
 
 
 ```
@@ -269,3 +276,5 @@ delete this clone
 
 
 ```
+
+</div>
