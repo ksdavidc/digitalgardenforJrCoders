@@ -2,21 +2,21 @@
 {"dg-publish":true,"permalink":"/prep-notes/2022-monday-class/","dgHomeLink":true,"dgPassFrontmatter":false}
 ---
 
-```toc
-style: bullet
-min_depth: 1
-max_depth: 6
-title: **Table of Contents**
-allow_inconsistent_headings: true
-delimiter: |
-varied_style: false
-```
+
+- [[Prep Notes/2022 Monday Class#Monday, 08 01|Monday, 08 01]]
+	- [[Prep Notes/2022 Monday Class#Monday, 08 01|CLOUD SPRITE:]]
+	- [[Prep Notes/2022 Monday Class#Monday, 08 01|GROUND SPRITE]]
+	- [[Prep Notes/2022 Monday Class#Monday, 08 01|KITTY]]
+	- [[Prep Notes/2022 Monday Class#Monday, 08 01|DIFFICULTY SPRITE]]
+- [[Prep Notes/2022 Monday Class#July 25th|July 25th]]
+	- [[Prep Notes/2022 Monday Class#July 25th|KITTY SPRITE]]
+	- [[Prep Notes/2022 Monday Class#July 25th|UPDRAFT SPRITE]]
+
+
 
 ## Monday, 08 01 
-
-<div class="blocks">
-
 ### CLOUD SPRITE:
+
 
 ```
 at the end of the New sky stack, add this
@@ -36,7 +36,9 @@ when I receive [choose difficulty v]
 hide
 
 ```
+{: .blocks}
 
+<div class="blocks">
 ### GROUND SPRITE
 
 
@@ -138,10 +140,6 @@ on the initialize stack and
 as the first block on the 
 when I receive [choose difficulty v]
 stack.
-
-
-
-
 ```
 
 </div>
