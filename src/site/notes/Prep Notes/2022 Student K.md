@@ -2,11 +2,23 @@
 {"dg-publish":true,"permalink":"/prep-notes/2022-student-k/","dgHomeLink":true,"dgPassFrontmatter":false}
 ---
 
+
+```toc
+style: bullet
+min_depth: 1
+max_depth: 6
+title: **Table of Contents**
+allow_inconsistent_headings: true
+delimiter: |
+varied_style: false
+```
+
+
 ## 08 05
 
 <div class="blocks">
 
-### Skeleton
+### SKELETON
 ```
 
 Add this to make the skeleton step away when he strikes:
@@ -133,14 +145,12 @@ end
 
 ```
 
-
-
-```
-
 </div >
 
 
 ## 07 29
+
+
 <div class="blocks">
 
 
