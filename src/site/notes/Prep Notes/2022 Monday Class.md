@@ -20,6 +20,10 @@
 
 ### CLOUD SPRITE
 
+```python {  .scratch }
+nums = [x for x in range(10)]
+```
+
 
 ```
 at the end of the New sky stack, add this
