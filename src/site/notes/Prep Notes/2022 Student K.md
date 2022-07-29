@@ -3,15 +3,14 @@
 ---
 
 
-```toc
-style: bullet
-min_depth: 1
-max_depth: 6
-title: **Table of Contents**
-allow_inconsistent_headings: true
-delimiter: |
-varied_style: false
-```
+
+- [[Prep Notes/2022 Student K#08 05|08 05]]
+	- [[Prep Notes/2022 Student K#08 05|SKELETON]]
+	- [[Prep Notes/2022 Student K#08 05|WEAPONS]]
+	- [[Prep Notes/2022 Student K#08 05|MAIKEY]]
+- [[Prep Notes/2022 Student K#07 29|07 29]]
+	- [[Prep Notes/2022 Student K#07 29|MAIKEY]]
+	- [[Prep Notes/2022 Student K#07 29|in WEAPONS]]
 
 
 ## 08 05
