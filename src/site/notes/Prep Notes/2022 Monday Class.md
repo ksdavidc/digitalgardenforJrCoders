@@ -19,7 +19,7 @@
 ### CLOUD SPRITE
 
 
-``` {: .blocks}
+```scratchblocks {: .blocks}
 at the end of the New sky stack, add this
 to make sure the cloud hides when the round is over:
 hide
@@ -39,6 +39,8 @@ hide
 
 
 <div class="blocks">
+
+
 ### GROUND SPRITE
 
 
