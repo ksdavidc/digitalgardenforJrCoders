@@ -34,9 +34,8 @@ add this as a new stack
 to make sure the cloud is hidden at the beginning of the game:
 when I receive [choose difficulty v]
 hide
-
 ```
-{: .blocks}
+{ .blocks}
 
 <div class="blocks">
 ### GROUND SPRITE
