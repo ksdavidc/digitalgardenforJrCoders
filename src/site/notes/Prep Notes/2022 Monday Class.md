@@ -20,7 +20,7 @@
 
 ### CLOUD SPRITE
 
-```python {  .scratch }
+```python {:  .scratch }
 nums = [x for x in range(10)]
 ```
 
