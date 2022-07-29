@@ -15,10 +15,11 @@
 
 
 ## Monday, 08 01 
-### CLOUD SPRITE:
+
+### CLOUD SPRITE
 
 
-```scratch { .blocks}
+```scratchblocks
 at the end of the New sky stack, add this
 to make sure the cloud hides when the round is over:
 hide
