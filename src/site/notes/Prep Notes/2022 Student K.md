@@ -144,6 +144,38 @@ end
 
 ```
 
+### SPIDER HP BAR
+
+```
+First CHANGE THE NAME
+
+ADD
+when I receive [15 v]
+hide
+set [SPIDER HP v] to [50]
+set [my color v] to [40]
+set [starting x v] to [-220]
+set [starting y v] to [135]
+go to x: (starting x) y: (starting y)
+
+ADD
+when I receive [draw healths v]
+draw health ((2) * (SPIDER HP))::custom
+
+ADD (a second receive 15 stack)
+when I receive [15 v]
+forever
+    erase all
+    broadcast [draw healths v]
+end
+
+define draw health (health)
+set pen size to (20)
+go to x: (starting x) y: (starting y)
+
+```
+
+
 </div >
 
 
