@@ -18,7 +18,7 @@
 ### CLOUD SPRITE:
 
 
-```
+``` { .blocks}
 at the end of the New sky stack, add this
 to make sure the cloud hides when the round is over:
 hide
@@ -35,7 +35,7 @@ to make sure the cloud is hidden at the beginning of the game:
 when I receive [choose difficulty v]
 hide
 ```
-{ .blocks}
+
 
 <div class="blocks">
 ### GROUND SPRITE
