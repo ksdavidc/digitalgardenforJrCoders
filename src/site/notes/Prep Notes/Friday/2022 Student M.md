@@ -18,16 +18,18 @@
 
 ```
 
-fix the no room available go back at the bottom, it belongs in the classroom open else area.
+fix the no room available go back at the bottom,
+it belongs in the classroom open else area.
 
 add a delete this clone on the end of 
-defind (no room available go back)
+define (no room available go back)
 
 
 WRITE the get money, go to and leave art gallery code
 while changing the variable names
 
-INITIALIZE all the MAX and OCCUPANTS VARIABLES, for example
+INITIALIZE all the MAX and OCCUPANTS VARIABLES
+for example
 set (OCCUPANTS ART GALLERY) to (0) 
 
 Change 
@@ -46,21 +48,22 @@ set (which room to go to) to (pick random (1) to (3))
 ### CLASSROOM COVER > ART GALLERY COVER
 
 ```
-
 we have to finish setting this up
 AFTER
-if <(MONEY) > 10>
+if <(MONEY) > 10> then
 ADD
 set (CLASSROOM OPEN) to (1)
 
 
-After than, COPY all the code to the art gallery cover, and CHANGE the variables and positions
+After than, COPY all the code to the art gallery cover, 
+but CHANGE the variables and positions
 ```
+
 ### CLASSROOM > ART GALLERY
 
 ```
-COPY the classroom code to the Art Gallery, but 
-CHANGE variables and positions
+COPY the classroom code to the Art Gallery, 
+but CHANGE variables and positions
 ```
 
 
