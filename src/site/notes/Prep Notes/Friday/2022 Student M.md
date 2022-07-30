@@ -36,8 +36,6 @@ Change
 set (which room to go to) to (pick random (1) to (2))
 to
 set (which room to go to) to (pick random (1) to (3))
-
-
 ...
 
 
