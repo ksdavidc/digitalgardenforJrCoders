@@ -8,7 +8,12 @@
 
 ## Instructions for students:
 
-[[Prep Notes/2022 Monday Class|2022 Monday Class]]
+## MONDAY
+* [[Prep Notes/2022 Monday Class|2022 Monday Class]]
 
-[[Prep Notes/Friday/2022 Student K|2022 Student K]]
+## FRIDAY
+* [[Prep Notes/Friday/2022 Student K|2022 Student K]]
+* [[Prep Notes/Friday/2022 Student M|2022 Student M]]
+
+
 
