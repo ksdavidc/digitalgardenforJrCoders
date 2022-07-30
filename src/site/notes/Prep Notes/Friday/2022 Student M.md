@@ -23,6 +23,8 @@ it belongs in the classroom open else area.
 
 add a delete this clone on the end of 
 define no room available go back
+/* ... {stuff, then}
+delete this clone
 
 
 WRITE the get money, go to and leave art gallery code
