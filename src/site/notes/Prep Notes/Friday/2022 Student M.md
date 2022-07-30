@@ -22,7 +22,7 @@ fix the no room available go back at the bottom,
 it belongs in the classroom open else area.
 
 add a delete this clone on the end of 
-define (no room available go back)
+define no room available go back
 
 
 WRITE the get money, go to and leave art gallery code
