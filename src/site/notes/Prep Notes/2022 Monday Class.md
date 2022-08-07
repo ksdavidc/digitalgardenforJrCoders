@@ -16,6 +16,7 @@
 ## 2022 08 08
 
 <div class="blocks">
+
 ```
 
 This week we take blocks like this:
