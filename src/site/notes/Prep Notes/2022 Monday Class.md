@@ -16,7 +16,6 @@
 ## 2022 08 08
 
 <div class="blocks">
-
 ```
 
 This week we take blocks like this:
@@ -24,9 +23,11 @@ This week we take blocks like this:
 set y to (10)
 and make them look like
 set {y position variable} to (10)
-change y by ({y position variable})1, create blank sprite
+change y by (y position variable) 
 
+1. create blank sprite
 
+2. do this:
 
 define Change player y by (speed y) and then pull up (fix overlap)
 change y by (speed y::custom)
