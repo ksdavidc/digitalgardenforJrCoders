@@ -13,11 +13,10 @@
 	- [[Prep Notes/2022 Monday Class#July 25th|UPDRAFT SPRITE]]
 
 
-
-
 ## 2022 08 08
 
 <div class="blocks">
+
 ```
 
 This week we take blocks like this:
@@ -27,7 +26,7 @@ and make them look like
 set {y position variable} to (10)
 change y by ({y position variable})1, create blank sprite
 
-2. 
+
 
 define Change player y by (speed y) and then pull up (fix overlap)
 change y by (speed y::custom)
