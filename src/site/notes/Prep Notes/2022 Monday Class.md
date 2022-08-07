@@ -29,8 +29,7 @@ change y by ({y position variable})1, create blank sprite
 
 2. 
 
-
-Tdefine Change player y by (speed y) and then pull up (fix overlap)
+define Change player y by (speed y) and then pull up (fix overlap)
 change y by (speed y::custom)
 // [is this if necessary?]::custom
 // [old version of change player loop]::custom
@@ -76,6 +75,7 @@ define Is touching level?
 set [touching level v] to ((1) * <touching [Platform v]?>)
 
 ```
+
 </div>
 
 ## 2022 08 01 
