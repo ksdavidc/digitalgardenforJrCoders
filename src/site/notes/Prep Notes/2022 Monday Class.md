@@ -19,7 +19,62 @@
 
 <div class="blocks">
 ```
-uytuyi
+
+This week we take blocks like this:
+
+set y to (10)
+and make them look like
+set {y position variable} to (10)
+change y by ({y position variable})1, create blank sprite
+
+2. 
+
+
+Tdefine Change player y by (speed y) and then pull up (fix overlap)
+change y by (speed y::custom)
+// [is this if necessary?]::custom
+// [old version of change player loop]::custom
+if <touching [Platform v]?> then
+    repeat until <not <touching [Platform v]?>>
+        change y by (1)
+    end
+    set [speed y v] to [0]
+end
+
+when @greenFlag clicked
+broadcast [green flag v] and wait
+broadcast [Play Game v]
+
+when I receive [Play Game v]
+Game on::custom
+broadcast [rl4 v]
+broadcast [su4 v]
+// [** this surround tick to broadcast tick once]::custom
+repeat until <>
+    tick::custom
+    set scroll and position::custom
+end
+
+define Game on
+set [speed y v] to [-1]
+go to x: (0) y: (100)
+
+define tick
+change [speed y v] by (-1)
+Change player y by (speed y) and then pull up (fix overlap)::custom
+
+define Position (at screen x and y)
+// [since the game player x and the game scroll x are the same, this is 0]::custom
+go to x: ((player game x) - (SCROLL X)) y: ((player game y) - (SCROLL Y))
+// [** goes in change player y by speed y at end of repeat until loop]::custom
+set [in air v] to [0]
+
+define set scroll and position
+// [will have stuff later]::custom
+
+define Is touching level?
+set [touching level v] to ((1) * <touching [Platform v]?>)
+
 ```
 </div>
 
