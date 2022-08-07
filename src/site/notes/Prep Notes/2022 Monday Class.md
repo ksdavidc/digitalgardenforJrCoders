@@ -14,11 +14,20 @@
 
 
 
-<div class="blocks">
 
-## Monday, 08 01 
+## 2022 08 08
+
+<div class="blocks">
+```
+uytuyi
+```
+</div>
+
+## 2022 08 01 
+
 
 ### CLOUD SPRITE
+<div class="blocks">
 
 ```
 at the end of the New sky stack, add this
@@ -38,11 +47,11 @@ when I receive [choose difficulty v]
 hide
 ```
 
-
-
+</div>
 
 ### GROUND SPRITE
 
+<div class="blocks">
 
 ```
 remove this
@@ -58,8 +67,11 @@ go to [back v] layer
 hide
 
 ```
+</div>
 
 ### KITTY
+
+<div class="blocks">
 
 ```
 add this as a new stack
@@ -120,11 +132,13 @@ stop [all v]
 
 
 ```
+</div>
 
 ### DIFFICULTY SPRITE
 
-```
+<div class="blocks">
 
+```
 create a new  my block
 define position difficulty
 
@@ -148,10 +162,10 @@ stack.
 
 ## July 25th
 
+
 ### KITTY SPRITE
 
 <div class="blocks">
-
 ```
 1. First we are going to creat a game loop. 
 then we can replay the game at the end. 
@@ -188,9 +202,11 @@ Now go to the updraft sprite and follow the next set of directions
 
 ```
 
+</div>
+
 ### UPDRAFT SPRITE
 
-
+<div class="blocks">
 ```
 1. After this block:
 clear graphic effects
