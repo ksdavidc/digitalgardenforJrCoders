@@ -7,7 +7,7 @@
 
 ## 2022 08 20
 
-<div class="blocks">
+div class="blocks">
 
 > I have added a CHECK COVERAGE sprite that does the checking to see how much of each section is covered. You don't need to code this, but the two key blocks are:
 
@@ -83,21 +83,28 @@ end
 > 
 > It checks each quadrant to see how much is covered. If more than 80% is covered, it creates a clone that **covers** that quadrant to make it look like it is being eaten. 
 > 
-> The way it checks the quadrant is by comparing how much is drawn with that quadrant is **covering** the drawing with how much with the quadrant **not covering** the drawing. It does this for each quadrant.
+> The way it checks the quadrant is by comparing 
+> a) how much is drawn when that quadrant is **covering** the drawing 
+> b) how much is drawn when that quadrant **not covering** the drawing.
 > 
-> This is the myblock that does the comparison:
+> It does this for each quadrant. This is the myblock that does the comparison:
 
 ```
 define test coverage of backdrop # (backdrop)
 switch costume to (backdrop::custom)
 set [ghost v] effect to (0)::looks
 show
+checks with covering:
 broadcast [check DRAWN v] and wait
+puts the result into (OUTSIDE OF SEGMENT)
 set [OUTSIDE OF SEGMENT v] to (RESULT)
 hide
+checks without covering.
 broadcast [check DRAWN v] and wait
-
+If I subtract (OUTSIDE OF SEGMENT) from (RESULT) I get how much is covering that quadrant
 ```
+
+If I subtract `(OUTSIDE OF SEGMENT)` from `(RESULT)' I get how much is covering that quadrant, '(QUAD 1)'
 
 > This is the stack that uses this for each quadrant:
 ```
@@ -222,12 +229,12 @@ when I receive [show timer v]
  reset timer
  set [TIME REMAINING v] to [30]
  show variable [TIME REMAINING v]
-It stops either if the timer runs out or we press another button
+It stops either if the timer runs out or we press another button or start a check (e.g. through the space bar)
  repeat until <<(timer) > [30]> or <<not <(CURRENT BUTTON) = [1]>> or <not <(CHECKING CURRENT) = (0)>>
  this complicated function is used to make the display of the time look nice
      set [TIME REMAINING v] to (join ([floor v] of ((30) - (timer))::operators) (join [.] (letter (length of ([floor v] of ((10) * ((30) - (timer)))::operators)::operators) of ([floor v] of ((10) * ((30) - (timer)))::operators))))
  end
- when we are done, if we finished because we ran out of time (in other words, we didn't finish for the other reasons), then we calculate the time and reset
+ when we are done, if we finished because we ran out of time {in other words, we didn't finish for the other reasons}, then we calculate the time and reset
  if <<(CURRENT BUTTON) = [1]> and <(CHECKING CURRENT) = [1]>> then
      broadcast [check current backdrop v] and wait
      set [CURRENT BUTTON v] to [0]
