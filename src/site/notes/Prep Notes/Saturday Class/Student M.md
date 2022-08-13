@@ -7,22 +7,21 @@
 
 ## 2022 08 20
 
-``<div class="blocks">
+<div class="blocks">
 
 > I have added a CHECK COVERAGE sprite that does the checking to see how much of each section is covered. You don't need to code this, but the two key blocks are:
 
-1. this checks for how much is drawn. 
+> 1. this checks for how much is drawn. 
 ```
 When I receive [check DRAWN v]
 ```
 
-2. This checks for how much is not white. (it is used in teh begininng to get the initial size of the quadrants)
+> 2. This checks for how much is not white. (it is used in teh begininng to get the initial size of the quadrants)
 ```
 When I receive [check not white v]
 ```
 
-
-The result from these is the put into the global variable RESULT.
+> The result from these is the put into the global variable RESULT.
 
 
 
@@ -163,14 +162,10 @@ go to [back v] layer
 
 > Go to the costume editor and move the sword so the point of the sword is at the very center of the sprite.
 
-
+Now we are done with the sword. Move to the 1 sprite 
+### 1  Sprite
  
  
-### 1, 2, 3 Sprites
- 
- > Create variable CURRENT BUTTON.
-> When I click button set the variable. Make it only draw on CURRENT BUTTON = 1
-
 > Initialize Sprite 1
 ```
 when I receive [initialize v]
@@ -183,7 +178,7 @@ when I receive [show initial game screen v]
 ```
 
 
-> when this is clicked, if it is not current, then start this button
+> When this sprite is clicked, if it is not current, then start this button
 ```
  when this sprite clicked
  if <not <(CURRENT BUTTON) = [1]>> then
