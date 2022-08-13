@@ -7,7 +7,7 @@
 
 ## 2022 08 20
 
-<div class="blocks">
+div class="blocks">
 
 > I have added a CHECK COVERAGE sprite that does the checking to see how much of each section is covered. You don't need to code this, but the two key blocks are:
 
@@ -61,14 +61,17 @@ erase all
 stamp full costumes::custom
 ```
 
-> It uses uses the following myblock. This stamps each quadrant onto the background whenn the game starts:
+> The *stamp full costumes* myblock stamps each quadrant onto the background when the game starts:
 
 ```
 define stamp full costumes
+    it clears the screen
 erase all
 switch backdrop to [blank v]
 go to x: (0) y: (0)
+    set up first quadrant
 switch costume to [top left2 v]
+	then 4 times stamps the 4 quadrant costumes
 wait (1) seconds
 repeat (4)
     stamp
