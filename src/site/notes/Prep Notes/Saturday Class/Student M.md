@@ -94,11 +94,15 @@ set [OUTSIDE OF SEGMENT v] to (RESULT)
 hide
 checks without covering.
 broadcast [check DRAWN v] and wait
-If I subtract (OUTSIDE OF SEGMENT) from (RESULT) I get how much is covering that quadrant
-```
+
 
 If I subtract `(OUTSIDE OF SEGMENT)` from `(RESULT)` 
 I get how much is covering that quadrant, `(QUAD 1)`
+
+
+```
+
+
 
 > This is the stack that uses this for each quadrant:
 ```
