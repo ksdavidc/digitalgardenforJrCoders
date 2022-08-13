@@ -3,7 +3,9 @@
 ---
 
 
-## 2022 08 13 Student M
+# Student M
+
+## 2022 08 13
 
 ### Sword
 
@@ -46,8 +48,20 @@ end
 ```
 
 
+Set the starting value of the variables when the game starts. Do this in the in the receive initialize stack.
+
+CURRENT BUTTON is which button we are using.
+DRAWN is how much of the screen we have drawn on.
+
+The screen is covered by 4 sections. Each of these takes up a certain amount of the screen.
+
+QUAD FULL are how much of the screen each section uses by itself. 
+QUAD is how much of that QUAD is covered by drawing.
 
 
+### Sword
+
+```
 when I receive [initialize v]
 hide variable [CURRENT BUTTON v]
 set [CURRENT BUTTON v] to [0]
@@ -61,9 +75,10 @@ set [QUAD3 FULL v] to [0]
 set [QUAD4 v] to [0]
 set [QUAD4 FULL v] to [0]
 set [RESULT v] to [0]
+```
 
-
- 
+Go to the costume editor and move the sword so the point of the sword is at the very center of the sprite.
+This will 
  
  fix pen routine:
  when drawing goes to mouse, puts pen down, and keeps drawing until mouse is not longer down.
@@ -72,7 +87,7 @@ set [RESULT v] to [0]
  
  note that it is different than the color of the numbers
  
- move the sword so it draws at the end.
+ 
  
  Create variable CURRENT BUTTON. 
  When I click button set the variable. Make it only draw on CURRENT BUTTON = 1
