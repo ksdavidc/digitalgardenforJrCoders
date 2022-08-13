@@ -10,26 +10,25 @@
 <div class="blocks">
 
 > I have added a CHECK COVERAGE sprite that does the checking to see how much of each section is covered. You don't need to code this, but the two key blocks are:
-
-> 1. this checks for how much is drawn. 
+ 
 ```
 When I receive [check DRAWN v]
+This checks for how much is drawn. 
 ```
 
-> 2. This checks for how much is not white. (it is used in teh begininng to get the initial size of the quadrants)
 ```
 When I receive [check not white v]
+This checks for how much is not white. (it is used in teh begininng to get the initial size of the quadrants)
 ```
 
-> The result from these is the put into the global variable RESULT.
-
+> If you call these, the result goes into the global variable RESULT. 
 
 
 ### TESTER Sprite
 
 >The Tester Sprite calls the coverage stacks to find out how much each quadrant is covered.
 >
->When the game starts, ti gets the initial coverage:
+>When the game starts, it gets the initial coverage:
 
 ```
 when I receive [get initial values v]
@@ -104,7 +103,8 @@ broadcast [check DRAWN v] and wait
 If I subtract (OUTSIDE OF SEGMENT) from (RESULT) I get how much is covering that quadrant
 ```
 
-If I subtract `(OUTSIDE OF SEGMENT)` from `(RESULT)' I get how much is covering that quadrant, '(QUAD 1)'
+If I subtract `(OUTSIDE OF SEGMENT)` from `(RESULT)` 
+I get how much is covering that quadrant, `(QUAD 1)`
 
 > This is the stack that uses this for each quadrant:
 ```
@@ -191,7 +191,8 @@ go to [back v] layer
 
 ### SWORD 
 
-> Now, go to the costume editor and move the sword so the point of the sword is at the very center of the sprite.
+> Now, go to the costume editor and move the sword 
+> so the point of the sword is at the very center of the sprite.
 
 > Now we are done with the sword, and move on to the 1 sprite 
 
@@ -223,23 +224,24 @@ when I receive [show initial game screen v]
  
  ```
 
-> This is the timer
+> This runs the timer
 ```
 when I receive [show timer v]
  reset timer
  set [TIME REMAINING v] to [30]
  show variable [TIME REMAINING v]
-It stops either if the timer runs out or we press another button or start a check (e.g. through the space bar)
+We will stop the timer for one of 3 reasons: 
+1. the timer runs out 
+2. we press another button or 
+3. start a check {for example with the space bar}
  repeat until <<(timer) > [30]> or <<not <(CURRENT BUTTON) = [1]>> or <not <(CHECKING CURRENT) = (0)>>
- this complicated function is used to make the display of the time look nice
+This complicated function is used to make the display of the time look nice:
      set [TIME REMAINING v] to (join ([floor v] of ((30) - (timer))::operators) (join [.] (letter (length of ([floor v] of ((10) * ((30) - (timer)))::operators)::operators) of ([floor v] of ((10) * ((30) - (timer)))::operators))))
  end
- when we are done, if we finished because we ran out of time {in other words, we didn't finish for the other reasons}, then we calculate the time and reset
- if <<(CURRENT BUTTON) = [1]> and <(CHECKING CURRENT) = [1]>> then
+If we stopped because of the timer, then calculate the coverage and reset everything
+ if <(timer) > [30]> then
      broadcast [check current backdrop v] and wait
      set [CURRENT BUTTON v] to [0]
-     hide variable [RESULT v]
-     hide variable [CURRENT BUTTON v]
  end
  once we are done, we do this
  set [CURRENT BUTTON v] to [0]
@@ -295,7 +297,9 @@ end
 
 
 > 
-> 3. Set the starting value of the variables when the game starts. Do this in the in the receive initialize stack.
+> 3. Now we set the starting value of the variables when the game starts. 
+> 
+> Do this in the in the receive initialize stack.
 > 
 > CURRENT BUTTON is which button we are using.
 > DRAWN is how much of the screen we have drawn on.
