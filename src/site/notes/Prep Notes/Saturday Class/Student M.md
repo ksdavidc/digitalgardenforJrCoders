@@ -39,17 +39,24 @@ set [is clone v] to [0]
 switch backdrop to [blank v]
 switch costume to [top left no bg v]
 show
+we will do this for each quadrant
+check not white, and then put the result in the QUAD variable.
+costume top left
 broadcast [check not white v] and wait
 set [QUAD1 FULL v] to (RESULT)
+then next is top right:
 next costume
 broadcast [check not white v] and wait
 set [QUAD2 FULL v] to (RESULT)
+bottom left:
 next costume
 broadcast [check not white v] and wait
 set [QUAD3 FULL v] to (RESULT)
+bottom right:
 next costume
 broadcast [check not white v] and wait
 set [QUAD4 FULL v] to (RESULT)
+clear the screen and run the stamp all costumes myblock
 erase all
 stamp full costumes::custom
 ```
