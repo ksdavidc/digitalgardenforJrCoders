@@ -8,10 +8,17 @@ https://digitalgardenforjrcoders.netlify.app/
 
 ## Instructions for students:
 
+### Monday
 [[Prep Notes/2022 07 25 Monday Class Instructions|2022 07 25 Monday Class Instructions]]
 
-[[Prep Notes/2022 Monday Class|2022 Monday Class]]
+[[Prep Notes/Monday Class/2022 Monday Class|2022 Monday Class]]
 
-[[Prep Notes/Friday/2022 Student K|2022 Student K]]
 
-[[Prep Notes/Friday/2022 Student K|2022 Student K]]
+### Friday
+[[Prep Notes/Friday Class/2022 Student K|2022 Student K]]
+
+[[Prep Notes/Friday Class/2022 Student K|2022 Student K]]
+
+### Saturday Class
+
+[[Prep Notes/Saturday Class/Student M|Student M]]
