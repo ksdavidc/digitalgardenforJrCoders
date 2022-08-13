@@ -7,7 +7,7 @@
 
 ## 2022 08 20
 
-div class="blocks">
+<div class="blocks">
 
 > I have added a CHECK COVERAGE sprite that does the checking to see how much of each section is covered. You don't need to code this, but the two key blocks are:
 
