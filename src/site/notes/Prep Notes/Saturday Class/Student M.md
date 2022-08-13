@@ -71,8 +71,7 @@ switch backdrop to [blank v]
 go to x: (0) y: (0)
     set up first quadrant
 switch costume to [top left2 v]
-	then 4 times stamps the 4 quadrant costumes
-wait (1) seconds
+	then (4 times) stamps each quadrant costumes
 repeat (4)
     stamp
     next costume
@@ -80,8 +79,12 @@ end
 
 ```
 
-> The way the program works is like this. It checks each quadrant to see how much is covered. If more than 80% is covered, then it creates a clone that covers that quadrant to make it look like it is being eaten. 
-> The way it checks the quadrant is by comparing how much is drawn with that quadrant is covering the drawing with how much with the quadrant not covering the drawing. It does this for each quadrant.
+> The way the program works is like this:
+> 
+> It checks each quadrant to see how much is covered. If more than 80% is covered, it creates a clone that **covers** that quadrant to make it look like it is being eaten. 
+> 
+> The way it checks the quadrant is by comparing how much is drawn with that quadrant is **covering** the drawing with how much with the quadrant **not covering** the drawing. It does this for each quadrant.
+> 
 > This is the myblock that does the comparison:
 
 ```
@@ -101,6 +104,7 @@ broadcast [check DRAWN v] and wait
 when I receive [check current backdrop v]
 hide
 wait (0) seconds
+only does this stack for the main sprite, not its clones:
 if <(is clone) = [0]> then
     switch backdrop to [blank v]
 this hides the background and makes the quadrants visible:    
@@ -147,12 +151,18 @@ end
 ```
 
 
-> This can be used to check coverage at any moment
+> This is the stack that calls that, and is used to check coverage at any moment
 ```
 when [space v] key pressed
 broadcast [hide variables v]
+this is used to stop the timer if the space is pressed:
+set [CHECKING CURRENT v] to (1)
+this call the checking stack, which is above:
 broadcast [check current backdrop v] and wait
+reset this variable:
+set [CHECKING CURRENT v] to (0)
 ```
+
 
 > This formats the covering clones so they hide the earth a bit
 ```
@@ -169,10 +179,15 @@ go to [back v] layer
 
 ```
 
+> All done with the TESTER sprite. 
+> 
 
-> Go to the costume editor and move the sword so the point of the sword is at the very center of the sprite.
+### SWORD 
 
-Now we are done with the sword. Move to the 1 sprite 
+> Now, go to the costume editor and move the sword so the point of the sword is at the very center of the sprite.
+
+> Now we are done with the sword, and move on to the 1 sprite 
+
 ### 1  Sprite
  
  
@@ -208,35 +223,22 @@ when I receive [show timer v]
  set [TIME REMAINING v] to [30]
  show variable [TIME REMAINING v]
 It stops either if the timer runs out or we press another button
- repeat until <<(timer) > [30]> or <not <(CURRENT BUTTON) = [1]>>>
+ repeat until <<(timer) > [30]> or <<not <(CURRENT BUTTON) = [1]>> or <not <(CHECKING CURRENT) = (0)>>
  this complicated function is used to make the display of the time look nice
      set [TIME REMAINING v] to (join ([floor v] of ((30) - (timer))::operators) (join [.] (letter (length of ([floor v] of ((10) * ((30) - (timer)))::operators)::operators) of ([floor v] of ((10) * ((30) - (timer)))::operators))))
  end
- when we are done, if we finished because we ran out of time, then we calculate the time and reset
- if <(CURRENT BUTTON) = [1]> then
+ when we are done, if we finished because we ran out of time (in other words, we didn't finish for the other reasons), then we calculate the time and reset
+ if <<(CURRENT BUTTON) = [1]> and <(CHECKING CURRENT) = [1]>> then
      broadcast [check current backdrop v] and wait
      set [CURRENT BUTTON v] to [0]
      hide variable [RESULT v]
      hide variable [CURRENT BUTTON v]
- else
-     hide variable [TIME REMAINING v]
- end```
- 
+ end
+ once we are done, we do this
+ set [CURRENT BUTTON v] to [0]
+ hide variable [TIME REMAINING v]
+  
 ```
-
-
-```
-```
-```
- create new sprite TESTER and copy all costumes from backdrop to this sprite in same order and with same names
- 
- create check current values stack and text coverage of backdrop # myblock
- 
- 
- 
- 
- 
- copy all the costumes in the backdrop into a new sprite, called TESTER
 
 
 
@@ -246,7 +248,7 @@ It stops either if the timer runs out or we press another button
 
 
 
->  Add broadcast and waits for:
+>  1. Add broadcast and waits for:
 > * initialize 
 > * get initialize values
 > * show initial game screen
@@ -262,7 +264,7 @@ broadcast [start game v] and wait
 ```
 
 
-> create a new draw routine
+> 2. Create a new draw routine
 > This replaces the old one because
 > Using if mouse down is better than if not mouse down
 > also, make it draw only on left part of screen
@@ -283,11 +285,10 @@ forever
     end
 end
 ```
-> 2.create show variable and hide variables:
+
+
 > 
-> 
-> 
-> Set the starting value of the variables when the game starts. Do this in the in the receive initialize stack.
+> 3. Set the starting value of the variables when the game starts. Do this in the in the receive initialize stack.
 > 
 > CURRENT BUTTON is which button we are using.
 > DRAWN is how much of the screen we have drawn on.
@@ -297,9 +298,6 @@ end
 > QUAD FULL are how much of the screen each section uses by itself.
 > QUAD is how much of that QUAD is covered by drawing.
 > 
-
-
-### Sword
 
 ```
 when I receive [initialize v]
@@ -315,7 +313,11 @@ set [QUAD3 FULL v] to [0]
 set [QUAD4 v] to [0]
 set [QUAD4 FULL v] to [0]
 set [RESULT v] to [0]
+
+
 ```
+
+
 
 </div>
 
