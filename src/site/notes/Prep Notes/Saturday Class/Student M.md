@@ -10,13 +10,10 @@
 <div class="blocks">
 
 > I have added a CHECK COVERAGE sprite that does the checking to see how much of each section is covered. You don't need to code this, but the two key blocks are:
- 
 ```
 When I receive [check DRAWN v]
 This checks for how much is drawn. 
-```
 
-```
 When I receive [check not white v]
 This checks for how much is not white. (it is used in teh begininng to get the initial size of the quadrants)
 ```
@@ -29,7 +26,6 @@ This checks for how much is not white. (it is used in teh begininng to get the i
 >The Tester Sprite calls the coverage stacks to find out how much each quadrant is covered.
 >
 >When the game starts, it gets the initial coverage:
-
 ```
 when I receive [get initial values v]
 clear graphic effects
@@ -61,7 +57,6 @@ stamp full costumes::custom
 ```
 
 > The *stamp full costumes* myblock stamps each quadrant onto the background when the game starts:
-
 ```
 define stamp full costumes
     it clears the screen
@@ -87,7 +82,6 @@ end
 > b) how much is drawn when that quadrant **not covering** the drawing.
 > 
 > It does this for each quadrant. This is the myblock that does the comparison:
-
 ```
 define test coverage of backdrop # (backdrop)
 switch costume to (backdrop::custom)
@@ -324,8 +318,6 @@ set [QUAD3 FULL v] to [0]
 set [QUAD4 v] to [0]
 set [QUAD4 FULL v] to [0]
 set [RESULT v] to [0]
-
-
 ```
 
 
