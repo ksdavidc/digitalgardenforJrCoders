@@ -7,7 +7,7 @@
 
 ## 2022 08 20
 
-<div class="blocks">
+``<div class="blocks">
 
 > I have added a CHECK COVERAGE sprite that does the checking to see how much of each section is covered. You don't need to code this, but the two key blocks are:
 
@@ -135,11 +135,18 @@ make sure background is blank, reset is clone, and show the variables
     broadcast [show variables v]
 end
 
+```
+
+
+> This can be used to check coverage at any moment
+```
 when [space v] key pressed
 broadcast [hide variables v]
 broadcast [check current backdrop v] and wait
+```
 
-
+> This formats the covering clones so they hide the earth a bit
+```
 when I start as a clone
 set [is clone v] to [1]
 set [ghost v] effect to (75)::looks
@@ -154,23 +161,68 @@ go to [back v] layer
 ```
 
 
-
-
 > Go to the costume editor and move the sword so the point of the sword is at the very center of the sprite.
 
 
  
- fix pen routine: when drawing goes to mouse, puts pen down, and keeps drawing until mouse is not longer down.
  
- change color detected to 000FF
+### 1, 2, 3 Sprites
  
- note that it is different than the color of the numbers
+ > Create variable CURRENT BUTTON.
+> When I click button set the variable. Make it only draw on CURRENT BUTTON = 1
+
+> Initialize Sprite 1
+```
+when I receive [initialize v]
+ hide variable [TIME REMAINING v]
+ hide
  
+when I receive [show initial game screen v]
+ show
+
+```
+
+
+> when this is clicked, if it is not current, then start this button
+```
+ when this sprite clicked
+ if <not <(CURRENT BUTTON) = [1]>> then
+ hide variables, set current, and start the coundown
+     broadcast [hide variables v]
+     set [CURRENT BUTTON v] to [1]
+     show variable [CURRENT BUTTON v]
+     broadcast [show timer v]
+ end
  
+ ```
+
+> This is the timer
+```
+when I receive [show timer v]
+ reset timer
+ set [TIME REMAINING v] to [30]
+ show variable [TIME REMAINING v]
+It stops either if the timer runs out or we press another button
+ repeat until <<(timer) > [30]> or <not <(CURRENT BUTTON) = [1]>>>
+ this complicated function is used to make the display of the time look nice
+     set [TIME REMAINING v] to (join ([floor v] of ((30) - (timer))::operators) (join [.] (letter (length of ([floor v] of ((10) * ((30) - (timer)))::operators)::operators) of ([floor v] of ((10) * ((30) - (timer)))::operators))))
+ end
+ when we are done, if we finished because we ran out of time, then we calculate the time and reset
+ if <(CURRENT BUTTON) = [1]> then
+     broadcast [check current backdrop v] and wait
+     set [CURRENT BUTTON v] to [0]
+     hide variable [RESULT v]
+     hide variable [CURRENT BUTTON v]
+ else
+     hide variable [TIME REMAINING v]
+ end```
  
- Create variable CURRENT BUTTON. 
- When I click button set the variable. Make it only draw on CURRENT BUTTON = 1
- 
+```
+
+
+```
+```
+```
  create new sprite TESTER and copy all costumes from backdrop to this sprite in same order and with same names
  
  create check current values stack and text coverage of backdrop # myblock
