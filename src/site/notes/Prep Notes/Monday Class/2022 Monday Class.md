@@ -13,9 +13,18 @@
 	- [[Prep Notes/Monday Class/2022 Monday Class#July 25th|UPDRAFT SPRITE]]
 
 
+<div class="blocks"> 
+
+## 2022 08 15
+
+ Open this link:
+ 
+https://www.youtube.com/watch?v=sebnyhBsXug
+
+
 ## 2022 08 08
 
-<div class="blocks">
+
 
 ```
 
