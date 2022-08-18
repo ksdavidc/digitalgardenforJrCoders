@@ -55,15 +55,11 @@ go [backward v] (2) layers
 
 ## Old Stuff
 <details>Old stuff
-
-## Old Stuff
-
-<summary>
+<summary>## Old Stuff</summary>
 
 ## 08 05
 
-### CAT
-
+### CAT SPRITE
 
 >fix the no room available go back at the bottom,
 it belongs in the classroom open else area.
@@ -123,6 +119,7 @@ COPY the classroom code to the Art Gallery,
 but CHANGE variables and positions
 ```
 
-</summary>
+
 </details>
+
 </div>
