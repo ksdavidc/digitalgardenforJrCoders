@@ -12,7 +12,7 @@
 	- [[Prep Notes/Friday Class/2022 Student M#08 05|CAT]]
 
 
-<div class="blocks">
+div class="blocks">
 
 ## 08 19
 
@@ -54,8 +54,7 @@ go [backward v] (2) layers
 ```
 
 
->[!seealso]+ ## OLD STUFF
-
+>[!seealso]- ## OLD STUFF
 > ## 08 05
 > 
 > ### CAT SPRITE
