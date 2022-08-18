@@ -16,4 +16,5 @@
 [[Prep Notes/Research on AI/(2) Weird Dall-E Mini Generations on Twitter httpst.coCYYBFMK7BV  Twitter|(2) Weird Dall-E Mini Generations on Twitter httpst.coCYYBFMK7BV  Twitter]]
 
 [[Prep Notes/Research on AI/AI Art - AI Art with Hotpot.ai - Hotpot.ai|AI Art - AI Art with Hotpot.ai - Hotpot.ai]]
+
 [[Prep Notes/Research on AI/AI Art Maker turn text to art - Hotpot.ai|AI Art Maker turn text to art - Hotpot.ai]]
