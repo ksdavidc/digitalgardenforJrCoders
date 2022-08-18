@@ -3,7 +3,7 @@
 ---
 
 
-# Student M
+# 2022 Student M
 
 - [[Prep Notes/Friday Class/2022 Student M#08 19|08 19]]
 	- [[Prep Notes/Friday Class/2022 Student M#08 19|ART GALLERY COVER SPRITE]]
@@ -12,7 +12,7 @@
 	- [[Prep Notes/Friday Class/2022 Student M#08 05|CAT]]
 
 
-div class="blocks">
+<div class="blocks">
 
 ## 08 19
 
