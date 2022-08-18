@@ -3,41 +3,96 @@
 ---
 
 
+- [[Prep Notes/Friday Class/2022 Student M#08 19|08 19]]
+	- [[Prep Notes/Friday Class/2022 Student M#08 19|ART GALLERY COVER SPRITE]]
+	- [[Prep Notes/Friday Class/2022 Student M#08 19|ART GALLERY SPRITE]]
 - [[Prep Notes/Friday Class/2022 Student M#08 05|08 05]]
 	- [[Prep Notes/Friday Class/2022 Student M#08 05|CAT]]
-	- [[Prep Notes/Friday Class/2022 Student M#08 05|CLASSROOM COVER > ART GALLERY COVER]]
-	- [[Prep Notes/Friday Class/2022 Student M#08 05|CLASSROOM > ART GALLERY]]
 
 
+div class="blocks">
+
+## 08 19
+
+### ART GALLERY COVER SPRITE
+
+> this should look like this: (some small changes)
+
+```
+when this sprite clicked
+if <(MONEY) > [10]> then
+    set [art gallerly v] to [1]
+    hide variable [art gallerly v]
+    change [MONEY v] by (-10)
+    hide
+end
+```
+
+> add this
+
+```
+when I receive [initialize v]
+go to x: (-34) y: (-20)
+show
+go to [front v] layer
+set [art gallerly v] to [0]
+show variable [art gallerly v]
+```
+
+### ART GALLERY SPRITE
+
+> In art gallery sprite:
+> add:
+
+``` 
+when I receive [initialize v]
+go to x: (-45) y: (-20)
+go to [front v] layer
+go [backward v] (2) layers
+```
+
+## Old Stuff
+<details>Old stuff
+
+## Old Stuff
+
+<summary>
 
 ## 08 05
 
-<div class="blocks">
-
 ### CAT
 
-```
 
-fix the no room available go back at the bottom,
+>fix the no room available go back at the bottom,
 it belongs in the classroom open else area.
 
-add a delete this clone on the end of 
+>add a delete this clone on the end of 
+``` 
 define no room available go back
 /* ... {stuff, then}
 delete this clone
+```
 
 
-WRITE the get money, go to and leave art gallery code
+> WRITE the get money, go to and leave art gallery code
 while changing the variable names
 
-INITIALIZE all the MAX and OCCUPANTS VARIABLES
+>INITIALIZE all the MAX and OCCUPANTS VARIABLES
 for example
-set (OCCUPANTS ART GALLERY) to (0) 
 
-Change 
+``` 
+set (OCCUPANTS ART GALLERY) to (0)
+```
+
+> Change 
+
+``` 
 set (which room to go to) to (pick random (1) to (2))
-to
+```
+> to
+``` 
 set (which room to go to) to (pick random (1) to (3))
+```
 ...
 
 
@@ -66,5 +121,6 @@ COPY the classroom code to the Art Gallery,
 but CHANGE variables and positions
 ```
 
-
+</summary>
+</details>
 </div>
