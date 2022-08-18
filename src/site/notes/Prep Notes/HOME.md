@@ -22,3 +22,7 @@ https://digitalgardenforjrcoders.netlify.app/
 ### Saturday Class
 
 [[Prep Notes/Saturday Class/Student M|Student M]]
+
+### Notes
+
+[[Prep Notes/Research on AI/AI|AI]]
