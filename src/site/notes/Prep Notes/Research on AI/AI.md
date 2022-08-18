@@ -11,8 +11,7 @@
 
 [[Prep Notes/Research on AI/Craiyon, formerly DALL-E mini|Craiyon, formerly DALL-E mini]]
 
-[[This AI image generator lets you type in words and get 
-weird pictures back - CNN]]
+[[Prep Notes/Research on AI/This AI image generator lets you type in words and get weird pictures back - CNN|This AI image generator lets you type in words and get weird pictures back - CNN]]
 
 [[Prep Notes/Research on AI/(2) Weird Dall-E Mini Generations on Twitter httpst.coCYYBFMK7BV  Twitter|(2) Weird Dall-E Mini Generations on Twitter httpst.coCYYBFMK7BV  Twitter]]
 
