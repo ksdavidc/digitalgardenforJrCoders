@@ -7,7 +7,9 @@
 - [[Prep Notes/Friday Class/2022 Student M#08 19|08 19]]
 	- [[Prep Notes/Friday Class/2022 Student M#08 19|ART GALLERY COVER SPRITE]]
 	- [[Prep Notes/Friday Class/2022 Student M#08 19|ART GALLERY SPRITE]]
-
+- [[Prep Notes/Friday Class/2022 Student M#OLD STUFF|OLD STUFF]]
+- [[Prep Notes/Friday Class/2022 Student M#08 05|08 05]]
+	- [[Prep Notes/Friday Class/2022 Student M#08 05|CAT SPRITE]]
 
 <div class="blocks">
 
@@ -50,7 +52,7 @@ go to [front v] layer
 go [backward v] (2) layers
 ```
 
-# OLD STUFF
+## OLD STUFF
 ## 08 05
 
 ### CAT SPRITE
