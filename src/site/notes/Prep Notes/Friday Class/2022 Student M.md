@@ -12,7 +12,7 @@
 	- [[Prep Notes/Friday Class/2022 Student M#08 05|CAT]]
 
 
-div class="blocks">
+<div class="blocks">
 
 ## 08 19
 
