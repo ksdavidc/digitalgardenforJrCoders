@@ -4,14 +4,8 @@
 
 
 # 2022 Student M
-- [[Prep Notes/Friday Class/2022 Student M#08 19|08 19]]
-	- [[Prep Notes/Friday Class/2022 Student M#08 19|ART GALLERY COVER SPRITE]]
-	- [[Prep Notes/Friday Class/2022 Student M#08 19|ART GALLERY SPRITE]]
-- [[Prep Notes/Friday Class/2022 Student M#OLD STUFF|OLD STUFF]]
-- [[Prep Notes/Friday Class/2022 Student M#08 05|08 05]]
-	- [[Prep Notes/Friday Class/2022 Student M#08 05|CAT SPRITE]]
 
-<div class="blocks">
+div class="blocks">
 
 ## 08 19
 
@@ -87,35 +81,33 @@ to
 ```
 set (which room to go to) to (pick random (1) to (3))
 ```
-...
 
 
 
 
-```
+
+
 
 ### CLASSROOM COVER > ART GALLERY COVER
 
-```
 we have to finish setting this up
 AFTER
+```
 if <(MONEY) > 10> then
+```
 ADD
+```
 set (CLASSROOM OPEN) to (1)
-
+```
 
 After than, COPY all the code to the art gallery cover,
 but CHANGE the variables and positions
-```
+
 
 ### CLASSROOM > ART GALLERY
 
-```
+
 COPY the classroom code to the Art Gallery,
 but CHANGE variables and positions
-```
 
 
-
-
-</div>
