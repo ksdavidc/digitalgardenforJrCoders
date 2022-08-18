@@ -15,7 +15,7 @@ https://digitalgardenforjrcoders.netlify.app/
 
 
 ### Friday
-[[Prep Notes/Friday Class/2022 Student K|2022 Student K]]
+[[Prep Notes/Friday Class/2022 Student M|2022 Student M]]
 
 [[Prep Notes/Friday Class/2022 Student K|2022 Student K]]
 
