@@ -20,7 +20,12 @@ Project Name:
 > [!question]+ Storyboard
 > Did you make and follow a Storyboard? 
 
+> [!summary]+
+> 
 
+
+> [!NOTE] Title
+> Contents
 
  > Is this based on another project? If so, what are things you added that were not part of the project it is based on?
 
