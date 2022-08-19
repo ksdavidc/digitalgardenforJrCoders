@@ -9,56 +9,84 @@ Date:
 Name:
 Project Name:
 
+During the showcase people will come to your station and will want to know about your project. They may come up you to ask you questions, or you may approach them to talk about your project. It could be more or less, but as fart as planning, I suggest you think about talking for about 3-5 minutes with each person or group.  The people who are coming are family and friends of our classes. They will be friendly and curious, so don't be shy. 
 
-### Project Development
+For example, this might include: 
+1. introducing the project
+2. demonstrating the project 
+3. helping them play it
+4. talking about your coding experience
 
-* Where did you get the idea for the project? (for example, I saw another game, my teacher gave it to me, I saw it on scratch)
+Below are questions <b>TO HELP YOU TALK ABOUT YOUR PROJECT</b> during the Showcase. These include:
+* Questions people might ask
+* Things you can tell them about that might be interesting. 
 
-* Why did  you choose this project? (what do you like about it? What makes it cool? )
+These are suggestions only. Answer the questions you can, and as best you can. Give honest answers.  Be yourself and have fun!
+
+<div style="page-break-after: always; visibility: hidden"> 
+\pagebreak 
+</div>
+
+### Introduction and Project Development
+> [!info] Intro
+> Give them basic info about the project such as:
+> * name
+ >* kind of project it is (platformer, chase, story, etc.) 
+ >* short summary or tag. You can "sell" the project here, to make it interesting. A very very simple example:
+ > > My game is called ArtichokeHearts. It is a game where you click running artichokes. You get points by catching artichokes and eating them. Beware of the bad artichokes, they will make you sick.
+
+> [!INFO] Origins
+> * **Where** did you get the idea for the project? Describe what you remember about **finding the project**. (for example, I saw someone playing it, I tried it during class, my teacher suggested it). 
 
 
-> [!question]+ Storyboard
-> Did you make and follow a Storyboard? 
-
-> [!summary]+
+> [!info] Reason for choosing
+> * **Why** did  you make this project (and not another) ? What do you like about it? What makes it cool?
 > 
 
 
-> [!NOTE] Title
-> Contents
-
- > Is this based on another project? If so, what are things you added that were not part of the project it is based on?
-
-[  ] Not at all  [  ] I added some   [  ] I added a lot [  ] It was all my own idea
+> [!info] Design
+> How did you design the project? What steps did you take? Did you make and follow a Storyboard? Did you change the design or improve the design at times?
 
 
-* What makes your project unique?
+> [!info] Originality
+ > Is this based on another project? If so, what are things you added that were not part of the project it is based on? What makes your project unique?
 
-### Media
+### Demonstration
 
-Tell me about the images in the project. Where did you get them? Did you make any of them yourself? How did you draw them? What techniques did you use? 
+Guests will want to see a demonstration of the project. Here are some things you can do to make it interesting.
 
-Tell me about the images in the project. Where did you get them? Did you make any of them yourself? How did you draw them? What techniques did you use? 
+> [!NOTE] Program Flow
+> What are the parts of your project? Are there levels? Does it have an opening screen, a game over screen? How do you measure progress in the game? Is there a story? What kind of user interaction is there? 
+
+> [!NOTE] Sprites
+> Talk about the sprites in your project. What does each do? How did you make them?
 
 
-## Difficulty
+> [!NOTE] Images
+> Tell people about the images, such as backdrops, in the project. Where did you get them? Did you make any of them yourself? How did you draw them? What techniques did you use? 
 
-    • Is it EASY TO USE and understand? 
+
+> [!NOTE] The Scratch Editor
+> **How** do you use the scratch editor? **What can you do** with it?
+
+
+> [!NOTE] Sound
+> **Where** did you get the sounds? **Why** did you choose those sounds?
+
+
+
+## Coding Experience
+
+
+> [!abstract] Learning Coding
+      > What was easy and hard about making this project? What are some ideas/coding techniques that this project uses? What did you learn doing it? What do you want to learn more about? 
       
-[  ] Not at all. The project is hard for anyone who is not me to understand
-[  ] A few people might be able to understand or use the project
-[  ] Many people can use or understand it. (The project has directions for example)
-[  ] The project is easy for anyone to use and understand
+      
+> [!abstract] Effort
+> How long did you work on this project? What was working on it like?
+  
+> [!abstract] Completion
+> Is the project finished? Are there parts you want to add?
 
-    • Did you work HARD on it? Did you get distracted? 
 
-[  ] Not at all. During coding time I played other games and did other projects.
-[  ] During coding time I sometimes worked hard on it, and sometimes lost focus.
-[  ] During coding time, I usually worked on it, without getting off focus.
-[  ] During project time I only worked on it. 
-
-    • Is it FINISHED, and is not missing anything I should have finished by now? 
-
-[  ] Not at all    [  ] I finished less than half   [  ] It is only missing a few things.
-[  ] It is not missing anything
 
