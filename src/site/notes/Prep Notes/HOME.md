@@ -26,3 +26,5 @@ https://digitalgardenforjrcoders.netlify.app/
 ### Notes
 
 [[Prep Notes/Research on AI/AI|AI]]
+
+[[Evaluations/Showcase Prep Sheet|Showcase Prep Sheet]]
