@@ -3,7 +3,7 @@
 ---
 
 
-<div class="blocks">
+div class="blocks">
 
 ## Step 1
 
@@ -46,10 +46,24 @@ This is where we come back to if we want to replay the game.
 ```
 when I receive [Play Game v]
 ``` 
-This myblock is to initialize each time we play the game
+This myblock is to initialize each time we play the game.
+
 ```
 Game on::custom
 ``` 
+
+> [!info] Note about myblocks:
+> When you see a red block like the one above, you may need to create a myblock.
+> A myblock has two parts.
+> First the definition block, which is a hat block.
+> It has a round top:
+> ```
+> define Game on
+> ```
+> and then, the call block, which is what is above. It is not a hat. Don't mix them up.
+
+
+
 Just add these, we will use them later.
 ```
 broadcast [reset level v]
