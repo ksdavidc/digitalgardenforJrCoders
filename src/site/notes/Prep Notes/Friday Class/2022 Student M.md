@@ -3,9 +3,20 @@
 ---
 
 
+
+- [[Prep Notes/Friday Class/2022 Student M#2022 Student M|2022 Student M]]
+	- [[Prep Notes/Friday Class/2022 Student M#2022 Student M|08 19]]
+		- [[Prep Notes/Friday Class/2022 Student M#08 19|ART GALLERY COVER SPRITE]]
+		- [[Prep Notes/Friday Class/2022 Student M#08 19|ART GALLERY SPRITE]]
+	- [[Prep Notes/Friday Class/2022 Student M#2022 Student M|OLD STUFF]]
+	- [[Prep Notes/Friday Class/2022 Student M#2022 Student M|08 05]]
+		- [[Prep Notes/Friday Class/2022 Student M#08 05|CAT SPRITE]]
+		- [[Prep Notes/Friday Class/2022 Student M#08 05|CLASSROOM COVER > ART GALLERY COVER]]
+		- [[Prep Notes/Friday Class/2022 Student M#08 05|CLASSROOM > ART GALLERY]]
+
 # 2022 Student M
 
-div class="blocks">
+<div class="blocks">
 
 
 
