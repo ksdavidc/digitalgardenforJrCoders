@@ -9,20 +9,25 @@
 
 <div class="blocks">
 
-> I have added a CHECK COVERAGE sprite that does the checking to see how much of each section is covered. You don't need to code this, but the two key blocks are:
+> I have added a CHECK COVERAGE sprite that does the checking to see how much of each section is covered. You don't need to code this, but the two key blocks are:  
+
+This checks for how much is drawn:
 ```
 When I receive [check DRAWN v]
-This checks for how much is drawn. 
+``` 
 
+This checks for how much is not white.
+It is used in the begininng to get the initial size of the quadrants.
+If you call these, the result goes into the global variable RESULT. 
+```
 When I receive [check not white v]
 ```
 
-> This checks for how much is not white. (it is used in teh begininng to get the initial size of the quadrants.
-> If you call these, the result goes into the global variable RESULT. 
 
 ### TESTER Sprite
 
->Create a new sprite called TESTER> The Tester Sprite calls the coverage stacks to find out how much each quadrant is covered.
+>Create a new sprite called TESTER.
+>The Tester Sprite calls the coverage stacks to find out how much each quadrant is covered.
 >
 >* When the game starts, it gets the initial coverage:
 ```
@@ -34,43 +39,42 @@ switch backdrop to [blank v]
 switch costume to [**name of your top left quadrant** v]
 show
 ``` 
-> * Then, on the same stack, we will:
->   * show the quadrant and see how much is showing. 
->   * store the RESULT
-> It is important that your 4 quadrant costumes are in the right order in your TESTER sprite.
-```
-check not white, and then put the result in the QUAD variable.
-``` 
-costume top left
+
+> * Then, on the same stack, we will:  
+>   * show the quadrant and see how much is showing.  
+>   * store the RESULT   
+> It is important that your 4 quadrant costumes are in the right order in your TESTER sprite.  
+  
+costume top left:  
 ```
 broadcast [check not white v] and wait
 set [QUAD1 FULL v] to (RESULT)
 ``` 
-then next is top right:
+then next is top right:  
 ```
 next costume
 broadcast [check not white v] and wait
 set [QUAD2 FULL v] to (RESULT)
 ``` 
-bottom left:
+bottom left:  
 ```
 next costume
 broadcast [check not white v] and wait
 set [QUAD3 FULL v] to (RESULT)
 ``` 
-lastly bottom right:
+lastly bottom right:  
 ```
 next costume
 broadcast [check not white v] and wait
 set [QUAD4 FULL v] to (RESULT)
 ``` 
-clear the screen and run the stamp all costumes myblock
+clear the screen and run the stamp all costumes myblock  
 ```
 erase all
 stamp full costumes::custom
 ```
 
-> The *stamp full costumes* myblock stamps each quadrant onto the background when the game starts:
+> The *stamp full costumes myblock* stamps each quadrant onto the background when the game starts:
 ```
 define stamp full costumes
 ``` 
@@ -180,9 +184,13 @@ end
 ```
 when [space v] key pressed
 broadcast [hide variables v]
+``` 
 this is used to stop the timer if the space is pressed:
+```
 set [CHECKING CURRENT v] to (1)
-this call the checking stack, which is above:
+``` 
+this calls the checking stack, which is above:
+```
 broadcast [check current backdrop v] and wait
 reset this variable:
 set [CHECKING CURRENT v] to (0)
