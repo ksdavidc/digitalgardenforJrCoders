@@ -7,7 +7,7 @@
 
 ## 2022 08 20
 
-div class="blocks">
+<div class="blocks">
 
 > I have added a CHECK COVERAGE sprite that does the checking to see how much of each section is covered. You don't need to code this, but the two key blocks are:
 ```
@@ -20,12 +20,11 @@ When I receive [check not white v]
 > This checks for how much is not white. (it is used in teh begininng to get the initial size of the quadrants.
 > If you call these, the result goes into the global variable RESULT. 
 
-MAKE A NEW TESTER SPRITE
 ### TESTER Sprite
 
->The Tester Sprite calls the coverage stacks to find out how much each quadrant is covered.
+>Create a new sprite called TESTER> The Tester Sprite calls the coverage stacks to find out how much each quadrant is covered.
 >
->When the game starts, it gets the initial coverage:
+>* When the game starts, it gets the initial coverage:
 ```
 when I receive [get initial values v]
 clear graphic effects
@@ -35,25 +34,38 @@ switch backdrop to [blank v]
 switch costume to [**name of your top left quadrant** v]
 show
 ``` 
-on the same stack, we will do this for each quadrant
+> * Then, on the same stack, we will:
+>   * show the quadrant and see how much is showing. 
+>   * store the RESULT
+> It is important that your 4 quadrant costumes are in the right order in your TESTER sprite.
 ```
 check not white, and then put the result in the QUAD variable.
+``` 
 costume top left
+```
 broadcast [check not white v] and wait
 set [QUAD1 FULL v] to (RESULT)
+``` 
 then next is top right:
+```
 next costume
 broadcast [check not white v] and wait
 set [QUAD2 FULL v] to (RESULT)
+``` 
 bottom left:
+```
 next costume
 broadcast [check not white v] and wait
 set [QUAD3 FULL v] to (RESULT)
-bottom right:
+``` 
+lastly bottom right:
+```
 next costume
 broadcast [check not white v] and wait
 set [QUAD4 FULL v] to (RESULT)
+``` 
 clear the screen and run the stamp all costumes myblock
+```
 erase all
 stamp full costumes::custom
 ```
@@ -61,13 +73,19 @@ stamp full costumes::custom
 > The *stamp full costumes* myblock stamps each quadrant onto the background when the game starts:
 ```
 define stamp full costumes
-    it clears the screen
+``` 
+it clears the screen
+```
 erase all
 switch backdrop to [blank v]
 go to x: (0) y: (0)
-    set up first quadrant
+``` 
+set up first quadrant
+```
 switch costume to [top left2 v]
-	then (4 times) stamps each quadrant costumes
+``` 
+then (4 times) stamps each quadrant costumes
+```
 repeat (4)
     stamp
     next costume
