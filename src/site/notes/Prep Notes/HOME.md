@@ -33,6 +33,8 @@ Some temporary files for easy access during class.
 
 [[Prep Notes/Saturday Class/Student M|Student M]]
 
+[[Prep Notes/Saturday Class/Student N|Student N]]
+
 ### Miscellaneous
 
 [[Prep Notes/Research on AI/AI|AI]]
