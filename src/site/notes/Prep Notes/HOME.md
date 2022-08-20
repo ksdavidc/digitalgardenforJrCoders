@@ -14,8 +14,7 @@ https://digitalgardenforjrcoders.netlify.app/
 
 
 # DIGITAL GARDEN FOR JUNIOR CODERS
-
-A bunch of temporary files for easy access during class. 
+Some temporary files for easy access during class. 
 
 ## Instructions for students:
 
