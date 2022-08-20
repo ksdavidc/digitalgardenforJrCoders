@@ -7,7 +7,7 @@
 
 ## 2022 08 20
 
-<div class="blocks">
+div class="blocks">
 
 > I have added a CHECK COVERAGE sprite that does the checking to see how much of each section is covered. You don't need to code this, but the two key blocks are:
 ```
@@ -15,12 +15,12 @@ When I receive [check DRAWN v]
 This checks for how much is drawn. 
 
 When I receive [check not white v]
-This checks for how much is not white. (it is used in teh begininng to get the initial size of the quadrants)
 ```
 
+> This checks for how much is not white. (it is used in teh begininng to get the initial size of the quadrants.
 > If you call these, the result goes into the global variable RESULT. 
 
-
+MAKE A NEW TESTER SPRITE
 ### TESTER Sprite
 
 >The Tester Sprite calls the coverage stacks to find out how much each quadrant is covered.
@@ -32,9 +32,11 @@ clear graphic effects
 erase all
 set [is clone v] to [0]
 switch backdrop to [blank v]
-switch costume to [top left no bg v]
+switch costume to [**name of your top left quadrant** v]
 show
-we will do this for each quadrant
+``` 
+on the same stack, we will do this for each quadrant
+```
 check not white, and then put the result in the QUAD variable.
 costume top left
 broadcast [check not white v] and wait
