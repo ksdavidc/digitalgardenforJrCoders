@@ -53,18 +53,22 @@ Game on::custom
 ``` 
 
 > [!info] Note about myblocks:
-> When you see a red block like the one above, you may need to create a myblock.
+> When you see a red block like the one above, 
+> you may need to create a myblock first, if it doesn't already exist.
 > A myblock has two parts.
 > First the definition block, which is a hat block.
-> It has a round top:
+> That means it has a round top:
 > ```
 > define Game on
 > ```
 > and then, the call block, which is what is above. It is not a hat. Don't mix them up.
 
-
-
-Just add these, we will use them later.
+So, now your **Play Game** stack should look like this:
+```
+when I receive [Play Game v]
+Game on::custom
+``` 
+Now add these, we will use them later.
 ```
 broadcast [reset level v]
 broadcast [set up this level v]
@@ -72,25 +76,18 @@ broadcast [set up this level v]
 Next is the main game loop.
 The game repeats this loop over and over
 until we lose or win the game.
-for now, don'T put anything in the brackets < >
+for now, don't put anything in the brackets < >
 ```
 repeat until <>
-``` 
-Each time through the loop, we figure how much
-each sprite will change on the screen, and any other changes to the screen. 
-This is a tick. Like the tick of a clock. Not the insect, silly.
-```
+    Each time through the loop, we figure how much
+    each sprite will change on the screen, and any other changes to the screen. 
+    This is a tick. Like the tick of a clock. Not the insect, silly.
     tick::custom
-``` 
-Then we actually make the changes to the screen, once per frame.
-```
+    Then we actually make the changes to the screen, once per frame.
     set scroll and position::custom
-``` 
-Just add this here, for now.
-```
+    Just add this here, for now.
     broadcast [tick once v] and wait
 end
-
 ``` 
 
 Now we are going to start taking the blocks we had in Step 1 and put them into our framework.
