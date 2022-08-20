@@ -5,21 +5,21 @@
 
 ## Showcase worksheet
 
-Date: 
-Name:
-Project Name:
+Date:  
+Name:  
+Project Name:  
 
 During the showcase people will come to your station and will want to know about your project. They may come up you to ask you questions, or you may approach them to talk about your project. It could be more or less, but as fart as planning, I suggest you think about talking for about 3-5 minutes with each person or group.  The people who are coming are family and friends of our classes. They will be friendly and curious, so don't be shy. 
 
-For example, this might include: 
-1. introducing the project
-2. demonstrating the project 
-3. helping them play it
-4. talking about your coding experience
+For example, this might include:  
+1. **Introducing** the project  
+2. **Demonstrating** the project   
+3. helping them **Play it**.  
+4. talking about your **Coding Experience**  
 
 Below are questions <b>TO HELP YOU TALK ABOUT YOUR PROJECT</b> during the Showcase. These include:
-* Questions people might ask
-* Things you can tell them about that might be interesting. 
+* Questions people might ask  
+* Things you can tell them about that might be interesting.   
 
 These are suggestions only. Answer the questions you can, and as best you can. Give honest answers.  Be yourself and have fun!
 
@@ -39,7 +39,7 @@ These are suggestions only. Answer the questions you can, and as best you can. G
 > [!INFO] Origins
 > * Where did you get the idea for the project? 
 > * Describe what you remember about **finding the project**. (for example, I saw someone playing it, I tried it during class, my teacher suggested it). 
-<div style="height:200px;"></div>
+<div style="height:300px;"  style="page-break-after: always;"></div>
 
 > [!info] Reason for choosing
 > * Why did  you make this project (and not another) ? 
