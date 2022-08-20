@@ -40,3 +40,5 @@ Some temporary files for easy access during class.
 [[Prep Notes/Research on AI/AI|AI]]
 
 [[Evaluations/Showcase Prep Sheet|Showcase Prep Sheet]]
+
+[[Prep Notes/Miscellaneous/Scrolling platformer|Scrolling platformer]]
