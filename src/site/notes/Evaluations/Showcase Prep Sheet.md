@@ -35,6 +35,8 @@ These are suggestions only. Answer the questions you can, and as best you can. G
  >* short summary or tag. You can "sell" the project here, to make it interesting. A very very simple example:
  > > My game is called ArtichokeHearts. It is a game where you click running artichokes. You get points by catching artichokes and eating them. Beware of the bad artichokes, they will make you sick.
 
+<div style="height:500px;"></div>
+
 > [!INFO] Origins
 > * **Where** did you get the idea for the project? Describe what you remember about **finding the project**. (for example, I saw someone playing it, I tried it during class, my teacher suggested it). 
 
