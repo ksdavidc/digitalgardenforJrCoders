@@ -42,9 +42,9 @@ broadcast [Play Game v]
 
 ``` 
 As always, a broadcast block is paired with (at least one) receive block.
-We will make the `when I receive [green flag v]`{: .scratch} stack later.
+We will make the ```when I receive [green flag v]``` stack later.
 
-The `when I receive [Play Game v]`{: .scratch} is the overall project loop. 
+The ```when I receive [Play Game v]``` is the overall project loop. 
 This is where we come back to if we want to replay the game.
 ```
 when I receive [Play Game v]
@@ -141,14 +141,12 @@ Then get a **call block** (*no hat*) for this myblock and put it at the bottom o
 Change player y by (speed y) and then pull up {fix overlap}::custom
 ``` 
 
-Go back to the definition of Change player y...
-
-
+Go back to the **definition block** of Change player y (this:)
 ```
 define Change player y by (speed y) and then pull up {fix overlap}
 ``` 
 You can put the rest of Step 1 below it, 
-but you have to change the first speed y, 
+but you have to change the first ```(speed y)```, 
 by dragging the red input into it.
 ```
 change y by (speed y::custom)
