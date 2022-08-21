@@ -6,7 +6,6 @@
 - [[Prep Notes/Miscellaneous/Scrolling platformer#Step 1|Step 1]]
 - [[Prep Notes/Miscellaneous/Scrolling platformer#Step 2|Step 2]]
 - [[Prep Notes/Miscellaneous/Scrolling platformer#Step 3|Step 3]]
-	- [[Prep Notes/Miscellaneous/Scrolling platformer#Step 3|yes]]
 
 
 div class="blocks">
@@ -224,10 +223,10 @@ set [speed y v] to [0]
 set [x v] to [0]
 set [y  v] to [100]
 ```
-make sure that **x** and **y** are for this sprite only variables.
-notice we used 2 **set** blocks for the one **go to**.
+Make sure that **x** and **y** are for this sprite only variables.
+Notice we used 2 **set** blocks for the one **go to**.
 
-after that, the position step will so something like this:
+After that, the position step will so something like this:
 ``` 
 go to x: (x) y: (y)
 ```
@@ -249,12 +248,13 @@ into an orange block:
 ``` 
 change [y  v] by (speed y::custom)
 ```
+
 and the put the Position call block right after it:
 ``` 
 Position (at screen x and y)::custom
 ```
 
-in the platform loop, instead of
+In the platform loop, instead of
 ``` 
 change y by (1)
 ```
@@ -291,3 +291,6 @@ Change player y by (speed y) and then pull up (fix overlap)::custom
 
 </div>
 
+```scratchblocks
+test
+```
