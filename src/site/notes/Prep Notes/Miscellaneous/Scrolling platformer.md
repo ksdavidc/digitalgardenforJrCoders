@@ -26,10 +26,10 @@ end
 ```
 
 ## Step 2
->Step 1 is  agood beginning, but we will have to change it  
+>Step 1 is  a good beginning, but we will have to change it  
 >so that we can make a bigger faster game.   
 >  
->In this step we build a framework for our game.  
+>In step 2, we build a framework for our game.  
 >This framework helps us keep the code organized.  
 >It also makes it easier to adjust and change the code as we need.  
 
@@ -41,7 +41,10 @@ broadcast [green flag v] and wait
 broadcast [Play Game v]
 
 ``` 
-This is the overall game loop. 
+As always, a broadcast block is paired with (at least one) receive block.
+We will make the `when I receive [green flag v]` stack later.
+
+The `when I receive [Play Game v]` is the overall game loop. 
 This is where we come back to if we want to replay the game.
 ```
 when I receive [Play Game v]
@@ -147,3 +150,4 @@ end
 ``` 
 
 </div>
+
