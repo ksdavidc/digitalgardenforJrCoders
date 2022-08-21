@@ -43,4 +43,3 @@ Some temporary files for easy access during class.
 
 [[Prep Notes/Miscellaneous/Scrolling platformer|Scrolling platformer]]
 
-[[testing/test of sideblock admonitions|test of sideblock admonitions]]
