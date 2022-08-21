@@ -304,3 +304,9 @@ test
 ```scratchblocks
 test
 ```
+
+>[!scratch] test
+>test 
+>```
+>test
+>```
