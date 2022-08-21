@@ -3,7 +3,7 @@
 ---
 
 
-<div class="blocks">
+div class="blocks">
 
 ## Step 1
 
@@ -168,6 +168,105 @@ if <touching [Platform v]?> then
 end
 
 ``` 
+
+### Step 3
+
+
+In this step we take **blue move blocks** like this:
+``` 
+set y to (10)
+```
+and make them **orange** look like
+``` 
+set (y) to (10)
+```
+
+Which, later in the program, 
+actually **Position** the sprite using blue blocks like this:
+``` 
+set y to (y)
+```
+we will do this **Position** step in a special myblock. (don't do it yet)
+
+For example:
+
+Here is our old Game on:
+``` 
+define Game on
+set [speed y v] to [0]
+go to x: (0) y: (100)
+```
+
+Now make it look like:
+``` 
+define Game on
+set [speed y v] to [0]
+set [x v] to [0]
+set [y  v] to [100]
+```
+notice we used 2 set blocks for the one go to.
+
+after that, the position step will so something like this:
+``` 
+go to x: (x) y: (y)
+```
+**Don't do it yet. **
+
+**First** make the myblock that will do this Position step:
+``` 
+define Position 
+go to x: ((x) - (SCROLL X)) y: ((y ) - (SCROLL Y))
+```
+(don't worry about SCROLL X and Y yet)
+
+In the  old Change player myblock, change this blue block:
+change y by (speed y::custom)
+
+into an orange block:
+``` 
+change [y  v] by (speed y::custom)
+```
+and the put the Position call block right after it:
+``` 
+Position (at screen x and y)::custom
+```
+
+in the platform loop, instead of
+``` 
+change y by (1)
+```
+do this:
+``` 
+change [y  v] by (1)
+Position (at screen x and y)::custom
+```
+
+
+In the Play game stack:
+after 
+``` 
+set scroll and position::custom
+```
+add this:
+``` 
+Position (at screen x and y)::custom
+```
+
+tick is now going to detect left and right arrow presses:
+
+``` 
+define tick
+if <key [right arrow v] pressed?> then
+    change [x v] by (10)
+end
+if <key [left arrow v] pressed?> then
+    change [x v] by (-10)
+end
+change [speed y v] by (-1)
+Change player y by (speed y) and then pull up (fix overlap)::custom
+```
+
+
 
 </div>
 
