@@ -228,25 +228,20 @@ end
 All done with Step 2.
 
 ## Step 3
-> The framework in Step 2 is like a map of a camping trip. The stacks are the places we will camp along the way.
-> But instead of hoping we have enough supplies, now we use the map to figure out everything we will need.
-> When it's time to use it, we know we have enough.
-> 
-
-In this step we take **blue move blocks** such as this one:
+In Step 3 we take **blue move blocks** such as this one:
 ```ad-scratch
 ~~~
 set y to (10)
 ~~~
 ```
-and make them **orange** variable type blocks like this one.
+and make them **orange** variable type blocks like this one. 
 ```ad-scratch
 ~~~
 set (y) to (10)
 ~~~
 ```
 
-Later, we will actually **Position** the sprite (use up the supplies), and use the blue blocks like this:
+Later, we will actually **Position** the sprite (use up just the supplies we need), and use the blue blocks like this:
 ````ad-scratch
 ```
 set y to (y)
@@ -254,7 +249,17 @@ set y to (y)
 ````
 We will do this **Position** step in a special myblock. (don't do it yet)
 
-Right now there are 3 places we have to do this. The first is in our old Game On myblock:
+```ad-tip
+title: Why are we doing this?
+collapse: closed
+ 
+The framework in Step 2 is a little like a map of a camping trip. The stacks and blocks are the places we will camp along the way. The blue (move) blocks are like using our supplies right away, without thinking about the rest of our trip. The orange (variable) blocks are like keeping track of what supplies we have used and need later, to make sure we know how much we have, and can compare it with how much we need now and on the rest of our trip.
+```
+
+
+Right now, there are 3 places we have to do this.
+
+1. The first is in our old Game On myblock:
 ````ad-scratch
 ``` 
 define Game on
@@ -292,7 +297,7 @@ go to x: ((x) - (SCROLL X)) y: ((y ) - (SCROLL Y))
 ````
 (don't worry about SCROLL X and Y yet)
 
-The second place we need to change is the old Change player myblock, change this blue block:
+2. The second place we need to change is the old Change player myblock, change this blue block:
 ````ad-scratch
 ``` 
 change y by (speed y::custom)
@@ -312,7 +317,7 @@ Position (at screen x and y)::custom
 ```
 ````
 
-Lastly, in the platform loop, instead of
+3. Lastly, in the platform loop, instead of
 ````ad-scratch
 ``` 
 change y by (1)
