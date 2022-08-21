@@ -10,10 +10,6 @@
 
 
 ## Step 1
-
-
-
-
 First, this is the basic falling routine.  
 ```ad-scratch
 ~~~
@@ -56,7 +52,7 @@ broadcast [Play Game v]
 
 ```
 
-go ahead and add that.
+Go ahead and add that.
 
 As always, a broadcast block is paired with (at least one) receive block.
 We will make the ```when I receive [green flag v]``` stack later.
@@ -69,20 +65,21 @@ when I receive [Play Game v]
 ~~~
 ``` 
 we add a "Game on" myblock that sets up the game each time we play it.
-```
+```ad-scratch
+~~~
 Game on::custom
+~~~
 ``` 
 
-````ad-tip
-collapse: open
+```ad-tip
 When you see a red block like the one above, 
 you may need to create its myblock definition first, if it doesn't already exist.
 A myblock has two parts.
 First the **definition block**, which is a hat block.
 That means it has a round top:
-```
+~~~
 define Game on
-```
+~~~
 It gets put into your project automatically when you create a new myblock. 
 * There is only 1 for each definition. 
 * It is always at the top of a stack. 
@@ -91,30 +88,35 @@ It gets put into your project automatically when you create a new myblock.
 Then there is the **call block**.
 It is not a hat. 
 It looks like this:
-```
+~~~
 Game on::custom
-```
+~~~
 Don't mix them up. 
 You need to drag these into your project from the "blocks" area.
 * There can be (and often are) more than 1 call block in each sprite.
 * It is never at the top of a stack. 
 * It can connect on both sides.
-````
-So, now your **Play Game** stack should look like this:
 ```
+So, now your **Play Game** stack should look like this:
+```ad-scratch
+~~~
 when I receive [Play Game v]
 Game on::custom
+~~~
 ``` 
 Now add these, we will use them later.
-```
+```ad-scratch
+~~~
 broadcast [reset level v]
 broadcast [set up this level v]
+~~
 ``` 
 Next is the main game loop.
-The game **repeats** this loop over and over
-**until** we lose or win the game.
+The game **repeats** this loop over and over,
+**until** we either win or lose the game.
 For now, don't put anything in the brackets \< \>
-```
+```ad-scratch
+~~~
 repeat until <>
     Each time through the loop, we figure how much  
     each sprite will change on the screen,  
@@ -126,15 +128,18 @@ repeat until <>
     Just add this here, for now.
     broadcast [tick once v] and wait
 end
+~~~
 ``` 
 
 Now we are going to start taking the blocks we had in Step 1 and put them into our framework.  
 
 Grab the first two blocks from step 1 and put them in Game On **hat/definition block**. 
-```
+```ad-scratch
+~~~
 define Game on
 set [speed y v] to [0]
 go to x: (0) y: (100)
+~~~
 ``` 
 This sets up or initializes the game
 by setting the initial speed y
@@ -142,56 +147,74 @@ and putting the player at the center top of the screen.
 
 Next we do the tick step. 
 Take the next block from our game:
-```
+```ad-scratch
+~~~
 change [speed y v] by (-1)
+~~~
 ``` 
 and move it to tick:
-```
+```ad-scratch
+~~~
 define tick
 change [speed y v] by (-1)
+~~~
 ``` 
 Almost done. 
 The rest of the code from Step 1 will go into its own myblock.
 Here is the hat/definition of that my block.
-```
+```ad-scratch
+~~~
 define Change player y by (speed y) and then pull up -fix overlap
+~~~
 ``` 
 Make sure that you add an input called speed y.
 
 You can create this myblock, and the definition will appear there.
 Then get a **call block** (*no hat*) for this myblock and put it at the bottom of tick:
-```
+```ad-scratch
+~~~
 define tick
 change [speed y v] by (-1)
 Change player y by (speed y) and then pull up -fix overlap::custom
+~~~
 ``` 
 
 Now, go back to the **definition block** of Change player y that you created  (this:) 
-```
+```ad-scratch
+~~~
 define Change player y by (speed y) and then pull up -fix overlap
+~~~
 ``` 
 You can put the rest of Step 1 below it, 
 but you have to change the first 
-```
+```ad-scratch
+~~~
 (speed y)
+~~~
 ``` 
 by dragging the red 
-```
+```ad-scratch
+~~~
 (speed y)::custom
+~~~
 ```  
 from the definition into the change y to replace it:
-```
+```ad-scratch
+~~~
 change y by (speed y::custom)
+~~~
 ``` 
 
 after, this is the rest of step 1's code.
-```
+```ad-scratch
+~~~
 if <touching [Platform v]?> then
     repeat until <not <touching [Platform v]?>>
         change y by (1)
     end
     set [speed y v] to [0]
 end
+~~~
 
 ``` 
 
@@ -201,90 +224,119 @@ All done with step 2.
 
 
 In this step we take **blue move blocks** like this:
-``` 
+```ad-scratch
+~~~
 set y to (10)
+~~~
 ```
 and make them **orange** look like
-``` 
+```ad-scratch
+~~~
 set (y) to (10)
+~~~
 ```
 
 Which, later in the program, 
 actually **Position** the sprite using blue blocks like this:
-``` 
+````ad-scratch
+```
 set y to (y)
 ```
+````
 we will do this **Position** step in a special myblock. (don't do it yet)
 
 For example:
 
 Here is our old Game on:
+````ad-scratch
 ``` 
 define Game on
 set [speed y v] to [0]
 go to x: (0) y: (100)
 ```
+````
 
 Now make it look like:
+````ad-scratch
 ``` 
 define Game on
 set [speed y v] to [0]
 set [x v] to [0]
 set [y  v] to [100]
 ```
+````
 Make sure that **x** and **y** are for this sprite only variables.
 Notice we used 2 **set** blocks for the one **go to**.
 
 After that, the position step will so something like this:
+````ad-scratch
 ``` 
 go to x: (x) y: (y)
 ```
+````
 **Don't do it yet. **
 
 **First** make the myblock that will do this Position step:
+````ad-scratch
 ``` 
 define Position 
 go to x: ((x) - (SCROLL X)) y: ((y ) - (SCROLL Y))
 ```
+````
 (don't worry about SCROLL X and Y yet)
 
 In the  old Change player myblock, change this blue block:
+````ad-scratch
 ``` 
 change y by (speed y::custom)
 ```
+````
 
 into an orange block:
+````ad-scratch
 ``` 
 change [y  v] by (speed y::custom)
 ```
+````
 
 and the put the Position call block right after it:
+````ad-scratch
 ``` 
 Position (at screen x and y)::custom
 ```
+````
 
 In the platform loop, instead of
+````ad-scratch
 ``` 
 change y by (1)
 ```
+````
 do this:
+````ad-scratch
 ``` 
 change [y  v] by (1)
 Position (at screen x and y)::custom
 ```
+````
 
 
 In the Play game stack:
 after 
+````ad-scratch
 ``` 
 set scroll and position::custom
 ```
+````
 add this:
+````ad-scratch
 ``` 
 Position (at screen x and y)::custom
 ```
+````
 
 Lastly, let's make tick detect left and right arrow presses:
+````ad-scratch
 ``` 
 define tick
 if <key [right arrow v] pressed?> then
@@ -296,16 +348,7 @@ end
 change [speed y v] by (-1)
 Change player y by (speed y) and then pull up (fix overlap)::custom
 ```
-
-```scratchblocks
-test
-```
-
-```javascript
-if () {
-test
-}
-```
+````
 
 
-</div>
+
