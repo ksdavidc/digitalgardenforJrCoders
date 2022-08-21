@@ -131,19 +131,19 @@ change [speed y v] by (-1)
 The rest of Step 1 will go into its own myblock.
 Here is the hat/definition of that my block.
 ```
-define Change player y by (speed y) and then pull up {fix overlap}
+define Change player y by (speed y) and then pull up -fix overlap
 ``` 
 Make sure that you add an input called speed y.
 
 
 Then get a **call block** (*no hat*) for this myblock and put it at the bottom of tick:
 ```
-Change player y by (speed y) and then pull up {fix overlap}::custom
+Change player y by (speed y) and then pull up -fix overlap::custom
 ``` 
 
 Go back to the **definition block** of Change player y (this:)
 ```
-define Change player y by (speed y) and then pull up {fix overlap}
+define Change player y by (speed y) and then pull up -fix overlap
 ``` 
 You can put the rest of Step 1 below it, 
 but you have to change the first ```(speed y)```, 
