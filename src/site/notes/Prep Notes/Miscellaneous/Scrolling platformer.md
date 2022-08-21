@@ -8,7 +8,7 @@
 - [[Prep Notes/Miscellaneous/Scrolling platformer#Step 3|Step 3]]
 
 
-<div class="blocks">
+div class="blocks">
 
 ## Step 1
 
@@ -319,24 +319,59 @@ test
 
 
 ````ad-scratch
-collapse: open
-
+sdfgsdffg
 ```
 go to x: (0) y: (0)
 ```
+asdfasdf
 ````
 
-```ad-scratch
+
+
+asdfasdf
+
+
+```ad-scratch  
+~~~
+go to x: (0) y: (0)
+~~~
+
+
+asdfasdfas
+
+asdf
+asdf
+
+```
+
+asdfasdfasdf
+
+
+```ad-scratch  &nbsp;
+collapse: open
+
 ~~~
 go to x: (0) y: (0)
 ~~~
 ```
 
+
+
+asdfasdfaf
+
+
 ```ad-scratch
 collapse: open
 
 ~~~
-o to x: (0) y: (0)
+go to x: (0) y: (0)
 ~~~
 ```
 
+
+```ad-scratch
+~~~
+go to x: (0) y: (0)
+~~~
+
+```
