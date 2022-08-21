@@ -320,15 +320,23 @@ test
 
 ````ad-scratch
 collapse: open
+
 ```
 go to x: (0) y: (0)
 ```
 ````
 
-````ad-scratch
-collapse: open
+```ad-scratch
 ~~~
 go to x: (0) y: (0)
 ~~~
-````
+```
+
+```ad-scratch
+collapse: open
+
+~~~
+o to x: (0) y: (0)
+~~~
+```
 
