@@ -289,3 +289,19 @@ I'm normal text,  *I'm italic { class='italics' }*, **I'm bold { .bold }** and =
 
 </div>
 
+
+
+###  yes
+
+```ad-sideblock 
+test
+
+```
+
+
+
+
+```ad-example 
+sdafd
+
+```
