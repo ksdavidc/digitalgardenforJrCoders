@@ -37,6 +37,7 @@ This program works as is, but we will have to give it some structure
 >In step 2, we build a framework for our game.  
 >This framework helps us keep the code organized.  
 >It also makes it easier to adjust and change the code as we need.  
+>It is like a map, the keeps us from getting lost, and lets us know where we are.
 
 First we will build the framework. 
 Then we will take different blocks in Step 1, and put them where they belong within the framework. 
@@ -251,8 +252,6 @@ We will do this **Position** step in a special myblock. (don't do it yet)
 
 ```ad-tip
 title: Why are we doing this?
-collapse: closed
- 
 The framework in Step 2 is a little like a map of a camping trip. The stacks and blocks are the places we will camp along the way. The blue (move) blocks are like using our supplies right away, without thinking about the rest of our trip. The orange (variable) blocks are like keeping track of what supplies we have used and need later, to make sure we know how much we have, and can compare it with how much we need now and on the rest of our trip.
 ```
 
