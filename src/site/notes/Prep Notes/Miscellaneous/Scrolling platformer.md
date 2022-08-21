@@ -3,7 +3,7 @@
 ---
 
 
-div class="blocks">
+<div class="blocks">
 
 ## Step 1
 
