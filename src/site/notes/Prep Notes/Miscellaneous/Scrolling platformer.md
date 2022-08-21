@@ -3,6 +3,10 @@
 ---
 
 
+- [[Prep Notes/Miscellaneous/Scrolling platformer#Step 1|Step 1]]
+- [[Prep Notes/Miscellaneous/Scrolling platformer#Step 2|Step 2]]
+	- [[Prep Notes/Miscellaneous/Scrolling platformer#Step 2|Step 3]]
+
 <div class="blocks">
 
 ## Step 1
@@ -25,22 +29,27 @@ forever
 end
 ```
 
+This program works as is, but we will have to give it some structure
+ or a framework, so we can make a bigger and faster game. 
+
 ## Step 2
->Step 1 is  a good beginning, but we will have to change it  
->so that we can make a bigger faster game.   
->  
+
 >In step 2, we build a framework for our game.  
 >This framework helps us keep the code organized.  
 >It also makes it easier to adjust and change the code as we need.  
 
-Games work better with just one green flag.
-We use a broadcast that then goes to every sprite.
+Right off the bat, games work better with just one green flag. 
+There is one Master Sprite that controls the others. 
+In our game, the Player is the master sprite.
+Its one green flag talks to all the other sprites 
+using broadcasts, like this:
 ```
 when @greenFlag clicked
 broadcast [green flag v] and wait
 broadcast [Play Game v]
-
 ``` 
+go ahead and add that.
+
 As always, a broadcast block is paired with (at least one) receive block.
 We will make the ```when I receive [green flag v]``` stack later.
 
@@ -49,7 +58,7 @@ This is where we come back to if we want to replay the game.
 ```
 when I receive [Play Game v]
 ``` 
-we add a myblock is to initialize each time we play the game.
+we add a "Game on" myblock that sets up the game each time we play it.
 ```
 Game on::custom
 ``` 
@@ -64,8 +73,9 @@ Game on::custom
 > define Game on
 > ```
 > It gets put into your project automatically when you create a new myblock. 
-> There is only 1 for each definition. It is always at the top of a stack. 
-> It only connects on the bottom.
+> * There is only 1 for each definition. 
+> * It is always at the top of a stack. 
+> * It only connects on the bottom.
 > 
 >  Then there is the **call block**.
 >  It is not a hat. 
@@ -75,8 +85,9 @@ Game on::custom
 > ```
 >  Don't mix them up. 
 >  You need to drag these into your project from the "blocks" area.
->  There can be (and often are) more than 1 in each sprite.
->  It is never at the top of a stack. It can connect on both sides.
+>  * There can be (and often are) more than 1 call block in each sprite.
+>  * It is never at the top of a stack. 
+>  * It can connect on both sides.
 
 So, now your **Play Game** stack should look like this:
 ```
@@ -89,8 +100,8 @@ broadcast [reset level v]
 broadcast [set up this level v]
 ``` 
 Next is the main game loop.
-The game repeats this loop over and over
-until we lose or win the game.
+The game **repeats** this loop over and over
+**until** we lose or win the game.
 For now, don't put anything in the brackets < >
 ```
 repeat until <>
@@ -108,7 +119,7 @@ end
 
 Now we are going to start taking the blocks we had in Step 1 and put them into our framework.  
 
-Grab the first two blocks from step 1 and put them in Game On myblock definition. 
+Grab the first two blocks from step 1 and put them in Game On **hat/definition block**. 
 ```
 define Game on
 set [speed y v] to [0]
@@ -123,25 +134,28 @@ Take the next block from our game:
 ```
 change [speed y v] by (-1)
 ``` 
-and move it to tick.
+and move it to tick:
 ```
 define tick
 change [speed y v] by (-1)
 ``` 
-The rest of Step 1 will go into its own myblock.
+Almost done. 
+The rest of the code from Step 1 will go into its own myblock.
 Here is the hat/definition of that my block.
 ```
 define Change player y by (speed y) and then pull up -fix overlap
 ``` 
 Make sure that you add an input called speed y.
 
-
+You can create this myblock, and the definition will appear there.
 Then get a **call block** (*no hat*) for this myblock and put it at the bottom of tick:
 ```
+define tick
+change [speed y v] by (-1)
 Change player y by (speed y) and then pull up -fix overlap::custom
 ``` 
 
-Go back to the **definition block** of Change player y (this:)
+Now, go back to the **definition block** of Change player y that you created  (this:) 
 ```
 define Change player y by (speed y) and then pull up -fix overlap
 ``` 
@@ -154,11 +168,12 @@ by dragging the red
 ```
 (speed y)::custom
 ```  
-from the definition into it.
+from the definition into the change y to replace it:
 ```
 change y by (speed y::custom)
 ``` 
-this is the rest.
+
+after, this is the rest of step 1's code.
 ```
 if <touching [Platform v]?> then
     repeat until <not <touching [Platform v]?>>
@@ -169,7 +184,9 @@ end
 
 ``` 
 
-### Step 3
+All done with step 2.
+
+## Step 3
 
 
 In this step we take **blue move blocks** like this:
@@ -204,7 +221,8 @@ set [speed y v] to [0]
 set [x v] to [0]
 set [y  v] to [100]
 ```
-notice we used 2 set blocks for the one go to.
+make sure that **x** and **y** are for this sprite only variables.
+notice we used 2 **set** blocks for the one **go to**.
 
 after that, the position step will so something like this:
 ``` 
@@ -267,7 +285,7 @@ change [speed y v] by (-1)
 Change player y by (speed y) and then pull up (fix overlap)::custom
 ```
 
-
+*I'm italic { class='italics' }*
 
 </div>
 
