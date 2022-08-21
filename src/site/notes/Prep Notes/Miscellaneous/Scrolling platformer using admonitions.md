@@ -14,8 +14,7 @@
 
 
 
-> first   
-> this is the basic falling routine.  
+First, this is the basic falling routine.  
 ```ad-scratch
 ~~~
 when @greenFlag clicked
@@ -48,11 +47,15 @@ There is one Master Sprite that controls the others.
 In our game, the Player is the master sprite.
 Its one green flag talks to all the other sprites 
 using broadcasts, like this:
-```
+```ad-scratch
+~~~
 when @greenFlag clicked
 broadcast [green flag v] and wait
 broadcast [Play Game v]
-``` 
+~~~
+
+```
+
 go ahead and add that.
 
 As always, a broadcast block is paired with (at least one) receive block.
@@ -60,8 +63,10 @@ We will make the ```when I receive [green flag v]``` stack later.
 
 The ```when I receive [Play Game v]``` is the overall project loop. 
 This is where we come back to if we want to replay the game.
-```
+```ad-scratch
+~~~
 when I receive [Play Game v]
+~~~
 ``` 
 we add a "Game on" myblock that sets up the game each time we play it.
 ```
