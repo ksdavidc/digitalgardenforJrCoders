@@ -322,45 +322,4 @@ I'm normal text,  *I'm italic { class='italics' }*, **I'm bold { .bold }** and =
 
 </div>
 
-````ad-info
 
-```ad-bug
-title: I'm Nested!
-~~~javascript
-throw new Error("Oops, I'm a bug.");
-~~~
-```
-
-```javascript
-console.log("Hello!");
-```
-
-````
-
-
-
-```ad-sideblock
-test
-
-```
-
-
-```ad-example
-collapse: open
-sdafd
-
-```
-
-
-```ad-seealso
-collapse: open
-sdfsadfsadf
-
-```
-
-
-```ad-sideblock
-collapse: open
-dfasdfsadf
-
-```
