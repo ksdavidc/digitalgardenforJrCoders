@@ -310,3 +310,9 @@ test
 >```
 >test
 >```
+
+
+> [!scratch] Title
+> ```
+> go to x: (0) y: (0)
+> ```
