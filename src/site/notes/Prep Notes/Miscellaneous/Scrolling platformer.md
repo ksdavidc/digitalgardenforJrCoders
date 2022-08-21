@@ -152,7 +152,7 @@ but you have to change the first
 ``` 
 by dragging the red 
 ```
-(speed y):::custom
+(speed y)::custom
 ```  
 from the definition into it.
 ```
