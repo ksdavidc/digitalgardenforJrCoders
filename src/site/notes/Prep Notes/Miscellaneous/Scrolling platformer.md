@@ -312,7 +312,15 @@ test
 >```
 
 
-> [!scratch] Title
+> [!scratch] 
 > ```
 > go to x: (0) y: (0)
 > ```
+
+
+````ad-scratch
+collapse: open
+
+go to x: (0) y: (0)
+````
+
