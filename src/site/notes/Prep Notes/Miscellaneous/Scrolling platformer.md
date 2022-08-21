@@ -5,7 +5,9 @@
 
 - [[Prep Notes/Miscellaneous/Scrolling platformer#Step 1|Step 1]]
 - [[Prep Notes/Miscellaneous/Scrolling platformer#Step 2|Step 2]]
-	- [[Prep Notes/Miscellaneous/Scrolling platformer#Step 2|Step 3]]
+- [[Prep Notes/Miscellaneous/Scrolling platformer#Step 3|Step 3]]
+	- [[Prep Notes/Miscellaneous/Scrolling platformer#Step 3|yes]]
+
 
 <div class="blocks">
 
@@ -102,7 +104,7 @@ broadcast [set up this level v]
 Next is the main game loop.
 The game **repeats** this loop over and over
 **until** we lose or win the game.
-For now, don't put anything in the brackets < >
+For now, don't put anything in the brackets \< \>
 ```
 repeat until <>
     Each time through the loop, we figure how much  
@@ -291,17 +293,28 @@ I'm normal text,  *I'm italic { class='italics' }*, **I'm bold { .bold }** and =
 
 
 
-###  yes
-
-```ad-sideblock 
+```ad-sideblock
 test
 
 ```
 
 
-
-
-```ad-example 
+```ad-example
+collapse: open
 sdafd
+
+```
+
+
+```ad-seealso
+collapse: open
+sdfsadfsadf
+
+```
+
+
+```ad-sideblock
+collapse: open
+dfasdfsadf
 
 ```
