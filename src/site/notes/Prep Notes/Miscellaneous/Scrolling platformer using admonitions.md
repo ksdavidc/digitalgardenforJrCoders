@@ -321,14 +321,13 @@ Position (at screen x and y)::custom
 ````
 
 
-In the Play game stack:
-after 
+In the Play game stack, after this:
 ````ad-scratch
 ``` 
 set scroll and position::custom
 ```
 ````
-add this:
+put this:
 ````ad-scratch
 ``` 
 Position (at screen x and y)::custom
