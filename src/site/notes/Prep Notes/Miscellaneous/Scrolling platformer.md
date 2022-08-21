@@ -55,22 +55,28 @@ Game on::custom
 ``` 
 > [!info] Note about myblocks:
 > When you see a red block like the one above, 
-> you may need to create a myblock first, if it doesn't already exist.
+> you may need to create its myblock definition first, if it doesn't already exist.
+> 
 > A myblock has two parts.
 > First the **definition block**, which is a hat block.
 > That means it has a round top:
 > ```
 > define Game on
 > ```
-> It gets put into your project when you create a new block.
+> It gets put into your project automatically when you create a new myblock. 
+> There is only 1 for each definition. It is always at the top of a stack. 
+> It only connects on the bottom.
 > 
->  Then there is the **call block**, which is what is above.
->  It is not a hat. Don't mix them up.
+>  Then there is the **call block**.
+>  It is not a hat. 
 >  It looks like this:
 > ```
 > Game on::custom
 > ```
->  You need to drag thest into your project from the "blocks" area.
+>  Don't mix them up. 
+>  You need to drag these into your project from the "blocks" area.
+>  There can be (and often are) more than 1 in each sprite.
+>  It is never at the top of a stack. It can connect on both sides.
 
 So, now your **Play Game** stack should look like this:
 ```
@@ -130,7 +136,7 @@ define Change player y by (speed y) and then pull up {fix overlap}
 Make sure that you add an input called speed y.
 
 
-Then get a call block and put it at the bottom of tick (this is the call part of the myblock):
+Then get a **call block** (*no hat*) for this myblock and put it at the bottom of tick:
 ```
 Change player y by (speed y) and then pull up {fix overlap}::custom
 ``` 
