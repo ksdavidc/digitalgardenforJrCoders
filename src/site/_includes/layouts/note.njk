@@ -18,7 +18,7 @@ permalink: "notes/{{ page.fileSlug | slugify }}/"
       {{ content | link | highlight | safe}}
     </div>
 <script>
-scratchblocks.renderMatching(' div.blocks pre, .scratch, pre.language-scratchblocks', {
+scratchblocks.renderMatching(' div.blocks pre, .scratch, pre.language-scratchblocks code, pre.language-scratchblocks, .language-scratchblocks', {
   style:     'scratch3',   // Optional, defaults to 'scratch2'.
   scale: 1,                // Optional, defaults to 1
 });
