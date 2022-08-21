@@ -8,7 +8,7 @@
 - [[Prep Notes/Miscellaneous/Scrolling platformer#Step 3|Step 3]]
 
 
-div class="blocks">
+<div class="blocks">
 
 ## Step 1
 
