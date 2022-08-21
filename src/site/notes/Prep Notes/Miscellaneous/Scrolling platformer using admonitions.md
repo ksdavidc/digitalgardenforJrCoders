@@ -38,7 +38,13 @@ This program works as is, but we will have to give it some structure
 >This framework helps us keep the code organized.  
 >It also makes it easier to adjust and change the code as we need.  
 
-Right off the bat, games work better with just one green flag. 
+First we will build the framework. 
+Then we will take different blocks in Step 1, and put them where they belong within the framework. 
+
+In the end, the project will run exactly the same way, but it will be wrapped in a nice package.
+Later, the package will be hold the rest of our project.
+
+The first thing, and this is a general rule, is that games work better with just one green flag. 
 There is one Master Sprite that controls the others. 
 In our game, the Player is the master sprite.
 Its one green flag talks to all the other sprites 
@@ -123,9 +129,10 @@ repeat until <>
     and any other changes to the screen. 
     This is called a tick. Like the tick of a clock. (Not the insect, silly.)
     tick::custom
-    Then we actually make the changes to the screen, once per frame.
+    When you define tick, make sure it is *without screen refresh*.
+    This myblock will be used to keep the player in the middle of the screen:
     set scroll and position::custom
-    Just add this here, for now.
+    Just add this here, for now:
     broadcast [tick once v] and wait
 end
 ~~~
@@ -205,7 +212,7 @@ change y by (speed y::custom)
 ~~~
 ``` 
 
-after, this is the rest of step 1's code.
+The rest of Step 1's code goes after this.
 ```ad-scratch
 ~~~
 if <touching [Platform v]?> then
@@ -218,36 +225,36 @@ end
 
 ``` 
 
-All done with step 2.
+All done with Step 2.
 
 ## Step 3
+> The framework in Step 2 is like a map of a camping trip. The stacks are the places we will camp along the way.
+> But instead of hoping we have enough supplies, now we use the map to figure out everything we will need.
+> When it's time to use it, we know we have enough.
+> 
 
-
-In this step we take **blue move blocks** like this:
+In this step we take **blue move blocks** such as this one:
 ```ad-scratch
 ~~~
 set y to (10)
 ~~~
 ```
-and make them **orange** look like
+and make them **orange** variable type blocks like this one.
 ```ad-scratch
 ~~~
 set (y) to (10)
 ~~~
 ```
 
-Which, later in the program, 
-actually **Position** the sprite using blue blocks like this:
+Later, we will actually **Position** the sprite (use up the supplies), and use the blue blocks like this:
 ````ad-scratch
 ```
 set y to (y)
 ```
 ````
-we will do this **Position** step in a special myblock. (don't do it yet)
+We will do this **Position** step in a special myblock. (don't do it yet)
 
-For example:
-
-Here is our old Game on:
+Right now there are 3 places we have to do this. The first is in our old Game On myblock:
 ````ad-scratch
 ``` 
 define Game on
@@ -256,7 +263,7 @@ go to x: (0) y: (100)
 ```
 ````
 
-Now make it look like:
+We change the blue block to make it look like this:
 ````ad-scratch
 ``` 
 define Game on
@@ -274,9 +281,9 @@ After that, the position step will so something like this:
 go to x: (x) y: (y)
 ```
 ````
-**Don't do it yet. **
+**Don't do it yet.**
 
-**First** make the myblock that will do this Position step:
+First, make the myblock that will do this Position step:
 ````ad-scratch
 ``` 
 define Position 
@@ -285,28 +292,27 @@ go to x: ((x) - (SCROLL X)) y: ((y ) - (SCROLL Y))
 ````
 (don't worry about SCROLL X and Y yet)
 
-In the  old Change player myblock, change this blue block:
+The second place we need to change is the old Change player myblock, change this blue block:
 ````ad-scratch
 ``` 
 change y by (speed y::custom)
 ```
 ````
-
-into an orange block:
+into this orange block:
 ````ad-scratch
 ``` 
 change [y  v] by (speed y::custom)
 ```
 ````
 
-and the put the Position call block right after it:
+and the put this Position call block right after it:
 ````ad-scratch
 ``` 
 Position (at screen x and y)::custom
 ```
 ````
 
-In the platform loop, instead of
+Lastly, in the platform loop, instead of
 ````ad-scratch
 ``` 
 change y by (1)
@@ -321,7 +327,7 @@ Position (at screen x and y)::custom
 ````
 
 
-In the Play game stack, after this:
+We need one more Position block. In the Play game stack, after this:
 ````ad-scratch
 ``` 
 set scroll and position::custom
