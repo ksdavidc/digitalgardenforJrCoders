@@ -8,7 +8,7 @@
 - [[Prep Notes/Miscellaneous/Scrolling platformer#Step 3|Step 3]]
 
 
-div class="blocks">
+<div class="blocks">
 
 ## Step 1
 
@@ -301,77 +301,4 @@ test
 
 </div>
 
-```scratchblocks
-test
-```
-
->[!scratch] test
->test 
->```
->test
->```
-
-
-> [!scratch] 
-> ```
-> go to x: (0) y: (0)
-> ```
-
-
-````ad-scratch
-sdfgsdffg
-```
-go to x: (0) y: (0)
-```
-asdfasdf
-````
-
-
-
-asdfasdf
-
-
-```ad-scratch  
-~~~
-go to x: (0) y: (0)
-~~~
-
-
-asdfasdfas
-
-asdf
-asdf
-
-```
-
-asdfasdfasdf
-
-
-```ad-scratch  &nbsp;
-collapse: open
-
-~~~
-go to x: (0) y: (0)
-~~~
-```
-
-
-
-asdfasdfaf
-
-
-```ad-scratch
-collapse: open
-
-~~~
-go to x: (0) y: (0)
-~~~
-```
-
-
-```ad-scratch
-~~~
-go to x: (0) y: (0)
-~~~
-
-```
+[[Prep Notes/Miscellaneous/Scrolling platformer using admonitions|Scrolling platformer using admonitions]]
