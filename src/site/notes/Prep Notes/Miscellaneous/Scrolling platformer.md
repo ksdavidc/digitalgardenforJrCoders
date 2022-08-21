@@ -220,7 +220,9 @@ go to x: ((x) - (SCROLL X)) y: ((y ) - (SCROLL Y))
 (don't worry about SCROLL X and Y yet)
 
 In the  old Change player myblock, change this blue block:
+``` 
 change y by (speed y::custom)
+```
 
 into an orange block:
 ``` 
@@ -252,8 +254,7 @@ add this:
 Position (at screen x and y)::custom
 ```
 
-tick is now going to detect left and right arrow presses:
-
+Lastly, let's make tick detect left and right arrow presses:
 ``` 
 define tick
 if <key [right arrow v] pressed?> then
