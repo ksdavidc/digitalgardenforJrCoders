@@ -64,7 +64,38 @@ we add a "Game on" myblock that sets up the game each time we play it.
 ```
 Game on::custom
 ``` 
-> [!info] Note about myblocks:
+
+````ad-tip
+collapse: open
+When you see a red block like the one above, 
+you may need to create its myblock definition first, if it doesn't already exist.
+A myblock has two parts.
+First the **definition block**, which is a hat block.
+That means it has a round top:
+```
+define Game on
+```
+It gets put into your project automatically when you create a new myblock. 
+* There is only 1 for each definition. 
+* It is always at the top of a stack. 
+* It only connects on the bottom.
+
+Then there is the **call block**.
+It is not a hat. 
+It looks like this:
+```
+Game on::custom
+```
+Don't mix them up. 
+You need to drag these into your project from the "blocks" area.
+* There can be (and often are) more than 1 call block in each sprite.
+* It is never at the top of a stack. 
+* It can connect on both sides.
+````
+
+
+> [!tip] Note about myblocks:
+> collapse: open
 > When you see a red block like the one above, 
 > you may need to create its myblock definition first, if it doesn't already exist.
 > 
@@ -290,6 +321,21 @@ Change player y by (speed y) and then pull up (fix overlap)::custom
 I'm normal text,  *I'm italic { class='italics' }*, **I'm bold { .bold }** and ==I'm highlighted { id=highlight }==.
 
 </div>
+
+````ad-info
+
+```ad-bug
+title: I'm Nested!
+~~~javascript
+throw new Error("Oops, I'm a bug.");
+~~~
+```
+
+```javascript
+console.log("Hello!");
+```
+
+````
 
 
 
