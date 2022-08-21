@@ -146,8 +146,15 @@ Go back to the **definition block** of Change player y (this:)
 define Change player y by (speed y) and then pull up -fix overlap
 ``` 
 You can put the rest of Step 1 below it, 
-but you have to change the first ```(speed y)```, 
-by dragging the red input into it.
+but you have to change the first 
+```
+(speed y)
+``` 
+by dragging the red 
+```
+(speed y):::custom
+```  
+from the definition into it.
 ```
 change y by (speed y::custom)
 ``` 
