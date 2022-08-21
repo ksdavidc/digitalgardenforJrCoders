@@ -9,7 +9,7 @@
 	- [[Prep Notes/Miscellaneous/Scrolling platformer#Step 3|yes]]
 
 
-<div class="blocks">
+div class="blocks">
 
 ## Step 1
 
@@ -288,8 +288,6 @@ change [speed y v] by (-1)
 Change player y by (speed y) and then pull up (fix overlap)::custom
 ```
 
-I'm normal text,  *I'm italic { class='italics' }*, **I'm bold { .bold }** and ==I'm highlighted { id=highlight }==.
 
 </div>
-
 
