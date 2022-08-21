@@ -301,3 +301,6 @@ test
 
 </div>
 
+```scratchblocks
+test
+```
