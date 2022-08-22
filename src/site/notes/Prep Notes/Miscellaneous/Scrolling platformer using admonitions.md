@@ -35,21 +35,19 @@ This program works as is, but we will have to give it some structure
 ## Step 2
 
 >In step 2, we build a framework for our game.  
->This framework helps us keep the code organized.  
->It also makes it easier to adjust and change the code as we need.  
->It is like a map, the keeps us from getting lost, and lets us know where we are.
+>This framework is like a map, that helps keep our journey organized.  
+>It tells us where we are, and makes it easier to change our path.
+>It keeps us from getting lost, and lets us know where we need to go next.
 
-First we will build the framework. 
-Then we will take different blocks in Step 1, and put them where they belong within the framework. 
-
-In the end, the project will run exactly the same way, but it will be wrapped in a nice package.
-Later, the package will be hold the rest of our project.
+* First we will build the framework. It won't have code from our Step 1.
+* Then we will take the different blocks in Step 1, and put them where they belong within the framework. 
+* In the end, the project will run exactly the same way, but all the pieces will be where they belong in our map.
+* Later, the map will be able to take us to new places.
 
 The first thing, and this is a general rule, is that games work better with just one green flag. 
 There is one Master Sprite that controls the others. 
 In our game, the Player is the master sprite.
-Its one green flag talks to all the other sprites 
-using broadcasts, like this:
+Its one green flag talks to all the other sprites using broadcasts  like this:
 ```ad-scratch
 ~~~
 when @greenFlag clicked
@@ -203,7 +201,7 @@ but you have to change the first
 by dragging the red 
 ```ad-scratch
 ~~~
-(speed y)::custom
+(speed y ::custom)
 ~~~
 ```  
 from the definition into the change y to replace it:
