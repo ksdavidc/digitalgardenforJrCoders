@@ -76,15 +76,17 @@ Game on::custom
 ~~~
 ``` 
 
-```ad-tip
+````ad-tip
 When you see a red block like the one above, 
 you may need to create its myblock definition first, if it doesn't already exist.
 A myblock has two parts.
 First the **definition block**, which is a hat block.
 That means it has a round top:
+---ad-scratch
 ~~~
 define Game on
 ~~~
+---
 It gets put into your project automatically when you create a new myblock. 
 * There is only 1 for each definition. 
 * It is always at the top of a stack. 
@@ -93,15 +95,17 @@ It gets put into your project automatically when you create a new myblock.
 Then there is the **call block**.
 It is not a hat. 
 It looks like this:
+---ad-scratch
 ~~~
 Game on::custom
 ~~~
+---
 Don't mix them up. 
 You need to drag these into your project from the "blocks" area.
 * There can be (and often are) more than 1 call block in each sprite.
 * It is never at the top of a stack. 
 * It can connect on both sides.
-```
+````
 So, now your **Play Game** stack should look like this:
 ```ad-scratch
 ~~~
