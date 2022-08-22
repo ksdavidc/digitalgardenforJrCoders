@@ -207,7 +207,7 @@ by dragging the red
 from the definition into the change y to replace it:
 ```ad-scratch
 ~~~
-change y by (speed y::custom)
+change (y) by (speed y::custom)
 ~~~
 ``` 
 
