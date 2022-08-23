@@ -118,7 +118,7 @@ Now add these, we will use them later.
 ~~~
 broadcast [reset level v]
 broadcast [set up this level v]
-~~
+~~~
 ``` 
 Next is the main game loop.
 The game **repeats** this loop over and over,
@@ -363,3 +363,4 @@ Change player y by (speed y) and then pull up (fix overlap)::custom
 
 
 
+body.theme-dark.markdown-preview-view.clickup-chrome-ext_installed
