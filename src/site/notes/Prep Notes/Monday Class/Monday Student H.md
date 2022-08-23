@@ -79,6 +79,20 @@ in the green flag stack of bkg 2 (not 1)
 
 ````
 
+
+
+````ad-tip
+title: TIP
+To help you see this more clearly, put a 
+```ad-scratch
+~~~
+set (color v) effect to (50)
+~~~
+```
+in the green flag stack of bkg 2 (not 1)
+
+````
+
 Why is a my x value of **600** special???
 
 2. Make Sonic be able to move left as well.
