@@ -47,3 +47,7 @@ body.markdown-preview-view div.blocks pre , body.markdown-rendered  div.blocks p
     margin: auto;
     overflow: scroll;
 }
+
+body.markdown-preview-view {
+    font-weight: bolder;
+}
