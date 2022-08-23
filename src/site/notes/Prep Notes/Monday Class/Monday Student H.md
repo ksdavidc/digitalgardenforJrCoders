@@ -67,7 +67,7 @@ this will replace the move 10 you have in the bkgs.
 
 1. I lied. 
 
-The bkg 2 my x value doesn't have to be 480. Change it to bigger and smaller numbers and see what happens.
+* The bkg 2 my x value doesn't have to be 480. Change it to bigger and smaller numbers and see what happens.
 
 ````ad-scratch
 title: TIP
@@ -93,7 +93,7 @@ in the green flag stack of bkg 2 (not 1)
 
 ````
 
-Why is a my x value of **600** special???
+* Why is a my x value of **600** special???
 
 2. Make Sonic be able to move left as well.
 
