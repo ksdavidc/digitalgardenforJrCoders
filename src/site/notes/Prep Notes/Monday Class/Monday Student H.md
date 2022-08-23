@@ -69,19 +69,14 @@ this will replace the move 10 you have in the bkgs.
 
 the bkg 2 my x value doesn't have to be 480. Change it to bigger and smaller numbers and see what happens.
 Why is 600 special???
+````ad-tip
+To help you see this, put a 
+```
+set (color v) effect to (50)
+```
+in the green flag stack
 
-> [!hint]
-> 
-> To help you see this, put a
-> 
-> ````ad-scratch
-> ```
-> set (color v) effect to (50)
-> ```
-> ````
-> in the green flag stack
-> 
-
+````
 
 2. Make Sonic be able to move left as well.
 
