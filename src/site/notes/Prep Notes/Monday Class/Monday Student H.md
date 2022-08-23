@@ -6,12 +6,48 @@
 1. rename sprites (standing sonic, running sonic, bkg 1, bkg 2)
 
 ### Standing Sonic sprite
-initialize scroll x in green flag stack
+#### * green flag stack
+
+initialize scroll x 
 ```ad-scratch
 ~~~
 set (scroll x v) to (0)
 ~~~
 ``` 
+
+add this so he is animated at beginning
+```ad-scratch
+~~~
+go to [front v] layer
+repeat until <<key [left arrow v] pressed?> or <key [right arrow v] pressed?>>
+    next costume
+end
+~~~
+``` 
+
+#### * right arrow pressed stack
+
+```ad-scratch
+~~~
+when [right arrow v] key pressed
+point in direction (90)
+~~~
+``` 
+#### * message 1 stack
+Move this part of your right arrow stack into this stack:
+```ad-scratch
+~~~
+when I receive [message1 v]
+go to [running sonic v]
+show
+repeat until <key [right arrow v] pressed?>
+    next costume
+end
+hide
+~~~
+``` 
+(*in your version, the hide is not at the bottom and the wait until is not needed*)
+
 
 
 
@@ -45,8 +81,6 @@ replace move 10, and replace it with:
 set (my x v) to ((x)-(scroll x))
 ~~~
 ```
-
-
 
 
 ### running sonic sprite
