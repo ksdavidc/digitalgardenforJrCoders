@@ -21,8 +21,9 @@ Some temporary files for easy access during class.
 ### Monday
 [[Prep Notes/2022 07 25 Monday Class Instructions|2022 07 25 Monday Class Instructions]]
 
-[[Prep Notes/Monday Class/2022 Monday Class|2022 Monday Class]]
+[[Prep Notes/Monday Class/2022 Monday Class|2022 Monday Class]]  
 
+[[Prep Notes/Monday Class/Monday Student H|Monday Student H]]  
 
 ### Friday
 [[Prep Notes/Friday Class/2022 Student M|2022 Student M]]
@@ -31,7 +32,7 @@ Some temporary files for easy access during class.
 
 ### Saturday Class
 
-[[Prep Notes/Saturday Class/Student M|Student M]]
+[[Prep Notes/Monday Class/Monday Student H|Monday Student H]]
 
 [[Prep Notes/Saturday Class/Student N|Student N]]
 
