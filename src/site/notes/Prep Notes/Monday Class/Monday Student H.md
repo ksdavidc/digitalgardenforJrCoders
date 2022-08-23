@@ -69,7 +69,8 @@ this will replace the move 10 you have in the bkgs.
 
 the bkg 2 my x value doesn't have to be 480. Change it to bigger and smaller numbers and see what happens.
 Why is 600 special???
-````ad-tip
+````ad-scratch
+title: TIP
 To help you see this, put a 
 ```
 set (color v) effect to (50)
