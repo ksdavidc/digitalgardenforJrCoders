@@ -34,10 +34,10 @@ This program works as is, but we will have to give it some structure
 
 ## Step 2
 
->In step 2, we build a framework for our game.  
->This framework is like a map, that helps keep our journey organized.  
->It tells us where we are, and makes it easier to change our path.
->It keeps us from getting lost, and lets us know where we need to go next.
+In step 2, we build a framework for our game.
+This framework is like a map, that helps keep our journey organized.
+It tells us where we are, and makes it easier to change our path.
+It keeps us from getting lost, and lets us know where we need to go next.> 
 
 * First we will build the framework. It won't have code from our Step 1.
 * Then we will take the different blocks in Step 1, and put them where they belong within the framework. 
@@ -61,6 +61,7 @@ Go ahead and add that.
 
 As always, a broadcast block is paired with (at least one) receive block.
 We will make the ```when I receive [green flag v]``` stack later.
+{ .scratch}
 
 The ```when I receive [Play Game v]``` is the overall project loop. 
 This is where we come back to if we want to replay the game.
@@ -87,7 +88,7 @@ That means it has a round top:
 define Game on
 ~~~
 ```
-It gets put into your project automatically when you create a new myblock. 
+* It gets put into your project automatically when you create a new myblock. 
 * There is only 1 for each definition. 
 * It is always at the top of a stack. 
 * It only connects on the bottom.
@@ -101,7 +102,7 @@ Game on::custom
 ~~~
 ```
 Don't mix them up. 
-You need to drag these into your project from the "blocks" area.
+* You need to drag these into your project from the "blocks" area.
 * There can be (and often are) more than 1 call block in each sprite.
 * It is never at the top of a stack. 
 * It can connect on both sides.
