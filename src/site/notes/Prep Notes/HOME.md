@@ -42,5 +42,5 @@ Some temporary files for easy access during class.
 
 [[testing/Showcase Prep Sheet|testing/Showcase Prep Sheet]]
 
-[[Prep Notes/Miscellaneous/Scrolling platformer|Scrolling platformer]]
+[[Prep Notes/Miscellaneous/Scrolling platformer using admonitions|Scrolling platformer using admonitions]]
 
