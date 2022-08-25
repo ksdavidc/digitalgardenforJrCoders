@@ -61,7 +61,7 @@ Go ahead and add that.
 
 As always, a broadcast block is paired with (at least one) receive block.
 We will make the ```when I receive [green flag v]``` stack later.
-{ .scratch}
+{: .scratch}
 
 The ```when I receive [Play Game v]``` is the overall project loop. 
 This is where we come back to if we want to replay the game.
