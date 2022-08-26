@@ -21,7 +21,7 @@ permalink: "notes/{{ page.fileSlug | slugify }}/"
 selectors: div.blocks pre, .scratch, pre.language-scratchblock code, pre.language-scratchblock, .language-scratchblocks, div.callout-scratch pre, div.ad-scratch pre,
 -->
 <script>
-scratchblocks.renderMatching('body .language-scratchblock, body .language-scratchblock code, div.language-ad-scratch pre', {
+scratchblocks.renderMatching('body .language-scratchblock, body .language-scratchblock, div.language-ad-scratch pre', {
   style:     'scratch3',   // Optional, defaults to 'scratch2'.
   scale: 1,                // Optional, defaults to 1
 });
