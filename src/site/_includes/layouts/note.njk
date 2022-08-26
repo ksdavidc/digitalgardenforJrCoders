@@ -17,8 +17,11 @@ permalink: "notes/{{ page.fileSlug | slugify }}/"
       {% endif %}
       {{ content | link | highlight | safe}}
     </div>
+<!-- provides scratchblock support 
+selectors: div.blocks pre, .scratch, pre.language-scratchblock code, pre.language-scratchblock, .language-scratchblocks, div.callout-scratch pre, div.ad-scratch pre,
+-->
 <script>
-scratchblocks.renderMatching(' div.blocks pre, .scratch, pre.language-scratchblock code, pre.language-scratchblock, .language-scratchblocks, div.callout-scratch pre, div.ad-scratch pre, div.language-ad-scratch pre', {
+scratchblocks.renderMatching('pre.language-scratchblock, div.language-ad-scratch pre', {
   style:     'scratch3',   // Optional, defaults to 'scratch2'.
   scale: 1,                // Optional, defaults to 1
 });
