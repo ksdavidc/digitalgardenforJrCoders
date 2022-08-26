@@ -64,6 +64,10 @@ Be sure the size of the background is 200. **Change the size of background** and
 3. Make Sonic be able to move left as well. This is mostly copy and paste, but there are a few changes you need to make.
 
 ---
+
+
+## Old Stuff
+
 ### 2022 08 22
 
 
