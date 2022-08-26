@@ -6,13 +6,13 @@
 This works:
 
 ```scratchblock
-move10steps
+move (10) steps
 ```
 
 And this too!! yeah!
 
 ```ad-scratch
 ~~~scratchblock
-move 10 steps
+move (10) steps
 ~~~
 ```
