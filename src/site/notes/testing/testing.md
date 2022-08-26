@@ -6,13 +6,13 @@
 This works correctly:
 
 ```scratchblock
-move (10) steps
+move (50) steps
 ```
 
 And this too!! yeah!
 
 ```ad-scratch
 ~~~scratchblock
-move (10) steps
+move (50) steps
 ~~~
 ```
