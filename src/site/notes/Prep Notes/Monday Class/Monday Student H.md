@@ -2,6 +2,53 @@
 {"dg-publish":true,"permalink":"/prep-notes/monday-class/monday-student-h/","dgHomeLink":true,"dgPassFrontmatter":false}
 ---
 
+## NEXT STEP CHALLENGE:
+
+1. I lied. The bkg 2 my x value doesn't have to be 480. Change it to bigger and smaller numbers and see what happens.
+````ad-tip
+title: TIP
+To help you see this more clearly, we put a
+```ad-scratch
+~~~
+set (color v) effect to (50)
+~~~
+```
+in the green flag stack of bkg 2 (not 1). This should make the second background appear green, in stead of red. In the actual game you can take it out.
+
+````
+
+2. But, here is a question: Why does your background appear green when the game starts?
+
+<details><summary>Hint</summary>
+Try hiding the second background and see what happens.
+<details>
+<summary> 
+Another Hint
+</summary>
+You will need to copy one block in your project and run it when the game starts.
+</details>
+</details>
+
+3. If you explore you may find that a (my x) value of **600** is special. Can you figure out what it is?
+
+<details><summary>Hint</summary>
+Be sure the size of the background is 200. Change the size of background and see how it changes. Again, try different values of (my x)
+<details>
+<summary> 
+Another Hint
+</summary>
+Showing the variable (scroll x) will also help.
+</details>
+</details>
+
+4. Make Sonic be able to move left as well. This is mostly copy and paste, but there are a few changes you need to make.
+
+
+
+
+
+### 2022 08 22
+
 
 1. rename sprites (standing sonic, running sonic, bkg 1, bkg 2)
 
@@ -96,32 +143,4 @@ change (scroll x v) by (10)
 ``` 
 
 this will replace the move 10 you have in the bkgs.
-
-## NEXT STEP CHALLENGE:
-
-1. I lied. 
-
-* The bkg 2 my x value doesn't have to be 480. Change it to bigger and smaller numbers and see what happens.
-````ad-tip
-title: TIP
-To help you see this more clearly, put a 
-```ad-scratch
-~~~
-set (color v) effect to (50)
-~~~
-```
-in the green flag stack of bkg 2 (not 1)
-
-````
-
-* Why is a my x value of **600** special???
-
-2. Make Sonic be able to move left as well.
-
-Be sure that:
-* sonic is not upside down
-* if you press an arrow key once quickly, sonic doesn't stop
-* remove the white background
-
-
 
