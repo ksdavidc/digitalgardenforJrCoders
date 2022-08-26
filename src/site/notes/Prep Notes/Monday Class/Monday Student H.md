@@ -6,10 +6,10 @@
 
 0. I suggest renaming the variables `hello` and `hi` to more useful values, like `background1 x`, `background2 x`. 
 
-Better yet, now that you have made them unique, you can:  
+**Better yet**, now that you have made them unique, you can:  
 * convert them to **local/this sprite only variables** (since they are only used in one sprite), 
 * delete the **global/all sprites** `my x`, and 
-* call the  `hi/hello` **this sprite only** variables both just `my x`, as I should have made you do in the first place.
+* call the  `hi/hello` **local/this sprite only** variables both just `my x`, as I should have made you do in the first place.
 
 To do this:
 1. make sure the Scratch Addons has '*Switch variables between "For all sprites" and "For this sprite only"*' selected (orange). ![screenshot](https://i.imgur.com/2VqS36W.png)(It think I did that in class, but just make sure). 
@@ -60,6 +60,7 @@ Be sure the size of the background is 200. **Change the size of background** and
 </details>
 
 4. Make Sonic be able to move left as well. This is mostly copy and paste, but there are a few changes you need to make.
+
 ---
 ### 2022 08 22
 
