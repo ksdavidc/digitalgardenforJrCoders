@@ -52,12 +52,12 @@ When the game starts, what <b>x-position</b> are the two backgrounds at?
 2. If you explore you may find that a (my x) value of **600** is special. Can you figure out what it is?
 
 <details><summary><u>Hint</u></summary>
-Be sure the size of the background is 200. **Change the size of background** and see how it changes. Again, try different values of (my x)
+Be sure the size of the background is 200. <b>Change the size of background</b> and see how it changes. Again, try different values of (my x)
 <details>
 <summary> 
 <u>Another Hint</u>
 </summary>
-**Showing** the variable `scroll x` will also help.
+<b>Showing</b> the variable `scroll x` will also help.
 </details>
 </details>
 
