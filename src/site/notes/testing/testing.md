@@ -3,7 +3,7 @@
 ---
 
 
-This works:
+This works correctly:
 
 ```scratchblock
 move (10) steps
