@@ -51,3 +51,10 @@ body.markdown-preview-view div.blocks pre , body.markdown-rendered  div.blocks p
 body.markdown-preview-view {
     font-weight: bolder;
 }
+
+
+body.markdown-preview-view summary {
+    background: darkcyan;
+    width: 70%;
+}
+
