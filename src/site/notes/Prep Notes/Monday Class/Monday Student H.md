@@ -35,16 +35,16 @@ in the green flag stack of bkg 2 (not 1). This should make the second background
 a. But, here is a question: When the game starts, before you touch the right arrow, why does your background appear green instead of red? 
 
 <details><summary><u>Hint</u></summary>
-Try **hiding the second background** and see what happens.
+Try <b>hiding the second background</b> and see what happens.
 <details>
 <summary> <u>Another Hint</u>
 </summary>
-When the game starts, what **x-position** are the two backgrounds at?
+When the game starts, what <b>x-position</b> are the two backgrounds at?
 <details>
 <summary> 
 <u>Another Hint</u>
 </summary>
-* You should see they are both at zero. But **we wanted the second one to be at 480**! To fix this, you will need to copy one block (already in your project) and make sure it runs when the game starts. Which block?
+* You should see they are both at zero. But <b>we wanted the second one to be at 480</b>! To fix this, you will need to copy one block (already in your project) and make sure it runs when the game starts. Which block?
 </details>
 </details>
 </details>
