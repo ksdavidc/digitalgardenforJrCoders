@@ -36,7 +36,12 @@ in the green flag stack of bkg 2 (not 1). This should make the second background
 Try hiding the second background and see what happens.
 <details>
 <summary> 
-#### Another Hint
+#### ```ad-tip
+collapse: closed
+
+Another Hint
+```
+
 </summary>
 When the game starts, what x-position are the two backgrounds at?
 <details>
