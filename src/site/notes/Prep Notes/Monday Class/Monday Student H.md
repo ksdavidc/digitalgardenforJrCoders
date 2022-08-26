@@ -32,21 +32,17 @@ in the green flag stack of bkg 2 (not 1). This should make the second background
 
 2. But, here is a question: When the game starts, before you touch the right arrow, why does your background appear green instead of red? 
 
-<details><summary>#### Hint</summary>
+<details><summary><u>Hint</u></summary>
 Try hiding the second background and see what happens.
 <details>
-<summary> 
-#### ```ad-tip
-collapse: closed
-
-Another Hint
+<summary> <u>Another Hint</u>
 ```
 
 </summary>
 When the game starts, what x-position are the two backgrounds at?
 <details>
 <summary> 
-#### Another Hint
+<u>Another Hint</u>
 </summary>
 You should see they are both at zero. But we wanted the second one to be at 480! To fix this, you will need to copy one block (already in your project) and make sure it runs when the game starts. Which block?
 </details>
@@ -55,11 +51,11 @@ You should see they are both at zero. But we wanted the second one to be at 480!
 
 3. If you explore you may find that a (my x) value of **600** is special. Can you figure out what it is?
 
-<details><summary>#### Hint</summary>
+<details><summary><u>Hint</u></summary>
 Be sure the size of the background is 200. Change the size of background and see how it changes. Again, try different values of (my x)
 <details>
 <summary> 
-#### Another Hint
+<u>Another Hint</u>
 </summary>
 Showing the variable (scroll x) will also help.
 </details>
