@@ -12,12 +12,14 @@
 * call the  `hi/hello` **local/this sprite only** variables both just `my x`, as I should have made you do in the first place.
 
 To do this:
-1. make sure the Scratch Addons has '*Switch variables between "For all sprites" and "For this sprite only"*' selected (orange). ![screenshot](https://i.imgur.com/2VqS36W.png)(It think I did that in class, but just make sure). 
-2. Then you can right click on the hi/hello variable <u>while in its sprite</u> to make it local. 
-3. Right-clicking the **global**  variable `my x` , you can then delete that. 
-4. Then, right click the local `hi/hello` variables again to rename them.
+a. make sure the Scratch Addons has '*Switch variables between "For all sprites" and "For this sprite only"*' selected (orange). 
+![screenshot](https://i.imgur.com/2VqS36W.png)
+(It think I did that in class, but just make sure). 
+b. Go to **each** background sprite **individually** and **in the block pallette** (*not the code area*),  right click on the hi/hello variable  to make it local. 
+c. Right-clicking the **global**  variable `my x` , you can then delete that. 
+d. Then, right click the local `hi/hello` variables again to rename them.
 
-1. The bkg 2 `my x` value doesn't have to be 480. Change it to bigger and smaller numbers and see what happens.
+1. The background 2 `my x` value doesn't have to be 480. Change it to bigger and smaller numbers and see what happens.
 ````ad-tip
 title: TIP
 To help you see this more clearly, we put a
@@ -28,9 +30,9 @@ set (color v) effect to (50)
 ```
 in the green flag stack of bkg 2 (not 1). This should make the second background appear green, instead of red. In the actual game you can take it out.
 
-````
 
-2. But, here is a question: When the game starts, before you touch the right arrow, why does your background appear green instead of red? 
+
+a. But, here is a question: When the game starts, before you touch the right arrow, why does your background appear green instead of red? 
 
 <details><summary><u>Hint</u></summary>
 Try **hiding the second background** and see what happens.
@@ -46,8 +48,8 @@ When the game starts, what **x-position** are the two backgrounds at?
 </details>
 </details>
 </details>
-
-3. If you explore you may find that a (my x) value of **600** is special. Can you figure out what it is?
+````
+2. If you explore you may find that a (my x) value of **600** is special. Can you figure out what it is?
 
 <details><summary><u>Hint</u></summary>
 Be sure the size of the background is 200. **Change the size of background** and see how it changes. Again, try different values of (my x)
@@ -59,7 +61,7 @@ Be sure the size of the background is 200. **Change the size of background** and
 </details>
 </details>
 
-4. Make Sonic be able to move left as well. This is mostly copy and paste, but there are a few changes you need to make.
+3. Make Sonic be able to move left as well. This is mostly copy and paste, but there are a few changes you need to make.
 
 ---
 ### 2022 08 22
