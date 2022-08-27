@@ -2,6 +2,54 @@
 {"dg-publish":true,"permalink":"/prep-notes/research-on-ai/this-ai-image-generator-lets-you-type-in-words-and-get-weird-pictures-back-cnn/","dgHomeLink":true,"dgPassFrontmatter":false}
 ---
 
+
+
+<div
+  style="
+    border: 1px solid rgb(222, 222, 222);
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 1px 3px;
+  "
+>
+  <div class="w __if _lc _sm _od _alsd _alcd _lh14 _xm _xi _ts _dm">
+    <div class="wf">
+      <div class="wc">
+        <div class="e" style="padding-bottom: 100%">
+          <div class="em">
+            <a
+              href="https://edition.cnn.com/2022/07/14/tech/craiyon-dalle-mini-ai/index.html"
+              target="_blank"
+              rel="noopener"
+              data-do-not-bind-click
+              class="c"
+              style="
+                background-image: url('https://cdn.cnn.com/cnnnext/dam/assets/220711163147-craiyon-rainbow-lion-eating-pizza-super-tease.jpg');
+              "
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="wt">
+        <div class="t _f0 _ffsa _fsn _fwn">
+          <div class="th _f1p _fsn _fwb">
+            <a href="https://edition.cnn.com/2022/07/14/tech/craiyon-dalle-mini-ai/index.html" target="_blank" rel="noopener" class="thl"
+              >This AI image generator lets you type in words and get weird pictures back</a
+            >
+          </div>
+          <div class="td">It only took Matt Laming, a 19-year-old from the United Kingdom, about a month to hit a million followers on Twitter. And all it required was sharing a steady stream of the most outlandish computer-generated images that he and a bunch of internet strangers could think up.</div>
+          <div class="tf _f1m">
+            <div class="tc">
+              <a href="https://edition.cnn.com/2022/07/14/tech/craiyon-dalle-mini-ai/index.html" target="_blank" rel="noopener" class="tw _f1m"
+                ><span class="twt">https://edition.cnn.com/2022/07/14/tech/craiyon-dalle-mini-ai/index.html</span
+                ><span class="twd">https://edition.cnn.com/2022/07/14/tech/craiyon-dalle-mini-ai/index.html</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 (CNN Business)It only took Matt Laming, a 19-year-old from the United Kingdom, about a month to hit a million followers on Twitter. And all it required was sharing a steady stream of the most outlandish computer-generated images that he and a bunch of internet strangers could think up.
 
 In recent weeks, the digital marketing apprentice, better known online as [@weirddalle](https://twitter.com/weirddalle), has shared images depicting things like people [vacuuming](https://twitter.com/weirddalle/status/1544369495564865537?s=20&t=Nb4lVPd0toft-iHNOuavig) in the forest, the Demogorgon from Netflix's "Stranger Things" [holding](https://twitter.com/weirddalle/status/1534549407537963010?s=20&t=RULw-k0GxExireKLn7436w) a basketball, and a Beanie Baby that [looks a lot like](https://twitter.com/weirddalle/status/1542259349699137536?s=20&t=RULw-k0GxExireKLn7436w) Danny DeVito.
