@@ -7,18 +7,33 @@
 
 ## 2022 08 20
 
-<div class="blocks">
 
-``` 
+
+
+```ad-scratch
+~~~scratchblock
+
 when I receive [GameOver v]
 stop all sounds
 stop [other scripts in sprite v]
 
-in the when I start as a clone stack
-change play sound to 
-        start sound [Dance Around]
-        
+~~~
+```
 
+
+### in the when I start as a clone stack
+change play sound to:
+
+```ad-scratch
+~~~scratchblock
+        start sound [Dance Around]
+~~~
+```
+
+Add this:
+
+```ad-scratch
+~~~scratchblock
 
 when I receive [AboutToDie v]
 repeat (3)
@@ -29,15 +44,18 @@ repeat (3)
 end
 Broadcast [Game over v]
 delete this clone
-
+~~~
 ```
 
-In Abu
 
-``` 
+### In Abu
 add to when I receive start stack
+```ad-scratch
+~~~scratchblock
 switch backdrop to [Blue Sky v]
+~~~
 ```
-</div>
+
+
 
 
