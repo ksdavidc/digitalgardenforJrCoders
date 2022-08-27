@@ -144,6 +144,7 @@ end
 > b) how much is drawn when that quadrant **not covering** the drawing.
 > 
 > It does this for each quadrant. This is the myblock that does the comparison:
+> 
 ```ad-scratch
 ~~~scratchblock
 define test coverage of backdrop # (backdrop)
@@ -161,7 +162,6 @@ broadcast [check DRAWN v] and wait
 
 If I subtract `(OUTSIDE OF SEGMENT)` from `(RESULT)` 
 I get how much is covering that quadrant, `(QUAD 1)`
-
 ~~~
 ```
 
