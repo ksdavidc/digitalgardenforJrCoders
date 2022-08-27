@@ -4,6 +4,161 @@
 
 
 # Student M
+- [[Prep Notes/Saturday Class/Student M#Old stuff|Old stuff]]
+- [[Prep Notes/Saturday Class/Student M#2022 08 20|2022 08 20]]
+	- [[Prep Notes/Saturday Class/Student M#2022 08 20|TESTER Sprite]]
+	- [[Prep Notes/Saturday Class/Student M#2022 08 20|SWORD]]
+	- [[Prep Notes/Saturday Class/Student M#2022 08 20|1  Sprite]]
+- [[Prep Notes/Saturday Class/Student M#2022 08 13|2022 08 13]]
+	- [[Prep Notes/Saturday Class/Student M#2022 08 13|Sword]]
+
+
+## 2022 09 02
+
+You are almost done with the first part. After this code, we can start customizing it and making it look nice. We can also prepare for the Showcase. 
+
+If we have time, we can work on buttons 2 and 3.
+
+
+### 1 Button Sprite
+
+
+```ad-scratch
+~~~scratchblock
+when this sprite clicked
+only if we are using button 1
+if <not <(CURRENT BUTTON) = [1]>> then
+
+    broadcast [hide variables v]
+    set [CURRENT BUTTON v] to [1]
+    show variable [CURRENT BUTTON v]
+    start the timer
+    broadcast [show timer v]
+end
+~~~
+```
+
+Hide the button when the game starts (for the game intro)
+
+```ad-scratch
+~~~scratchblock
+when I receive [initialize v]
+hide variable [TIME REMAINING v]
+hide
+~~~
+```
+
+This is when the game starts
+```ad-scratch
+~~~scratchblock
+when I receive [show initial game screen v]
+show
+~~~
+```
+
+This is the timer function
+```ad-scratch
+~~~scratchblock
+when I receive [show timer v]
+reset timer
+set [TIME REMAINING v] to [30]
+show variable [TIME REMAINING v]
+This will stop timer if time runs out 
+or we touch another button
+or if we are only checking the current
+repeat until <<(timer) > [30]> or <<not <(CURRENT BUTTON) = [1]>> or <not <(CHECKING CURRENT) = [0]>>>>
+complicated function shows time easily
+    set [TIME REMAINING v] to (join ([floor v] of ((30) - (timer))::operators) (join [.] (letter (length of ([floor v] of ((10) * ((30) - (timer)))::operators)::operators) of ([floor v] of ((10) * ((30) - (timer)))::operators))))
+end
+When timer is done, check
+if <(timer) > [30]> then
+    set [CURRENT BUTTON v] to [0]
+    broadcast [check current backdrop v] and wait
+end
+else we don'T check, but hide/stop timer
+set [CURRENT BUTTON v] to [0]
+hide variable [TIME REMAINING v]
+
+~~~
+```
+
+### Button 2  Sprite
+Change current button
+```ad-scratch
+~~~scratchblock
+when this sprite clicked
+broadcast [hide variables v]
+set [CURRENT BUTTON v] to [2]
+~~~
+```
+
+Hides for opening, shows during game
+```ad-scratch
+~~~scratchblock
+when I receive [initialize v]
+hide
+~~~
+```
+
+
+```ad-scratch
+~~~scratchblock
+when I receive [show initial game screen v]
+show
+
+~~~
+```
+
+### Button 3 
+Similar to 2, some things can be copied
+
+
+```ad-scratch
+~~~scratchblock
+when this sprite clicked
+broadcast [hide variables v]
+set [CURRENT BUTTON v] to [3]
+~~~
+```
+
+
+```ad-scratch
+~~~scratchblock
+when I receive [initialize v]
+hide
+~~~
+```
+
+
+```ad-scratch
+~~~scratchblock
+when I receive [show initial game screen v]
+show
+~~~
+```
+### Control Area Sprite
+Hides for opening, shows during game
+```ad-scratch
+~~~scratchblock
+when I receive [initialize v]
+hide
+go to [back v] layer
+~~~
+```
+
+
+```ad-scratch
+~~~scratchblock
+when I receive [show initial game screen v]
+show
+~~~
+```
+
+
+
+---
+
+## Old stuff
 
 ## 2022 08 20
 
@@ -144,7 +299,6 @@ end
 > b) how much is drawn when that quadrant **not covering** the drawing.
 > 
 > It does this for each quadrant. This is the myblock that does the comparison:
-> 
 ```ad-scratch
 ~~~scratchblock
 define test coverage of backdrop # (backdrop)
@@ -162,6 +316,7 @@ broadcast [check DRAWN v] and wait
 
 If I subtract `(OUTSIDE OF SEGMENT)` from `(RESULT)` 
 I get how much is covering that quadrant, `(QUAD 1)`
+
 ~~~
 ```
 
