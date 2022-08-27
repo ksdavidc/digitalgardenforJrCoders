@@ -3,6 +3,101 @@
 ---
 
 
+
+<div
+  style="
+    border: 1px solid rgb(222, 222, 222);
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 1px 3px;
+  "
+>
+  <div class="w __if _lc _sm _od _alsd _alcd _lh14 _xm _xi _ts _dm">
+    <div class="wf">
+      <div class="wc">
+        <div class="e" style="padding-bottom: 100%">
+          <div class="em">
+            <a
+              href="https://hotpot.ai/art-maker"
+              target="_blank"
+              rel="noopener"
+              data-do-not-bind-click
+              class="c"
+              style="
+                background-image: url('https://hotpot.ai/images/site/ai/art_maker/teaser.jpg');
+              "
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="wt">
+        <div class="t _f0 _ffsa _fsn _fwn">
+          <div class="th _f1p _fsn _fwb">
+            <a href="https://hotpot.ai/art-maker" target="_blank" rel="noopener" class="thl"
+              >AI Art Generator: make images with AI</a
+            >
+          </div>
+          <div class="td">AI Art Generator turns imagination into art. Create art by telling AI what to make. Our AI interprets your instructions and produces images in various styles, from classic art like Van Gogh to photorealistic graphics. Bring your ideas to life.</div>
+          <div class="tf _f1m">
+            <div class="tc">
+              <a href="https://hotpot.ai/art-maker" target="_blank" rel="noopener" class="tw _f1m"
+                ><span class="twt">https://hotpot.ai/art-maker</span
+                ><span class="twd">https://hotpot.ai/art-maker</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div
+  style="
+    border: 1px solid rgb(222, 222, 222);
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 1px 3px;
+  "
+>
+  <div class="w __if _lc _sm _od _alsd _alcd _lh14 _xm _xi _ts _dm">
+    <div class="wf">
+      <div class="wc">
+        <div class="e" style="padding-bottom: 100%">
+          <div class="em">
+            <a
+              href="https://hotpotmedia.s3.us-east-2.amazonaws.com/8-Qr6Gf4eCMoSDBgz.png"
+              target="_blank"
+              rel="noopener"
+              data-do-not-bind-click
+              class="c"
+              style="
+                background-image: url('');
+              "
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="wt">
+        <div class="t _f0 _ffsa _fsn _fwn">
+          <div class="th _f1p _fsn _fwb">
+            <a href="https://hotpotmedia.s3.us-east-2.amazonaws.com/8-Qr6Gf4eCMoSDBgz.png" target="_blank" rel="noopener" class="thl"
+              ></a
+            >
+          </div>
+          <div class="td"></div>
+          <div class="tf _f1m">
+            <div class="tc">
+              <a href="https://hotpotmedia.s3.us-east-2.amazonaws.com/8-Qr6Gf4eCMoSDBgz.png" target="_blank" rel="noopener" class="tw _f1m"
+                ><span class="twt">https://hotpotmedia.s3.us-east-2.amazonaws.com/8-Qr6Gf4eCMoSDBgz.png</span
+                ><span class="twd">https://hotpotmedia.s3.us-east-2.amazonaws.com/8-Qr6Gf4eCMoSDBgz.png</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 > ghost eating monster
 > 
 > Hotpot Art 1
