@@ -35,5 +35,5 @@ Some temporary files for easy access during class. {: style="color: orange;"}
 
 [[testing/Showcase Prep Sheet|testing/Showcase Prep Sheet]]
 
-[[Prep Notes/Miscellaneous/Scrolling platformer using admonitions|Scrolling platformer using admonitions]]
+[[Prep Notes/Miscellaneous/Scrolling platformer First Steps|Scrolling platformer First Steps]]
 
