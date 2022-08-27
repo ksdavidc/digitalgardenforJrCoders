@@ -19,7 +19,7 @@ Some temporary files for easy access during class.
 ## Instructions for students:
 
 ### Monday
-[[Prep Notes/2022 07 25 Monday Class Instructions|2022 07 25 Monday Class Instructions]]
+[[Prep Notes/Monday Class/2022 07 25 Monday Class Instructions|2022 07 25 Monday Class Instructions]]
 
 [[Prep Notes/Monday Class/2022 Monday Class|2022 Monday Class]]  
 
