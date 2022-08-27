@@ -17,11 +17,11 @@
 
 ## 08 05
 
-<div class="blocks">
+
 
 ### SKELETON
-```
-
+```ad-scratch
+~~~scratchblock
 Add this to make the skeleton step away when he strikes:
 
 when I receive [a hit! v]
@@ -29,12 +29,13 @@ if <touching [Weapons v]?> then
     point towards [maikey v]
     move (-50) steps
 end
-
+~~~
 ```
 
 ### WEAPONS
 
-```
+```ad-scratch
+~~~scratchblock
 change 
  if <key (join [] (clone id)) pressed?> then
  to this:
@@ -94,12 +95,13 @@ FIND:
 and MAKE IT
     change x by (((32) * <not <(MAIKEY DSIRECTION) < [0]>>) + ((-32) * <(MAIKEY DSIRECTION) < [0]>))
     point in direction ((MAIKEY DSIRECTION) + ((90) * <(ABS of MAIKEY DIRECTION) < [0]>))
-
+~~~
 ```
 
 ### MAIKEY
 
-```
+```ad-scratch
+~~~scratchblock
 
 CREATE:
 define set maikeys direction
@@ -143,12 +145,13 @@ repeat until <not <(HP) > [0]>>
 end
 
 
-
+~~~
 ```
 
 ### SPIDER HP BAR
 
-```
+```ad-scratch
+~~~scratchblock
 First CHANGE THE NAME
 
 ADD
@@ -181,7 +184,7 @@ point in direction (90)
 move (health::custom) steps
 pen up
 
-
+~~~
 ```
 
 
@@ -191,12 +194,11 @@ pen up
 ## 07 29
 
 
-<div class="blocks">
-
 
 ### MAIKEY
 
-```
+```ad-scratch
+~~~scratchblock
 
 LET'S MAKE SURE MAIKEY IS POINTING IN THE RIGHT DIRECTION 
 
@@ -218,19 +220,21 @@ point in direction (90)
 
 to the left arrow
 point in direction (-90)
+~~~
 ```
 
 ### in WEAPONS
 
-```
+```ad-scratch
+~~~scratchblock
 if <touching mouse-pointer> then
 say (costume name)
 else
 say ()
 end
 change all costume names to weapon name
+~~~
 ```
 
 
 
-</div>
