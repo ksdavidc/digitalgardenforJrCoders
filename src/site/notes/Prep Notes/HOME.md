@@ -14,22 +14,20 @@ Some temporary files for easy access during class. {: style="color: orange;"}
 ## Instructions for students:
 
 ### Monday
-[[Prep Notes/Monday Class/2022 07 25 Monday Class Instructions|2022 07 25 Monday Class Instructions]]
+[[Prep Notes/Monday Class/2022 Monday Class Kitten Parachute Game|2022 Monday Class Kitten Parachute Game]]  
 
-[[Prep Notes/Monday Class/2022 Monday Class|2022 Monday Class]]  
-
-[[Prep Notes/Monday Class/Monday Student H|Monday Student H]]  
+[[Prep Notes/Monday Class/2022 Monday Student H|2022 Monday Student H]]  
 
 ### Friday
-[[Prep Notes/Friday Class/2022 Student M|2022 Student M]]
+[[Prep Notes/Friday Class/2022 Fri Student M|2022 Fri Student M]]
 
-[[Prep Notes/Friday Class/2022 Student K|2022 Student K]]
+[[Prep Notes/Friday Class/2022 Fri Student K|2022 Fri Student K]]
 
-### Saturday Class
+### Saturday
 
-[[Prep Notes/Monday Class/Monday Student H|Monday Student H]]
+[[Prep Notes/Saturday Class/2022 Sat Student N|2022 Sat Student N]]
 
-[[Prep Notes/Saturday Class/Student N|Student N]]
+[[Prep Notes/Saturday Class/2022 Sat Student M|2022 Sat Student M]]
 
 ### Miscellaneous
 
