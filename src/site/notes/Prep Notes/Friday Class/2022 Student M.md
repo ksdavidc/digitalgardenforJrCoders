@@ -4,21 +4,17 @@
 
 
 
-- [[Prep Notes/Friday Class/2022 Student M#2022 Student M|2022 Student M]]
-	- [[Prep Notes/Friday Class/2022 Student M#2022 Student M|08 19]]
-		- [[Prep Notes/Friday Class/2022 Student M#08 19|ART GALLERY COVER SPRITE]]
-		- [[Prep Notes/Friday Class/2022 Student M#08 19|ART GALLERY SPRITE]]
-	- [[Prep Notes/Friday Class/2022 Student M#2022 Student M|OLD STUFF]]
-	- [[Prep Notes/Friday Class/2022 Student M#2022 Student M|08 05]]
-		- [[Prep Notes/Friday Class/2022 Student M#08 05|CAT SPRITE]]
-		- [[Prep Notes/Friday Class/2022 Student M#08 05|CLASSROOM COVER > ART GALLERY COVER]]
-		- [[Prep Notes/Friday Class/2022 Student M#08 05|CLASSROOM > ART GALLERY]]
 
 # 2022 Student M
 
-<div class="blocks">
-
-
+- [[Prep Notes/Friday Class/2022 Student M#08 19|08 19]]
+	- [[Prep Notes/Friday Class/2022 Student M#08 19|ART GALLERY COVER SPRITE]]
+	- [[Prep Notes/Friday Class/2022 Student M#08 19|ART GALLERY SPRITE]]
+- [[Prep Notes/Friday Class/2022 Student M#OLD STUFF|OLD STUFF]]
+- [[Prep Notes/Friday Class/2022 Student M#08 05|08 05]]
+	- [[Prep Notes/Friday Class/2022 Student M#08 05|CAT SPRITE]]
+	- [[Prep Notes/Friday Class/2022 Student M#08 05|CLASSROOM COVER > ART GALLERY COVER]]
+	- [[Prep Notes/Friday Class/2022 Student M#08 05|CLASSROOM > ART GALLERY]]
 
 
 
@@ -28,7 +24,8 @@
 
 > this should look like this: (some small changes)
 
-```
+```ad-scratch
+~~~scratchblock
 when this sprite clicked
 if <(MONEY) > [10]> then
     set [art gallerly v] to [1]
@@ -36,17 +33,20 @@ if <(MONEY) > [10]> then
     change [MONEY v] by (-10)
     hide
 end
+~~~
 ```
 
 > add this
 
-```
+```ad-scratch
+~~~scratchblock
 when I receive [initialize v]
 go to x: (-34) y: (-20)
 show
 go to [front v] layer
 set [art gallerly v] to [0]
 show variable [art gallerly v]
+~~~
 ```
 
 ### ART GALLERY SPRITE
@@ -54,12 +54,16 @@ show variable [art gallerly v]
 > In art gallery sprite:
 > add:
 
-``` 
+
+```ad-scratch
+~~~scratchblock
 when I receive [initialize v]
 go to x: (-45) y: (-20)
 go to [front v] layer
 go [backward v] (2) layers
+~~~
 ```
+
 
 ## OLD STUFF
 ## 08 05
@@ -70,10 +74,12 @@ go [backward v] (2) layers
 it belongs in the classroom open else area.
 
 >add a delete this clone on the end of
-```
+```ad-scratch
+~~~scratchblock
 define no room available go back
 /* ... {stuff, then}
 delete this clone
+~~~
 ```
 
 
@@ -83,18 +89,24 @@ while changing the variable names
 >INITIALIZE all the MAX and OCCUPANTS VARIABLES
 for example
 
-```
+```ad-scratch
+~~~scratchblock
 set (OCCUPANTS ART GALLERY) to (0)
+~~~
 ```
 
 Change 
 
-```
+```ad-scratch
+~~~scratchblock
 set (which room to go to) to (pick random (1) to (2))
+~~~
 ```
 to
-```
+```ad-scratch
+~~~scratchblock
 set (which room to go to) to (pick random (1) to (3))
+~~~
 ```
 
 
@@ -107,12 +119,16 @@ set (which room to go to) to (pick random (1) to (3))
 
 we have to finish setting this up
 AFTER
-```
-if <(MONEY) > 10> then
+```ad-scratch
+~~~scratchblock
+if <(MONEY) > (10) > then
+~~~
 ```
 ADD
-```
+```ad-scratch
+~~~scratchblock
 set (CLASSROOM OPEN) to (1)
+~~~
 ```
 
 After than, COPY all the code to the art gallery cover,
