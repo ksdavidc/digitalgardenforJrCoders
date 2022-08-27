@@ -32,6 +32,8 @@ Some temporary files for easy access during class.
 
 ### Saturday Class
 
+[[Prep Notes/Saturday Class/Student M|Student M]]
+
 [[Prep Notes/Monday Class/Monday Student H|Monday Student H]]
 
 [[Prep Notes/Saturday Class/Student N|Student N]]
