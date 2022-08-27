@@ -12,7 +12,7 @@
 ## Step 1
 First, this is the basic falling routine.  
 ```ad-scratch
-~~~
+~~~scratchblock
 when @greenFlag clicked
 set [speed y v] to [0]
 go to x: (0) y: (100)
@@ -49,7 +49,7 @@ There is one Master Sprite that controls the others.
 In our game, the Player is the master sprite.
 Its one green flag talks to all the other sprites using broadcasts  like this:
 ```ad-scratch
-~~~
+~~~scratcblock
 when @greenFlag clicked
 broadcast [green flag v] and wait
 broadcast [Play Game v]
