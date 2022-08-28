@@ -24,7 +24,7 @@ d. Then, right click the local `hi/hello` variables again to rename them.
 title: TIP
 To help you see this more clearly, we put a
 ```ad-scratch
-~~~
+~~~scratchblock
 set (color v) effect to (50)
 ~~~
 ```
@@ -78,14 +78,14 @@ Be sure the size of the background is 200. <b>Change the size of background</b> 
 
 initialize scroll x 
 ```ad-scratch
-~~~
+~~~scratchblock
 set (scroll x v) to (0)
 ~~~
 ``` 
 
 add this so he is animated at beginning
 ```ad-scratch
-~~~
+~~~scratchblock
 go to [front v] layer
 repeat until <<key [left arrow v] pressed?> or <key [right arrow v] pressed?>>
     next costume
@@ -96,7 +96,7 @@ end
 #### * right arrow pressed stack
 
 ```ad-scratch
-~~~
+~~~scratchblock
 when [right arrow v] key pressed
 point in direction (90)
 ~~~
@@ -104,7 +104,7 @@ point in direction (90)
 #### * message 1 stack
 Move this part of your right arrow stack into this stack:
 ```ad-scratch
-~~~
+~~~scratchblock
 when I receive [message1 v]
 go to [running sonic v]
 show
@@ -124,7 +124,7 @@ hide
 add  in bkg 1
 
 ```ad-scratch
-~~~
+~~~scratchblock
 set (my x v) to (0)
 ~~~
 ``` 
@@ -134,7 +134,7 @@ set (my x v) to (0)
 add  in bkg 2
 
 ```ad-scratch
-~~~
+~~~scratchblock
 set (my x v) to (480)
 ~~~
 ``` 
@@ -145,7 +145,7 @@ this is 480 because the second background is 480 off
 replace move 10, and replace it with:
 
 ```ad-scratch
-~~~
+~~~scratchblock
 set (my x v) to ((x)-(scroll x))
 ~~~
 ```
@@ -158,7 +158,7 @@ set (my x v) to ((x)-(scroll x))
 * remove first next costume, not needed. replace it with the show block from the other right arrow stack. 
 * add 
 ```ad-scratch
-~~~
+~~~scratchblock
 change (scroll x v) by (10) 
 ~~~
 ``` 
