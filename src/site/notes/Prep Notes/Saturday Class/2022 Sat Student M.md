@@ -4,6 +4,11 @@
 
 
 # Student M
+- [[Prep Notes/Saturday Class/2022 Sat Student M#2022 09 02|2022 09 02]]
+	- [[Prep Notes/Saturday Class/2022 Sat Student M#2022 09 02|1 Button Sprite]]
+	- [[Prep Notes/Saturday Class/2022 Sat Student M#2022 09 02|Button 2  Sprite]]
+	- [[Prep Notes/Saturday Class/2022 Sat Student M#2022 09 02|Button 3]]
+	- [[Prep Notes/Saturday Class/2022 Sat Student M#2022 09 02|Control Area Sprite]]
 - [[Prep Notes/Saturday Class/2022 Sat Student M#Old stuff|Old stuff]]
 - [[Prep Notes/Saturday Class/2022 Sat Student M#2022 08 20|2022 08 20]]
 	- [[Prep Notes/Saturday Class/2022 Sat Student M#2022 08 20|TESTER Sprite]]
@@ -11,6 +16,7 @@
 	- [[Prep Notes/Saturday Class/2022 Sat Student M#2022 08 20|1  Sprite]]
 - [[Prep Notes/Saturday Class/2022 Sat Student M#2022 08 13|2022 08 13]]
 	- [[Prep Notes/Saturday Class/2022 Sat Student M#2022 08 13|Sword]]
+
 
 
 ## 2022 09 02
