@@ -82,7 +82,7 @@ This is easy if you see the trick.
 
 
 
-Now that you have the basic idea, you can make any kind of loop you want. It can be as thick as you want, and you can fill the track with whatever colors or images you want.
+Now that you have the basic idea, you can make any kind of loop you want. It can be as thick as you want, and you can fill the track with whatever colors or images you want. You can even make it out of other shapes. See the other loop [in my project](https://scratch.mit.edu/projects/727409961/) for an example.
 
 ### Small Dots
 
