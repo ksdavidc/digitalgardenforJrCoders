@@ -5,19 +5,19 @@
 # Making a Loop De Loop 
 ## Template
 
-The Loop de Loop Costumes is part of the the [Sonic Loop De Loop Scroller project](https://scratch.mit.edu/projects/727409961/).
-
-In the project there is are Platform and AntiPlatform Sprites. Some of the costumes in those sprites are for the loop de loop. I will show you how I made them, so you can design your own to suit your project. Mine are green and ugly, and yours can be different. 
-
-There are 2 loops on the project. The first is in a Sonic Style, but the second one is the template I used to make it. This is the one that we are going to make today.
-
-To make a Loop, you need 4 costumes. You need 2 normal gravity costumes (in the Platformer Sprite), and 2 antigravity costumes (in the Antiplaform Sprite).  Each sprite has a Loop start and and Loop return costume. 
-
+The Loop de Loop Costumes are part of the [Sonic Loop De Loop Scroller project](https://scratch.mit.edu/projects/727409961/). 
+$~$
+In the project there are Platform and AntiPlatform Sprites. Some of the costumes in those sprites are for the loop de loop. I will show you how I made them, so you can design your own to suit your project. Mine are green and ugly, and yours can be different.    
+    
+There are 2 loops on the project. The first is in a Sonic Style, but the second one is the template I used to make it. This is the one that we are going to make today.       
+    
+To make a Loop, you need 4 costumes. You need 2 normal gravity costumes (in the Platformer Sprite), and 2 antigravity costumes (in the Antiplaform Sprite).  Each sprite has a Loop start and and Loop return costume.   
+    
 When the player goes in from one side, as he reaches the top half of the loop, gravity goes up and the back of the loop moves to the front, so we can exit. Little buttons detect the player as he moves and control the changes in the costumes.
+   
+The costumes are easy. They all start from a Loop Base, which is basically 2 circles and 4 lines. One of the lines is just to arrange the other lines, and is deleted in the final Base.    
 
-The costumes are easy. They all start from a Loop Base, which is basically 2 circles and 4 lines. One of the lines is just to arrange the other lines, and is deleted in the final Base.
-
-Once  you have the base, a few simple steps creates the 4 costumes. I will show you how to make the Platform Start and Return costume, and I will show you what the Antiplatform  costumes look like so you can make your own.
+Once  you have the base, a few simple steps creates the 4 costumes. I will show you how to make the Platform Start and Return costume, and I will show you what the Antiplatform  costumes look like so you can make your own.    
 
 ## Creating a Loop Base
 
