@@ -5,7 +5,7 @@
 # Making a Loop De Loop 
 ## Template
 
-The Loop de Loop Costumes are part of the [Sonic Loop De Loop Scroller project](https://scratch.mit.edu/projects/727409961/). 
+The Loop de Loop Costumes are part of the [Sonic Loop De Loop Scroller project](https://scratch.mit.edu/projects/727409961/).
 
 In the project there are Platform and AntiPlatform Sprites. Some of the costumes in those sprites are for the loop de loop. I will show you how I made them, so you can design your own to suit your project. Mine are green and ugly, and yours can be different.    
     
@@ -15,7 +15,9 @@ To make a Loop, you need 4 costumes.
 * 2 normal gravity costumes (in the Platformer Sprite), and 
 * 2 antigravity costumes (in the Antiplaform Sprite).  
 * Each Sprite has a loop start and and loop return costume.   
-    
+
+This is not the only way to set up a loop de loop, but this is the way I am doing it.
+
 When the player goes in from one side, as he reaches the top half of the loop, gravity goes up and the back of the loop moves to the front, so we can exit. Little buttons detect the player as he moves and control the changes in the costumes.
    
 The costumes are easy. They all start from a Loop Base, which is basically 2 circles and 4 lines. One of the lines is just to arrange the other lines, and is deleted in the final Base.    
@@ -64,7 +66,7 @@ Now we are going to create 4 costumes from this.
 Basically the same:
 1. Copy the Loop Return.
 2. Flip the image left to right.
-3. In bitmap mode, use the square selection tool to delete **just a little from the top**. We need a little bit of curve to keep the player from flying off, but we don't want to go the whole way.
+3. In bitmap mode, use the square selection tool to delete **just a little from the top**. The cutoff is a little above where the path turns. We need a little bit of curve to keep the player from flying off, but we don't want to go the whole way, because we need the Antiplatform costume will catch the upward gravity.
 
 Then repeat steps 4 and 5 above.
 
