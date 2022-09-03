@@ -37,4 +37,4 @@ Some temporary files for easy access during class.
 
 [[Prep Notes/Miscellaneous/Scrolling Platformer First Steps|Scrolling Platformer First Steps]]
 
-[[Prep Notes/Showcase/Making a Loop De Loop Project|Making a Loop De Loop Project]]
+[[Prep Notes/Showcase/Making a Loop de Loop Project|Making a Loop de Loop Project]]
