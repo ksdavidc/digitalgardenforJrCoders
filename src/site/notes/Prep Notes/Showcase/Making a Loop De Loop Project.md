@@ -6,12 +6,15 @@
 ## Template
 
 The Loop de Loop Costumes are part of the [Sonic Loop De Loop Scroller project](https://scratch.mit.edu/projects/727409961/). 
-$~$
+
 In the project there are Platform and AntiPlatform Sprites. Some of the costumes in those sprites are for the loop de loop. I will show you how I made them, so you can design your own to suit your project. Mine are green and ugly, and yours can be different.    
     
-There are 2 loops on the project. The first is in a Sonic Style, but the second one is the template I used to make it. This is the one that we are going to make today.       
+There are 2 loops in the project. The first is Sonic Style, but the second one is the template I used to make it. This is the one that we are going to make today.       
     
-To make a Loop, you need 4 costumes. You need 2 normal gravity costumes (in the Platformer Sprite), and 2 antigravity costumes (in the Antiplaform Sprite).  Each sprite has a Loop start and and Loop return costume.   
+To make a Loop, you need 4 costumes. 
+* 2 normal gravity costumes (in the Platformer Sprite), and 
+* 2 antigravity costumes (in the Antiplaform Sprite).  
+* Each Sprite has a loop start and and loop return costume.   
     
 When the player goes in from one side, as he reaches the top half of the loop, gravity goes up and the back of the loop moves to the front, so we can exit. Little buttons detect the player as he moves and control the changes in the costumes.
    
@@ -20,6 +23,9 @@ The costumes are easy. They all start from a Loop Base, which is basically 2 cir
 Once  you have the base, a few simple steps creates the 4 costumes. I will show you how to make the Platform Start and Return costume, and I will show you what the Antiplatform  costumes look like so you can make your own.    
 
 ## Creating a Loop Base
+This is what the Loop Base should look like this:
+
+![Base for Loop De Loop](https://i.imgur.com/XOCMGUC.png)
 
 1. Go into vector drawing mode.
 2. Draw **circle 1** with a thick border and no fill. Center it.
@@ -34,36 +40,33 @@ Once  you have the base, a few simple steps creates the 4 costumes. I will show 
 		3. These 2 base lines should go right over the small circle base line, but not cover the **gap** between the two circles on the right.
 	4. Now you can delete line 5.2, the **small circle base line**! You can nowsee the **gap** in the front track.
 
-This is what the Loop Base should look like this:
-
-![Base for Loop De Loop](https://i.imgur.com/XOCMGUC.png)
 
 
 Now we are going to create 4 costumes from this.
 
 #### Loop Return (for Platform Sprite)
+
+![](https://i.imgur.com/199xT9m.png)
+
+
 1. Copy the Loop Base.
 2. Select all and flip it, so it faces the other way.
 3. Switch to bitmap mode and use the square selection tool to delete **the right half of the loop**.
 4. Go to Vector Mode and draw red lines to close the ends of the bottom tracks. Don't put a red line at the top.
 5. In bitmap mode again, use the fill tool to fill the tracks, as in the green below.
 
-
-
-![](https://i.imgur.com/199xT9m.png)
-
-
-
-
 #### Loop Start2 (for Platform Sprite)
+
+
+![Loop Start](https://i.imgur.com/IGxRDRU.png)
+
+
 Basically the same:
 1. Copy the Loop Return.
 2. Flip the image left to right.
 3. In bitmap mode, use the square selection tool to delete **just a little from the top**. We need a little bit of curve to keep the player from flying off, but we don't want to go the whole way.
 
 Then repeat steps 4 and 5 above.
-
-![Loop Start](https://i.imgur.com/IGxRDRU.png)
 
 Here are the other 2 as challenges for you:
 
