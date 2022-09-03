@@ -16,13 +16,13 @@ To make a Loop, you need 4 costumes.
 * 2 antigravity costumes (in the Antiplaform Sprite).  
 * Each Sprite has a loop start and and loop return costume.   
 
-This is not the only way to set up a loop de loop, but this is the way I am doing it.
+
 
 When the player goes in from one side, as he reaches the top half of the loop, gravity goes up and the back of the loop moves to the front, so we can exit. Little buttons detect the player as he moves and control the changes in the costumes.
    
 The costumes are easy. They all start from a Loop Base, which is basically 2 circles and 4 lines. One of the lines is just to arrange the other lines, and is deleted in the final Base.    
 
-Once  you have the base, a few simple steps creates the 4 costumes. I will show you how to make the Platform Start and Return costume, and I will show you what the Antiplatform  costumes look like so you can make your own.    
+Once  you have the base, a few simple steps creates the 4 costumes. I will show you how to make the Platform Start and Return costume, and I will show you what the Antiplatform  costumes look like so you can make your own. In fact, this is not the only shapes these costumes could have for a loop, but this is the way I am doing it in this project. 
 
 ## Creating a Loop Base
 This is what the Loop Base should look like this:
