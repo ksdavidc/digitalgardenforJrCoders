@@ -11,6 +11,10 @@ https://digitalgardenforjrcoders.netlify.app/
 
 Some temporary files for easy access during class.
 
+RECENT:
+
+> FRIDAY: [[Prep Notes/Showcase/Adding Loops and Rearranging Platforms|Adding Loops and Rearranging Platforms]]
+
 ## Instructions for students:
 
 ### Monday
