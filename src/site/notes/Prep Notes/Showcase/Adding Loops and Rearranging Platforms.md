@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/prep-notes/showcase/adding-loops-and-rearranging-platforms/","dgHomeLink":true,"dgPassFrontmatter":false}
 ---
 
-
+We are on page `= this.file.name`.
 fixes:
 remove loop reflip
 
@@ -21,7 +21,7 @@ remove loop reflip
 		- [[Prep Notes/Showcase/Adding Loops and Rearranging Platforms#WHERE DO WE CHOOSE THE ORDER OF THE COSTUMES???|Make your own level 2]]
 
 
-# Adding Loops and Rearranging Platforms 
+# `= this.file.name`.
 
 ## SUMMARY
 
