@@ -53,3 +53,5 @@ Some temporary files for easy access during class.
 [[Prep Notes/Showcase/Making a Loop de Loop Project|Making a Loop de Loop Project]]
 
 [[Prep Notes/Showcase/Adding Loops and Rearranging Platforms|Adding Loops and Rearranging Platforms]]
+
+[[Prep Notes/Showcase/Poster Instructions|Poster Instructions]]
