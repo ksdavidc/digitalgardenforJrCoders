@@ -22,7 +22,7 @@ Some temporary files for easy access during class.
 
 ## Recently added
 
-> FRIDAY: [[Prep Notes/Showcase/Adding Loops and Rearranging Platforms|Adding Loops and Rearranging Platforms]]
+> FRIDAY: [[Events Planning/Showcase/Adding Loops and Rearranging Platforms|Adding Loops and Rearranging Platforms]]
 
 ## Instructions for students
 
@@ -50,9 +50,9 @@ Some temporary files for easy access during class.
 
 [[Prep Notes/Miscellaneous/Scrolling Platformer First Steps|Scrolling Platformer First Steps]]
 
-[[Prep Notes/Showcase/Making a Loop de Loop Project|Making a Loop de Loop Project]]
+[[Events Planning/Showcase/Making a Loop de Loop Project|Making a Loop de Loop Project]]
 
-[[Prep Notes/Showcase/Adding Loops and Rearranging Platforms|Adding Loops and Rearranging Platforms]]
+[[Events Planning/Showcase/Adding Loops and Rearranging Platforms|Adding Loops and Rearranging Platforms]]
 
-[[Prep Notes/Showcase/Poster Instructions|Poster Instructions]]
+[[Events Planning/Showcase/Poster Instructions|Poster Instructions]]
 
