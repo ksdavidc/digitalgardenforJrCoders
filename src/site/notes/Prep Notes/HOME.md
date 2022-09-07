@@ -56,5 +56,4 @@ Some temporary files for easy access during class.
 
 [[Prep Notes/Showcase/Poster Instructions|Poster Instructions]]
 
-Test:
-I'm normal text, but *I'm italic { class='italics' }*, **I'm bold { .bold }** and ==I'm highlighted { id=highlight }==.
+[[Prep Notes/How to show scratchblocks inline|How to show scratchblocks inline]]
