@@ -56,4 +56,3 @@ Some temporary files for easy access during class.
 
 [[Prep Notes/Showcase/Poster Instructions|Poster Instructions]]
 
-[[Prep Notes/How to show scratchblocks inline|How to show scratchblocks inline]]
