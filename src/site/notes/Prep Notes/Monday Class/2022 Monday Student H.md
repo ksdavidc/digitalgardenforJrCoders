@@ -5,21 +5,21 @@
 
 ## 2022 09 09
  
-The main purpose is to make the platforms cycle. We need to fix a few things as well (platforms sticking at edge and x in the last platform).
+The main goal today is to make the platforms cycle. We need to fix a few things as well (platforms sticking at edge and x in the last platform).
 
-Go to Sprite 1. In this stack
+Let's start with Sprite 1. In this stack:
 ```ad-scratch
 ~~~scratchblock
 when [right arrow v] key pressed
 ~~~
 ```
-You have:
+you have:
 ```ad-scratch
 ~~~scratchblock
 set x to ((x) - (scroll x))
 ~~~
 ```
-This tells us how far this platform's position (called `x`) is from the current position in the game  (called `scroll x`). This is the same thing as where the sprite is relative to the center of the screen, and that's really our standard, blue x position (relative to our screen).
+(x) - (scroll x) tells us how far this platform's position (called `x`) is from the current position in the game  (called `scroll x`). This is the same thing as where the sprite is relative to the center of the screen, and that's really our standard, blue x position (relative to our screen).
 
 In order to: 
 *  avoid long lines of code
