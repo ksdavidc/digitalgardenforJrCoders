@@ -55,3 +55,6 @@ Some temporary files for easy access during class.
 [[Prep Notes/Showcase/Adding Loops and Rearranging Platforms|Adding Loops and Rearranging Platforms]]
 
 [[Prep Notes/Showcase/Poster Instructions|Poster Instructions]]
+
+Test:
+I'm normal text, but *I'm italic { class='italics' }*, **I'm bold { .bold }** and ==I'm highlighted { id=highlight }==.
