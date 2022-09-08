@@ -24,12 +24,13 @@ remove loop reflip
 # `= this.file.name`.
 
 ## SUMMARY
+We have 9 things to do:
 
-- [[Events Planning/Showcase/Adding Loops and Rearranging Platforms#Adding Loops and Rearranging Platforms|Set up the Costume Numbers]]
+1.  [[Events Planning/Showcase/Adding Loops and Rearranging Platforms#Adding Loops and Rearranging Platforms|Set up the Costume Numbers]]
 
-The platform in the Platform and the Antiplatform and the Lava need to be in the same order, 1 for 1. 
+The platform in the Platform and the Antiplatform and the Lava need to be in the same order, 1-for-1. 
 
-- [[Events Planning/Showcase/Adding Loops and Rearranging Platforms#WHERE DO WE CHOOSE THE ORDER OF THE COSTUMES???|Add to the Costume List]]
+2. [[Events Planning/Showcase/Adding Loops and Rearranging Platforms#WHERE DO WE CHOOSE THE ORDER OF THE COSTUMES???|Add to the Costume List]]
 
 Right now the level 1 platforms in this order in a list. 
 
@@ -41,32 +42,32 @@ We are going to add your loop (**21**) and two other sprites (**1**) into the li
 
 > *1  .  2  .  **<u>1</u>**  .  **<u>21</u>**  .  **<u>1</u>**  .  4  .  1  .  2  .  1  .  **5**  .  1  .  **18**  .  1*
 
-- [[Events Planning/Showcase/Adding Loops and Rearranging Platforms#WHERE DO WE CHOOSE THE ORDER OF THE COSTUMES???|The old loop buttons changed position]]
+3. [[Events Planning/Showcase/Adding Loops and Rearranging Platforms#WHERE DO WE CHOOSE THE ORDER OF THE COSTUMES???|The old loop buttons changed position]]
 
 The loops are controlled by loop buttons. Because the old loops changed position in the list, we have to change a block in the Gravity Changer sprite to bring the loop buttons to their new position. We also have to add our new loop button blocks.
 
 
-- [[Events Planning/Showcase/Adding Loops and Rearranging Platforms#WHERE DO WE CHOOSE THE ORDER OF THE COSTUMES???|Copy some code to make the new loop buttons work]]
+4. [[Events Planning/Showcase/Adding Loops and Rearranging Platforms#WHERE DO WE CHOOSE THE ORDER OF THE COSTUMES???|Copy some code to make the new loop buttons work]]
 
 The Loop Buttons use `if loops` in the Platform and Antiplatform sprites to make the loop change as we move through it. We have to **Copy**, **Paste** , and **Change** that code to make our new loop work.
 
-- [[Events Planning/Showcase/Adding Loops and Rearranging Platforms#WHERE DO WE CHOOSE THE ORDER OF THE COSTUMES???|Add dots]]
+5. [[Events Planning/Showcase/Adding Loops and Rearranging Platforms#WHERE DO WE CHOOSE THE ORDER OF THE COSTUMES???|Add dots]]
 
 This makes the costumes go offscreen.
 
-- [[Events Planning/Showcase/Adding Loops and Rearranging Platforms#WHERE DO WE CHOOSE THE ORDER OF THE COSTUMES???|Change the other gravity changers]]
+6. [[Events Planning/Showcase/Adding Loops and Rearranging Platforms#WHERE DO WE CHOOSE THE ORDER OF THE COSTUMES???|Change the other gravity changers]]
 
 At some points in the game, we hit buttons and gravity changes and Sonic flies up. We have to change the position of these gravity change buttons.
 
-- [[Events Planning/Showcase/Adding Loops and Rearranging Platforms#WHERE DO WE CHOOSE THE ORDER OF THE COSTUMES???|Change one of the Goodies (collectibles)]]
+7. [[Events Planning/Showcase/Adding Loops and Rearranging Platforms#WHERE DO WE CHOOSE THE ORDER OF THE COSTUMES???|Change one of the Goodies (collectibles)]]
 
 To win the game you have to collect 3 "Goodies". The last one changed position, so we have to fix it.
 
-- [[Events Planning/Showcase/Adding Loops and Rearranging Platforms#WHERE DO WE CHOOSE THE ORDER OF THE COSTUMES???|Change the portal]]
+8. [[Events Planning/Showcase/Adding Loops and Rearranging Platforms#WHERE DO WE CHOOSE THE ORDER OF THE COSTUMES???|Change the portal]]
 
 Since our level is longer, we have to move the Portal as well.
 
-- [[Events Planning/Showcase/Adding Loops and Rearranging Platforms#WHERE DO WE CHOOSE THE ORDER OF THE COSTUMES???|Make your own level 2]]
+9. [[Events Planning/Showcase/Adding Loops and Rearranging Platforms#WHERE DO WE CHOOSE THE ORDER OF THE COSTUMES???|Make your own level 2]]
 
 You made or will make a storyboard. We can put it into our game as a new level, by changing or creating items in the costume list. We may have to add one or more platform costumes.
 
