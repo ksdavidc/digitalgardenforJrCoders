@@ -64,20 +64,23 @@ body.markdown-preview-view summary {
 .scratchblocks::-webkit-scrollbar {
     display: block;
     width: 20px;
-    height: 20px;
-    -webkit-border-radius: 100px;
+    height: 20px!important;
+    -webkit-border-radius: 34px;
 }
 
 .scratchblocks::-webkit-scrollbar-thumb {
-    background-color: pink!important;
-}
-.scratchblocks ::-webkit-scrollbar-thumb {
-    background-color: blue!important;
+    background-color: #c0ffc9 !important;
+    height: 50px;
+    border: 1px solid var(--text-muted);
 }
 
+
 .scratchblocks::-webkit-scrollbar-track {
-    background: yellow!important;
+    background: var(--text-accent-hover)!important;
     width: 20px;
+    height: 40px;
+    border-radius: 5px;
+    border: 3px solid var(--text-muted) !important;
 }
 
 
