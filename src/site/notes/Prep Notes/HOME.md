@@ -48,7 +48,7 @@ Some temporary files for easy access during class.
 
 [[testing/Showcase Prep Sheet|testing/Showcase Prep Sheet]]
 
-[[Prep Notes/Miscellaneous/Scrolling Platformer First Steps|Scrolling Platformer First Steps]]
+[[Prep Notes/Miscellaneous/Scrolling platformer First Steps|Scrolling Platformer First Steps]]
 
 [[Events Planning/Showcase/Making a Loop de Loop Project|Making a Loop de Loop Project]]
 
