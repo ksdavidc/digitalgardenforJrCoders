@@ -67,6 +67,20 @@ body.markdown-preview-view summary {
     height: 20px;
     -webkit-border-radius: 100px;
 }
+
+.scratchblocks::-webkit-scrollbar-thumb {
+    background-color: pink!important;
+}
+.scratchblocks ::-webkit-scrollbar-thumb {
+    background-color: blue!important;
+}
+
+.scratchblocks::-webkit-scrollbar-track {
+    background: yellow!important;
+    width: 20px;
+}
+
+
 .scratchblocks {
     overflow: auto;
 }
