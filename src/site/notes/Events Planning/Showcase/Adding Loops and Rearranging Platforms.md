@@ -6,19 +6,18 @@ We are on page `= this.file.name`.
 fixes:
 remove loop reflip
 
-
-- [[Events Planning/Showcase/Adding Loops and Rearranging Platforms#Adding Loops and Rearranging Platforms|Adding Loops and Rearranging Platforms]]
-	- [[Events Planning/Showcase/Adding Loops and Rearranging Platforms#Adding Loops and Rearranging Platforms|SUMMARY]]
-	- [[Events Planning/Showcase/Adding Loops and Rearranging Platforms#Adding Loops and Rearranging Platforms|DETAILS]]
-		- [[Events Planning/Showcase/Adding Loops and Rearranging Platforms#DETAILS|Set up the Costume Numbers]]
-		- [[Events Planning/Showcase/Adding Loops and Rearranging Platforms#WHERE DO WE CHOOSE THE ORDER OF THE COSTUMES???|Add to the Costume List]]
-		- [[Events Planning/Showcase/Adding Loops and Rearranging Platforms#WHERE DO WE CHOOSE THE ORDER OF THE COSTUMES???|The loop buttons we have changed position]]
-		- [[Events Planning/Showcase/Adding Loops and Rearranging Platforms#WHERE DO WE CHOOSE THE ORDER OF THE COSTUMES???|Copy some code to make the new loop buttons work]]
-		- [[Events Planning/Showcase/Adding Loops and Rearranging Platforms#WHERE DO WE CHOOSE THE ORDER OF THE COSTUMES???|Add dots]]
-		- [[Events Planning/Showcase/Adding Loops and Rearranging Platforms#WHERE DO WE CHOOSE THE ORDER OF THE COSTUMES???|Change the other gravity changers]]
-		- [[Events Planning/Showcase/Adding Loops and Rearranging Platforms#WHERE DO WE CHOOSE THE ORDER OF THE COSTUMES???|Change one of the Goodies (collectibles)]]
-		- [[Events Planning/Showcase/Adding Loops and Rearranging Platforms#WHERE DO WE CHOOSE THE ORDER OF THE COSTUMES???|Change the portal]]
-		- [[Events Planning/Showcase/Adding Loops and Rearranging Platforms#WHERE DO WE CHOOSE THE ORDER OF THE COSTUMES???|Make your own level 2]]
+- [[Events Planning/Showcase/Adding Loops and Rearranging Platforms#SUMMARY|SUMMARY]]
+- [[Events Planning/Showcase/Adding Loops and Rearranging Platforms#DETAILS|DETAILS]]
+	- [[Events Planning/Showcase/Adding Loops and Rearranging Platforms#DETAILS|Set up the Costume Numbers]]
+	- [[Events Planning/Showcase/Adding Loops and Rearranging Platforms#DETAILS|Add to the Costume List]]
+		- [[Events Planning/Showcase/Adding Loops and Rearranging Platforms#Add to the Costume List|Here is how we do it]]
+	- [[Events Planning/Showcase/Adding Loops and Rearranging Platforms#DETAILS|The old loop buttons changed position]]
+	- [[Events Planning/Showcase/Adding Loops and Rearranging Platforms#DETAILS|Copy some code to make the new loop buttons work]]
+	- [[Events Planning/Showcase/Adding Loops and Rearranging Platforms#DETAILS|Add dots]]
+	- [[Events Planning/Showcase/Adding Loops and Rearranging Platforms#DETAILS|Change the other gravity changers]]
+	- [[Events Planning/Showcase/Adding Loops and Rearranging Platforms#DETAILS|Change one of the Goodies (collectibles)]]
+	- [[Events Planning/Showcase/Adding Loops and Rearranging Platforms#DETAILS|Change the portal]]
+	- [[Events Planning/Showcase/Adding Loops and Rearranging Platforms#DETAILS|Make your own level 2]]
 
 
 # `= this.file.name`.
@@ -38,18 +37,19 @@ Right now the level 1 platforms in this order in a list.
 
 These numbers are costumes, and **5** and **18** are our loop costumes. 
 
-We are going to add your loop (**21**) and two other sprites (**1**) into the list like this:
+We are going to add your loop costumes (**21**) and two other costumes (**1**) into the list like this:
 
 > *1  .  2  .  **<u>1</u>**  .  **<u>21</u>**  .  **<u>1</u>**  .  4  .  1  .  2  .  1  .  **5**  .  1  .  **18**  .  1*
 
-3. [[Events Planning/Showcase/Adding Loops and Rearranging Platforms#WHERE DO WE CHOOSE THE ORDER OF THE COSTUMES???|The old loop buttons changed position]]
+
+3. Bring the loop buttons to new positions
 
 The loops are controlled by loop buttons. Because the old loops changed position in the list, we have to change a block in the Gravity Changer sprite to bring the loop buttons to their new position. We also have to add our new loop button blocks.
 
 
 4. [[Events Planning/Showcase/Adding Loops and Rearranging Platforms#WHERE DO WE CHOOSE THE ORDER OF THE COSTUMES???|Copy some code to make the new loop buttons work]]
 
-The Loop Buttons use `if loops` in the Platform and Antiplatform sprites to make the loop change as we move through it. We have to **Copy**, **Paste** , and **Change** that code to make our new loop work.
+The Loop Buttons use `if loops` . The if loops are in the Platform and Antiplatform sprites. They make the loop costume change as we move through it. We have to **Copy**, **Paste** , and **Change** that code to make our new loop work.
 
 5. [[Events Planning/Showcase/Adding Loops and Rearranging Platforms#WHERE DO WE CHOOSE THE ORDER OF THE COSTUMES???|Add dots]]
 
