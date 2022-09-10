@@ -4,6 +4,10 @@
 
 
 # Student M
+- [[Prep Notes/Saturday Class/2022 Sat Student M#2022 09 17 Setting up a Game Won Screen|2022 09 17 Setting up a Game Won Screen]]
+	- [[Prep Notes/Saturday Class/2022 Sat Student M#2022 09 17 Setting up a Game Won Screen|New Sprite for Exploding Earth]]
+	- [[Prep Notes/Saturday Class/2022 Sat Student M#2022 09 17 Setting up a Game Won Screen|Tester Sprite detect game over]]
+- [[Prep Notes/Saturday Class/2022 Sat Student M#OLD STUFF|OLD STUFF]]
 - [[Prep Notes/Saturday Class/2022 Sat Student M#2022 09 02|2022 09 02]]
 	- [[Prep Notes/Saturday Class/2022 Sat Student M#2022 09 02|1 Button Sprite]]
 	- [[Prep Notes/Saturday Class/2022 Sat Student M#2022 09 02|Button 2  Sprite]]
@@ -18,6 +22,93 @@
 	- [[Prep Notes/Saturday Class/2022 Sat Student M#2022 08 13|Sword]]
 
 
+
+## 2022 09 17 Setting up a Game Won Screen
+
+### New Sprite for Exploding Earth
+Save and import this gif into a new sprite:
+
+![](https://c.tenor.com/lUbT0ff2HNYAAAAC/earth-globe.gif)
+This has `28` images. Add these `2` new costumes at the end to make `30` costumes:
+
+![](https://i.imgur.com/sC26RJ7.jpg)
+![](https://i.imgur.com/mJyjw3B.jpg)
+We show the first, then move to the next `30 - 1 = 29` times.
+
+Then add these 3 stacks
+```ad-scratch
+~~~scratchblock
+when I receive [Game 1 Won v]
+We hide the variables
+broadcast [hide other variable v] and wait
+broadcast [hide variables v] and wait
+show first and move to next...
+switch costume to [earth-globe v]
+show
+repeat (29)
+    wait (.05) seconds
+    next costume
+end
+
+Hide in beginning of game
+when I receive [initialize v]
+hide
+
+Clear Screen
+when I receive [hide other variable v]
+hide variable [GAME STATE v]
+hide variable [CHECKING v]
+hide variable [RESULT v]
+hide variable [TOTAL QUAD v]
+~~~
+```
+
+### Tester Sprite detect game over
+When you have won the game?
+`QUAD / QUAD FULL` is the percentage of the `QUAD` covered.
+The max is `1`, but we want to cover it by at least `80%`, which is `.8`.
+If a `QUAD / QUAD FULL` is more than .8, that `QUAD` is covered.
+We that is true for all 4 `QUAD`, then you win.
+
+```ad-scratch
+~~~scratchblock
+when I receive [check current  backdrop v]
+hide
+wait (0) seconds
+if <(it clone) = [0]> then
+    ...
+    after this:
+    hide
+    initialize TOTAL QUAD:
+    set [TOTAL QUAD v] to [0]
+    ...
+    AFTER THIS:
+    show variable [QUAD1 v]
+    WE MARK THIS QUAD AS DONE AND
+    CREATE A CLONE TO COVER THE SQUARE
+    if <((QUAD1) / (QUAD1 FULL)) \> [.8]> then
+        change [TOTAL QUAD v] by (1)
+        create clone of [myself v]
+    end
+    ...
+    DO THE SAME FOR QUAD 2, QUAD 3, AND QUAD 4
+    ...
+    REPLACE:
+    broadcast [show variables v]
+    WITH THIS, IF ALL 4 QUADS ARE DONE, GAME IS OVER
+    if <(TOTAL QUAD) \> ((4) * (.8))> then
+        broadcast [Game 1 Won v]
+    else
+        broadcast [show variables v]
+    end
+end
+
+~~~
+```
+
+
+---
+## OLD STUFF
 
 ## 2022 09 02
 
@@ -161,10 +252,6 @@ show
 ```
 
 
-
----
-
-## Old stuff
 
 ## 2022 08 20
 
