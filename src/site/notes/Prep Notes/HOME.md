@@ -22,7 +22,7 @@ Some temporary files for easy access during class.
 
 ## Recently added
 
-> FRIDAY: [[Events Planning/Showcase/Adding Loops and Rearranging Platforms|Adding Loops and Rearranging Platforms]]
+> FRIDAY: [[Prep Notes/Saturday Class/Adding Loops and Rearranging Platforms|Adding Loops and Rearranging Platforms]]
 
 ## Instructions for students
 
@@ -36,23 +36,27 @@ Some temporary files for easy access during class.
 
 [[Prep Notes/Friday Class/2022 Fri Student K|2022 Fri Student K]]
 
+
+
 ### Saturday
 
 [[Prep Notes/Saturday Class/2022 Sat Student N|2022 Sat Student N]]
 
 [[Prep Notes/Saturday Class/2022 Sat Student M|2022 Sat Student M]]
 
+
+[[Prep Notes/Saturday Class/2022 Sat Student Y|2022 Sat Student Y]]
 ## Miscellaneous Topics
 
 [[Prep Notes/Research on AI/AI|AI]]
 
 [[testing/Showcase Prep Sheet|testing/Showcase Prep Sheet]]
 
-[[Prep Notes/Miscellaneous/Scrolling platformer First Steps|Scrolling Platformer First Steps]]
+[[Prep Notes/Miscellaneous/Scrolling Platformer First Steps|Scrolling Platformer First Steps]]
 
-[[Events Planning/Showcase/Making a Loop de Loop Project|Making a Loop de Loop Project]]
+[[Prep Notes/Saturday Class/Making a Loop de Loop Project|Making a Loop de Loop Project]]
 
-[[Events Planning/Showcase/Adding Loops and Rearranging Platforms|Adding Loops and Rearranging Platforms]]
+[[Prep Notes/Saturday Class/Adding Loops and Rearranging Platforms|Adding Loops and Rearranging Platforms]]
 
 [[Events Planning/Showcase/Poster Instructions|Poster Instructions]]
 
