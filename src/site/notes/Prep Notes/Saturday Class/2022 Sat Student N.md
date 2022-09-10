@@ -5,6 +5,20 @@
 
 # Student N
 
+## 2022 09 17
+
+Add
+When game is over, let's delete the old pipes
+
+```ad-scratch
+~~~scratchblock
+When I receive [Game Over v]
+delete this clone
+~~~
+```
+
+
+## Old Stuff
 ## 2022 08 20
 
 
