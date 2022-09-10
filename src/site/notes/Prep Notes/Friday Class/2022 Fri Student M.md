@@ -5,8 +5,7 @@
 
 
 
-# 2022 Student M
-
+# `= this.file.name`
 - [[Prep Notes/Friday Class/2022 Fri Student M#08 19|08 19]]
 	- [[Prep Notes/Friday Class/2022 Fri Student M#08 19|ART GALLERY COVER SPRITE]]
 	- [[Prep Notes/Friday Class/2022 Fri Student M#08 19|ART GALLERY SPRITE]]
