@@ -3,19 +3,26 @@
 ---
 
 
-# Student N
+# `= this.file.name`
 
 ## 2022 09 17
 
-Add
-When game is over, let's delete the old pipes
-
+### Small Fixes
+When game is over, let's delete the old pipes by adding this in the pipe sprite:
 ```ad-scratch
 ~~~scratchblock
 When I receive [Game Over v]
 delete this clone
 ~~~
 ```
+
+In F, add this before you `broadcast start` to restart the game (*can you figure out where this is?*):
+```ad-scratch
+~~~scratchblock
+wait until <<mouse down?> or <key [any v] pressed?>>
+~~~
+```
+
 
 
 ## Old Stuff
