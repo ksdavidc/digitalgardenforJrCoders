@@ -155,7 +155,7 @@ We can use these in different ways. For example, using a message, we can make a 
             </g>
         </g>
     </g>
-</svg>tool to show the dots, and double click one corner dot to delete it. (It takes a little practice.) Now you have a triangle with a
+</svg> tool to show the dots, and double click one corner dot to delete it. (It takes a little practice.) Now you have a triangle with a
 3. long side, but it is pointing the wrong way.
 4. Hold shift and use the rotation handle 
 ![|300x300](https://i.imgur.com/Kf3OXV8.png)
