@@ -22,7 +22,7 @@ Some temporary files for easy access during class.
 - [[Prep Notes/HOME#Miscellaneous Topics|Miscellaneous Topics]]
 
 ## Recently added
->[Simple Halloween Storytelling Project](Simple%20Halloween%20Storytelling%20Project.md)
+>[[Prep Notes/Halloween/Simple Halloween Storytelling Project|Simple Halloween Storytelling Project]]
 ## Instructions for students
 
 ### Monday
