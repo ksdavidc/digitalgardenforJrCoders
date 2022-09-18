@@ -22,9 +22,7 @@ Some temporary files for easy access during class.
 - [[Prep Notes/HOME#Miscellaneous Topics|Miscellaneous Topics]]
 
 ## Recently added
-
-> FRIDAY: [[Prep Notes/Saturday Class/Adding Loops and Rearranging Platforms|Adding Loops and Rearranging Platforms]]
-
+>[Simple Halloween Storytelling Project](Simple%20Halloween%20Storytelling%20Project.md)
 ## Instructions for students
 
 ### Monday
@@ -38,22 +36,21 @@ Some temporary files for easy access during class.
 [[Prep Notes/Friday Class/2022 Fri Student K|2022 Fri Student K]]
 
 
-
 ### Saturday
 
 [[Prep Notes/Saturday Class/2022 Sat Student N|2022 Sat Student N]]
 
 [[Prep Notes/Saturday Class/2022 Sat Student M|2022 Sat Student M]]
 
-
 [[Prep Notes/Saturday Class/2022 Sat Student Y|2022 Sat Student Y]]
+
 ## Miscellaneous Topics
 
 [[Prep Notes/Research on AI/AI|AI]]
 
 [[testing/Showcase Prep Sheet|testing/Showcase Prep Sheet]]
 
-[[Prep Notes/Miscellaneous/Scrolling platformer First Steps|Scrolling Platformer First Steps]]
+[[Prep Notes/Miscellaneous/Scrolling Platformer First Steps|Scrolling Platformer First Steps]]
 
 [[Prep Notes/Saturday Class/Making a Loop de Loop Project|Making a Loop de Loop Project]]
 
@@ -61,3 +58,4 @@ Some temporary files for easy access during class.
 
 [[Events Planning/Showcase/Poster Instructions|Poster Instructions]]
 
+[Simple Halloween Storytelling Project](Simple%20Halloween%20Storytelling%20Project.md)
