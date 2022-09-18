@@ -157,7 +157,7 @@ We can use these in different ways. For example, using a message, we can make a 
     </g>
 </svg>tool to show the dots, and double click one corner dot to delete it. (It takes a little practice.) Now you have a triangle with a long side, but it is pointing the wrong way.
 3. Hold shift and use the rotation handle 
-![|100x100](https://i.imgur.com/Kf3OXV8.png)
+![|200x200](https://i.imgur.com/Kf3OXV8.png)
 to turn it to face right or left.
 
 In the button, we can add the following code:
