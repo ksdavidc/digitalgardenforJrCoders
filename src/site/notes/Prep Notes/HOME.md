@@ -58,4 +58,4 @@ Some temporary files for easy access during class.
 
 [[Events Planning/Showcase/Poster Instructions|Poster Instructions]]
 
-[Simple Halloween Storytelling Project](Simple%20Halloween%20Storytelling%20Project.md)
+[[Prep Notes/Halloween/Simple Halloween Storytelling Project|Simple Halloween Storytelling Project]]
