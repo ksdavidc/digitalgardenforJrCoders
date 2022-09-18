@@ -3,7 +3,7 @@
 ---
 
 
-# `= this.file.name`
+## `= this.file.name`
 
 ### Overview
 We are going to tell a Halloween story using a simple **transition system** for moving from one screen to the next. The purpose is to practice *making one costume disappear and another appear*. This is used for things like **Introduction screens**, and most good projects have one. It is a basic building block of many projects, especially ones that tell stories. We are going to make a pretty simple one, and then later perhaps we will add some effects. 
