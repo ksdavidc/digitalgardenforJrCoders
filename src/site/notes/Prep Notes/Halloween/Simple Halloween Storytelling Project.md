@@ -221,7 +221,7 @@ Make another button to move backwards.
 > * *If the ghost effect is 100, we can't see the sprite, but* 
 > * *Scratch can still detect that our mouse is touching it (It can't do that if the sprite is hidden)*.
 
-* Makes your buttons cool and user-friendly!
+* Makes buttons cool and user-friendly!
 * Shows the button when our mouse is over it
 * Hides it when it isn't. 
 * Screen is less cluttered. 
