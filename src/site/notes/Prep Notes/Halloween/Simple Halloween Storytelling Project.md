@@ -225,7 +225,7 @@ Make another button to move backwards.
 * Shows the button when our mouse is over it.
 * Hides it when it isn't. 
 * Screen is less cluttered. 
-* Player sees the whole screen while the project is running
+* Player sees the whole screen while the project is running.
 * Buttons show only when needed.
 
 ```ad-scratch
