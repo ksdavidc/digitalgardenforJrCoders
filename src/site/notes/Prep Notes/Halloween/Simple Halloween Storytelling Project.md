@@ -39,9 +39,10 @@ You can come up with the ideas in Japanese, but you have to write them down in E
 
 ### Storyboard (on paper)
 
-1. Tell the story **in images only**, as a sequence of image **frames** one after the other, like a comic strip or flipbook.  
-2. Write **description of action** for each image. 
-3. If you are working in pairs make a copy for each of you, even if you are doing the same story.
+1. Tell the story **in images only**, as a sequence of image **frames** one after the other
+2. Like a comic strip or flipbook.  
+3. Write **description of action** for each image. 
+4. If you are working in pairs make a copy for each of you, even if you are doing the same story.
 
 ## Draw each image in Scratch
 - Create a "Frames" sprite for the images.
