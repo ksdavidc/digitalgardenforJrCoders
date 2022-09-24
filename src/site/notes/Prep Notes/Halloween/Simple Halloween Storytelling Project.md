@@ -55,6 +55,7 @@ You can come up with the ideas in Japanese, but you have to write them down in E
 
 ### Coding the transitions
 * Always initialize sprites.
+* For example:
 
 ```ad-scratch
 ~~~scratchblock
