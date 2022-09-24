@@ -6,46 +6,104 @@
 ## Simple Halloween Storytelling Project
 
 ### Overview
-We are going to tell a Halloween story using a simple **transition system** for moving from one screen to the next. The purpose is to practice *making one costume disappear and another appear*. This is used for things like **Introduction screens**, and most good projects have one. It is a basic building block of many projects, especially ones that tell stories. We are going to make a pretty simple one, and then later perhaps we will add some effects. 
+* **Project**: Halloween story 
+* **Transition**: one costume disappears and another appears
+* **Useful**: Introduction screens, scene changes, etc.
 
-For the Halloween story itself, the focus will be on how we tell the story, not the story itself, but the two are related.
+*
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
 
-### Getting an Idea
-First, you need an idea. Often, that means choosing: 
-* a theme: Halloween 
-* a setting: An evening walk
-* some characters: me, a ghost
-* a premise (basic situation): I meet a ghost and something happens. 
-* a challenge for the main character: the ghost scares me
-* a twist or surprise: I am not scared
-* a resolution: I eat him
+<div class="markdown-embed-title">
 
-### Game
-Telling someone else what you are doing is a good way to get new ideas, see what you need to code it, see what works and doesn't, and other things.
 
-To make this easier, we will play a game where we will, as a group, come up with a story. We will go around the room and each person adds one item to the story. This is a warmup only though. 
 
-For the real project, you will work in pairs, and do the same thing. Using the storytelling checklist as a guide write the story. You can make one story between the two of you. Or two stories, one for each of you. This is an act of cooperation and communication. 
+</div>
 
-Write down what you have. You can come up with the ideas in Japanese, but you have to write them down in English. I will help. 
 
-What you write down will be the basis for the summary in your project poster. Yes, there will be project posters!!
 
-### Map Out Your Project
-Now that you have a story, the next step is to tell the story **in images only**. This means a sequence of image **frames** one after the other, like a comic strip.  You can often do that in your head, but **in this class**, in order to:
-* make it easier for me to help you
-* prevent possible problems later
-* be sure your idea will work in this situation
-I need you to **map our your project on paper**. A rough drawing of each **frame** in order is enough. Each person should do their own, even if they are doing the same project.
+### Broadcast Game
+Remix the template project. It has 5 broadcast and receive pairs. It includes one broadcast and wait. It also has 2 myblocks.
 
-For this project, at this stage, there is no motion. The challenge here is to tell the story just with **still** images going by one at a time, like a flipbook. Characters can change position from frame to frame. The frame can move closer of change position. You can do speech bubbles and text, but no actual motion or sound, yet.
+```ad-scratch
+~~~scratchblock
+broadcast [msg1 v]
+when I receive [msg1 v]
+
+broadcast [msg2 v] and wait
+when I receive [msg2 v]
+
+...
+
+define mb1
+
+define mb2
+~~~
+```
+
+
+Now, you can then add other blocks and sprites
+* not less 10  blocks
+* not more than 20 blocks
+* No more than 5 sprites 
+* Only 2 myblocks
+* At least one when this sprite is clicked block with a broadcast in it.
+
+```ad-scratch
+~~~scratchblock
+when this sprite clicked
+...
+broadcast [msg1 v]
+...
+~~~
+```
+
+* every receive block must have at least one other block under it.
+* Every broadcast block must get used at least once either via the green flag or clicking on a sprite. 
+
+
+
+</div></div>
+
+
+## Halloween Game
+
+### Checklist
+Choose: 
+- [x] a theme: Halloween 
+* [ ] **setting**: An evening walk
+* [ ] **characters**: me, a ghost
+* [ ] **premise** (basic situation): I meet a ghost and something happens. 
+* [ ] **challenge** for the main character: the ghost scares me
+* [ ] **twist** or surprise: I am not scared
+* [ ] **resolution**: I eat him
+
+### Warmup Game
+
+We play a game where we go around the room and each person adds one item to the story. This is a warmup only though. 
+
+### Make your Summary/Storyboard
+* Option 1: Work in pairs
+* Option 2: Work on your own story.
+
+You can come up with the ideas in Japanese, but you have to write them down in English. I will help if needed. 
+
+Using the storytelling checklist to start.
+
+* Be neat. It will be used in project poster. Yes, there will be project posters!!
+
+### Storyboard (on paper)
+
+1. Tell the story **in images only**, as a sequence of image **frames** one after the other, like a comic strip or flipbook.  
+2. Write description of action for each image. 
+3. If you are working in pairs make a copy for each of you, even if you are doing the same project
+
+## Draw each image in Scratch
+First we will create a sprite (*I called mine "Frames"*) to hold the images. The code will cycle through the images, one at a time.
+
+Can be rough version, just as a guide. Characters can change position from frame to frame. The frame can move closer or change setting or position. You can do speech bubbles and text, but no actual motion or sound, yet.
 
 ### Coding the transitions
-Once you have that, we can begin coding. First we will create a sprite (*I called mine "Frames"*) to hold the frames. This is the series of images we are going to cycle through, one at a time.
-
-Then, draw each frame (as a costume in your sprite). If you want, you can do just a few to start, and add more once the code is working. This can help you preview your work as you go along.
-
-Once you have a few costumes, let's make our **transition system**. First, **as always**, initialize the sprite.
+First, **as always**, initialize the sprite.
 
 ```ad-scratch
 ~~~scratchblock
