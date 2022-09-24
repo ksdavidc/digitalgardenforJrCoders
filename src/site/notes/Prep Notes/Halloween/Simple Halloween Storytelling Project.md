@@ -148,11 +148,10 @@ end
 
 wait until <>
 transition [1]::custom
-end
 
 repeat until <>
 transition [1]::custom
-end
+
 ~~~
 ```
 
