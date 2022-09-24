@@ -34,8 +34,7 @@ We play a game where we go around the room and each person adds one item to the 
 
 You can come up with the ideas in Japanese, but you have to write them down in English. I will help if needed. 
 
-Use the storytelling checklist to start, then add details.
-
+* Use the storytelling checklist to start, then add details.
 * Be neat. It will be used in project poster. Yes, there will be project posters!!
 
 ### Storyboard (on paper)
