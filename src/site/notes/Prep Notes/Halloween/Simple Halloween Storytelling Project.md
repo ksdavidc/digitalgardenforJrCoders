@@ -7,7 +7,7 @@
 
 ### Overview
 * **Project**: Halloween story  
-* **Main idea** or purpose: To teach the **TRANSITION TRICK**
+* **Main idea** or purpose: **TRANSITION TRICK**
 * **Transition**: one costume disappears and another appears
 * **Uses**: Introduction screens, scene changes, etc.
 * **Practice** basic idea: [[Prep Notes/Halloween/Broadcast Game|Broadcast Game]]
