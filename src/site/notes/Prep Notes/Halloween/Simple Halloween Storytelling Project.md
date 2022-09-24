@@ -222,7 +222,7 @@ Make another button to move backwards.
 > * *Scratch can still detect that our mouse is touching it (It can't do that if the sprite is hidden)*.
 
 * Makes buttons cool and user-friendly!
-* Shows the button when our mouse is over it
+* Shows the button when our mouse is over it.
 * Hides it when it isn't. 
 * Screen is less cluttered. 
 * Player sees the whole screen while the project is running
