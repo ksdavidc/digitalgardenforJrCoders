@@ -87,3 +87,18 @@ body.markdown-preview-view summary {
 .scratchblocks {
     overflow: auto;
 }
+
+
+
+h1:before, h2:before, h3:before, h4:before, h5:before {
+    display: none;
+}
+
+code[class*=language-] {
+    display: inline;
+}
+
+.markdown-preview-view pre {
+    background-color: transparent;
+    display: inline;
+}
