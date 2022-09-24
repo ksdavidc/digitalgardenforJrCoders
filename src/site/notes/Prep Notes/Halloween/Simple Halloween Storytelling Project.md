@@ -93,6 +93,8 @@ Example, previous frame:
 ```
 ````
 
+
+ To make this reusable:
 * Define a **myblock** called **transition**
 * One input, called  `1 or -1`. 
 ```ad-scratch
