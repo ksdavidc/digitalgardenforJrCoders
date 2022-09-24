@@ -156,6 +156,12 @@ transition [-1]::custom
 |:--:|
 |rotation handle|
 
+
+| ![](https://i.imgur.com/Kf3OXV8.png) |
+|:--:|
+|rotation handle|
+
+
 ## THE TRANSITION TRICK
 
 **MAIN IDEA FOR THIS PROJECT!**
