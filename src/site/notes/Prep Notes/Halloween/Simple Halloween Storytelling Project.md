@@ -190,7 +190,7 @@ title: How to make a triangle in Scratch:
 
 | ![](https://i.imgur.com/Kf3OXV8.png) |
 |:--:|
-|rotation handle|
+|*rotation handle*|
 ````
 
 ### THE TRANSITION TRICK
