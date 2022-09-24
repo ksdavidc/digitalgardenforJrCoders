@@ -211,7 +211,7 @@ switch costume to ((costume [number v]) + (1 or -1::custom))
 ~~~
 ```
 
-In BUTTON, **add**:
+In BUTTON, to move forward, **add**:
 ```ad-scratch
 ~~~scratchblock
 when this sprite clicked
