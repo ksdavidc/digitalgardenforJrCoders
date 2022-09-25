@@ -35,8 +35,7 @@ The platform in the Platform and the Antiplatform and the Lava need to be in the
 Right now the level 1 platforms in this order in a list. 
 
 > *1  .  2  .  4  .  1  .  2  .  1  . **5**  .  1  .  **18**  .  1*
-
-These numbers are costumes, and `***5***` and `***18***` are our loop costumes. 
+These numbers are costumes, and **`5`** and ***`18`*** are our loop costumes. 
 
 We are going to add your loop costumes (`***21***`) and two other costumes (`***1***`) into the list like this:
 
