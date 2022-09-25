@@ -125,7 +125,7 @@ To show you how, let's look at my project.  My level 1 looks like this:
 >*The other numbers are other kinds of platform. 
 >You can see them in the costume tab of the Platform Sprite.*
 
-We are going to add your loop (`***21***`) and two other sprites (`***1***`) into level like this:
+We are going to add your loop (***`21`***) and two other sprites (`***1***`) into level like this:
 
 > level 1: 
 > 	>*1  .  2  .  **1**  .  **21**  .  **1**  .  4  .  1  .  2  .  1  .  **5**  .  1  .  **18**  .  1*
