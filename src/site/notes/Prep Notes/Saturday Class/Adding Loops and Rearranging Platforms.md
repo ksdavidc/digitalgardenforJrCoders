@@ -113,7 +113,7 @@ So, the game has 5 platforms, but only needs 3 costumes.
 
 When you make your game, you will put your level into a list like this:
 
-> *1  .  2  .  1  .  3  .  3
+> *1  .  2  .  1  .  3  .  3*
 
 To show you how, let's look at my project.  My level 1 looks like this:
 
