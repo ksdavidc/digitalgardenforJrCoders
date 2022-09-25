@@ -34,13 +34,13 @@ The platform in the Platform and the Antiplatform and the Lava need to be in the
 
 Right now the level 1 platforms in this order in a list. 
 
-> *1  .  2  .  4  .  1  .  2  .  1  . **<u>5</u>**  .  1  .  **<u>18</u>**  .  1*
+> *1  .  2  .  4  .  1  .  2  .  1  . **5**  .  1  .  **18**  .  1*
 
-These numbers are costumes, and **5** and **18** are our loop costumes. 
+These numbers are costumes, and `***5***` and `***18***` are our loop costumes. 
 
-We are going to add your loop costumes (**21**) and two other costumes (**1**) into the list like this:
+We are going to add your loop costumes (`***21***`) and two other costumes (`***1***`) into the list like this:
 
-> *1  .  2  .  **<u>1</u>**  .  **<u>21</u>**  .  **<u>1</u>**  .  4  .  1  .  2  .  1  .  **<u>5</u>**  .  1  .  **<u>18</u>**  .  1*
+> *1  .  2  .  **1**  .  **21**  .  **1**  .  4  .  1  .  2  .  1  .  **5**  .  1  .  **18**  .  1*
 
 
 3. - [[Prep Notes/Saturday Class/Adding Loops and Rearranging Platforms#DETAILS|Bringing Loop Buttons to New Positions]]
@@ -82,15 +82,15 @@ You should now have 4 costumes for the loop. To make this easier, give them the 
 - Antiplatform: **My antiloop start** and **My antiloop return**
 
 
-The important thing is that the start and return costumes have the **same number in each sprite**. To make it easier, use **21** and **22**, like I am doing.  In other words, make costumes **20**, **21**, and **22** like this:
+The important thing is that the start and return costumes have the **same number in each sprite**. To make it easier, use `***21***` and `***22***`, like I am doing.  In other words, make costumes `***20***`, `***21***`, and `****22***` like this:
 
-Your costume **20** is probably the Loop Base. We won't actually use this in the game, but leave it or put a blank costume 20 if you need to.
+Your costume `***20***` is probably the Loop Base. We won't actually use this in the game, but leave it or put a blank costume 20 if you need to.
 ![Base for Loop De Loop|50](https://i.imgur.com/XOCMGUC.png)
 
 
-**COSTUME 21**: **My loop start** ![Loop Start|25](https://i.imgur.com/IGxRDRU.png) is costume **21** in Platform, and so is **My antiloop start** ![Antiloop Start|25](https://i.imgur.com/2y0ilLK.png)
+**COSTUME 21**: **My loop start** ![Loop Start|25](https://i.imgur.com/IGxRDRU.png) is costume `***21***` in Platform, and so is **My antiloop start** ![Antiloop Start|25](https://i.imgur.com/2y0ilLK.png)
 (in Antiplatform)
-**COSTUME 21**: **My loop return** ![Loop Return|25](https://i.imgur.com/199xT9m.png) is costume **22** in Platform, and so is **My antiloop return** ![Antiloop Return|25](https://i.imgur.com/zP2NbbN.png)(in Antiplatform)
+**COSTUME 21**: **My loop return** ![Loop Return|25](https://i.imgur.com/199xT9m.png) is costume `***22***` in Platform, and so is **My antiloop return** ![Antiloop Return|25](https://i.imgur.com/zP2NbbN.png)(in Antiplatform)
 
 Same *number*, but *different costumes*. Move any **other** costumes you made **to the end of the sprite**. Keep costumes 1-19 the same. 
 
@@ -125,13 +125,13 @@ To show you how, let's look at my project.  My level 1 looks like this:
 >*The other numbers are other kinds of platform. 
 >You can see them in the costume tab of the Platform Sprite.*
 
-We are going to add your loop (**21**) and two other sprites (**1**) into level like this:
+We are going to add your loop (`***21***`) and two other sprites (`***1***`) into level like this:
 
 > level 1: 
-> 	>*1  .  2  .  **<u>1</u>**  .  **<u>21</u>**  .  **<u>1</u>**  .  4  .  1  .  2  .  1  .  **5**  .  1  .  **18**  .  1*
+> 	>*1  .  2  .  **1**  .  **21**  .  **1**  .  4  .  1  .  2  .  1  .  **5**  .  1  .  **18**  .  1*
 > 
-> *The **<u>21</u>** will be your new Loop de Loop.*
-> *The  **<u>1</u>**'s are plain platforms.* 
+> *The **21** will be your new Loop de Loop.*
+> *The  **1**'s are plain platforms.* 
 
 #### Here is how we do it
 The order of the platform costumes used in the games is stored in a list called **costume list for all level**. This list and its code in the platform sprite is where we tell scratch where each costume goes. Find it in the Platform sprite. 
