@@ -2,12 +2,12 @@
 {"dg-publish":true,"permalink":"/prep-notes/saturday-class/adding-loops-and-rearranging-platforms/","dgHomeLink":true,"dgPassFrontmatter":false}
 ---
 
-We are on page `= this.file.name`.
-fixes:
-remove loop reflip
-- [[#`= this.file.name`.|`= this.file.name`.]]
-	- [[#`= this.file.name`.#SUMMARY|SUMMARY]]
-	- [[#`= this.file.name`.#DETAILS|DETAILS]]
+We are on page [[Prep Notes/Saturday Class/Adding Loops and Rearranging Platforms|Adding Loops and Rearranging Platforms]].
+
+
+- [[Prep Notes/Saturday Class/Adding Loops and Rearranging Platforms#Adding Loops and Rearranging Platforms|Adding Loops and Rearranging Platforms]]
+	- [[Prep Notes/Saturday Class/Adding Loops and Rearranging Platforms#Adding Loops and Rearranging Platforms|SUMMARY]]
+	- [[Prep Notes/Saturday Class/Adding Loops and Rearranging Platforms#Adding Loops and Rearranging Platforms|DETAILS]]
 		- [[Prep Notes/Saturday Class/Adding Loops and Rearranging Platforms#DETAILS|Set up the Costume Numbers]]
 		- [[Prep Notes/Saturday Class/Adding Loops and Rearranging Platforms#DETAILS|Add to the Costume List]]
 			- [[Prep Notes/Saturday Class/Adding Loops and Rearranging Platforms#Add to the Costume List|Here is how we do it]]
@@ -20,8 +20,7 @@ remove loop reflip
 		- [[Prep Notes/Saturday Class/Adding Loops and Rearranging Platforms#DETAILS|Make your own level 2]]
 
 
-
-# `= this.file.name`.
+# Adding Loops and Rearranging Platforms
 
 ## SUMMARY
 We have 9 things to do:
@@ -35,9 +34,9 @@ The platform in the Platform and the Antiplatform and the Lava need to be in the
 Right now the level 1 platforms in this order in a list. 
 
 > *1  .  2  .  4  .  1  .  2  .  1  . **5**  .  1  .  **18**  .  1*
-These numbers are costumes, and **`5`** and ***`18`*** are our loop costumes. 
+These numbers are costumes, and **`5`** and **`18`** are our loop costumes. 
 
-We are going to add your loop costumes (`***21***`) and two other costumes (`***1***`) into the list like this:
+We are going to add your loop costumes (***`21`***) and two other costumes (***`1`***) into the list like this:
 
 > *1  .  2  .  **1**  .  **21**  .  **1**  .  4  .  1  .  2  .  1  .  **5**  .  1  .  **18**  .  1*
 
@@ -124,7 +123,7 @@ To show you how, let's look at my project.  My level 1 looks like this:
 >*The other numbers are other kinds of platform. 
 >You can see them in the costume tab of the Platform Sprite.*
 
-We are going to add your loop (***`21`***) and two other sprites (`***1***`) into level like this:
+We are going to add your loop (***`21`***) and two other sprites (***`1`***) into level like this:
 
 > level 1: 
 > 	>*1  .  2  .  **1**  .  **21**  .  **1**  .  4  .  1  .  2  .  1  .  **5**  .  1  .  **18**  .  1*
