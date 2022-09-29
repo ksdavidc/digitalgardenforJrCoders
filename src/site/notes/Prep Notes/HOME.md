@@ -22,7 +22,7 @@ Some temporary files for easy access during class.
 - [[Prep Notes/HOME#Miscellaneous Topics|Miscellaneous Topics]]
 
 ## Recently added
->[[Prep Notes/Halloween/Simple Halloween Storytelling Project|Simple Halloween Storytelling Project]]
+>[[Prep Notes/Halloween/Simple Halloween Storytelling Project3|Simple Halloween Storytelling Project3]]
 ## Instructions for students
 
 ### Monday
@@ -58,4 +58,4 @@ Some temporary files for easy access during class.
 
 [[Events Planning/Showcase/Poster Instructions|Poster Instructions]]
 
-[[Prep Notes/Halloween/Simple Halloween Storytelling Project|Simple Halloween Storytelling Project]]
+[[Prep Notes/Halloween/Simple Halloween Storytelling Project3|Simple Halloween Storytelling Project3]]
