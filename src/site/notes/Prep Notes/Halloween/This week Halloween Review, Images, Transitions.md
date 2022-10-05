@@ -3,7 +3,7 @@
 ---
 
 
-## This week Halloween Review, Images, Transitions
+## Monday This week Halloween Review, Images, Transitions
 
 ### Review: story
 Look at your story one more time. Can you make it better? 
