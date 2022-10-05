@@ -40,8 +40,5 @@ Some temporary files for easy access during class.
 
 [[Prep Notes/Research on AI/AI|AI]]
 
-[[Prep Notes/Saturday Class/Making a Loop de Loop Project|Making a Loop de Loop Project]]
-
-[[Prep Notes/Saturday Class/Adding Loops and Rearranging Platforms|Adding Loops and Rearranging Platforms]]
 
 [[Prep Notes/Halloween/Simple Halloween Storytelling Project Outline|Simple Halloween Storytelling Project Outline]]
