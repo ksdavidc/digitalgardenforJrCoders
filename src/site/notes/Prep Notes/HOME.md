@@ -26,7 +26,7 @@ Some temporary files for easy access during class.
 ## Instructions for students
 
 ### Monday
-[[This week | Review, Images, Transitions]]
+[[Prep Notes/Halloween/This week Halloween Review, Images, Transitions|This week Halloween Review, Images, Transitions]]
 
 ### Friday
 [[Prep Notes/Halloween/Simple Halloween Storytelling Project Outline|Simple Halloween Storytelling Project Outline]]
