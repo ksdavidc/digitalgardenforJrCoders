@@ -37,10 +37,12 @@ div.language-ad-scratch div.admonition-title {
    /*   display: none; */
     float: right;
     font-family: fantasy;
-    padding: 5px;
+    border: var(--text-normal) 2px solid;
+    padding: 12px;
     padding-bottom: 0px;
+    border-radius: 13px;
 }
-div.language-ad-scratch div.admonition-title::before {
+div.language-ad-scratch div.admonition-title::after {
     content: "";
     display: inline-flex;
     background: #ccc url(http://maps.google.com/mapfiles/kml/pal5/icon12.png) no-repeat;
