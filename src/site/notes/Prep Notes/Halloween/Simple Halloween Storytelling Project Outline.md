@@ -99,7 +99,7 @@ Using the storytelling checklist to start.
 4. If you are working in pairs make a copy for each of you, even if you are doing the same project
 
 ## Draw each image in Scratch
-* Create a sprite (*I called mine "Frames"*) to hold the images. 
+* Create a sprite (*I call mine "Frames"*) to hold the images. 
 * Code will cycle through the images, one at a time.
 * Can be rough version, just as a guide. 
 * Characters can change position from frame to frame. 
