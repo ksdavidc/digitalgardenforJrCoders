@@ -275,13 +275,18 @@ Play Track [2]::custom
 ```
 
 
-## Step 5 Add Flames
+## Step 5a Add Flames
 
 When we jump, we broadcast `jump`. `Jump` will tell the flames to move.
 
+```ad-scratch
+~~~scratchblock
 when [space v] key pressed::event
 broadcast [jump v]
 change y by (35)
+
+~~~
+```
 
 
 
@@ -322,6 +327,45 @@ hide
 when I receive [GameOver v]
 stop [other scripts in sprite v]
 
+
+~~~
+```
+
+
+
+## Step 5b Use Mouse to Jump
+
+It turns out we want to jump by using the mouse as well as the space. 
+
+1. We add an if statement to detect the mouse or space.
+2. We put the blcks that make the jump (`broadcast` and `change y`) inside this.
+3. If we put the next costume step inside it, the character will only flap its wings when it is jumping.
+4. if we add an else, we can make sure it has the same costume when it is not flying.
+
+```ad-scratch
+~~~scratchblock
+when I receive [Main Loop v]
+repeat until <touching [wall v]?>
+    if <<mouse down?> or <key [space v] pressed?>> then
+        broadcast [jump v]
+        change y by (8)
+        next costume
+    else
+        switch costume to [not flying v]
+    end
+end
+~~~
+```
+
+
+Because we are doing this we don't need this anymore.
+
+```ad-scratch
+~~~scratchblock
+Delete this whole stack from step 5a
+when [space v] key pressed::event
+broadcast [jump v]
+change y by (35)
 
 ~~~
 ```
