@@ -23,6 +23,8 @@ Some temporary files for easy access during class.
 
 ## Recently added
 >[[Prep Notes/Halloween/Simple Halloween Storytelling Project Outline|Simple Halloween Storytelling Project Outline]]
+>[[Prep Notes/Friday Class/2022 Student K Flappy Bird|2022 Student K Flappy Bird]]
+
 ## Instructions for students
 
 ### Monday
@@ -30,12 +32,13 @@ Some temporary files for easy access during class.
 
 ### Friday
 [[Prep Notes/Halloween/Simple Halloween Storytelling Project Outline|Simple Halloween Storytelling Project Outline]]
-
+[[Prep Notes/Friday Class/2022 Student K Flappy Bird|2022 Student K Flappy Bird]]
 
 ### Saturday
 
-
 [[Prep Notes/Halloween/Simple Halloween Storytelling Project Outline|Simple Halloween Storytelling Project Outline]]
+
+
 ## Miscellaneous Topics
 
 [[Prep Notes/Research on AI/AI|AI]]
