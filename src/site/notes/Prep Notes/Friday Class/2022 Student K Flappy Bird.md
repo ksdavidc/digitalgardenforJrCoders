@@ -9,6 +9,7 @@ Create your  **Bird Sprite**, and add this code.
 
 
 ```ad-scratch
+title: bird
 ~~~scratchblock
 when @greenFlag clicked
 forever
@@ -25,10 +26,11 @@ change y by (35)
 
 ## Step 2a Walls
 
-Create one set of walls, and add this code in the wall sprite
+Create one set of walls, and add this code in the Wall Sprite
 
 
 ```ad-scratch
+title: wall
 ~~~scratchblock
 when @greenFlag clicked
 go to x: (575) y: (0)
@@ -42,9 +44,10 @@ end
 ## Step 2b Use broadcast
 This has 5 parts.
 
-1. In the Bird sprite, we have 
+1. In the **Bird Sprite**, we have 
 
 ```ad-scratch
+title: bird
 ~~~scratchblock
 when @greenFlag clicked
 forever
@@ -62,6 +65,7 @@ We
 This creates the **Gravity Main Loop**.
 
 ```ad-scratch
+title: bird
 ~~~scratchblock
 when @greenFlag clicked
 broadcast [Main Loop v]
@@ -78,6 +82,7 @@ end
 2. Now we **break and insert** again. This time we insert a `Game Start` message. We take the green flag stack:
 
 ```ad-scratch
+title: bird
 ~~~scratchblock
 when @greenFlag clicked
 broadcast [Main Loop v]
@@ -87,6 +92,7 @@ broadcast [Main Loop v]
 We break it apart and insert to create the **Game Start Stack**.
 
 ```ad-scratch
+title: bird
 ~~~scratchblock
 when @greenFlag clicked
 broadcast [Game start v]
@@ -98,10 +104,10 @@ broadcast [Main Loop v]
 ~~~
 ```
 
-
 3. Next, initialize your bird in the **Game Start Stack**. Here I set the size. You can also set the position, direction, and so on.
 
 ```ad-scratch
+title: bird
 ~~~scratchblock
 when I receive [Game start v]
 set size to (40) %
@@ -113,6 +119,7 @@ broadcast [Main Loop v]
 4. The bird begins falling in the **Gravity Main Loop**. He should start from  the left middle of the screen. To put him there, add a glide to the Gravity Main Loop.
 
 ```ad-scratch
+title: bird
 ~~~scratchblock
 when I receive [Main Loop v]
 glide (1) secs to x: (-156) y: (13)
@@ -126,6 +133,7 @@ end
 5. If you want to make your costume change, add ANOTHER second different Main loop to change the costume. This is the **Costume Main Loop**. Why two Main Loops? Since they start at the same time. Remember, a single broadcasts can go be received in many places.
 
 ```ad-scratch
+title: bird
 ~~~scratchblock
 this is a SECOND different receive main loop stack!!!
 when I receive [Main Loop v]
@@ -142,6 +150,7 @@ We don't really want the bird to fly forever. We want him to stop flying when he
 
 
 ```ad-scratch
+title: bird
 ~~~scratchblock
 when I receive [Main Loop v]
 show
@@ -166,6 +175,7 @@ To start the game, you have to click the Bird. Here's how.
 In the **Game Start Stack**:
 
 ```ad-scratch
+title: bird
 ~~~scratchblock
 when I receive [Game start v]
 set size to (40) %
@@ -184,7 +194,8 @@ broadcast [Main Loop v]
 
 When we have touched a wall, the game is over, so we broadcast the game over message. We also stop the bird from moving any more and we want him to disappear.
 
-```ad-scratch
+```ad-scratch 
+title: bird
 ~~~scratchblock
 when I receive [Main Loop v]
 show
@@ -206,6 +217,7 @@ hide
 Create a **Game Over Sprite** to show your game over message. Mine is a beachball. In that sprite we can put a simple game over message. 
 
 ```ad-scratch
+title: game over
 ~~~scratchblock
 when I receive [Game Over v]
 switch costume to [beachball v]
@@ -220,6 +232,7 @@ Notice that we also restart the game. This is why we created a **Game Start Stac
 
 
 ```ad-scratch
+title: game over
 ~~~scratchblock
 when I receive [Main Loop v]
 hide
@@ -229,6 +242,7 @@ hide
 We also need to tell the walls that the game is over. Go to the **Wall Sprite** and add this:
 
 ```ad-scratch
+title: wall
 ~~~scratchblock
 when I receive [Game Over v]
 stop [other scripts in sprite v]
@@ -243,6 +257,7 @@ This is optional, and I will not explain it completely.
 If you want to add music, this is the way to do it. Pick 2 songs and put them somewhere. The bird is okay, or a dedicated sound sprite. One is for playing during the main loop (track 1), and the other is for the end of the game (track 2). 
 
 ```ad-scratch
+title: bird or sound
 ~~~scratchblock
 
 
@@ -293,13 +308,14 @@ change y by (35)
 ~~~
 ```
 
-Now make the Flame Sprite. You can use 1 flame sprite with two fires, or two flame sprites, one on each leg, each with one fire. 
+Now make the **Flame Sprite**. You can use 1 flame sprite with two fires, or two flame sprites, one on each leg, each with one fire. 
 
 Make sure the flames are centered in costume editor. THen
 
 The way this works is we go to the hero (`Hero` is the name of my bird ), and then move a little down and a little left of right so the flames are just at his feet. Doing this every time makes the flames "follow" the bird. Also, we can cycle the costumes here.
 
 ```ad-scratch
+title: flames
 ~~~scratchblock
 when I receive [jump v]
 You have to choose the right direction. 
@@ -321,6 +337,7 @@ hide
 Be sure to hide them when the game starts and stop them when the game is over.
 
 ```ad-scratch
+title: flames
 ~~~scratchblock
 when I receive [Game start v]
 hide
@@ -345,6 +362,7 @@ It turns out we want to jump by using the mouse as well as the space. **In the B
 4. if we add an else, we can make sure it has the same costume when it is not flying.
 
 ```ad-scratch
+title: bird
 ~~~scratchblock
 when I receive [Main Loop v]
 repeat until <touching [wall v]?>
@@ -362,6 +380,7 @@ end
 Because we are doing this we don't need this anymore.
 
 ```ad-scratch
+title: bird
 ~~~scratchblock
 Delete this whole stack from step 5a
 when [space v] key pressed::event
@@ -374,9 +393,10 @@ change y by (35)
 
 ## Step 6 (Optional) Make a Game Over Effect 
 
-Create your own special Game over effect. This is the one I use, but you can make a simpler one.
+Create your own special Game Over effect. This is the one I use, but you can make a simpler one.
 
 ```ad-scratch
+title: game over
 ~~~scratchblock
 when I receive [Game Over v]
 erase all
@@ -429,9 +449,10 @@ hide
 
 ## Step 7 add more walls
 
-In the wall sprite, add your costumes then add one block in the forever loop:
+In the **Wall Sprite**, add your costumes then add one block in the forever loop:
 
 ```ad-scratch
+title: wall
 ~~~scratchblock
 when I receive [Main Loop v]
 show
