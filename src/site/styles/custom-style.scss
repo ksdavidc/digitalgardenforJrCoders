@@ -33,11 +33,23 @@ body {
         font-size: 12pt;
     }
 
-
 div.language-ad-scratch div.admonition-title {
-    display: none;
+   /*   display: none; */
+    float: right;
+    font-family: fantasy;
 }
-
+div.language-ad-scratch div.admonition-title::before {
+    content: "";
+    display: inline-flex;
+    background: #ccc url(http://maps.google.com/mapfiles/kml/pal5/icon12.png) no-repeat;
+    width: 1.4rem;
+    background-size: contain;
+    background-color: transparent;
+    height: 1.4rem;
+    margin-left: 6px;
+}   
+    
+    
 div[class*=language-ad-] {
     font-size: revert;
 }
