@@ -36,7 +36,7 @@ body {
 
 
     
-body div.language-ad-scratch div.admonition-title {
+div.language-ad-scratch div.admonition-title {
     /* display: none; */
     float: left;
     font-family: fantasy;
@@ -53,7 +53,7 @@ body div.language-ad-scratch div.admonition-title {
     text-align: initial;
 }
     
-body div.language-ad-scratch div.admonition-title::before {
+div.language-ad-scratch div.admonition-title::before {
     content: "";
     display: inline-flex;
     background: #ccc url(http://maps.google.com/mapfiles/kml/pal5/icon12.png) no-repeat;
