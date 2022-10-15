@@ -5,7 +5,7 @@
 
 ## Step 1 Gravity
 First we just create gravity.
-Create your "bird" sprite, and add this code.
+Create your  **Bird Sprite**, and add this code.
 
 
 ```ad-scratch
@@ -55,7 +55,11 @@ end
 ~~~
 ```
 
-We break it apart and insert a message/receive pair (Main Loop). This creates the **Gravity Main Loop**.
+We 
+1. **Break** the green flag and forever apart 
+2. **Insert** a message/receive pair (`Main Loop`).
+
+This creates the **Gravity Main Loop**.
 
 ```ad-scratch
 ~~~scratchblock
@@ -71,7 +75,7 @@ end
 ~~~
 ```
 
-2. Now we do that again. We take the green flag stack:
+2. Now we **break and insert** again. This time we insert a `Game Start` message. We take the green flag stack:
 
 ```ad-scratch
 ~~~scratchblock
@@ -80,7 +84,7 @@ broadcast [Main Loop v]
 ~~~
 ```
 
-We break it apart and insert a message/receive pair (Game Start) to create the **Game Start Stack**.
+We break it apart and insert to create the **Game Start Stack**.
 
 ```ad-scratch
 ~~~scratchblock
@@ -95,7 +99,7 @@ broadcast [Main Loop v]
 ```
 
 
-3. Next, initialize your bird. Here I set the size. You can also set the position, direction, and so on. Put it in the **Game Start Stack**.
+3. Next, initialize your bird in the **Game Start Stack**. Here I set the size. You can also set the position, direction, and so on.
 
 ```ad-scratch
 ~~~scratchblock
@@ -106,8 +110,8 @@ broadcast [Main Loop v]
 ```
 
 
-4. When the game starts we want the bird to be at the left middle of the screen. Add a glide to the **Gravity Main Loop**.
-5. 
+4. The bird begins falling in the **Gravity Main Loop**. He should start from  the left middle of the screen. To put him there, add a glide to the Gravity Main Loop.
+
 ```ad-scratch
 ~~~scratchblock
 when I receive [Main Loop v]
@@ -119,7 +123,7 @@ end
 ```
 
 
-5. If you want to make your costume change, add ANOTHER second different Main loop to change the costume. This is the **Costume Main Loop**.
+5. If you want to make your costume change, add ANOTHER second different Main loop to change the costume. This is the **Costume Main Loop**. Why two Main Loops? Since they start at the same time. Remember, a single broadcasts can go be received in many places.
 
 ```ad-scratch
 ~~~scratchblock
@@ -134,7 +138,7 @@ end
 
 ## Step 3a Repeat Until Touching Wall
 
-We don't really want the bird to fly forever. We want him to stop flying when he hits a wall. So we will change the `forever loop` to `until touching wall` loops.
+We don't really want the bird to fly forever. We want him to stop flying when he hits a wall. So we will change the `forever` loops to `repeat until touching wall` loops.
 
 
 ```ad-scratch
@@ -157,21 +161,21 @@ end
 
 ## Step 3b Game Start Game Over
 
+To start the game, you have to click the Bird. Here's how.
+
 In the **Game Start Stack**:
-1. To start the game, you have to click the Bird. We show the bird and the bird tells the user this.
-2. We wait until the mouse is down and touching the bird. This is the same as a click.
-3. We clear the text bubble.
-
-
 
 ```ad-scratch
 ~~~scratchblock
 when I receive [Game start v]
 set size to (40) %
 go to x: (-118) y: (-127)
+We show the bird and the bird tells the user to click.
 show
 say [Click Me To Play]
+We wait until the mouse is down and touching the bird. This is the same as a click.
 wait until <<touching [mouse-pointer v]?> and <mouse down?>>
+We clear the text bubble.
 say []
 broadcast [Main Loop v]
 
@@ -188,6 +192,7 @@ glide (1) secs to x: (-156) y: (13)
 repeat until <touching [wall v]?>
     change y by (-2)
 end
+add these blocks
 say [Game over!]
 broadcast [Game Over v]
 stop [this script v]
@@ -198,7 +203,7 @@ hide
 ~~~
 ```
 
-Create a **Game Over Sprite** to show your game over message. Mine is a beachball. In that sprite. 
+Create a **Game Over Sprite** to show your game over message. Mine is a beachball. In that sprite we can put a simple game over message. 
 
 ```ad-scratch
 ~~~scratchblock
@@ -211,7 +216,7 @@ broadcast [Game start v]
 ~~~
 ```
 
-Notice that it also restarts the game. This is why we created a **Game Start Stack**. The game will restart and wait for us to click the bird again. But we will need to hide the Game over message in the **Game Over Sprite**:
+Notice that we also restart the game. This is why we created a **Game Start Stack**. That stack will restart (reset) the game and wait for us to click the bird again. But in our **Game Over Sprite** we will need to hide the Game over message once the main loop starts:
 
 
 ```ad-scratch
@@ -221,7 +226,7 @@ hide
 ~~~
 ```
 
-We also need to tell the walls that the game is over. Go to the Wall sprite and add this:
+We also need to tell the walls that the game is over. Go to the **Wall Sprite** and add this:
 
 ```ad-scratch
 ~~~scratchblock
@@ -235,7 +240,7 @@ hide
 
 This is optional, and I will not explain it completely.
 
-If you want to add music, this is the way to do it. Pick 2 songs, one for playing during the main loop (track 1), and one for the end of the game (track 2). 
+If you want to add music, this is the way to do it. Pick 2 songs and put them somewhere. The bird is okay, or a dedicated sound sprite. One is for playing during the main loop (track 1), and the other is for the end of the game (track 2). 
 
 ```ad-scratch
 ~~~scratchblock
@@ -288,13 +293,11 @@ change y by (35)
 ~~~
 ```
 
-
-
-Now make the Flame Sprite. You can use 1 flame sprite with two flames, or two flame sprites one on each leg. 
+Now make the Flame Sprite. You can use 1 flame sprite with two fires, or two flame sprites, one on each leg, each with one fire. 
 
 Make sure the flames are centered in costume editor. THen
 
-The way this works is we go to the hero (`Hero` is the name of my bird ), and then move a little down so the flames are at his feet. This way the flames follow the bird. Also, we can cycle the costumes here.
+The way this works is we go to the hero (`Hero` is the name of my bird ), and then move a little down and a little left of right so the flames are just at his feet. Doing this every time makes the flames "follow" the bird. Also, we can cycle the costumes here.
 
 ```ad-scratch
 ~~~scratchblock
@@ -315,7 +318,6 @@ hide
 ~~~
 ```
 
-
 Be sure to hide them when the game starts and stop them when the game is over.
 
 ```ad-scratch
@@ -335,7 +337,7 @@ stop [other scripts in sprite v]
 
 ## Step 5b Use Mouse to Jump
 
-It turns out we want to jump by using the mouse as well as the space. 
+It turns out we want to jump by using the mouse as well as the space. **In the Bird Sprite:**
 
 1. We add an if statement to detect the mouse or space.
 2. We put the blcks that make the jump (`broadcast` and `change y`) inside this.
@@ -357,7 +359,6 @@ end
 ~~~
 ```
 
-
 Because we are doing this we don't need this anymore.
 
 ```ad-scratch
@@ -372,7 +373,6 @@ change y by (35)
 
 
 ## Step 6 (Optional) Make a Game Over Effect 
-
 
 Create your own special Game over effect. This is the one I use, but you can make a simpler one.
 
