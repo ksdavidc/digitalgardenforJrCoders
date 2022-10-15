@@ -38,19 +38,19 @@ body {
     
 div.language-ad-scratch div.admonition-title {
     /* display: none; */
-    float: left;
+    float: right;
     font-family: fantasy;
-    border: var(--text-normal) 2px solid;
+    /* border: var(--text-normal) 2px solid; */
     padding: 12px;
     padding-bottom: 0px;
     /* padding-left: 40px; */
     border-radius: 13px;
     /* margin-right: 50%; */
     /* z-index: 14; */
-    margin-right: 20px;
+    /* margin-right: 20px; */
     /* flex-wrap: nowrap; */
     width: 150px;
-    text-align: initial;
+    text-align: right;
 }
     
 div.language-ad-scratch div.admonition-title::before {
