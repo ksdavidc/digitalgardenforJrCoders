@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/prep-notes/research-on-ai/night-cafe-creator/","dgHomeLink":true,"dgPassFrontmatter":false}
+{"dg-publish":true,"permalink":"/prep-notes/research-on-ai/night-cafe-creator/"}
 ---
 
 -   [My Creations](https://creator.nightcafe.studio/my-creations)
