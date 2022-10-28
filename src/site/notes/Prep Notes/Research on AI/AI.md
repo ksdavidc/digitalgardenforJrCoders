@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/prep-notes/research-on-ai/ai/","dgHomeLink":true,"dgPassFrontmatter":false}
+{"dg-publish":true,"permalink":"/prep-notes/research-on-ai/ai/"}
 ---
 
 
