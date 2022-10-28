@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/prep-notes/research-on-ai/dall-e-mini-by-craiyon-com-on-hugging-face/","dgHomeLink":true,"dgPassFrontmatter":false}
+{"dg-publish":true,"permalink":"/prep-notes/research-on-ai/dall-e-mini-by-craiyon-com-on-hugging-face/"}
 ---
 
 [Hugging Face Dalle Mini](
