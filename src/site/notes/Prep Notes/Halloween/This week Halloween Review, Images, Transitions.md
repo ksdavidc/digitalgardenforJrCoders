@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/prep-notes/halloween/this-week-halloween-review-images-transitions/","dgHomeLink":true,"dgPassFrontmatter":false}
+{"dg-publish":true,"permalink":"/prep-notes/halloween/this-week-halloween-review-images-transitions/"}
 ---
 
 
