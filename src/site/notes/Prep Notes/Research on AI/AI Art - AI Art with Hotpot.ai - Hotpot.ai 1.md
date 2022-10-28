@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/prep-notes/research-on-ai/ai-art-ai-art-with-hotpot-ai-hotpot-ai-1/","dgHomeLink":true,"dgPassFrontmatter":false}
+{"dg-publish":true,"permalink":"/prep-notes/research-on-ai/ai-art-ai-art-with-hotpot-ai-hotpot-ai-1/"}
 ---
 
 ## AI Art - AI Art with Hotpot.ai
