@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/prep-notes/research-on-ai/this-ai-image-generator-lets-you-type-in-words-and-get-weird-pictures-back-cnn/","dgHomeLink":true,"dgPassFrontmatter":false}
+{"dg-publish":true,"permalink":"/prep-notes/research-on-ai/this-ai-image-generator-lets-you-type-in-words-and-get-weird-pictures-back-cnn/"}
 ---
 
 
