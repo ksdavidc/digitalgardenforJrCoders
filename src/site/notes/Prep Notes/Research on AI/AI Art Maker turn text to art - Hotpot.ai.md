@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/prep-notes/research-on-ai/ai-art-maker-turn-text-to-art-hotpot-ai/","dgHomeLink":true,"dgPassFrontmatter":false}
+{"dg-publish":true,"permalink":"/prep-notes/research-on-ai/ai-art-maker-turn-text-to-art-hotpot-ai/"}
 ---
 
 
