@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/prep-notes/research-on-ai/2-weird-dall-e-mini-generations-on-twitter-httpst-co-cyybfmk-7-bv-twitter/","dgHomeLink":true,"dgPassFrontmatter":false}
+{"dg-publish":true,"permalink":"/prep-notes/research-on-ai/2-weird-dall-e-mini-generations-on-twitter-httpst-co-cyybfmk-7-bv-twitter/"}
 ---
 
 
