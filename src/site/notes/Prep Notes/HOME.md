@@ -21,7 +21,7 @@ Some temporary files for easy access during class.
 	- [[Prep Notes/HOME#Instructions for students|Saturday]]
 - [[Prep Notes/HOME#Miscellaneous Topics|Miscellaneous Topics]]
 
-## Recently added
+## Recently added 
 >[[Prep Notes/Halloween/Simple Halloween Storytelling Project Outline|Simple Halloween Storytelling Project Outline]]
 >[[Prep Notes/Friday Class/2022 10 Student K Flappy Bird|2022 10 Student K Flappy Bird]]
 
