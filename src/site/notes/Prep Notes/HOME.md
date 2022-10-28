@@ -32,7 +32,7 @@ Some temporary files for easy access during class.
 
 ### Friday
 [[Prep Notes/Halloween/Simple Halloween Storytelling Project Outline|Simple Halloween Storytelling Project Outline]]
-[[2022 Student K Flappy Bird|2022 Student K Flappy Bird]]
+[[Prep Notes/Friday Class/2022 10 Student K Flappy Bird|2022 10 Student K Flappy Bird]]
 
 ### Saturday
 
