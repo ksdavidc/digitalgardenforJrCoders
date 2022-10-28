@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/prep-notes/halloween/simple-halloween-storytelling-project-outline/","dgHomeLink":true,"dgPassFrontmatter":false}
+{"dg-publish":true,"permalink":"/prep-notes/halloween/simple-halloween-storytelling-project-outline/"}
 ---
 
 
@@ -13,11 +13,7 @@
 *
 <div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
 
-<div class="markdown-embed-title">
 
-
-
-</div>
 
 
 
