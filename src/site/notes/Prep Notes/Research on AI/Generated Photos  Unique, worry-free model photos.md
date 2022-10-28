@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/prep-notes/research-on-ai/generated-photos-unique-worry-free-model-photos/","dgHomeLink":true,"dgPassFrontmatter":false}
+{"dg-publish":true,"permalink":"/prep-notes/research-on-ai/generated-photos-unique-worry-free-model-photos/"}
 ---
 
 Generated photos are created from scratch by AI systems. All images can be used for any purpose without worrying about copyrights, distribution rights, infringement claims, or royalties.
