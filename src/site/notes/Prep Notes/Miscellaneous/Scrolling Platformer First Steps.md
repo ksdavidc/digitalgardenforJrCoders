@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/prep-notes/miscellaneous/scrolling-platformer-first-steps/","dgHomeLink":true,"dgPassFrontmatter":false}
+{"dg-publish":true,"permalink":"/prep-notes/miscellaneous/scrolling-platformer-first-steps/"}
 ---
 
 
