@@ -77,7 +77,7 @@ This is a student version of Beach Game, where you have to touch the cloud inste
 
 $<div class="markdown-embed-title">
 
-# Flappy Brd Game v4
+# Flappy Bird Game v4
 
 </div>
 
@@ -91,6 +91,11 @@ Looks like an attempt at a revision to [[Flappy Bird game v2|Flappy Bird game v2
 
 <div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
 
+$<div class="markdown-embed-title">
+
+# Flappy Bird
+
+</div>
 
 
 
