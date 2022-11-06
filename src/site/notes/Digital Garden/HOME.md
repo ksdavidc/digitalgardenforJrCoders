@@ -46,4 +46,3 @@ Some temporary files for easy access during class.
 
 [[Digital Garden/Halloween/Simple Halloween Storytelling Project Outline|Simple Halloween Storytelling Project Outline]]
 
-[[Curricula/ScratchJr. Projects/List of ScratchJr. project and notes|List of ScratchJr. project and notes]]
