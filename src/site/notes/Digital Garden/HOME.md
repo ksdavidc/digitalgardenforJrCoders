@@ -43,6 +43,7 @@ Some temporary files for easy access during class.
 
 [[Digital Garden/Research on AI/AI|AI]]
 
+[[Digital Garden/Friday Class/For Trisha|For Trisha]]
 
 [[Digital Garden/Halloween/Simple Halloween Storytelling Project Outline|Simple Halloween Storytelling Project Outline]]
 
