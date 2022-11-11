@@ -5,12 +5,18 @@
 
 # For Trisha
 
-
+I am going ot start off with an explanation of a point I think many of the friday kids (other than Saki) have not grasped:
+The idea of this project is you make FRAMES that show the action like a flipbook. Maybe we will even make a flipbook???
 
 This is an example of the kind code that kids can use for their halloween projects to move from costume or background to background. 
 
-For Miki it will be backdrop number, but for other kids it will be costume number, instead.
+For Miki the code uses backdrop number, but for other kids it will be costume number, instead.
+(Miki should have put his frames in a sprite, not the backdrop. Using a sprite makes certain blocks available (motion  blacks, say blocks, etc.) that are not available for backdrops.)
+
 The main idea is nested if statement. 
+if A then B else if C then D else if E then F...
+
+
 ```ad-scratch
 ~~~scratchblock
 
@@ -47,9 +53,13 @@ else
             end
         else
             if <(backdrop [number v]) \> [69]> then
+            here we use the last costume to know 
+            when to stop being able to scroll
                 if <(backdrop [number v]) \< (last costume)> then
                     next backdrop
                 else
+                    this is makes it black, 
+                    but replace this with game over
                     set [brightness v] effect to (-100)::looks
                 end
             end
@@ -60,29 +70,40 @@ end
 ~~~
 ```
 
+#### **Saki**
+
+Her project is a model of what we are trying to do. She just needs to keep adding frames and then add the scrolling code as well.
 
 
 #### **Daifuku**
 He is actually not following the template for this project. I have fixed his project at:
 https://scratch.mit.edu/projects/755406245/
+There are comments that explain what I changed and why. The idea would be to walk through these with him.
 
-I think we should first fix his project. 
-THen we should have him follow the template:
-1. Make a storyboard.
-2. Make frames for each image in his storyboard.
-3. Make the in-between frames between each frame in the storyboard.
-4. Then uuse the code above
-5. 
-
+BUT,  THen we should have him follow the template:
+1. Make a storyboard. (he's done this)
+2. Make frames for each image in his storyboard. 1 frame per image.
+3. Add  in-between frames between each frame in the storyboard to make the action/movement natural and clearer.
+4. Then use the code above to move through it.
+https://scratch-viewer.techlit.app/view#project=759559263&showDownload=true
 <iframe style="width:-webkit-fill-available;" src="https://scratch-viewer.techlit.app/view#project=759559263&showDownload=true" height="500px" />
-
-
-
-#### **Saki**
+<iframe src="https://forkphorus.github.io/embed.html?id=759559263&auto-start=false&light-content=false" width="482" height="393" allowfullscreen="true" allowtransparency="true" style="border:none;"></iframe>
 
 #### **Miki**
 He will use nested if statements to automate the control of his character.
+https://scratch-viewer.techlit.app/view#project=759601159&showDownload=true
+<iframe style="width:-webkit-fill-available;" src="https://scratch-pviewer.techlit.app/view#project=759601159&showDownload=true" height="500px" />
 
-<iframe style="width:-webkit-fill-available;" src="https://scratch-viewer.techlit.app/view#project=759601159&showDownload=true" height="500px" />
-   
-   
+   <iframe src="https://forkphorus.github.io/embed.html?id=759601159&auto-start=false&light-content=false" width="482" height="393" allowfullscreen="true" allowtransparency="true" style="border:none;"></iframe>
+   # Keigo
+
+He needs to 
+* fix the flames (so they are in the correct position)
+* change the balls to 232 so they cycle through. 
+* 
+
+# Taiga
+He is jsut starting to get his sprites. He will need to draw his frames.
+
+# Kina
+Needs to make frames.
