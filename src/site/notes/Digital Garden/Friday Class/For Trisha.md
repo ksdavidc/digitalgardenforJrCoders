@@ -104,7 +104,7 @@ He will use nested if statements to automate the control of his character.
 ## Keigo
 
 He needs to 
-* fix the flames (so they are in the correct position)
+* fix the flames (NOT FRAMES, but flames) under the main character's feet (so they are in the correct position)
 * change the balls to 232 so they cycle through. 
 * 
 
