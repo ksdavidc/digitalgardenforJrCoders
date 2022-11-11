@@ -23,16 +23,18 @@ if A then B else if C then D else if E then F...
 
 when @greenFlag clicked
 clear graphic effects
-this is used to get the number of the last costume. We use this to know when to stop.
+this is used to get the number of the last costume. 
+We use this to know when to stop.
 It works because the last costume is always costume 0. 
 switch backdrop to (join [0] [])
-But when we actually switch to the last costume, the number of the costume is not 0, but the number of costumes.
+But when we actually switch to the last costume, 
+the number of the costume is not 0, but the number of costumes.
 set [last costume v] to (backdrop [number v])
 switch backdrop to [backdrop1 v]
 
 This is a series of nested loops.
 For each costume I ask: what do I want to do 
-(after pressing space) when I am at this costume. 
+ after pressing space  when I am at this costume. 
 IF I want to move to the next costume that is fine, 
 but sometimes I want to scroll through several costumes 
 to create the idea of motion. Then I use a repeat until.
