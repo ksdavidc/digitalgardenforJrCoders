@@ -88,6 +88,7 @@ BUT,  THen we should have him follow the template:
 3. Add  in-between frames between each frame in the storyboard to make the action/movement natural and clearer.
 4. Then use the code above to move through it.
 
+
 https://scratch.mit.edu/projects/759559263/
 
 <iframe src="https://forkphorus.github.io/embed.html?id=759559263&auto-start=false&light-content=false" width="482" height="393" allowfullscreen="true" allowtransparency="true" style="border:none;"></iframe>
@@ -106,7 +107,6 @@ He will use nested if statements to automate the control of his character.
 He needs to 
 * fix the flames (NOT FRAMES, but flames) under the main character's feet (so they are in the correct position)
 * change the balls to 232 so they cycle through. 
-* 
 
 ## Taiga
 He is jsut starting to get his sprites. He will need to draw his frames.
