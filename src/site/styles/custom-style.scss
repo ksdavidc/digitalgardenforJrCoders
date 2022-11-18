@@ -129,3 +129,9 @@ code[class*=language-] {
     background-color: transparent;
     display: inline;
 }
+
+.markdown-preview-view pre.mermaid {
+    background: var(--text-normal);
+    display: block;
+    text-align: center;
+}
