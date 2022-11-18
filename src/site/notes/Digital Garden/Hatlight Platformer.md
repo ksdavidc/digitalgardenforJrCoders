@@ -73,8 +73,7 @@ So let's do the left right routine. The basic routine is this:
 flowchart TB
         B("1. Detect arrows and set the <code>x-speed</code> variable") -->
         C("2. Keep <code>x-speed</code> below a maximum speed") -->
-        D("3. change x by <code>x-speed</code>") -->
-        E("Fall")
+        D("3. change x by <code>x-speed</code>") --> E("Fall")
 ```
 
 ```ad-scratch
