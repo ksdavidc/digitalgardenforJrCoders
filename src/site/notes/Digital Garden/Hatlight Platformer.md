@@ -131,9 +131,39 @@ end
 ~~~
 ```
 
+# Falling
+
+Next we will teach our guy to fall. First, we need a platform or wall for the character to fall onto. So make one. 
+
+Our basic fall routing is 
+
+```mermaid
+flowchart TB
+		A["Change the y speed by gravity"] -->
+		B["Change the y position by the y speed"] -->
+		C["If inside a wall or platform, pull out"] --> 
+		D["Go back to move left/right"]
+```
 
 
-To be continued....
+We could change the y position by y speed in big jumps, but it might turn out we will jump beyond the platform, so instead we will change y by 1 step y-speed times. 
 
-- Make a platform/wall sprite
-- add fall routine
+
+```ad-scratch
+title: 
+~~~scratchblock
+
+when I receive [fall v]
+change [y speed v] by (-1)
+change y  by 1 (y speed) times or until touching wall::custom
+/: [At this point we may be touching a wall]::custom
+/: [if so, we should pull out of the wall]::custom
+/: [our speed +/- tells us whether we are either moving up (ceiling\) or down (floor\)]::custom
+pull up or down if touching walls depending on whether we were <(y speed) \> [0]> or not::custom
+broadcast [move left / right v]
+
+~~~
+```
+
+
+To be continued...
