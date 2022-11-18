@@ -37,7 +37,7 @@ After we initialize, we move left right, then fall, then repeat. The flowchart f
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': { 'fontSize': '13px', 'fontFamily': 'Inter'}, "flowchart" : { 'curve' : 'linear'} }}%%
 flowchart LR
-       GF[Green Flag] --> I[Initialize] --> A{{left-right}} 
+       GF[Green Flag] --> I[Initialize] --> A{{leftright}} 
        A --> B[Fall] ----> A
 ```
 
