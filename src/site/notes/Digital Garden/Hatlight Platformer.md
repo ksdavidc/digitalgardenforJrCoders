@@ -31,7 +31,6 @@ set [y speed v] to [0]
 ~~~
 ```
 
-
 After we initialize, we move left right, then fall, then repeat. The flowchart for this is:
 
 
@@ -66,8 +65,6 @@ broadcast [move left / right v]
 
 ~~~
 ```
-
-
 
 So let's do the left right routine. The basic routine is this:
 
