@@ -23,18 +23,16 @@ if A then B else if C then D else if E then F...
 
 when @greenFlag clicked
 clear graphic effects
-this is used to get the number of the last costume. 
-We use this to know when to stop.
+this is used to get the number of the last costume. We use this to know when to stop.
 It works because the last costume is always costume 0. 
 switch backdrop to (join [0] [])
-But when we actually switch to the last costume, 
-the number of the costume is not 0, but the number of costumes.
+But when we actually switch to the last costume, the number of the costume is not 0, but the number of costumes.
 set [last costume v] to (backdrop [number v])
 switch backdrop to [backdrop1 v]
 
 This is a series of nested loops.
 For each costume I ask: what do I want to do 
- after pressing space  when I am at this costume. 
+(after pressing space) when I am at this costume. 
 IF I want to move to the next costume that is fine, 
 but sometimes I want to scroll through several costumes 
 to create the idea of motion. Then I use a repeat until.
@@ -72,14 +70,14 @@ end
 ~~~
 ```
 
-## **Saki**
+#### **Saki**
 
 Her project is a model of what we are trying to do. She just needs to keep adding frames and then add the scrolling code as well.
 
 
-## **Daifuku**
+#### **Daifuku**
 He is actually not following the template for this project. I have fixed his project at:
-[https://scratch.mit.edu/projects/759559263/](https://scratch.mit.edu/projects/759559263/)
+https://scratch.mit.edu/projects/755406245/
 There are comments that explain what I changed and why. The idea would be to walk through these with him.
 
 BUT,  THen we should have him follow the template:
@@ -88,28 +86,23 @@ BUT,  THen we should have him follow the template:
 3. Add  in-between frames between each frame in the storyboard to make the action/movement natural and clearer.
 4. Then use the code above to move through it.
 
+<iframe style="width:-webkit-fill-available;" src="https://scratch-viewer.techlit.app/view#project=759559263&showDownload=true" height="500px" />
 
-https://scratch.mit.edu/projects/759559263/
-
-<iframe src="https://forkphorus.github.io/embed.html?id=759559263&auto-start=false&light-content=false" width="482" height="393" allowfullscreen="true" allowtransparency="true" style="border:none;"></iframe>
 
 #### **Miki**
 He will use nested if statements to automate the control of his character.
 
-[https://scratch.mit.edu/projects/759528097](https://scratch.mit.edu/projects/759528097)
-
-
-<iframe src="https://forkphorus.github.io/embed.html?id=759528097&auto-start=false&light-content=false" width="482" height="393" allowfullscreen="true" allowtransparency="true" style="border:none;"></iframe>
-
-
-## Keigo
+<iframe style="width:-webkit-fill-available;" src="https://scratch-viewer.techlit.app/view#project=759601159&showDownload=true" height="500px" />
+   
+   # Keigo
 
 He needs to 
-* fix the flames (NOT FRAMES, but flames) under the main character's feet (so they are in the correct position)
+* fix the flames (so they are in the correct position)
 * change the balls to 232 so they cycle through. 
+* 
 
-## Taiga
+# Taiga
 He is jsut starting to get his sprites. He will need to draw his frames.
 
-## Kina
+# Kina
 Needs to make frames.
