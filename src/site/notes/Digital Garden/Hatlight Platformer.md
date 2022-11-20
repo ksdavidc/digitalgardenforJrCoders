@@ -223,6 +223,8 @@ title:
 
 define change y  by (speed)  in steps. stop at wall.
 repeat ([abs v] of (speed::custom)::operators)
+we only change y IF it is not touching the walls.
+You can read the * as if it was "IF"
     change y by ((-1) * <not <touching [walls v]?>>)
 end
 ~~~
