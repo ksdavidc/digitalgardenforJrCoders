@@ -232,24 +232,9 @@ end
 Notice the sensing block. The first time we touch a wall, the change y stops working, and were are just inside the wall. We are ready to pull out of the wall.
 
 Now how do we pull up?
-
-```ad-scratch
-title: 
-~~~scratchblock
-define pull up or down if touching walls or <falling?> or not
-repeat until <not <touching [walls v]?>>
-this goes down if we were going up, and up if we were going down.
-Explanation: here inside this loop we are touching a wall. So:
-if going up, it is hitting a platform, so pull down \(change y by -1\)
-if we are falling or still, pull up \(change y by 1\)
-    change y by (<falling?::custom> - <not <falling?::custom>>)
-we set the speed to zero because 
-whether we reach a ground of ceiling \(either way\)
-we get stopped when we hit a wall
-    set [y speed v] to [0]
-end
-~~~
-```
+If we are touching a wall, we have to do two things, in this order:
+1. Set y-speed to zero so we are still. We are still touching the wall, though, so:
+2. Pull up by 1 to cancel the last step
 
 
 ```ad-scratch
@@ -259,6 +244,22 @@ define pull up or down if touching walls and <falling?> or not
 if touching a wall, set y speed to zero, else keep the same
 change [y speed v] by (<touching [walls v]?> * ((-1) * (y speed)))
 if touching a wall, go up if falling, down if jumping
-change y by (<touching [walls v]?> * (<falling?::custom> - <not <falling?::custom>>))
+change y by (<touching [walls v]?> * <falling?::custom> )
 ~~~
 ```
+
+
+Order is important! If we pull up by 1 to cancel the last down step, now we are not touching the wall. At this point we don't know if we touched a wall to get here or not, so we don't know if we should change the yspeed or not. 
+
+To test it we use the up arrow key to change y. The second line lets us keep pressing the  up arrow as long as we are moving slowly (in either direction). This works okay but later we will use a better way to jump...
+
+```ad-scratch
+title: 
+~~~scratchblock
+when [up arrow v] key pressed
+change y by (50)
+wait until < ((abs v) of (yspeed))  < (8) >
+~~~
+```
+
+
