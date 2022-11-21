@@ -53,6 +53,7 @@ title: main sprite
 ~~~scratchblock
 when @greenFlag clicked
    broadcast [initialize v]
+   add this here:
    broadcast [move left / right v]
 
 
@@ -102,7 +103,7 @@ if <<not <key [left arrow v] pressed?>> and <not <key [right arrow v] pressed?>>
    moving left means speed IS LESS THAN 0,  right means speed IS MORE THAN 0
    change [x speed v] by (<(x speed) \< [0]> - <(x speed) \> [0]>)
 else
-    /: [else go in direction of arrow]::custom
+else go in direction of arrow
     change [x speed v] by (<key [right arrow v] pressed?> - <key [left arrow v] pressed?>)
 end
 
@@ -117,7 +118,7 @@ title:
 
 
 define keep speed below max
-/: [set maximum speed]::custom
+set maximum speed
 moving right:
 if <(x speed) \> [4]> then
     set [x speed v] to [4]
