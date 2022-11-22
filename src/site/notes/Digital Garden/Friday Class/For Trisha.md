@@ -86,14 +86,13 @@ BUT,  THen we should have him follow the template:
 3. Add  in-between frames between each frame in the storyboard to make the action/movement natural and clearer.
 4. Then use the code above to move through it.
 
-<iframe style="width:-webkit-fill-available;" src="https://scratch-viewer.techlit.app/view#project=759559263&showDownload=true" height="500px" />
+https://scratch.mit.edu/projects/759559263/
 
 
 #### **Miki**
 He will use nested if statements to automate the control of his character.
+https://scratch.mit.edu/projects/759601159/
 
-<iframe style="width:-webkit-fill-available;" src="https://scratch-viewer.techlit.app/view#project=759601159&showDownload=true" height="500px" />
-   
    # Keigo
 
 He needs to 
