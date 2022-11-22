@@ -167,7 +167,7 @@ broadcast [move left / right v]
 
 ### Change y in steps
 
-FIrst, let's make the myblock:
+First, let's make this myblock:
 
 
 ```ad-scratch
@@ -176,6 +176,7 @@ title: main sprite
 define change y by (y speed) in steps. Stop at wall.::custom
 ~~~
 ```
+
 
 So, how do we change y in steps? What is our code?
 
@@ -231,6 +232,8 @@ end
 ~~~
 ```
 Notice the sensing block. The first time we touch a wall, the change y stops working, and were are just inside the wall. We are ready to pull out of the wall.
+
+Here is the myblock. Note that instead of an input field it has a boolean field. Boolean fields just accept sensing and other logic blocks, not variables and expressions.
 
 Now how do we pull up?
 If we are touching a wall, we have to do two things, in this order:
