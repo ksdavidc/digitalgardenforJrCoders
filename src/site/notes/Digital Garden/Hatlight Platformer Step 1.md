@@ -278,27 +278,27 @@ If we are touching a wall, we have to do two things, in this order:
 1. Set y-speed to zero so we are still. 
 	1. We could use an if block:
 	   
-	   ```ad-scratch
-	   title: 
-	   ~~~scratchblock
-	   define pull up or down if touching walls and <falling?> or not
-	   if <falling?> then
-	   set [y speed v] to (0)
-	   end
-	   ...
-	   ~~~
-	   ```
+			```ad-scratch
+			title: 
+			~~~scratchblock
+			define pull up or down if touching walls and <falling?> or not
+			if <falling?> then
+			set [y speed v] to (0)
+			end
+			...
+			~~~
+			```
 	   
 	2. However, it is nice to do it all in one line. We do this by subtracting the yspeed (`-1 * yspeed`) from itself using a change block. This basically cancels itself out.
 
-```ad-scratch
-title: 
-~~~scratchblock
-define pull up or down if touching walls and <falling?> or not
-change [y speed v] by (<touching [walls v]?> * ((-1) * (y speed)))
-...
-~~~
-```
+		```ad-scratch
+		title: 
+		~~~scratchblock
+		define pull up or down if touching walls and <falling?> or not
+		change [y speed v] by (<touching [walls v]?> * ((-1) * (y speed)))
+		...
+		~~~
+		```
 
 The next step is:
 1. Pull up by 1 to cancel the last step, the one that landed in the wall. We only want to do this if we are toucing the wall, and if we are falling. 
@@ -320,7 +320,7 @@ pull up or down if touching walls or <(y speed) \< [0]> or not::custom
    - This means that **falling?** is 1 if we are falling, but 
    - ***Zero** if we are not falling* -- that means it will change by 0 if we are going up; 
    - In other words, not change at all.
-- It only pulls up if we are falling.
+- It only pulls up if we are falling and touching the wall:
 
 
 ```ad-scratch
@@ -341,17 +341,14 @@ Order is important! If we do this:
 title: 
 ~~~scratchblock
 define pull up or down if touching walls and <falling?> or not
-if touching a wall, set y speed to zero, else keep the same
-change [y speed v] by (<touching [walls v]?> * ((-1) * (y speed)))
-if touching a wall, go up if falling, down if jumping
 change y by (<touching [walls v]?> * <falling?::custom> )
+change [y speed v] by (<touching [walls v]?> * ((-1) * (y speed)))
 ~~~
 ```
 
+We are pulling up by 1 to cancel the last down step, but then we are not touching the wall anymore. We don't know if we touched a wall to get here or not, so we don't know if we should change the yspeed or not. 
 
-
-
-pull up by 1 to cancel the last down step, now we are not touching the wall. At this point we don't know if we touched a wall to get here or not, so we don't know if we should change the yspeed or not. 
+## Testing jumps
 
 To test it we use the up arrow key to change y. The second line lets us keep pressing the  up arrow as long as we are moving slowly (in either direction). 
 
