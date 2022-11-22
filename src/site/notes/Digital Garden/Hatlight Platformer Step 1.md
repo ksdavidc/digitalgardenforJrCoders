@@ -277,18 +277,16 @@ If we are touching a wall, we have to do two things, in this order:
 
 1. Set y-speed to zero so we are still. 
 	1. We could use an if block:
-	   
-			```ad-scratch
-			title: 
-			~~~scratchblock
-			define pull up or down if touching walls and <falling?> or not
-			if <falling?> then
-			set [y speed v] to (0)
-			end
-			...
-			~~~
-			```
-	   
+		```ad-scratch
+		title: 
+		~~~scratchblock
+		define pull up or down if touching walls and <falling?> or not
+		if <falling?> then
+		set [y speed v] to (0)
+		end
+		...
+		~~~
+		```
 	2. However, it is nice to do it all in one line. We do this by subtracting the yspeed (`-1 * yspeed`) from itself using a change block. This basically cancels itself out.
 
 		```ad-scratch
