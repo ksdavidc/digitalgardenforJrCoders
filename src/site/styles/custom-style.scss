@@ -50,9 +50,20 @@ div.language-ad-scratch div.admonition-title {
     /* z-index: 14; */
     /* margin-right: 20px; */
     /* flex-wrap: nowrap; */
-    width: 150px;
+    width: fit-content;
+    max-width: 150px;
+    color: var(--text-normal);
     text-align: right;
+    background: rgb(210, 105, 30, .5);
+    position: absolute;
+    right: 0px;
+    z-index: -1;
 }
+   
+    
+div.language-ad-scratch:hover div.admonition-title {
+    z-index: 10;
+    }
     
 div.language-ad-scratch div.admonition-title::before {
     content: "";
