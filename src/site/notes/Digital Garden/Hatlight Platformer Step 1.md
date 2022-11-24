@@ -76,7 +76,7 @@ So let's do the left right routine. The basic routine is this:
 And here is the code:
 
 ```ad-scratch
-title: main sprite
+title: hitbox, receive left/right
 ~~~scratchblock
 when I receive [move left / right v]
 set xspeed::custom
@@ -95,7 +95,7 @@ Setting the xspeed has 2 steps.
 	* To speed up, we do the opposite, we make it larger if we want to go right (*right arrow*), and smaller to go left (*left arrow*), so left gets the negative sign.
 
 ```ad-scratch
-title: 
+title: hitbox, define set xspeed
 ~~~scratchblock
 
 define set xspeed
@@ -120,7 +120,7 @@ end
 
 Keeping the speed below the max is easy, but we have to remember that left and right are different.
 ```ad-scratch
-title: 
+title: hitbox, define keep speed below max
 ~~~scratchblock
 
 
@@ -153,7 +153,7 @@ So we have 2 steps
 2. Pull up if you have to.
 
 ```ad-scratch
-title: main sprite
+title: hitbox, receive fall
 ~~~scratchblock
 
 when I receive [fall v]
@@ -178,7 +178,7 @@ First, let's make the change y myblock. To make this create a:
 	- The actual text is not important, and you can choose your own words. Make it meaningful for you.
 
 ```ad-scratch
-title: main sprite
+title: hitbox, define change y
 ~~~scratchblock
 define change y by (y speed) in steps. Stop at wall.::custom
 ~~~
@@ -192,7 +192,7 @@ The second is the pull up myblock. To make this create a:
 	- Again you can choose your own words for the text of the fields.  Make it meaningful for you.
 
 ```ad-scratch
-title: 
+title: hitbox, define pull up
 ~~~scratchblock
 define pull up or down if touching walls and <falling?> or not
 ~~~
@@ -238,7 +238,7 @@ But, when the sprite is **falling**, `y speed`  is *less than* zero (**negative*
 That is not okay. **Positive** is okay, but **negative** has to become positive in a repeat block. Luckily, in Scratch there is something that can help us, **abs**, which is short for **absolute value**: 
 
 ```ad-scratch
-title: 
+title: abs
 ~~~scratchblock
 [abs v] of (y speed)
 ~~~
@@ -259,7 +259,7 @@ end
 That's pretty good. But, we also want to stop if we are touching a wall. We only want to *change y by -1 if we are **not touching a wall***. In code that means:
 
 ```ad-scratch
-title: 
+title: hitbox, define change y
 ~~~scratchblock
 
 define change y  by (speed)  in steps. stop at wall.
@@ -401,7 +401,7 @@ Step 1 is finished. It works okay but not perfectly. For example, it doesn't wor
 
 [^1]: One alternative that does the same thing is: 
 ```ad-scratch
-title: 
+title: alternative change y speed
 ~~~scratchblock
 change [y speed v] by (<touching [walls v]?> * ((-1) * (y speed)))
 ~~~
