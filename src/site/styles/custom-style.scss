@@ -53,12 +53,13 @@ div.language-ad-scratch div.admonition-title {
     max-width: 250px;
     color: var(--text-normal);
     text-align: right;
-    background: rgb(210, 105, 30, .5);
     position: absolute;
     right: 0px;
     z-index: 10;
-    /* background: #15aabf; */
-    background: rgb(76,110,245,.5);
+    /* background: #15aabf; 
+    background: rgb(210, 105, 30, .5);
+    background: rgb(76,110,245,.5);*/
+    background: rgb(255 0 0 / 50%);
     border-radius: 24px 0px 0px 24px;
 }
    
