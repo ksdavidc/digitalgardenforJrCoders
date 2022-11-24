@@ -399,4 +399,11 @@ wait until < ((abs v) of (yspeed))  < (8) >
 
 Step 1 is finished. It works okay but not perfectly. For example, it doesn't work if we hit a platform from below. We will have to fix it in Step 2.
 
-[^1]: One alternative that does the same thing is `change [y speed v] by (<touching [walls v]?> * ((-1) * (y speed)))`
+[^1]: One alternative that does the same thing is: 
+	```ad-scratch
+	title: alternative change y speed
+	~~~scratchblock
+	change [y speed v] by (<touching [walls v]?> * ((-1) * (y speed)))
+	~~~
+	```
+
