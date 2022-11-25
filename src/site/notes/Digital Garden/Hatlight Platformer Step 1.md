@@ -437,6 +437,11 @@ wait until < ((abs v) of (yspeed))  < (8) >
 ```
 
 Step 1 is finished. It works okay but not perfectly. For example, it doesn't work if we hit a platform from below. We will have to fix it in [[Digital Garden/Hatlink part 2|Hatlink part 2]]
+
+
+---
+##### Footnotes:
+
 [^1]: The reason will become clear later.
 [^2]: One alternative that does the same thing is: 
 	```ad-scratch
