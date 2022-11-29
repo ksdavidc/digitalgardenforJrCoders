@@ -30,6 +30,7 @@ Some temporary files for easy access during class.
 
 ### Monday
 [[Digital Garden/Halloween/This week Halloween Review, Images, Transitions|This week Halloween Review, Images, Transitions]]
+[[Digital Garden/Monday Class/TSU|TSU]]
 
 ### Friday
 [[Digital Garden/Halloween/Simple Halloween Storytelling Project Outline|Simple Halloween Storytelling Project Outline]]
