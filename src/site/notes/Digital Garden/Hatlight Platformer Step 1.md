@@ -81,8 +81,9 @@ So let's do the left right routine. In words, the basic routine is this:
 <div id="HatlightmoveLeftRight.excalidraw.md3"></div><script>(function(){const InitialData={"type":"excalidraw","version":2,"source":"https://excalidraw.com","elements":[{"type":"rectangle","version":2483,"versionNonce":1247119587,"isDeleted":false,"id":"j46Q-mIB_RMtLqBuMi9Jo","fillStyle":"solid","strokeWidth":2,"strokeStyle":"solid","roughness":2,"opacity":100,"angle":0,"x":-333.2813200409966,"y":-457.07274754709914,"strokeColor":"#5f3dc4","backgroundColor":"#fd7e14","width":418,"height":58,"seed":216207345,"groupIds":[],"strokeSharpness":"round","boundElements":[{"id":"hoKKMoqj","type":"text"}],"updated":1669342606930,"link":null,"locked":false},{"type":"text","version":2696,"versionNonce":135477699,"isDeleted":false,"id":"hoKKMoqj","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"angle":0,"x":-328.7813200409966,"y":-452.07274754709914,"strokeColor":"#5f3dc4","backgroundColor":"transparent","width":409,"height":48,"seed":1921704863,"groupIds":[],"strokeSharpness":"sharp","boundElements":[],"updated":1669342586279,"link":null,"locked":false,"fontSize":20,"fontFamily":3,"text":"Detect arrows and set the x-speed \nvariable","rawText":"Detect arrows and set the x-speed variable","baseline":44,"textAlign":"center","verticalAlign":"middle","containerId":"j46Q-mIB_RMtLqBuMi9Jo","originalText":"Detect arrows and set the x-speed variable"},{"type":"rectangle","version":2742,"versionNonce":310883427,"isDeleted":false,"id":"IoJwQQFPcnide1ayTmbpU","fillStyle":"solid","strokeWidth":2,"strokeStyle":"solid","roughness":2,"opacity":100,"angle":0,"x":-301.7813200409966,"y":-368.63565331462917,"strokeColor":"#5f3dc4","backgroundColor":"#fd7e14","width":355,"height":58,"seed":2059266513,"groupIds":[],"strokeSharpness":"round","boundElements":[{"id":"KNDBm7n1","type":"text"},{"id":"BQTp2Km0sXOdqGU8mgJqd","type":"arrow"}],"updated":1669342631811,"link":null,"locked":false},{"type":"text","version":2895,"versionNonce":250518765,"isDeleted":false,"id":"KNDBm7n1","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"angle":0,"x":-297.2813200409966,"y":-363.63565331462917,"strokeColor":"#5f3dc4","backgroundColor":"transparent","width":346,"height":48,"seed":130750399,"groupIds":[],"strokeSharpness":"sharp","boundElements":[],"updated":1669342631811,"link":null,"locked":false,"fontSize":20,"fontFamily":3,"text":"Keep x-speed below a maximum \nspeed","rawText":"Keep x-speed below a maximum speed","baseline":44,"textAlign":"center","verticalAlign":"middle","containerId":"IoJwQQFPcnide1ayTmbpU","originalText":"Keep x-speed below a maximum speed"},{"type":"rectangle","version":2688,"versionNonce":1182008749,"isDeleted":false,"id":"ABGizyKxq-GGhHL1bSIUj","fillStyle":"solid","strokeWidth":2,"strokeStyle":"solid","roughness":2,"opacity":100,"angle":0,"x":-225.7813200409966,"y":-276.7620826530891,"strokeColor":"#5f3dc4","backgroundColor":"#fd7e14","width":203,"height":58,"seed":2145552305,"groupIds":[],"strokeSharpness":"round","boundElements":[{"id":"llvdtr75","type":"text"},{"id":"dKCsiULa4aCptAMA4JZvi","type":"arrow"},{"id":"BQTp2Km0sXOdqGU8mgJqd","type":"arrow"},{"id":"3kD_5vABuaYS-50Mz2okq","type":"arrow"}],"updated":1669342631811,"link":null,"locked":false},{"type":"text","version":2878,"versionNonce":83439619,"isDeleted":false,"id":"llvdtr75","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"angle":0,"x":-221.2813200409966,"y":-271.7620826530891,"strokeColor":"#5f3dc4","backgroundColor":"transparent","width":194,"height":48,"seed":1261422559,"groupIds":[],"strokeSharpness":"sharp","boundElements":[],"updated":1669342631811,"link":null,"locked":false,"fontSize":20,"fontFamily":3,"text":"change x by \nx-speed","rawText":"change x by x-speed","baseline":44,"textAlign":"center","verticalAlign":"middle","containerId":"ABGizyKxq-GGhHL1bSIUj","originalText":"change x by x-speed"},{"type":"rectangle","version":2570,"versionNonce":783895363,"isDeleted":false,"id":"ZLp42ksZ46S107PNBhQAh","fillStyle":"solid","strokeWidth":2,"strokeStyle":"solid","roughness":2,"opacity":100,"angle":0,"x":-162.2813200409966,"y":-182.18015978307884,"strokeColor":"#5f3dc4","backgroundColor":"#fd7e14","width":76,"height":34,"seed":376990097,"groupIds":[],"strokeSharpness":"round","boundElements":[{"id":"7coyg3pg","type":"text"},{"id":"dKCsiULa4aCptAMA4JZvi","type":"arrow"},{"id":"3kD_5vABuaYS-50Mz2okq","type":"arrow"}],"updated":1669342631811,"link":null,"locked":false},{"type":"text","version":2713,"versionNonce":513853453,"isDeleted":false,"id":"7coyg3pg","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"angle":0,"x":-148.7813200409966,"y":-177.18015978307884,"strokeColor":"#5f3dc4","backgroundColor":"transparent","width":49,"height":24,"seed":2060022783,"groupIds":[],"strokeSharpness":"sharp","boundElements":[],"updated":1669342631811,"link":null,"locked":false,"fontSize":20,"fontFamily":3,"text":"Fall","rawText":"Fall","baseline":20,"textAlign":"center","verticalAlign":"middle","containerId":"ZLp42ksZ46S107PNBhQAh","originalText":"Fall"},{"type":"arrow","version":2879,"versionNonce":751189613,"isDeleted":false,"id":"dKCsiULa4aCptAMA4JZvi","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"angle":0,"x":-124.01397947517343,"y":-145.517117753767,"strokeColor":"#e67700","backgroundColor":"transparent","width":0.28874846551465794,"height":0.1462436558385889,"seed":166066513,"groupIds":[],"strokeSharpness":"round","boundElements":[],"updated":1669342631811,"link":null,"locked":false,"startBinding":{"elementId":"ZLp42ksZ46S107PNBhQAh","gap":3.1878291699105725,"focus":0.026503790986018495},"endBinding":{"elementId":"ZLp42ksZ46S107PNBhQAh","gap":1.0333333333333334,"focus":-0.03069383178984822},"lastCommittedPoint":null,"startArrowhead":null,"endArrowhead":"arrow","points":[[0,0],[-0.28874846551465794,-0.1462436558385889]]},{"type":"arrow","version":2373,"versionNonce":1973896387,"isDeleted":false,"id":"BXhvDQHmQzR-Mp2WdIDRD","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"angle":0,"x":-124.56009098516891,"y":-397.85085198848293,"strokeColor":"#e67700","backgroundColor":"transparent","width":0,"height":27.782745361328125,"seed":1288981813,"groupIds":[],"strokeSharpness":"round","boundElements":[],"updated":1669342631811,"link":null,"locked":false,"startBinding":null,"endBinding":null,"lastCommittedPoint":null,"startArrowhead":null,"endArrowhead":"arrow","points":[[0,0],[0,27.782745361328125]]},{"type":"arrow","version":2412,"versionNonce":38172493,"isDeleted":false,"id":"BQTp2Km0sXOdqGU8mgJqd","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"angle":0,"x":-124.96984034609525,"y":-310.1957663970771,"strokeColor":"#e67700","backgroundColor":"transparent","width":0.01183763971259566,"height":32.57754501158621,"seed":323426581,"groupIds":[],"strokeSharpness":"round","boundElements":[],"updated":1669342631811,"link":null,"locked":false,"startBinding":{"elementId":"IoJwQQFPcnide1ayTmbpU","focus":-0.0042626224508648895,"gap":3.15618896484375},"endBinding":{"elementId":"ABGizyKxq-GGhHL1bSIUj","focus":0.005809692111724222,"gap":3.2554103051411403},"lastCommittedPoint":null,"startArrowhead":null,"endArrowhead":"arrow","points":[[0,0],[0.01183763971259566,32.57754501158621]]},{"type":"arrow","version":1688,"versionNonce":251279267,"isDeleted":false,"id":"3kD_5vABuaYS-50Mz2okq","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"angle":0,"x":-124.95193707600501,"y":-216.8726133364072,"strokeColor":"#e67700","backgroundColor":"transparent","width":0.007373942970190228,"height":32.4190673828125,"seed":1637309077,"groupIds":[],"strokeSharpness":"round","boundElements":[],"updated":1669342631811,"link":null,"locked":false,"startBinding":{"elementId":"ABGizyKxq-GGhHL1bSIUj","focus":-0.0004688343721599147,"gap":3.3189400973726606},"endBinding":{"elementId":"ZLp42ksZ46S107PNBhQAh","focus":0.007914750444716614,"gap":2.51663852016722},"lastCommittedPoint":null,"startArrowhead":null,"endArrowhead":"arrow","points":[[0,0],[-0.007373942970190228,32.4190673828125]]}],"appState":{"theme":"dark","viewBackgroundColor":"transparent","currentItemStrokeColor":"#e67700","currentItemBackgroundColor":"transparent","currentItemFillStyle":"solid","currentItemStrokeWidth":1,"currentItemStrokeStyle":"solid","currentItemRoughness":1,"currentItemOpacity":100,"currentItemFontFamily":3,"currentItemFontSize":20,"currentItemTextAlign":"center","currentItemStrokeSharpness":"sharp","currentItemStartArrowhead":null,"currentItemEndArrowhead":"arrow","currentItemLinearStrokeSharpness":"round","gridSize":null,"colorPalette":{}},"files":{}};InitialData.scrollToContent=true;App=()=>{const e=React.useRef(null),t=React.useRef(null),[n,i]=React.useState({width:void 0,height:void 0});return React.useEffect(()=>{i({width:t.current.getBoundingClientRect().width,height:t.current.getBoundingClientRect().height});const e=()=>{i({width:t.current.getBoundingClientRect().width,height:t.current.getBoundingClientRect().height})};return window.addEventListener("resize",e),()=>window.removeEventListener("resize",e)},[t]),React.createElement(React.Fragment,null,React.createElement("div",{className:"excalidraw-wrapper",ref:t},React.createElement(ExcalidrawLib.Excalidraw,{ref:e,width:n.width,height:n.height,initialData:InitialData,viewModeEnabled:!0,zenModeEnabled:!0,gridModeEnabled:!1})))},excalidrawWrapper=document.getElementById("HatlightmoveLeftRight.excalidraw.md3");ReactDOM.render(React.createElement(App),excalidrawWrapper);})();</script>
 
 
-The first 2 will be **myblocks**: 
+The first 2 will be simple **myblocks**. To make a simple myblock:
 - In the block area, click `Make a Block`, 
+- fill in the name of the myblock (see the description below) and click ok
 - then find that myblock in the block area,
 - and drag the myblock into the stack
 
@@ -101,37 +102,51 @@ broadcast [fall v]
 
 Let's code two myblocks.
 
-### **set xspeed** myblock
+### Set xspeed myblock
 
 Setting the xspeed has 2 steps. We start with an if/else block.
-- If no key is being held, then slow the speed down. 
-	- notice that to slow down depends on the direction we are going. if we are going left (*xspeed < 0*), we have to **INCREASE** xspeed , and if we are right (*xspeed > 0*), we **DECREASE** xspeed, so it has a minus sign.
-	- moving left means *speed IS LESS THAN 0*,  right means *speed IS MORE THAN 0*
+       - If no key is being held, then slow the speed down. 
+       - There are 2 directions:
+      	Let's say we are going **right**
+	      	Our speed is +2. 
+               The positive sign (+) tells us our direction is right.We are going 2 units fast. 
+               To slow down, we change the 2, but keep the +, since the direction is the same.
+               In other words: +2 becomes +1. We **subtract 1**.
+      	Let's say we are going **left**
+      		Our speed is -2.  
+      		How fast is still 2, but the negative sign (-) tells us the direction is left.
+      		Slowing down means the 2 becomes a 1. But the direction stays the same, so we keep the negative sign.
+      		In other words, -2 becomes -1. We **add 1**.
+      	- in other words: 
+      			*left* **+1** 
+      			*right* **-1**
+      	- in other words:  
+      			(left) speed **less than** 0 is **+1** 
+      			(right) speed **greater than** 0 is **-1** 
 
-Slowing down can be described in many ways:
-- slowing down means *go a little less quickly left,* or *go a little less quickly right*.
-	- *a little less quickly left* means **make xspeed a less negative number**
-		- -2 become -1. That means we **add 1**.
-	- *a little less quickly right* means **make xspeed a less positive number**
-		- 2 becomes 1. that means we **subtract 1**.
-- in other words: *left* **+1** *right* **-1**
-- in other words:  `x speed < 0` +1 is `x speed > 0` -1
-  
-Add left and right together to get:
 ```ad-scratch
 title: hitbox, define set xspeed
 ~~~scratchblock
 define set xspeed
 if <<not <key [left arrow v] pressed?>> and <not <key [right arrow v] pressed?>>> then
-left - right
-   change [x speed v] by (<(x speed) \< [0]> - <(x speed) \> [0]>)
+left
+if <(x speed) < (0)> then
+      change (x speed) by (1)
+      end
+right
+if <(x speed) > (0)> then
+      change (x speed) by (-1)
+      end
 else
 end
 ~~~
 ```
+
+(Below, I have given a way to put all this in one line.[^2] One line, without the if, is faster, so in big games it is better.)
+
 In the else part of the if/else block:
 * If we are touching an arrow, speed up in the direction of the arrow.
-	* To speed up, we do the opposite, we **add 1** if we want to go right (*right arrow*), and **subtract 1** to go left (*left arrow*), so left gets the negative sign.
+	* To speed up, we **add 1** if we want to go right (*right arrow*), and **subtract 1** to go left (*left arrow*), so left gets the negative sign.
 
 ```ad-scratch
 title: hitbox, define set xspeed
@@ -139,16 +154,29 @@ title: hitbox, define set xspeed
 
 define set xspeed
 if <<not <key [left arrow v] pressed?>> and <not <key [right arrow v] pressed?>>> then
-   change [x speed v] by (<(x speed) \< [0]> - <(x speed) \> [0]>)
+if <(x speed) < (0)> then
+	change (x speed) by (1)
+	end
+	if <(x speed) > (0)> then
+	change (x speed) by (-1)
+	end
 else
-right - left
-    change [x speed v] by (<key [right arrow v] pressed?> - <key [left arrow v] pressed?>)
+right 
+if <key [right arrow v] pressed> then
+	change (x speed) by (1)
+end
+left
+if <key [left arrow v] pressed> then
+	change (x speed) by (-1)
+end
 end
 ~~~
 ```
-### **keep speed below max** myblock
 
-Keeping the speed below the max is easy, but we have to remember that left and right are different.
+
+### Keep speed below max myblock
+
+Keeping the speed below the max is easy, but, again, we have to remember that left and right are different.
 ```ad-scratch
 title: hitbox, define keep speed below max
 ~~~scratchblock
@@ -199,14 +227,14 @@ broadcast [move left / right v]
 ~~~
 ```
 
-We'll have to make 2 myblocks.
+We'll have to make 2 myblocks, but these are a little different. One has an input field, and the other has a boolean field. 
 
-First, let's make the change y myblock. To make this create a:
-1. label ("`change y by`")
-2. an input field (`y speed`) 
+First, let's make the change y myblock. To make this, click `create a block` like before, and this time:
+1. fill in the first label ("`change y by`")
+2. add an input field (`y speed`) (round edges "( ... )" )
 	- Input fields take variables and expressions like a + b.
-3. and another label field ("`in steps. Stop at wall`")
-	- The actual text is not important, and you can choose your own words. Make it meaningful for you.
+3. and add another label field ("`in steps. Stop at wall`")
+	- The actual label text is not important, and you can choose your own words. Make it meaningful for you.
 
 ```ad-scratch
 title: hitbox, define change y
@@ -215,11 +243,11 @@ define change y by (y speed) in steps. Stop at wall.::custom
 ~~~
 ```
 
-The second is the pull up myblock. To make this create a:
-1. label ("`pull up or down if touching walls`") and
-2. a **boolean** field <`falling?`>
-	- **Be careful**. A **boolean** field is different than an input field. It only takes things like sensing blocks and logical connectors (and, or)
-3. and another label field ("`or not`"). 
+The second is the pull up myblock. To make this:
+1. fill in the first label ("`pull up or down if touching walls`") 
+2. add a **boolean** field <`falling?`> (pointy edges "< ... >")
+	- **Be careful**. A **boolean** field is different than an input field. It only takes things like sensing blocks and logical connectors (`and`, `or`)
+3. and another label field ("`or not`")
 	- Again you can choose your own words for the text of the fields.  Make it meaningful for you.
 
 ```ad-scratch
@@ -229,10 +257,11 @@ define pull up or down if touching walls and <falling?> or not
 ~~~
 ```
 
+Now, let's make the code for the myblocks.
 
-### Change y in steps
+### Not big jumps, but single steps
 
-We could change the y position by y speed in big jumps, like on the left in the diagram below, but it might turn out we will jump beyond the platform.
+We could change the y position by y speed in big jumps, like on the left in the diagram below, but it might turn out we will jump beyond the platform. Notice how the jumps get bigger and bigger. This is gravity pulling the hitbox down.
 
 Instead we want to change y in small steps as in the right. Each small step repeats *y-speed times*, and we check and stop if it hits a wall.
 
@@ -259,15 +288,15 @@ end
 ~~~
 ```
 
-Notice that this only works if we are falling (y speed < 0), because y is going down. Later we will fix this so that it works even if we are moving up.
+But, notice that this only works if we are falling (y speed < 0), because y is going down. Later we will fix this so that it works even if we are moving up, in other words jumping.
 
-Before that, there is one little problem. A repeat block can only use number that is *bigger* than 0 (**positive**), like 1, 2, 3, .... 
+Before that, there is one little problem. A repeat block can only use number that is *bigger* than 0 (+**positive**), like 1, 2, 3, .... 
 
 We say it has to have a **sign of +1**. 
 
-But, when the sprite is **falling**, `y speed`  is *less than* zero (**negative**), like -1, -2, -3... It has a **sign of -1**.
+But, when the sprite is **falling**, `y speed`  is *less than* zero (-**negative**), like -1, -2, -3... It has a **sign of -1**.
 
-That is not okay. **Positive** is okay, but **negative** has to become positive in a repeat block. Luckily, in Scratch there is something that can help us, **abs**, which is short for **absolute value**: 
+That is not okay. +**Positive** is okay, but -**negative** has to become +positive in a repeat block. Luckily, in Scratch there is something that can help us, **abs**, which is short for **absolute value**: 
 
 ```ad-scratch
 title: abs block
@@ -276,7 +305,7 @@ title: abs block
 ~~~
 ```
 
-**Abs** keeps a positive number positive, but changes a negative to a positive. 
+**Abs** keeps a +positive number positive, but changes a -negative to a +positive. 
 
 So EXAMPLE 1 should be:
 ```ad-scratch
@@ -296,18 +325,20 @@ title: hitbox, define change y
 
 define change y  by (speed)  in steps. stop at wall.
 repeat ([abs v] of (speed::custom)::operators)
-    change y by ((-1) * <not <touching [walls v]?>>)
+    if <not <touching [walls v]?>> then
+    change y by (-1)
+    end
 end
 ~~~
 ```
 
-Notice that you can read the * in the `change y` block as **IF**: change y by -1 **IF** not touching walls. This is a very handy trick and we use it a lot.
+Again, there is a way to do this in one line.[^3]
 
-What does the sensing block do? The first time we touch a wall, the change y stops changing y, and were are just inside the wall. We are ready to pull out of the wall.
+What happens when we hit a wall when falling? The first time we touch a wall, the change y stops changing y, and were are just inside the wall. We are ready to pull out of the wall.
 
 ### Pulling up
 
-Here is the myblock. Note that instead of an input field it has a boolean field. Boolean fields just accept sensing and other logic blocks, not variables and expressions.
+Here is the myblock. Note that instead of an input field it has a boolean field with pointy edges: <>. Boolean fields just accept sensing and other logic blocks, not variables and expressions.
 ```ad-scratch
 title: hitbox, pull up definition
 ~~~scratchblock
@@ -339,7 +370,7 @@ end
 ~~~
 ```
 
-- However, it is nice to do it all in one line. We do this by subtracting the yspeed (`-1 * yspeed`) from itself using a change block[^2]. This basically cancels itself out.
+- However, it is nice to do it all in one line. We do this by subtracting the yspeed (`-1 * yspeed`) from itself using a change block[^4]. This basically cancels itself out.
 
 ```ad-scratch
 title: hitbox, pull up definition
@@ -443,9 +474,51 @@ Step 1 is finished. It works okay but not perfectly. For example, it doesn't wor
 ##### Footnotes:
 
 [^1]: The reason will become clear later.
-[^2]: One alternative that does the same thing is: 
+[^2]: Add the two conditions together (left - right)  to get:
+	```ad-scratch
+	~~~scratchblock
+	define set xspeed
+	if <<not <key [left arrow v] pressed?>> and <not <key [right arrow v] pressed?>>> then
+	  left - right
+	  change [x speed v] by (<(x speed) \< [0]> - <(x speed) \> [0]>)
+	else
+	end
+	~~~
+	```
+	In the else part of the if/else block:
+	
+	```ad-scratch
+	~~~scratchblock
+	change [x speed v] by (<key [right arrow v] pressed?> - <key [left arrow v] pressed?>)
+	~~~
+	```
+[^3]: You can do this:
+	```ad-scratch
+	~~~scratchblock
+	define change y  by (speed)  in steps. stop at wall.
+	repeat ([abs v] of (speed::custom)::operators)
+	   change y by ((-1) * <not <touching [walls v]?>>)
+	end
+	~~~
+	```
+Notice that you can read the * in the `change y` block as **IF**: change y by -1 **IF** not touching walls. This is a very handy trick and we use it a lot.
+
+
+[^4]: This is a one line way to do it:  
 	```ad-scratch
 	~~~scratchblock
 	change [y speed v] by (<touching [walls v]?> * ((-1) * (y speed)))
 	~~~
 	```
+All together:
+	```ad-scratch
+	~~~scratchblock
+	define set xspeed
+    if <<not <key [left arrow v] pressed?>> and <not <key [right arrow v] pressed?>>> then
+	    change [x speed v] by (<(x speed) \< [0]> - <(x speed) \> [0]>)
+	else
+	   change [x speed v] by (<key [right arrow v] pressed?> - <key [left arrow v] pressed?>)
+	end
+	~~~
+	```
+
