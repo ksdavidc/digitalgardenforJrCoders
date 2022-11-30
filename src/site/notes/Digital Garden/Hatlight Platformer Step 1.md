@@ -370,16 +370,8 @@ end
 ~~~
 ```
 
-- However, it is nice to do it all in one line. We do this by subtracting the yspeed (`-1 * yspeed`) from itself using a change block[^4]. This basically cancels itself out.
+One line version in footnote[^4] 
 
-```ad-scratch
-title: hitbox, pull up definition
-~~~scratchblock
-define pull up or down if touching walls and <falling?> or not
-set [y speed v] to ((y speed) - (<touching [walls v]?> * (y speed)))
-...
-~~~
-```
 
 The next step is:
 
@@ -405,14 +397,16 @@ define pull up or down if touching walls and <falling?> or not
 ```
 
    - This means that `falling?` is **1** if we are falling, but **Zero** if we are not falling.
-   - We change y if we are touching the wall and falling like this:
+   - Drag the falling into the change y block, and we change y if we are touching the wall and falling like this:
 
 ```ad-scratch
 title: hitbox, pull up definition
 ~~~scratchblock
 define pull up or down if touching walls and <falling?> or not
-...
-change y by (<touching [walls v]?> * <falling?::custom> )
+if <touching [walls v]> then
+set [y speed v] to (0)
+change y by <falling?::custom>
+end
 ~~~
 ```
 
@@ -423,12 +417,14 @@ change y by (<touching [walls v]?> * <falling?::custom> )
 title: hitbox, pull up definition
 ~~~scratchblock
 define pull up or down if touching walls and <falling?> or not
-set y speed to zero \(if touching wall\)
-set [y speed v] to ((y speed) - (<touching [walls v]?> * (y speed)))
-pull up \(if touching and still falling\)
-change y by (<touching [walls v]?> * <falling?::custom> )
+if <touching [walls v]> then
+set [y speed v] to (0)
+change y by <falling?::custom>
+end
 ~~~
 ```
+
+One line version of the pull up routine is in the footnotes [^5]
 
 Here is the diagram again. After we pull up, the speed is 0, which means we stop falling, as we should. This is realistic. When you hit the ground, you stop moving.
 
@@ -440,10 +436,10 @@ The thing to note here is that: **order** is important! If instead we pull up th
 ```ad-scratch
 ~~~scratchblock
 define pull up or down if touching walls and <falling?> or not
-first pull up
-change y by (<touching [walls v]?> * <falling?::custom> )
-then set speed to 0
-set [y speed v] to ((y speed) - (<touching [walls v]?> * (y speed)))
+   if <touching [walls v]> then
+       change y by <falling?::custom>
+       set [y speed v] to (0)
+   end
 ~~~
 ```
 
@@ -451,8 +447,7 @@ After the first step we are not touching the wall:
 
 <div id="pullUp2excalidraw.md9"></div><script>(function(){const InitialData={"type":"excalidraw","version":2,"source":"https://excalidraw.com","elements":[{"type":"rectangle","version":456,"versionNonce":2014170363,"isDeleted":false,"id":"kX6mdJgu6Z9zYzt4QkKQC","fillStyle":"solid","strokeWidth":1,"strokeStyle":"solid","roughness":0,"opacity":90,"angle":0,"x":-307.98758146963695,"y":-325.6335309486249,"strokeColor":"#000000","backgroundColor":"#15aabf","width":580.8837890625,"height":409.2378845214844,"seed":524826683,"groupIds":[],"strokeSharpness":"sharp","boundElements":[],"updated":1669156330265,"link":null,"locked":false},{"type":"rectangle","version":344,"versionNonce":809665563,"isDeleted":false,"id":"btiQUpFtBA806yPFVw0O4","fillStyle":"solid","strokeWidth":1,"strokeStyle":"solid","roughness":2,"opacity":100,"angle":0,"x":-309.00035603841144,"y":-141.91882501132244,"strokeColor":"#000000","backgroundColor":"#fa5252","width":578.7227783203125,"height":52.170654296875,"seed":44219637,"groupIds":[],"strokeSharpness":"round","boundElements":[{"id":"UcskjoFCvHzCqT3uSCxMh","type":"arrow"}],"updated":1669156202842,"link":null,"locked":false},{"type":"rectangle","version":613,"versionNonce":1311481621,"isDeleted":false,"id":"h2uqRkhOXHx654X-XRb_Z","fillStyle":"solid","strokeWidth":1,"strokeStyle":"solid","roughness":2,"opacity":100,"angle":0,"x":-261.6880943661644,"y":-184.1071904026449,"strokeColor":"#000000","backgroundColor":"#4c6ef5","width":57.265625,"height":54.74920654296875,"seed":2074835163,"groupIds":[],"strokeSharpness":"round","boundElements":[],"updated":1669156202842,"link":null,"locked":false},{"type":"arrow","version":290,"versionNonce":858867899,"isDeleted":false,"id":"f8Uzi4SwRvBu9EFRjHf0t","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"angle":0,"x":-154.18271270952195,"y":-166.59826983046526,"strokeColor":"#000000","backgroundColor":"transparent","width":1.675567626953125,"height":59.69586181640625,"seed":231274421,"groupIds":[],"strokeSharpness":"round","boundElements":[],"updated":1669156202842,"link":null,"locked":false,"startBinding":{"elementId":"QwswnlTb","focus":0.0007407326464248657,"gap":7.324716967445852},"endBinding":null,"lastCommittedPoint":null,"startArrowhead":null,"endArrowhead":"arrow","points":[[0,0],[-1.675567626953125,59.69586181640625]]},{"type":"text","version":81,"versionNonce":1240527989,"isDeleted":false,"id":"QwswnlTb","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"angle":0,"x":-192.4592895507813,"y":-194.98466872318392,"strokeColor":"#000000","backgroundColor":"transparent","width":76,"height":25,"seed":104294235,"groupIds":[],"strokeSharpness":"sharp","boundElements":[{"id":"f8Uzi4SwRvBu9EFRjHf0t","type":"arrow"}],"updated":1669156202842,"link":null,"locked":false,"fontSize":20,"fontFamily":1,"text":"speed y","rawText":"speed y","baseline":18,"textAlign":"left","verticalAlign":"top","containerId":null,"originalText":"speed y"},{"type":"rectangle","version":971,"versionNonce":1524374325,"isDeleted":false,"id":"vEIBqNI4qxu5-18LGiWQE","fillStyle":"solid","strokeWidth":1,"strokeStyle":"solid","roughness":2,"opacity":100,"angle":0,"x":-96.94336759127094,"y":-210.0129713534471,"strokeColor":"#000000","backgroundColor":"#4c6ef5","width":57.265625,"height":54.74920654296875,"seed":1920351419,"groupIds":[],"strokeSharpness":"round","boundElements":[{"id":"UcskjoFCvHzCqT3uSCxMh","type":"arrow"}],"updated":1669156202842,"link":null,"locked":false},{"type":"text","version":429,"versionNonce":1693327003,"isDeleted":false,"id":"vSFzy3VC","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"angle":0,"x":-19.22992122216982,"y":-195.1009494151482,"strokeColor":"#000000","backgroundColor":"transparent","width":76,"height":25,"seed":487731541,"groupIds":[],"strokeSharpness":"sharp","boundElements":[{"id":"44dLB82oMVXvMA_wzfLOo","type":"arrow"}],"updated":1669156202842,"link":null,"locked":false,"fontSize":20,"fontFamily":1,"text":"speed y","rawText":"speed y","baseline":18,"textAlign":"left","verticalAlign":"top","containerId":null,"originalText":"speed y"},{"type":"arrow","version":693,"versionNonce":881169211,"isDeleted":false,"id":"UcskjoFCvHzCqT3uSCxMh","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"angle":0,"x":-61.70821595803301,"y":-124.68474592344634,"strokeColor":"#000000","backgroundColor":"transparent","width":27.456711088338537,"height":29.57901888703202,"seed":1512917051,"groupIds":[],"strokeSharpness":"round","boundElements":[],"updated":1669156202842,"link":null,"locked":false,"startBinding":null,"endBinding":{"elementId":"vEIBqNI4qxu5-18LGiWQE","focus":0.6448389025672585,"gap":1},"lastCommittedPoint":null,"startArrowhead":null,"endArrowhead":"arrow","points":[[0,0],[19.660488030849365,-12.53169133112982],[-7.796223057489172,-29.57901888703202]]},{"type":"text","version":258,"versionNonce":1857851893,"isDeleted":false,"id":"t43ZZ7QC","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"angle":0,"x":-97.4621331630608,"y":-240.4428714242476,"strokeColor":"#000000","backgroundColor":"transparent","width":65,"height":25,"seed":1768232251,"groupIds":[],"strokeSharpness":"sharp","boundElements":[],"updated":1669156202842,"link":null,"locked":false,"fontSize":20,"fontFamily":1,"text":"pull up","rawText":"pull up","baseline":18,"textAlign":"left","verticalAlign":"top","containerId":null,"originalText":"pull up"},{"type":"arrow","version":343,"versionNonce":1451586523,"isDeleted":false,"id":"44dLB82oMVXvMA_wzfLOo","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"angle":0,"x":19.39937745528882,"y":-166.42398015550145,"strokeColor":"#000000","backgroundColor":"transparent","width":1.675567626953125,"height":59.69586181640625,"seed":1066318587,"groupIds":[],"strokeSharpness":"round","boundElements":[],"updated":1669156202842,"link":null,"locked":false,"startBinding":{"elementId":"vSFzy3VC","focus":0.2655967455293468,"gap":3.6769692596467394},"endBinding":null,"lastCommittedPoint":null,"startArrowhead":null,"endArrowhead":"arrow","points":[[0,0],[-1.675567626953125,59.69586181640625]]},{"type":"rectangle","version":1016,"versionNonce":1436584789,"isDeleted":false,"id":"szdJ8c_tnKgqDPAvWjN_v","fillStyle":"solid","strokeWidth":1,"strokeStyle":"solid","roughness":2,"opacity":100,"angle":0,"x":113.65481514284465,"y":-209.50058983883142,"strokeColor":"#000000","backgroundColor":"#4c6ef5","width":57.265625,"height":54.74920654296875,"seed":1140882325,"groupIds":[],"strokeSharpness":"round","boundElements":[{"id":"UcskjoFCvHzCqT3uSCxMh","type":"arrow"}],"updated":1669156202842,"link":null,"locked":false},{"type":"text","version":495,"versionNonce":886783221,"isDeleted":false,"id":"Ayia79E8","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"angle":0,"x":181.8590562142732,"y":-195.59811639108779,"strokeColor":"#000000","backgroundColor":"transparent","width":76,"height":25,"seed":162400853,"groupIds":[],"strokeSharpness":"sharp","boundElements":[{"id":"RSHGkcLSqwCNXqkXrhEHI","type":"arrow"}],"updated":1669156211044,"link":null,"locked":false,"fontSize":20,"fontFamily":1,"text":"speed y","rawText":"speed y","baseline":18,"textAlign":"left","verticalAlign":"top","containerId":null,"originalText":"speed y"},{"type":"arrow","version":490,"versionNonce":698130133,"isDeleted":false,"id":"RSHGkcLSqwCNXqkXrhEHI","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"angle":0,"x":220.48835489173186,"y":-166.92114713144105,"strokeColor":"#000000","backgroundColor":"transparent","width":1.675567626953125,"height":59.69586181640625,"seed":936259963,"groupIds":[],"strokeSharpness":"round","boundElements":[],"updated":1669156211196,"link":null,"locked":false,"startBinding":{"elementId":"Ayia79E8","focus":-0.028248663575349633,"gap":3.6769692596467394},"endBinding":null,"lastCommittedPoint":null,"startArrowhead":null,"endArrowhead":"arrow","points":[[0,0],[-1.675567626953125,59.69586181640625]]},{"type":"text","version":148,"versionNonce":1127183579,"isDeleted":false,"id":"CSBAxIxD","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"angle":0,"x":81.11407853570182,"y":-294.51605353163285,"strokeColor":"#000000","backgroundColor":"transparent","width":168,"height":75,"seed":1454111797,"groupIds":[],"strokeSharpness":"sharp","boundElements":[],"updated":1669156332769,"link":null,"locked":false,"fontSize":20,"fontFamily":1,"text":"am I still falling,\nor did I just\nget pulled up?","rawText":"am I still falling,\nor did I just\nget pulled up?","baseline":68,"textAlign":"left","verticalAlign":"top","containerId":null,"originalText":"am I still falling,\nor did I just\nget pulled up?"}],"appState":{"theme":"dark","viewBackgroundColor":"transparent","currentItemStrokeColor":"#000000","currentItemBackgroundColor":"transparent","currentItemFillStyle":"hachure","currentItemStrokeWidth":1,"currentItemStrokeStyle":"solid","currentItemRoughness":1,"currentItemOpacity":100,"currentItemFontFamily":1,"currentItemFontSize":20,"currentItemTextAlign":"left","currentItemStrokeSharpness":"sharp","currentItemStartArrowhead":null,"currentItemEndArrowhead":"arrow","currentItemLinearStrokeSharpness":"round","gridSize":null,"colorPalette":{}},"files":{}};InitialData.scrollToContent=true;App=()=>{const e=React.useRef(null),t=React.useRef(null),[n,i]=React.useState({width:void 0,height:void 0});return React.useEffect(()=>{i({width:t.current.getBoundingClientRect().width,height:t.current.getBoundingClientRect().height});const e=()=>{i({width:t.current.getBoundingClientRect().width,height:t.current.getBoundingClientRect().height})};return window.addEventListener("resize",e),()=>window.removeEventListener("resize",e)},[t]),React.createElement(React.Fragment,null,React.createElement("div",{className:"excalidraw-wrapper",ref:t},React.createElement(ExcalidrawLib.Excalidraw,{ref:e,width:n.width,height:n.height,initialData:InitialData,viewModeEnabled:!0,zenModeEnabled:!0,gridModeEnabled:!1})))},excalidrawWrapper=document.getElementById("pullUp2excalidraw.md9");ReactDOM.render(React.createElement(App),excalidrawWrapper);})();</script>
 
-
-However we are still going down. We are kind of back where we started. And, we don't know if we touched a wall to get here or whether we were just falling, so *we don't know if we should change the yspeed or not*. It won't work. 
+We are still going down. We are kind of back where we started. And, we don't know if we touched a wall to get here or whether we were just falling, so *we don't know if we should change the yspeed or not*. It won't work. 
 
 ## Testing jumps
 
@@ -521,4 +516,13 @@ All together:
 	end
 	~~~
 	```
-
+[^5]: This is the pull up routine using oneliners:
+	```ad-scratch
+	title: hitbox, pull up definition
+	~~~scratchblock
+	define pull up or down if touching walls and <falling?> or not
+	set [y speed v] to ((y speed) - (<touching [walls v]?> * (y speed)))
+	change y by (<falling?> * <touching [walls v]?>)
+	...
+	~~~
+	```
