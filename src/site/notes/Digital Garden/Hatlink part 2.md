@@ -20,6 +20,27 @@ wait until < ([abs v] of (y speed)) < (8)>
 * Still, the jump is "wobbly". 
 * Right now we fall in steps, but our jump routine makes a big step up when we jump. We are going to jump in steps as well, so that we can detect platforms. 
 
+## Organize your Code Area
+
+It really helps to keep your code area neat. 
+For example, I suggest arranging your code area in two columns:
+COLUMN 1 (stacked in roughly the order they are executed):
+Green Flag
+Initialize
+move left/right
+fall
+up arrow
+
+COLUMN 2 myblocks in roughly the order they are executed
+set speed
+keep speed below max
+change y by y speed...
+pull out if touching ...
+
+
+When we add new stack, we will try to fit them into the two columns.
+
+
 ## Distance to the ground
 The first step we will take is to keep track of our distance to the ground. 
 1. create a variable `distance to ground`
@@ -35,6 +56,11 @@ set [distance to ground v] to [0]
 ~~~
 ```
 
+
+**TODO  change platformer 1 to use ifs instead of onelines, but put onelines in footnotes**
+
+**fix next screen routine**
+
 Next we change `distance to ground` inside the `change y by xspeed...` stack. Note that we duplicate the condition in the `change y block`, so the two change the same way.
 
 ```ad-scratch
@@ -48,25 +74,10 @@ end
 ~~~
 ```
 
-we also change  `pull out if touching...` but in a slightlly different way. Here we want to make sure that the distance to the ground will be zero when we are done  pulling out (which means touching the wall and falling). Therefore we multiply the condition by `-1 * distance to ground`. This cancels whatever value is in there.
+we also change  `pull out if touching...` but in a slightlly different way. 
 
-```ad-scratch
-title: hitbox, define pull up
-~~~scratchblock
-define pull up or down if touching walls and <falling?> or not
-change [y speed v] by (<touching [walls v]?> * ((-1) * (y speed)))
-change [distance to ground v] by (<touching [walls v]?> * (<falling?::custom> * ((distance to ground) * (-1))))
-change y by (<touching [walls v]?> * (falling?::custom)
-~~~
-```
+If we are touching the wall and falling, then we want to seet `Distance to the ground` will to zero.  One way to do is
 
-Notice that:
-```ad-scratch
-~~~scratchblock
-change [distance to ground v] by (<touching [walls v]?> * (<falling?::custom> * ((distance to ground) * (-1))))
-~~~
-```
-is the same as, but all in one line:
 ```ad-scratch
 ~~~scratchblock
 
@@ -78,6 +89,27 @@ end
 ~~~
 ```
 
+It runs a little faster if we don't use an `if`, but put it all on one line. We can do this with a change block. If I have 10, and I change it by -10, I get zero. This is true for any number. We multiply `distance to ground` by **-1** and then multiply by the condition.
+
+```ad-scratch
+title: 
+~~~scratchblock
+change [distance to ground v] by (((distance to ground) * (-1)) * (<falling?::custom> * <touching [walls v]?>))
+~~~
+```
+
+We put all this in our pull up stack:
+```ad-scratch
+title: hitbox, define pull up
+~~~scratchblock
+define pull up or down if touching walls and <falling?> or not
+change [y speed v] by (<touching [walls v]?> * ((-1) * (y speed)))
+change [distance to ground v] by (((distance to ground) * (-1)) * (<falling?::custom> * <touching [walls v]?>))
+change y by (<touching [walls v]?> * (falling?::custom)
+~~~
+```
+
+Notice that:
 ## Change jump routine
 Now we can change the jump routine so that we only jump when we are close to the ground.
 
