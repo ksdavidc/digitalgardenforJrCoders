@@ -271,6 +271,7 @@ The next step is:
 * Notice that in the `receive fall` stack we called this myblock with an input of `y speed < 0 ` (this is 1 when we are falling, and 0 when we are not):
 
 ```ad-scratch
+title:
 ~~~scratchblock
 
 when I receive [fall v]
@@ -282,6 +283,7 @@ pull out if touching wall and <(y speed) \< [0]> or not::custom
 -  We send  `y speed < 0 ` into the red boolean called <**falling?**> in the myblock. 
 
 ```ad-scratch
+title:
 ~~~scratchblock
 define pull out if touching wall and <falling?> or not
 ...
@@ -327,6 +329,7 @@ Here is the diagram again. After we pull out, the speed is 0, which means we sto
 Note that **order** is important! If instead we `change y` first and then change the speed...
 
 ```ad-scratch
+title:
 ~~~scratchblock
 define pull out if touching wall and <falling?> or not
    if <touching [walls v]> then
@@ -363,6 +366,7 @@ Step 1 is finished. It works okay but not perfectly. For example, it doesn't wor
 
 [^1]: 	In the else part of the if/else block you can use this instead of the 2 if statements:
 	```ad-scratch
+	title: 
 	~~~scratchblock
 	change [x speed v] by (<key [right arrow v] pressed?> - <key [left arrow v] pressed?>)
 	~~~
@@ -378,12 +382,14 @@ Step 1 is finished. It works okay but not perfectly. For example, it doesn't wor
 	```
 [^3]: This is a one line way to do it:  
 	```ad-scratch
+	title:
 	~~~scratchblock
 	change [y speed v] by (<touching [walls v]?> * ((-1) * (y speed)))
 	~~~
 	```
 [^4]: This is the pull out routine using one-liners:
 	```ad-scratch
+	title:
 	~~~scratchblock
 	define pull out if touching wall and <falling?> or not
 	set [y speed v] to ((y speed) - (<touching [walls v]?> * (y speed)))
