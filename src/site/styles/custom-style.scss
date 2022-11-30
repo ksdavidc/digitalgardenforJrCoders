@@ -156,3 +156,8 @@ code[class*=language-] {
     display: block;
     text-align: center;
 }
+
+:root[dir=ltr] .excalidraw .layer-ui__wrapper .zen-mode-transition.layer-ui__wrapper__footer-left--transition-left {
+     -webkit-transform: translate(0px, 0);
+     transform: translate(0px, 0);
+}
