@@ -366,13 +366,14 @@ Step 1 is finished. It works okay but not perfectly. For example, it doesn't wor
 
 [^1]: 	In the else part of the if/else block you can use this instead of the 2 if statements:
 	```ad-scratch
-	title: 
+	title:
 	~~~scratchblock
 	change [x speed v] by (<key [right arrow v] pressed?> - <key [left arrow v] pressed?>)
 	~~~
 	```
 [^2]: You can do this:
 	```ad-scratch
+	title:
 	~~~scratchblock
 	define change y  by (speed)  in steps. stop at wall.
 	repeat ([abs v] of (speed::custom)::operators)
