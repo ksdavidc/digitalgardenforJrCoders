@@ -161,6 +161,14 @@ code[class*=language-] {
      -webkit-transform: translate(0px, 0)!important;
      transform: translate(0px, 0)!important;
 }
+.excalidraw-wrapper::after {
+    content: "Click here if image is not visible";
+    position: absolute;
+    text-align: right;
+    right: 0px;
+    bottom: 20px;
+    font-variant: small-caps;
+}
 .excalidraw.excalidraw-container.excalidraw--view-mode.theme--dark {
     background: var(--background-primary);
 }
