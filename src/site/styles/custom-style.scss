@@ -161,3 +161,6 @@ code[class*=language-] {
      -webkit-transform: translate(0px, 0)!important;
      transform: translate(0px, 0)!important;
 }
+.excalidraw.excalidraw-container.excalidraw--view-mode.theme--dark {
+    background: var(--background-primary);
+}
