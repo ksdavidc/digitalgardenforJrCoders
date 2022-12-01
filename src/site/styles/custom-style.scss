@@ -167,8 +167,12 @@ code[class*=language-] {
     margin: 0px!important;
     border-radius: 16px;
 }
+/* fix color */
+.excalidraw.excalidraw-container.excalidraw--view-mode.theme--dark {
+    background: var(--background-primary);
+}
 /* fix border */
-.excalidraw.excalidraw-container {
+.excalidraw.excalidraw-container.excalidraw--view-mode.theme--dark  {
   text-align: center;
   line-height: 100px;
   background: linear-gradient(to right, orange 50%, rgba(255, 255, 255, 0) 0%), linear-gradient(blue 50%, rgba(255, 255, 255, 0) 0%), linear-gradient(to right, green 50%, rgba(255, 255, 255, 0) 0%), linear-gradient(red 50%, rgba(255, 255, 255, 0) 0%);
@@ -188,7 +192,4 @@ code[class*=language-] {
     font-size: smaller;
     padding: 10px;
 }
-/* fix color */
-.excalidraw.excalidraw-container.excalidraw--view-mode.theme--dark {
-    background: var(--background-primary);
-}
+
