@@ -167,7 +167,8 @@ So, what goes in this stack? How do we change y in steps? What is our code?
 Well, in words it would be:
 * Change y by 1 step each time --  each step is **down** so we change y by  **-1**.
 * Repeat this `y speed` times
-\
+
+&nbsp;  
 In code it would look like this (EXAMPLE 1): 
 
 ```ad-scratch
@@ -180,18 +181,23 @@ end
 ~~~
 ```
 
+#### Only works if we are falling
 But, notice that this only works if we are falling (y speed < 0), because y is going down. Later we will fix this so that it works even if we are moving up, in other words jumping.
 \
+&nbsp;
+#### Repeat Blocks only take positive numbers
 Before that, there is one little problem. A repeat block cannot have number *less than* than 0 (-**negative or zero**), like -1, -2, -3, .... It has to be **positive**.
 \
 We say it has to have a **sign of +1**.  
 \
 But, when the sprite is **falling**, `y speed`  **is less than zero** (-**negative**), like -1, -2, -3... It has a **sign of -1**.
 \
-That is not okay. In a repeat block, the number of times can be +**Positive**.  
+That is not okay. In a repeat block, the number of times has to be be +**positive**  or zero.  
 \
-If we want to use a negative number, the -**negative** has to become +positive in a repeat block.  
+If we want to use a negative number, the -**negative** has to become +**positive** in a repeat block.  
 \
+&nbsp;
+#### Absolute value to the rescue
 Luckily, in Scratch there is something that can help us, **abs**, which is short for **absolute value**: 
 
 ```ad-scratch
@@ -213,7 +219,7 @@ end
 ~~~
 ```
 
-That's pretty good. But, we also want to stop if we are touching a wall. We only want to change y by -1 *if we are **not touching a wall***. In code that means:
+That's pretty good. But, we also want to stop if we are touching a wall. We only want to change y by -1 **IF** we are **not touching a wall**. In code that means:
 
 ```ad-scratch
 title: hitbox, define change y
@@ -232,8 +238,8 @@ Again, there is a way to do this in one line.[^2]
 \
 What happens when we hit a wall when falling? The first time we touch a wall, the change y stops changing y, and were are just inside the wall. We are ready to pull out of the wall.
 \
+&nbsp;
 ### Define the pull out if touching wall myblock
-\
 Here is the pull out if touching wall myblock. Note that instead of an input field it has a boolean field with pointy edges: <>. Boolean fields just accept sensing and other logic blocks, not variables and expressions.
 ```ad-scratch
 title: hitbox, pull up definition
@@ -242,8 +248,8 @@ define pull out if touching wall and <falling?> or not
 ~~~
 ```
 
-How *do* we pull out? If we are touching a wall, we have to do two things, in this order:
-\
+How *do* we pull out? If we are touching a wall, we have to do two things, in this order:  
+
 1. Set `y speed` to zero  
 2. Pull out of the wall  
 
