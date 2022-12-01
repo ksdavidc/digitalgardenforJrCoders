@@ -40,9 +40,9 @@ set [y speed v] to [0]
 ~~~
 ```
 
-After we initialize, we 
-- move left right, 
-- then fall, 
+After we initialize, we
+- move left right,
+- then fall,
 - then repeat.
 
 ## Flowchart for the project
@@ -53,7 +53,7 @@ The flowchart for this is:
 
 *Move left/right* is the start of a **loop**. After *Fall*, it goes back to the beginning at Left/right. In this case the loop goes forever.
 
-So, let's put in  left/right and fall stacks.
+So, let's put in left/right and fall stacks.
 
 ```ad-scratch
 title: main sprite
@@ -115,24 +115,33 @@ Let's code two myblocks.
 ### Set xspeed myblock
 
 Setting the xspeed has 2 steps. We start with an if/else block.
-       - If no key is being held, then slow the speed down. 
-       - How? There are 2 directions:
-      	Let's say we are going **right**
-	      	Our speed is +2. 
-               The positive sign (+) tells us our direction is right.The 2 is how fast. 
-               To slow down, we change the 2 to 1, but keep the +, since the direction is the same.
-               In other words: +2 becomes +1. We **subtract 1**.
-      	Let's say we are going **left**
-      		Our speed is -2.  
-      		How fast is still 2, but the negative sign (-) tells us the direction is left.
-      		Slowing down means the 2 becomes a 1. But the direction stays the same, so we keep the negative sign.
-      		In other words, -2 becomes -1. We **add 1**.
-      	In other words: 
-				*right* **-1**
-				*left* **+1** 
-			In other words:  
-				(left) speed **less** (<) **than** 0 is **+1** 
-				(right) speed **greater** (>) **than** 0 is **-1** 
+
+  - If no key is being held, then slow the speed down. 
+  - How? There are 2 directions:
+
+- Let's say we are going **right**.
+		Our speed is +2. 
+		The positive sign (+) tells us our direction is right.The 2 is how fast. 
+		To slow down, we change the 2 to 1, but keep the +, since the direction is the same.
+		In other words: +2 becomes +1. We **subtract 1**.
+
+
+- Let's say we are going **left**
+		Our speed is -2.  
+		How fast is still 2, but the negative sign (-) tells us the direction is left.
+		Slowing down means the 2 becomes a 1. But the direction stays the same, so we keep the negative sign.
+		In other words, -2 becomes -1. We **add 1**.
+
+
+- In other words: 
+		*right* **-1**
+		*left* **+1** 
+
+
+- In other words:
+		(left) speed **less** (<) **than** 0 is **+1**
+		(right) speed **greater** (>) **than** 0 is **-1**
+
 
 ```ad-scratch
 title: hitbox, define set xspeed
@@ -152,8 +161,7 @@ end
 ~~~
 ```
 
-(Below, I have given a way to put all this in one line.[^2] One line, without the if, is faster, so in big games it is better.)
-
+(Below,[^2] I have given a way to put all this in one line. One line, without the if, is faster, so in big games it is better.)
 ## First class finished
 You are done for this class. Next is [[Digital Garden/Torchlight Platformer Part 1, Second Class|Torchlight Platformer Part 1, Second Class]]
 
