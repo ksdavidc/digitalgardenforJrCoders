@@ -56,11 +56,6 @@ set [distance to ground v] to [0]
 ~~~
 ```
 
-
-**TODO  change platformer 1 to use ifs instead of onelines, but put onelines in footnotes**
-
-**fix next screen routine**
-
 Next we change `distance to ground` inside the `change y by xspeed...` stack. Note that we duplicate the condition in the `change y block`, so the two change the same way.
 
 ```ad-scratch
