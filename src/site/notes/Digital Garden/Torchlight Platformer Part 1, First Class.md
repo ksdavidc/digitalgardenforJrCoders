@@ -129,7 +129,10 @@ Setting the xspeed has 2 steps. We start with an if/else block.
 		Our speed is -2.  
 		How fast is still 2, but the negative sign (-) tells us the direction is left.
 		Slowing down means the 2 becomes a 1. But the direction stays the same, so we keep the negative sign.
-		In other words, -2 becomes -1. We **add 1**.
+		In other words, -2 becomes -1. We **add 1**.  
+	\ 
+	\
+
 
 - In other words: 
 		*right* **-1**
