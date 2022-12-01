@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/digital-garden/torchlight-platformer-part-2/"}
 ---
 
-I assume you have made [[Digital Garden/Torchlight Platformer Part 1 FULL|Torchlight Platformer Part 1 FULL]].
+I assume you have made [[Digital Garden/Torchlight Platformer Part 1, First Class|Torchlight Platformer Part 1, First Class]].
 
 In that we had a jump routine, but it was a temporary solution. 
 
