@@ -161,13 +161,24 @@ code[class*=language-] {
      -webkit-transform: translate(0px, 0)!important;
      transform: translate(0px, 0)!important;
 }
+
+.excalidraw-wrapper {
+    margin: 0px;
+    border-style: dashed;
+background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='16' ry='16' stroke='%23761D1DFF' stroke-width='9' stroke-dasharray='5%25%2c 15%25' stroke-dashoffset='35' stroke-linecap='round'/%3e%3c/svg%3e");
+
+border-radius: 16px;
+}
+
 .excalidraw-wrapper::after {
     content: "Click here if image is not visible";
     position: absolute;
     text-align: right;
     right: 0px;
-    top: 20px;
+    top: 0px;
     font-variant: small-caps;
+    font-size: smaller;
+    padding: 10px;
 }
 .excalidraw.excalidraw-container.excalidraw--view-mode.theme--dark {
     background: var(--background-primary);
