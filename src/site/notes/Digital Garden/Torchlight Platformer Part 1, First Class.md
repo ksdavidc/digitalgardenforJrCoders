@@ -123,8 +123,7 @@ Setting the xspeed has 2 steps. We start with an if/else block.
 		Our speed is +2. 
 		The positive sign (+) tells us our direction is right.The 2 is how fast. 
 		To slow down, we change the 2 to 1, but keep the +, since the direction is the same.
-		In other words: +2 becomes +1. We **subtract 1**.
-
+		In other words: +2 becomes +1. We **subtract 1**.  
 
 - Let's say we are going **left**
 		Our speed is -2.  
@@ -132,15 +131,14 @@ Setting the xspeed has 2 steps. We start with an if/else block.
 		Slowing down means the 2 becomes a 1. But the direction stays the same, so we keep the negative sign.
 		In other words, -2 becomes -1. We **add 1**.
 
-
 - In other words: 
 		*right* **-1**
-		*left* **+1** 
+		*left* **+1**   
 
 
 - In other words:
 		(left) speed **less** (<) **than** 0 is **+1**
-		(right) speed **greater** (>) **than** 0 is **-1**
+		(right) speed **greater** (>) **than** 0 is **-1**  
 
 
 ```ad-scratch
@@ -168,9 +166,8 @@ You are done for this class. Next is [[Digital Garden/Torchlight Platformer Part
 ---
 
 ## Footnotes
-
-[^1]: The reason will become clear later.
-[^2]: Add the two conditions together (left - right)  to get:
+[^1]: The reason will become clear later. 
+[^2]: Add the two conditions together (left - right)  to get: 
 	```ad-scratch
 	~~~scratchblock
 	define set xspeed
