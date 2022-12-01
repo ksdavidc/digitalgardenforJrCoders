@@ -163,11 +163,15 @@ code[class*=language-] {
 }
 
 .excalidraw-wrapper {
-    margin: 0px;
+    margin: 0px!important;
     border-style: dashed;
-background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='16' ry='16' stroke='%23761D1DFF' stroke-width='9' stroke-dasharray='5%25%2c 15%25' stroke-dashoffset='35' stroke-linecap='round'/%3e%3c/svg%3e");
-
-border-radius: 16px;
+    border-radius: 16px;
+      position: absolute;
+  border: 5px dashed var(--text-normal);
+  top: -3px;
+  bottom: -3px;
+  left: -3px;
+  right: -3px;
 }
 
 .excalidraw-wrapper::after {
