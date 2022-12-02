@@ -317,7 +317,7 @@ end
 ```ad-scratch
 title: hitbox, pull up definition
 ~~~scratchblock
-define vpull up or down if touching walls and <falling?> or not
+define pull out if touching walls and <falling?> or not
 if <touching [walls v]> then
 set [y speed v] to (0)
 change y by <falling?::custom>
