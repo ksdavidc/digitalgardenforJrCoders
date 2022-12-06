@@ -31,7 +31,7 @@ end
 
 Now we will do the **else** part of the if/else block. This covers the case that either the up arrow or left arrow key are being pressed. 
 
-How set `x speed` if we are touching and arrow? The arrow keys should make us go faster. We have 2 directions:
+How do we set `x speed` if we are pressing an arrow key? The arrow keys should make us go faster. We have 2 directions:
 * If we want to go faster to the right, we **add 1** to `x speed`
 
 ```ad-scratch
