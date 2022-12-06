@@ -35,7 +35,6 @@ How do we set `x speed` if we are pressing an arrow key? The arrow keys should m
 * If we want to go faster to the right, we **add 1** to `x speed`
 
 ```ad-scratch
-title: 
 ~~~scratchblock
 if <key [right arrow v] pressed> then
 	change (x speed) by (1)
@@ -46,7 +45,6 @@ end
 * If we want to go faster to the left, we **subtract 1** from `x speed`
 
 ```ad-scratch
-title: 
 ~~~scratchblock
 if <key [left arrow v] pressed> then
 	change (x speed) by (-1)
@@ -324,7 +322,6 @@ The next step is:
 * Notice that in the `receive fall` stack we called this myblock with an input of `y speed < 0` (this is 1 when we are falling, and 0 when we are not):
 
 ```ad-scratch
-title:
 ~~~scratchblock
 
 when I receive [fall v]
@@ -336,7 +333,6 @@ pull out if touching wall and <(y speed) \< [0]> or not::custom
 -  We send the value of  `y speed < 0 ` into the boolean called <**falling?**> in the myblock definition. 
 
 ```ad-scratch
-title:
 ~~~scratchblock
 define pull out if touching wall and <falling?> or not
 ...
@@ -384,7 +380,6 @@ Here is the diagram again. After we pull out, the speed is **0**, which means we
 Note that **order** is important! If instead we `change y` first and then change the speed...
 
 ```ad-scratch
-title:
 ~~~scratchblock
 define pull out if touching wall and <falling?> or not
    if <touching [walls v]> then
