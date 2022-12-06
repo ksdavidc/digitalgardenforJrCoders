@@ -333,7 +333,7 @@ pull out if touching wall and <(y speed) \< [0]> or not::custom
 ...
 ~~~
 ```
--  We send the value of  `y speed < 0 ` into the boolean called <**falling?**> in the myblock. 
+-  We send the value of  `y speed < 0 ` into the boolean called <**falling?**> in the myblock definition. 
 
 ```ad-scratch
 title:
@@ -343,9 +343,12 @@ define pull out if touching wall and <falling?> or not
 ~~~
 ```
 
-   - <`falling?`> is **1** if we are falling, but **Zero** if we are not falling.
-   - Drag the red <`falling?`> into the `change y` block
-   - This will change y **only if** we are **both** *touching the wall* **and** *falling*:
+   - <`falling?`> is **1** (true) if we are falling, but **Zero** (false) if we are not falling. 
+```ad-tip
+This is how booleans work. If the condition is true, the boolean actually takes the value `true`, but scratch "knows" to make this into a **1** if we try to use it like a number. If the boolean is `false`, scratch makes it **zero** for us if we try to use it as a number.
+```
+- Drag the <`falling?`> boolean from the definition into the `change y` block. (The change y block expects a number, and Scratch will change <`falling?`> into a **zero** or **1**.)
+- Therefore, this will change y **only if** we are **both** *touching the wall* **and** *falling*:
 
 ```ad-scratch
 title: hitbox, pull up definition
@@ -358,8 +361,8 @@ end
 ~~~
 ```
 
-- <`falling?`> will be 0 if we are going up, and this block won't change y, which is good (for now).
-- It only pulls out if we are falling and touching the wall.
+- <`falling?`> will be **0** if we are going up, and this block won't change y, which is good (for now).
+- It only pulls out (up) if we are falling and touching the wall.
 
 ```ad-scratch
 title: hitbox, pull up definition
@@ -374,7 +377,7 @@ end
 
 One line version of the pull out routine is in the footnotes [^4]
 
-Here is the diagram again. After we pull out, the speed is 0, which means we stop falling, as we should. This is realistic. When you hit the ground, you stop moving. when you are done you are sitting on the ground and not moving, just as you would be when you land on the ground from falling.
+Here is the diagram again. After we pull out, the speed is **0**, which means we stop falling, as we should. This is realistic. When you hit the ground, you stop moving. When we are done we are sitting on the ground and not moving, just as you would be when you land on the ground from falling.
 
 <div id="pullUp1excalidraw.md5"></div><script>(function(){const InitialData={"type":"excalidraw","version":2,"source":"https://excalidraw.com","elements":[{"type":"rectangle","version":467,"versionNonce":165867235,"isDeleted":false,"id":"kX6mdJgu6Z9zYzt4QkKQC","fillStyle":"solid","strokeWidth":1,"strokeStyle":"solid","roughness":0,"opacity":90,"angle":0,"x":-309.40719526241986,"y":-322.6127524742713,"strokeColor":"#000000","backgroundColor":"#15aabf","width":580.8837890625,"height":409.2378845214844,"seed":524826683,"groupIds":[],"strokeSharpness":"sharp","boundElements":[],"updated":1669342816112,"link":null,"locked":false},{"type":"rectangle","version":365,"versionNonce":867167853,"isDeleted":false,"id":"btiQUpFtBA806yPFVw0O4","fillStyle":"solid","strokeWidth":1,"strokeStyle":"solid","roughness":2,"opacity":100,"angle":0,"x":-308.62730916341144,"y":-141.68146946119225,"strokeColor":"#000000","backgroundColor":"#fa5252","width":578.7227783203125,"height":52.170654296875,"seed":44219637,"groupIds":[],"strokeSharpness":"round","boundElements":[{"id":"UcskjoFCvHzCqT3uSCxMh","type":"arrow"}],"updated":1669342806524,"link":null,"locked":false},{"type":"rectangle","version":616,"versionNonce":308165347,"isDeleted":false,"id":"h2uqRkhOXHx654X-XRb_Z","fillStyle":"solid","strokeWidth":1,"strokeStyle":"solid","roughness":2,"opacity":100,"angle":0,"x":-262.0369364420573,"y":-183.8746464573324,"strokeColor":"#000000","backgroundColor":"#4c6ef5","width":57.265625,"height":54.74920654296875,"seed":2074835163,"groupIds":[],"strokeSharpness":"round","boundElements":[],"updated":1669342806524,"link":null,"locked":false},{"type":"arrow","version":337,"versionNonce":1977718989,"isDeleted":false,"id":"f8Uzi4SwRvBu9EFRjHf0t","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"angle":0,"x":-155.02411891657368,"y":-168.93575815054083,"strokeColor":"#000000","backgroundColor":"transparent","width":0,"height":59.370208740234375,"seed":231274421,"groupIds":[],"strokeSharpness":"round","boundElements":[],"updated":1669342806524,"link":null,"locked":false,"startBinding":{"elementId":"QwswnlTb","focus":0.132333157240707,"gap":4.791787652533429},"endBinding":null,"lastCommittedPoint":null,"startArrowhead":null,"endArrowhead":"arrow","points":[[0,0],[0,59.370208740234375]]},{"type":"text","version":84,"versionNonce":87746179,"isDeleted":false,"id":"QwswnlTb","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"angle":0,"x":-192.4592895507813,"y":-198.72754580307426,"strokeColor":"#000000","backgroundColor":"transparent","width":76,"height":25,"seed":104294235,"groupIds":[],"strokeSharpness":"sharp","boundElements":[{"id":"f8Uzi4SwRvBu9EFRjHf0t","type":"arrow"}],"updated":1669342806524,"link":null,"locked":false,"fontSize":20,"fontFamily":1,"text":"speed y","rawText":"speed y","baseline":18,"textAlign":"left","verticalAlign":"top","containerId":null,"originalText":"speed y"},{"type":"rectangle","version":726,"versionNonce":758052653,"isDeleted":false,"id":"7ROID8RLUbPYdA3Pg-am9","fillStyle":"solid","strokeWidth":1,"strokeStyle":"solid","roughness":2,"opacity":100,"angle":0,"x":-107.46558125813806,"y":-183.8746464573324,"strokeColor":"#000000","backgroundColor":"#4c6ef5","width":57.265625,"height":54.74920654296875,"seed":2113005077,"groupIds":[],"strokeSharpness":"round","boundElements":[],"updated":1669342806524,"link":null,"locked":false},{"type":"text","version":197,"versionNonce":985734691,"isDeleted":false,"id":"ZpKNmGDT","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"angle":0,"x":-37.9922888340094,"y":-199.14230825111613,"strokeColor":"#000000","backgroundColor":"transparent","width":76,"height":25,"seed":1465277301,"groupIds":[],"strokeSharpness":"sharp","boundElements":[],"updated":1669342806524,"link":null,"locked":false,"fontSize":20,"fontFamily":1,"text":"speed y","rawText":"speed y","baseline":18,"textAlign":"left","verticalAlign":"top","containerId":null,"originalText":"speed y"},{"type":"text","version":39,"versionNonce":604080525,"isDeleted":false,"id":"rQd7o4Mi","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"angle":0,"x":-7.9922888340094005,"y":-167.28807961673064,"strokeColor":"#000000","backgroundColor":"transparent","width":16,"height":25,"seed":1635862747,"groupIds":[],"strokeSharpness":"sharp","boundElements":[],"updated":1669342806524,"link":null,"locked":false,"fontSize":20,"fontFamily":1,"text":"0","rawText":"0","baseline":18,"textAlign":"left","verticalAlign":"top","containerId":null,"originalText":"0"},{"type":"rectangle","version":956,"versionNonce":940071149,"isDeleted":false,"id":"vEIBqNI4qxu5-18LGiWQE","fillStyle":"solid","strokeWidth":1,"strokeStyle":"solid","roughness":2,"opacity":100,"angle":0,"x":80.32943921211427,"y":-200.77953222584304,"strokeColor":"#000000","backgroundColor":"#4c6ef5","width":57.265625,"height":54.74920654296875,"seed":1920351419,"groupIds":[],"strokeSharpness":"round","boundElements":[{"id":"UcskjoFCvHzCqT3uSCxMh","type":"arrow"}],"updated":1669342809384,"link":null,"locked":false},{"type":"text","version":274,"versionNonce":462606317,"isDeleted":false,"id":"vSFzy3VC","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"angle":0,"x":156.79945412660248,"y":-198.9336149668613,"strokeColor":"#000000","backgroundColor":"transparent","width":76,"height":25,"seed":487731541,"groupIds":[],"strokeSharpness":"sharp","boundElements":[],"updated":1669342806524,"link":null,"locked":false,"fontSize":20,"fontFamily":1,"text":"speed y","rawText":"speed y","baseline":18,"textAlign":"left","verticalAlign":"top","containerId":null,"originalText":"speed y"},{"type":"text","version":118,"versionNonce":934556003,"isDeleted":false,"id":"RhLxkizO","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"angle":0,"x":186.79945412660248,"y":-171.39498859204417,"strokeColor":"#000000","backgroundColor":"transparent","width":16,"height":25,"seed":425982587,"groupIds":[],"strokeSharpness":"sharp","boundElements":[],"updated":1669342806524,"link":null,"locked":false,"fontSize":20,"fontFamily":1,"text":"0","rawText":"0","baseline":18,"textAlign":"left","verticalAlign":"top","containerId":null,"originalText":"0"},{"type":"arrow","version":1018,"versionNonce":1844951139,"isDeleted":false,"id":"UcskjoFCvHzCqT3uSCxMh","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"angle":0,"x":112.02164244040449,"y":-119.58971927142812,"strokeColor":"#000000","backgroundColor":"transparent","width":28.716396233974365,"height":21.483466515174285,"seed":1512917051,"groupIds":[],"strokeSharpness":"round","boundElements":[],"updated":1669342809384,"link":null,"locked":false,"startBinding":null,"endBinding":{"elementId":"vEIBqNI4qxu5-18LGiWQE","focus":0.8157109159252531,"gap":4.957139896271883},"lastCommittedPoint":null,"startArrowhead":null,"endArrowhead":"arrow","points":[[0,0],[28.716396233974365,-12.348799485426696],[2.3998008391852466,-21.483466515174285]]},{"type":"text","version":110,"versionNonce":1048648405,"isDeleted":false,"id":"t43ZZ7QC","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"angle":0,"x":72.21938539162653,"y":-233.3396355437138,"strokeColor":"#000000","backgroundColor":"transparent","width":77,"height":25,"seed":1768232251,"groupIds":[],"strokeSharpness":"sharp","boundElements":[],"updated":1669909072248,"link":null,"locked":false,"fontSize":20,"fontFamily":1,"text":"pull out","rawText":"pull out","baseline":18,"textAlign":"left","verticalAlign":"top","containerId":null,"originalText":"pull out"}],"appState":{"theme":"dark","viewBackgroundColor":"transparent","currentItemStrokeColor":"#000000","currentItemBackgroundColor":"transparent","currentItemFillStyle":"hachure","currentItemStrokeWidth":1,"currentItemStrokeStyle":"solid","currentItemRoughness":1,"currentItemOpacity":100,"currentItemFontFamily":1,"currentItemFontSize":20,"currentItemTextAlign":"left","currentItemStrokeSharpness":"sharp","currentItemStartArrowhead":null,"currentItemEndArrowhead":"arrow","currentItemLinearStrokeSharpness":"round","gridSize":null,"colorPalette":{}},"files":{}};InitialData.scrollToContent=true;App=()=>{const e=React.useRef(null),t=React.useRef(null),[n,i]=React.useState({width:void 0,height:void 0});return React.useEffect(()=>{i({width:t.current.getBoundingClientRect().width,height:t.current.getBoundingClientRect().height});const e=()=>{i({width:t.current.getBoundingClientRect().width,height:t.current.getBoundingClientRect().height})};return window.addEventListener("resize",e),()=>window.removeEventListener("resize",e)},[t]),React.createElement(React.Fragment,null,React.createElement("div",{className:"excalidraw-wrapper",ref:t},React.createElement(ExcalidrawLib.Excalidraw,{ref:e,width:n.width,height:n.height,initialData:InitialData,viewModeEnabled:!0,zenModeEnabled:!0,gridModeEnabled:!1})))},excalidrawWrapper=document.getElementById("pullUp1excalidraw.md5");ReactDOM.render(React.createElement(App),excalidrawWrapper);})();</script>
 
@@ -396,13 +399,11 @@ define pull out if touching wall and <falling?> or not
 
 ...we are still going down. We are kind of back where we started, in the air and falling. But, we don't know if we touched a wall to get here or whether we were just falling, so *we can't know if we should change `y speed` to zero here yet or not*. Try it and you will see that it won't work.
 
-&nbsp;
-
 ## Testing jumps
 
 Okay, so we are done with Part 1 of our Torchlight Platformer. But let's test it. 
 
-To test out jumping, we use the up arrow key to change y. The second line lets us keep pressing the  up arrow as long as we are moving slowly (in either direction). You might have to adjust the numbers if they are too large or small.
+To test out jumping, we use a simple when up arrow key pressed stack to change y. The second line lets us keep pressing the  up arrow as long as we are moving slowly (in either direction). You might have to adjust the numbers if they are too large or small.
 
 ```ad-scratch
 title: hitbox, jumping test
@@ -413,7 +414,7 @@ wait until < ([abs v] of (y speed))  < (8) >
 ~~~
 ```
 
-This works okay but not perfectly. For example, it doesn't work if we hit a platform from below. You can put a platform in your wall and see what happens. We will have to fix this and add other things in [[Digital Garden/Torchlight Platformer Part 2|Torchlight Platformer Part 2]].
+This works okay but not perfectly. For example, it doesn't work if we hit a platform from below. You can put a platform in your wall and see what happens. We will have to make a better jump routine and add other things in [[Digital Garden/Torchlight Platformer Part 2|Torchlight Platformer Part 2]].
 
 ---
 
