@@ -46,6 +46,7 @@ end
 * If we want to go faster to the left, we **subtract 1** from `x speed`
 
 ```ad-scratch
+title:
 ~~~scratchblock
 if <key [left arrow v] pressed> then
 	change (x speed) by (-1)
@@ -57,7 +58,6 @@ All together it looks like this:
 ```ad-scratch
 title: hitbox, define set xspeed
 ~~~scratchblock
-
 define set xspeed
 if <<not <key [left arrow v] pressed?>> and <not <key [right arrow v] pressed?>>> then
 if <(x speed) < (0)> then
@@ -87,8 +87,6 @@ Keeping the speed below the max is similar. If we are going faster than 4 units,
 ```ad-scratch
 title: hitbox, define keep speed below max
 ~~~scratchblock
-
-
 define keep speed below max
 set maximum speed
 moving right:
@@ -133,7 +131,6 @@ We will use myblocks for the 2 middle steps. These myblocks are a little differe
 ```ad-scratch
 title: hitbox, receive fall
 ~~~scratchblock
-
 when I receive [fall v]
 change [y speed v] by (-1)
 change y by (y speed) in steps. Stop at wall.::custom
@@ -142,7 +139,6 @@ If so, we should pull out of the wall
 Our speed +/- tells us whether we are either moving up {ceiling} or down {floor}
 pull out if touching wall and <(y speed) \< [0]> or not::custom
 broadcast [move left / right v]
-
 ~~~
 ```
 
@@ -177,7 +173,6 @@ define change y by (y speed) in steps. Stop at wall.::custom
 
 ````ad-example
 title: Steps
-
 1. Fill in the first label ("`pull out if touching wall and`")  
 2. Add a **boolean** field <`falling?`> (pointy edges "< ... >")  
 ```ad-tip
@@ -324,8 +319,8 @@ The next step is:
 * Notice that in the `receive fall` stack we called this myblock with an input of `y speed < 0` (this is true when we are falling, and false when we are not):
 
 ```ad-scratch
+title:
 ~~~scratchblock
-
 when I receive [fall v]
 ...
 pull out if touching wall and <(y speed) \< [0]> or not::custom
