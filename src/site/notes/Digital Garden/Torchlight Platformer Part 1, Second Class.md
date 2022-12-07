@@ -35,6 +35,7 @@ How do we set `x speed` if we are pressing an arrow key? The arrow keys should m
 * If we want to go faster to the right, we **add 1** to `x speed`
 
 ```ad-scratch
+title:
 ~~~scratchblock
 if <key [right arrow v] pressed> then
 	change (x speed) by (1)
