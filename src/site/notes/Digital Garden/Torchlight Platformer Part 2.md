@@ -5,7 +5,7 @@
 
 # Torchlight Platformer Part 2
 
-I assume you have made [[Digital Garden/Torchlight Platformer Part 1, First Class|Torchlight Platformer Part 1, First Class]].
+Please complete [[Digital Garden/Torchlight Platformer Part 1, First Class\|Torchlight Platformer Part 1, First Class]] before starting here.
 
 In that we had a jump routine, but it was a temporary solution. 
 
