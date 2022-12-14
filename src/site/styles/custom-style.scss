@@ -7,7 +7,18 @@ body {
      display: block!important;
         width: 25px;
        
-    }    
+    }  
+
+/*** Fix fonts after digital garded upgrade ***/
+
+    --h1-font: "Ranille Normal", serif;  
+    --h2-font: "Ranille Normal", serif; 
+    --h3-font: "Ranille Normal", serif; 
+    --h4-font: "Ranille Normal", serif; 
+    --h5-font: "Ranille Normal", serif; 
+    --h6-font: "Ranille Normal", serif; 
+
+
     //  background-color: white;
     //  .content {
     //   font-size: 14px;
@@ -193,3 +204,6 @@ code[class*=language-] {
     padding: 10px;
 }
 
+div.content.cm-s-obsidian .admonition li {
+    line-height: 1.3em;
+}

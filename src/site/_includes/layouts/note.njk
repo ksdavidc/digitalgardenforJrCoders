@@ -8,15 +8,30 @@ permalink: "notes/{{ page.fileSlug | slugify }}/"
     <title>{{ page.fileSlug }}</title>
     {%include "components/pageheader.njk"%}
   </head>
-  <body class="theme-{{meta.baseTheme}} markdown-preview-view">
+  <body class="theme-{{meta.baseTheme}} markdown-preview-view markdown-rendered markdown-preview-section">
     {%include "components/notegrowthhistory.njk"%}
+    
+    {% if settings.dgShowFileTree !== true %}
+      {%include "components/navbar.njk"%}
+    {%else%}
+      {%include "components/filetree.njk"%}
+    {% endif %}
 
-    <div class="content">
-      {% if dgHomeLink !== false%}
-        <a href="/">🏡 Back Home</a>
+    {% if settings.dgEnableSearch === true %}
+      {%include "components/searchContainer.njk"%}
+    {% endif %}
+
+    <div class="content cm-s-obsidian">
+      {% if settings.dgShowInlineTitle === true %}
+        <h1>{{ page.fileSlug }}</h1>
       {% endif %}
       {{ content | link | highlight | safe}}
+
+      {% if settings.dgShowBacklinks === true or settings.dgShowLocalGraph === true%}
+        {%include "components/sidebar.njk"%}
+      {% endif %}
     </div>
+
 <!-- provides scratchblock support 
 old selectors: div.blocks pre, .scratch, pre.language-scratchblock code, pre.language-scratchblock, .language-scratchblocks, div.callout-scratch pre, div.ad-scratch pre,
 new selectors: div.blocks pre, pre code.language-scratchblock, div.language-ad-scratch pre
@@ -27,5 +42,6 @@ scratchblocks.renderMatching('div.blocks pre, pre code.language-scratchblock, co
   scale: 1,                // Optional, defaults to 1
 });
 </script>
+
   </body>
 </html>
