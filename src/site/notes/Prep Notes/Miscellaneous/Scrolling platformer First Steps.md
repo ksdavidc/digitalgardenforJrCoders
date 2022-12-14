@@ -5,9 +5,9 @@
 
 # Scrolling Platformer First steps
 
-- [[Prep Notes/Miscellaneous/Scrolling platformer First Steps#Step 1|Step 1]]
-- [[Prep Notes/Miscellaneous/Scrolling platformer First Steps#Step 2|Step 2]]
-- [[Prep Notes/Miscellaneous/Scrolling platformer First Steps#Step 3|Step 3]]
+- [[Prep Notes/Miscellaneous/Scrolling platformer First Steps#Step 1\|Step 1]]
+- [[Prep Notes/Miscellaneous/Scrolling platformer First Steps#Step 2\|Step 2]]
+- [[Prep Notes/Miscellaneous/Scrolling platformer First Steps#Step 3\|Step 3]]
 
 
 
