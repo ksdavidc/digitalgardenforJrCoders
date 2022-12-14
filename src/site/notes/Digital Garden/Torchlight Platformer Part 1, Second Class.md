@@ -176,7 +176,7 @@ title: Steps
 1. Fill in the first label ("`pull out if touching wall and`")  
 2. Add a **boolean** field <`falling?`> (pointy edges "< ... >")  
 ```ad-tip
-title: 
+title:
 A **boolean** field is different than an input field. It only takes things like sensing blocks and logical connectors (`and`, `or`)
 ```
 3. And another label field ("`or not`")
