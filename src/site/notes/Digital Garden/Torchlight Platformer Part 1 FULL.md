@@ -465,7 +465,7 @@ wait until < ((abs v) of (yspeed))  < (8) >
 ~~~
 ```
 
-Step 1 is finished. It works okay but not perfectly. For example, it doesn't work if we hit a platform from below. We will have to fix it in [[Digital Garden/Torchlight Platformer Part 2|Torchlight Platformer Part 2]]
+Step 1 is finished. It works okay but not perfectly. For example, it doesn't work if we hit a platform from below. We will have to fix it in [[Digital Garden/Torchlight Platformer Part 2\|Torchlight Platformer Part 2]]
 
 
 ---
