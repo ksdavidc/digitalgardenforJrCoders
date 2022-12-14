@@ -51,4 +51,4 @@
 </div>
 )
 
-DALL·E mini is migrating to [[Digital Garden/Research on AI/Craiyon, formerly DALL-E mini|Craiyon, formerly DALL-E mini]]
+DALL·E mini is migrating to [[Digital Garden/Research on AI/Craiyon, formerly DALL-E mini\|Craiyon, formerly DALL-E mini]]
