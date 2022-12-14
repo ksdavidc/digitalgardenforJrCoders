@@ -183,6 +183,7 @@ module.exports = function(eleventyConfig) {
     });
 
     eleventyConfig.addPassthroughCopy("src/site/img");
+    eleventyConfig.addPassthroughCopy("src/site/js");
     eleventyConfig.addPlugin(faviconPlugin, { destination: 'dist' });
     eleventyConfig.addFilter('jsonify', function (variable) {
       return JSON.stringify(variable);
