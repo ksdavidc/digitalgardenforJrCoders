@@ -5,9 +5,9 @@
 
 # Scrolling Platformer First steps
 
-- [[Digital Garden/Miscellaneous/Scrolling Platformer First Steps#Step 1|Step 1]]
-- [[Digital Garden/Miscellaneous/Scrolling Platformer First Steps#Step 2|Step 2]]
-- [[Digital Garden/Miscellaneous/Scrolling Platformer First Steps#Step 3|Step 3]]
+- [[Digital Garden/Miscellaneous/Scrolling Platformer First Steps#Step 1\|Step 1]]
+- [[Digital Garden/Miscellaneous/Scrolling Platformer First Steps#Step 2\|Step 2]]
+- [[Digital Garden/Miscellaneous/Scrolling Platformer First Steps#Step 3\|Step 3]]
 
 
 
