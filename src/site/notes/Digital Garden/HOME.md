@@ -14,39 +14,39 @@ https://digitalgardenforjrcoders.netlify.app/
 
 Some temporary files for easy access during class.
 
-- [[Digital Garden/HOME#Recently added|Recently added]]
-- [[Digital Garden/HOME#Instructions for students|Instructions for students]]
-	- [[Digital Garden/HOME#Instructions for students|Monday]]
-	- [[Digital Garden/HOME#Instructions for students|Friday]]
-	- [[Digital Garden/HOME#Instructions for students|Saturday]]
-- [[Digital Garden/HOME#Miscellaneous Topics|Miscellaneous Topics]]
+- [[Digital Garden/HOME#Recently added\|Recently added]]
+- [[Digital Garden/HOME#Instructions for students\|Instructions for students]]
+	- [[Digital Garden/HOME#Instructions for students\|Monday]]
+	- [[Digital Garden/HOME#Instructions for students\|Friday]]
+	- [[Digital Garden/HOME#Instructions for students\|Saturday]]
+- [[Digital Garden/HOME#Miscellaneous Topics\|Miscellaneous Topics]]
 
 ## Recently added 
->[[Digital Garden/Halloween/Simple Halloween Storytelling Project Outline|Simple Halloween Storytelling Project Outline]]
->[[Digital Garden/Torchlight Platformer Part 1, First Class|Torchlight Platformer Part 1, First Class]]
->[[Digital Garden/Friday Class/2022 10 Student K Flappy Bird|2022 10 Student K Flappy Bird]]
+>[[Digital Garden/Halloween/Simple Halloween Storytelling Project Outline\|Simple Halloween Storytelling Project Outline]]
+>[[Digital Garden/Torchlight Platformer Part 1, First Class\|Torchlight Platformer Part 1, First Class]]
+>[[Digital Garden/Friday Class/2022 10 Student K Flappy Bird\|2022 10 Student K Flappy Bird]]
 
 ## Instructions for students
 
 ### Monday
-[[Digital Garden/Halloween/This week Halloween Review, Images, Transitions|This week Halloween Review, Images, Transitions]]
-[[Digital Garden/Monday Class/TSU|TSU]]
+[[Digital Garden/Halloween/This week Halloween Review, Images, Transitions\|This week Halloween Review, Images, Transitions]]
+[[Digital Garden/Monday Class/TSU\|TSU]]
 
 ### Friday
-[[Digital Garden/Halloween/Simple Halloween Storytelling Project Outline|Simple Halloween Storytelling Project Outline]]
+[[Digital Garden/Halloween/Simple Halloween Storytelling Project Outline\|Simple Halloween Storytelling Project Outline]]
 
 ### Saturday
 
-[[Digital Garden/Halloween/Simple Halloween Storytelling Project Outline|Simple Halloween Storytelling Project Outline]]
+[[Digital Garden/Halloween/Simple Halloween Storytelling Project Outline\|Simple Halloween Storytelling Project Outline]]
 
 
 ## Miscellaneous Topics
 
-[[Digital Garden/Torchlight Platformer Part 1 FULL|Torchlight Platformer Part 1 FULL]]
+[[Digital Garden/Torchlight Platformer Part 1 FULL\|Torchlight Platformer Part 1 FULL]]
 
-[[Digital Garden/Research on AI/AI|AI]]
+[[Digital Garden/Research on AI/AI\|AI]]
 
-[[Digital Garden/Friday Class/For Trisha|For Trisha]]
+[[Digital Garden/Friday Class/For Trisha\|For Trisha]]
 
-[[Digital Garden/Halloween/Simple Halloween Storytelling Project Outline|Simple Halloween Storytelling Project Outline]]
+[[Digital Garden/Halloween/Simple Halloween Storytelling Project Outline\|Simple Halloween Storytelling Project Outline]]
 
