@@ -5,7 +5,7 @@
 
 # Torchlight Platformer Part 1, Second Class
 
-This is the second class. The first class is [[Digital Garden/Torchlight Platformer Part 1, First Class|here]].
+This is the second class. The first class is [[Digital Garden/Torchlight Platformer Part 1, First Class\|here]].
 
 ## Finishing the definition of the set xspeed myblock
 We were working on the set `x speed` myblock. We had finished the **if** part of the if/else block.
@@ -408,7 +408,7 @@ wait until < ([abs v] of (y speed))  < (8) >
 ~~~
 ```
 
-This works okay but not perfectly. For example, it doesn't work if we hit a platform from below. You can put a platform in your wall and see what happens. We will have to make a better jump routine and add other things in [[Digital Garden/Torchlight Platformer Part 2|Torchlight Platformer Part 2]].
+This works okay but not perfectly. For example, it doesn't work if we hit a platform from below. You can put a platform in your wall and see what happens. We will have to make a better jump routine and add other things in [[Digital Garden/Torchlight Platformer Part 2\|Torchlight Platformer Part 2]].
 
 ---
 
