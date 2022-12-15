@@ -1,13 +1,13 @@
 ---
-{"dg-publish":true,"permalink":"/digital-garden/miscellaneous/scrolling-platformer-first-steps/"}
+{"dg-publish":true,"permalink":"/digital-garden/scrolling-platformer/scrolling-platformer-first-steps/"}
 ---
 
 
 # Scrolling Platformer First steps
 
-- [[Digital Garden/Miscellaneous/Scrolling Platformer First Steps#Step 1\|Step 1]]
-- [[Digital Garden/Miscellaneous/Scrolling Platformer First Steps#Step 2\|Step 2]]
-- [[Digital Garden/Miscellaneous/Scrolling Platformer First Steps#Step 3\|Step 3]]
+- [[Digital Garden/Scrolling Platformer/Scrolling platformer First Steps#Step 1\|Step 1]]
+- [[Digital Garden/Scrolling Platformer/Scrolling platformer First Steps#Step 2\|Step 2]]
+- [[Digital Garden/Scrolling Platformer/Scrolling platformer First Steps#Step 3\|Step 3]]
 
 
 

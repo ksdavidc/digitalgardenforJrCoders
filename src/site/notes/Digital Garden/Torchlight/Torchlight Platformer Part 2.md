@@ -1,11 +1,11 @@
 ---
-{"dg-publish":true,"permalink":"/digital-garden/torchlight-platformer-part-2/"}
+{"dg-publish":true,"permalink":"/digital-garden/torchlight/torchlight-platformer-part-2/"}
 ---
 
 
 # Torchlight Platformer Part 2
 
-Please complete [[Digital Garden/Torchlight Platformer Part 1, First Class\|Torchlight Platformer Part 1, First Class]] before starting here.
+Please complete [[Digital Garden/Torchlight/Torchlight Platformer Part 1, First Class\|Torchlight Platformer Part 1, First Class]] and [[Digital Garden/Torchlight/Torchlight Platformer Part 1, Second Class\|Torchlight Platformer Part 1, Second Class]] before starting here.
 
 In that we had a jump routine, but it was a temporary solution. 
 

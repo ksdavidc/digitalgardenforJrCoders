@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/digital-garden/torchlight-platformer-part-1-first-class/"}
+{"dg-publish":true,"permalink":"/digital-garden/torchlight/torchlight-platformer-part-1-first-class/"}
 ---
 
  
@@ -166,7 +166,7 @@ end
 
 ## First Class Finished
 
-You are done for this class. Next is [[Digital Garden/Torchlight Platformer Part 1, Second Class\|Torchlight Platformer Part 1, Second Class]]
+You are done for this class. Next is [[Digital Garden/Torchlight/Torchlight Platformer Part 1, Second Class\|Torchlight Platformer Part 1, Second Class]]
 
 ---
 
