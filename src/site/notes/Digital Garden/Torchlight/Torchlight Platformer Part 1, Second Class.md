@@ -15,16 +15,15 @@ title: hitbox, define set xspeed
 ~~~scratchblock
 define set xspeed
 if <<not <key [left arrow v] pressed?>> and <not <key [right arrow v] pressed?>>> then
-left
+We did this already.
 if <(x speed) < (0)> then
       change (x speed) by (1)
       end
-right
 if <(x speed) > (0)> then
       change (x speed) by (-1)
       end
 else
-we will do this now
+We will do this now.
 end
 ~~~
 ```
