@@ -37,14 +37,14 @@ body {
 
 
     div.scratchblocks path.sb3-obsolete {
-        fill: bisque;
+        fill: var(--background-primary);
         stroke: transparent;
     }
 
 
     div.scratchblocks path.sb3-obsolete ~ text.sb3-label {
-        color: black;
-        fill: black;
+        color: var(--text-normal);
+        fill: var(--text-normal);
         font-family: serif;
         font-size: 10pt;
       
