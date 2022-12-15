@@ -8,7 +8,7 @@
 This is the second class. The first class is [[Digital Garden/Torchlight/Torchlight Platformer Part 1, First Class\|here]].
 
 ## Finishing the definition of the set xspeed myblock
-We were working on the set `x speed` myblock. We had finished the **if** part of the if/else block.
+We were working on the `set x speed` myblock. We had finished the **if** part of the if/else block.
 
 ```ad-scratch
 title: hitbox, define set xspeed
