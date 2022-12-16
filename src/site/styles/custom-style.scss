@@ -82,7 +82,7 @@ div.language-ad-scratch div.admonition-title {
     
 div.language-ad-scratch:hover div.admonition-title {
     z-index: -10;
-    
+    background: rgb(210, 105, 30, .2);
     }
     
 div.language-ad-scratch div.admonition-title::before {
@@ -96,6 +96,10 @@ div.language-ad-scratch div.admonition-title::before {
     /* margin-left: 6px; */
 }    
     
+div.language-ad-scratch:hover div.scratchblocks {
+background-color: var(--background-secondary);
+}
+
 div[class*=language-ad-] {
     font-size: revert;
 }
