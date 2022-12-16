@@ -120,6 +120,23 @@ body.markdown-preview-view summary {
     width: 70%;
 }
 
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--background-secondary);
+    height: 20vh;
+    min-height: 25px;
+    border-radius: 20px;
+}
+
+
+body::-webkit-scrollbar {
+    display: block;
+    width: 26px;
+    background: var(--background-primary);
+    border-radius: 20px;
+}
+
+
 .scratchblocks::-webkit-scrollbar {
     display: block;
     width: 20px;
