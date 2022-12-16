@@ -126,10 +126,12 @@ body::-webkit-scrollbar {
     background: var(--background-primary);
     border-radius: 20px;
 }
+
 body::-webkit-scrollbar:hover {
-
-    width: 26px;
-
+    width: 20px;
+}
+body::-webkit-scrollbar-track:hover {
+    width: 20px;
 }
 
 
@@ -141,10 +143,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 body::-webkit-scrollbar-thumb:hover {
-    background-color: blue;
+    background-color: var(--text-normal);
     width: 20px;
 }
-
 
 
 .scratchblocks::-webkit-scrollbar {
