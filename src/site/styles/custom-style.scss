@@ -170,6 +170,10 @@ body::-webkit-scrollbar-thumb:hover {
     border: 3px solid var(--text-muted) !important;
 }
 
+/* makes room for the scrollbar to be hovered */
+.sidebar {
+    right: 6px;
+}
 
 .scratchblocks {
     overflow: auto;
