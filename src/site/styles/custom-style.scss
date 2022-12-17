@@ -99,9 +99,7 @@ div.language-ad-scratch div.admonition-title::before {
 /* END ADMONITION TITLE */
 
 div.language-ad-scratch:hover div.scratchblocks {
-background-color: var(--background-primary);
-opacity:.5;
-border-radius: 32px;
+background-color: transparent;
 }
 
 div[class*=language-ad-] {
