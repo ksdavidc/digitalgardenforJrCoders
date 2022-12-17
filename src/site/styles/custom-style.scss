@@ -51,7 +51,7 @@ body {
     }
 
 
-
+/* ADMONTION TITLE */
     
 div.language-ad-scratch div.admonition-title {
     /* display: none; */
@@ -96,8 +96,10 @@ div.language-ad-scratch div.admonition-title::before {
     /* margin-left: 6px; */
 }    
     
+/* END ADMONITION TITLE */
+
 div.language-ad-scratch:hover div.scratchblocks {
-background-color: var(--background-secondary);
+background-color: var(--background-primary);
 opacity:.5;
 border-radius: 32px;
 }
@@ -125,6 +127,8 @@ body.markdown-preview-view summary {
     background: darkcyan;
     width: 70%;
 }
+
+/* SCROLLBAR SECTION */
 
 body::-webkit-scrollbar {
     display: block;
@@ -181,10 +185,14 @@ body::-webkit-scrollbar-thumb:hover {
     right: 6px;
 }
 
+
+
 .scratchblocks {
     overflow: auto;
 }
 
+
+/* END SCROLLBAR SECTION  */
 
 
 h1:before, h2:before, h3:before, h4:before, h5:before {
