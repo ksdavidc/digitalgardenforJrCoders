@@ -467,7 +467,3 @@ end
 
 This will loop through the costumes forever, in the order you put them. 
 
-```JAVA TI:"your title"
-Public Class Helloworld() {
-}
-```
