@@ -54,3 +54,5 @@ Some temporary files for easy access during class.
 [[Digital Garden/Torchlight/Torchlight Platformer Part 1, First Class\|Torchlight Platformer Part 1, First Class]]
 
 [[Digital Garden/Torchlight/Torchlight Platformer Part 1, Second Class\|Torchlight Platformer Part 1, Second Class]]
+
+[[Digital Garden/Miscellaneous/Extension Activities\|Extension Activities]]
