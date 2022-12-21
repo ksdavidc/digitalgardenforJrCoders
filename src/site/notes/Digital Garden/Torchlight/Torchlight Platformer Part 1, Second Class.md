@@ -118,7 +118,7 @@ Each time we fall the following happens:
 1) First gravity makes us __fall faster__.
 2) Then we actually __move down__ if we can.
 3) If we __hit a wall__, we have to __stop falling and pull out__ of the wall.
-4) When we are done, we __go back to moving left and righ__t.
+4) When we are done, we **go back to moving left and right**.
 
 In terms of a flowchart and `y speed`, these 4 steps are:
 
