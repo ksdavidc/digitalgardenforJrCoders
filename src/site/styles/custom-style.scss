@@ -26,6 +26,8 @@ body {
     //  h1 {
     //   color: black;
     //  }
+
+
     
     div.scratchblocks text.sb3-label {
         color: blue;
@@ -98,6 +100,11 @@ div.language-ad-scratch div.admonition-title::before {
     
 /* END ADMONITION TITLE */
 
+div.language-ad-scratch:hover {
+    border: 1px solid var(--text-normal);
+}
+
+
 div.language-ad-scratch:hover div.scratchblocks {
 background-color: transparent;
 }
@@ -105,6 +112,8 @@ background-color: transparent;
 div[class*=language-ad-] {
     font-size: revert;
 }
+
+
 
 
 }
@@ -201,6 +210,10 @@ code[class*=language-] {
     display: inline;
 }
 
+.theme-dark {
+--background-modifier-form-field-highlighted: teal;
+}
+
 .markdown-preview-view pre {
     background-color: transparent;
     display: inline;
@@ -251,3 +264,4 @@ code[class*=language-] {
 div.content.cm-s-obsidian .admonition li {
     line-height: 1.3em;
 }
+
