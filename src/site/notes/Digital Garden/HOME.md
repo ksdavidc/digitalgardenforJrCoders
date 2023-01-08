@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/digital-garden/home/","tags":"gardenEntry"}
+{"dg-publish":true,"permalink":"/digital-garden/home/","title":"Digital Garden for Junior Coders","tags":"gardenEntry"}
 ---
 
 
