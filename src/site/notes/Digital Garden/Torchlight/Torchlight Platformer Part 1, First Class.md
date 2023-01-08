@@ -4,8 +4,6 @@
 
  
 
-# Torchlight Platformer Part 1, First Class
-
 ## Create the Hitbox
 
 As always, start by creating your main sprite, which I am calling __hitbox__[^1] and initializing hitbox and your project's variables. 
