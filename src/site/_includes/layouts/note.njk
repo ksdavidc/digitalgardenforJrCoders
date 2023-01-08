@@ -34,5 +34,17 @@ permalink: "notes/{{ page.fileSlug | slugify }}/"
     {% if settings.dgLinkPreview === true %}
       {%include "components/linkPreview.njk"%}
     {% endif %}
+    
+    <!-- provides scratchblock support 
+old selectors: div.blocks pre, .scratch, pre.language-scratchblock code, pre.language-scratchblock, .language-scratchblocks, div.callout-scratch pre, div.ad-scratch pre,
+new selectors: div.blocks pre, pre code.language-scratchblock, div.language-ad-scratch pre
+-->
+<script>
+scratchblocks.renderMatching('div.blocks pre, pre code.language-scratchblock, code.language-scratchblock, code.scratchblock, div.language-ad-scratch pre', {
+  style:     'scratch3',   // Optional, defaults to 'scratch2'.
+  scale: 1,                // Optional, defaults to 1
+});
+</script>
+
   </body>
 </html>
