@@ -188,6 +188,7 @@ module.exports = function(eleventyConfig) {
     });
 
     eleventyConfig.addPassthroughCopy("src/site/img");
+    eleventyConfig.addPassthroughCopy("src/site/js");
     eleventyConfig.addPlugin(faviconPlugin, { destination: 'dist' });
     eleventyConfig.addPlugin(tocPlugin, {ul:true, tags: ['h1','h2', 'h3', 'h4', 'h5', 'h6']});
     eleventyConfig.addFilter('jsonify', function (variable) {
