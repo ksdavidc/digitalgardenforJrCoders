@@ -3,7 +3,6 @@
 ---
 
 
-# Torchlight Platformer Part 1, Second Class
 
 This is the second class. The first class is [[Digital Garden/Torchlight/Torchlight Platformer Part 1, First Class\|here]].
 
