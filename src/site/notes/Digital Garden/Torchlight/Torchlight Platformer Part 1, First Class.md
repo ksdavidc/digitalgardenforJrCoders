@@ -6,8 +6,9 @@
 
 ## Create the Hitbox
 
-As always, start by creating your main sprite, which I am calling __hitbox__[^1] and initializing hitbox and your project's variables. 
-- In this case, it is important that __hitbox is just a square__. Later, we will make it have a real costume, but for now, just a square.
+Create the first sprite. Call it __Hitbox__[^1]
+- Important: __hitbox is just a square__. Later, we will make it have a real costume, but for now, just a square.
+   
 
 <style>
 .container {font-family: sans-serif; text-align: center;}
@@ -20,7 +21,7 @@ As always, start by creating your main sprite, which I am calling __hitbox__[^1]
 ## Initialize the Hitbox
 
 - Initialize usually means things like __position__, __direction__, and __effects__. You will also initialize all your __variables__. 
-- At the start you don't always know all your variables, but as this is a platformer, we know we will need `x speed `and `y speed`, so let's initialize those.
+- At the start you don't always know all your variables, but as this is a platformer, we know we will need `x speed `and `y speed`, so let's initialize those. 
 - To set the __position__, use this trick: Put your sprite at the starting position in the stage. Then find the `go to x` block in the block area, and scratch will put the correct numbers in the block.
 
 This is what we get:
@@ -164,7 +165,7 @@ end
 
 ## First Class Finished
 
-You are done for this class. Next is [[Digital Garden/Torchlight/Torchlight Platformer Part 1, Second Class\|Torchlight Platformer Part 1, Second Class]]
+You are done for this class. Next is [[Digital Garden/Torchlight/Torchlight Class 2\|Torchlight Class 2]]
 
 ---
 
