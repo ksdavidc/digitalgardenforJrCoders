@@ -24,7 +24,7 @@ Some temporary files for easy access during class.
 ## Recently added 
 >[[Digital Garden/Halloween/Simple Halloween Storytelling Project Outline\|Simple Halloween Storytelling Project Outline]]
 >[[Digital Garden/Torchlight/Torchlight Platformer Part 1, First Class\|Torchlight Platformer Part 1, First Class]]
->[[Digital Garden/Torchlight/Torchlight Platformer Part 1, Second Class\|Torchlight Platformer Part 1, Second Class]]
+>[[Digital Garden/Torchlight/Torchlight Class 2\|Torchlight Class 2]]
 >[[Digital Garden/Friday Class/2022 10 Student K Flappy Bird\|2022 10 Student K Flappy Bird]]
 
 ## Instructions for students
@@ -53,6 +53,6 @@ Some temporary files for easy access during class.
 
 [[Digital Garden/Torchlight/Torchlight Platformer Part 1, First Class\|Torchlight Platformer Part 1, First Class]]
 
-[[Digital Garden/Torchlight/Torchlight Platformer Part 1, Second Class\|Torchlight Platformer Part 1, Second Class]]
+[[Digital Garden/Torchlight/Torchlight Class 2\|Torchlight Class 2]]
 
 [[Digital Garden/Miscellaneous/Extension Activities\|Extension Activities]]
