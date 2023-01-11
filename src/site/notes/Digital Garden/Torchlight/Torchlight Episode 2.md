@@ -433,7 +433,7 @@ Our myblock will cover both cases, so it needs to know the answer to the questio
 "*Am I falling?*" is not a number. It is either `true` or `false`.
 「*私は落ちていますか？*」 は数値ではありません。 「真」または「偽」のいずれかです。
 - `TRUE`: We were falling \(hitting the floor\)
-- 「真」: 私たちは落ちていた \(床にぶつかる\)
+- ` 真 `: 私たちは落ちていた \(床にぶつかる\)
 - `FALSE`: We were jumping \(hitting a ceiling/platform\)
 - `間違い`: 私たちはジャンプしていた \( 天井またはプラットフォーム \)
 
@@ -493,7 +493,7 @@ define pull out if touching wall and <falling?> or not
 Go to the block area and get this block. (notice the empty space)
 ブロックエリアに行き、このブロックを入手してください。 （空きスペースにご注意ください）
 ```ad-scratch
-title: hitbox, define pull out
+title:
 ~~~scratchblock
 pull out if touching wall and < > or not::custom
 ~~~
@@ -578,7 +578,7 @@ title:
 ~~~
 ```
 
-- Repeat this `speed` times. Note that it is purple. This is the `speed` from from the definition hat block, not the variable `y speed`.
+- Repeat this `speed` times. Note that it is red. This is the `speed` from from the definition hat block, not the variable `y speed`.
 - この `speed` 回を繰り返します。紫ですのでご注意ください。これは、定義ハット ブロックからの「速度」であり、変数「y 速度」ではありません。
 
 
