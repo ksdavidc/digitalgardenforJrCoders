@@ -3,7 +3,7 @@
 ---
 
 
-Please complete [[Digital Garden/Torchlight/Torchlight Platformer Part 1, First Class\|Torchlight Platformer Part 1, First Class]] and [[Digital Garden/Torchlight/Torchlight Class 2\|Torchlight Class 2]] before starting here.
+Please complete [[Digital Garden/Torchlight/Torchlight Episode 1\|Torchlight Episode 1]] and [[Digital Garden/Torchlight/Torchlight Episode 2\|Torchlight Episode 2]] before starting here.
 
 In that we had a jump routine, but it was a temporary solution. 
 
