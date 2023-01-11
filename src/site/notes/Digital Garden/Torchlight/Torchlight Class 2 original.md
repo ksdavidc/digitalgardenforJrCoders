@@ -5,7 +5,7 @@
 
 ## Where we left off 中断した場所
 
-This is the second class. The first class is [[Digital Garden/Torchlight/Torchlight Platformer Part 1, First Class\|here]]. 
+This is the second class. The first class is [[Digital Garden/Torchlight/Torchlight Episode 1\|here]]. 
 2番目のクラスです。 ファーストクラスは【トーチライトプラクター パート1、ファーストクラス|こちら】
 
 In the first part we made an **if/else** block in the `set xspeed`. We finished the first condition. It worked like this:
