@@ -171,7 +171,7 @@ end
 
 ## First Class Finished
 
-You are done for this class. Next is [[Digital Garden/Torchlight/Torchlight Class 2\|Torchlight Class 2]]
+You are done for this class. Next is [[Digital Garden/Torchlight/Torchlight Episode 2\|Torchlight Episode 2]]
 
 ---
 
