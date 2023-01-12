@@ -6,10 +6,11 @@
 ## Where we left off 中断した場所
 
 This is **Episode 2**. **Episode 1** is [[Digital Garden/Torchlight/Torchlight Episode 1\|here]]. 
-2番目のクラスです。 ファーストクラスは【トーチライトプラクター パート1、ファーストクラス|こちら】
+2番目 のクラスです。 ファーストクラスは【トーチライトプラクター パート1、ファーストクラス|こちら】
 
 In **Episode 1** we made an **if/else** block in the `set xspeed`. We finished the first condition. It worked like this:
 最初の部分では、 `set xspeed` に **if/else** ブロックを作成しました。最初の条件を終えました。次のように機能しました。
+
 ```ad-scratch
 title: 
 ~~~scratchblock
@@ -21,6 +22,8 @@ else
 end
 ~~~
 ```
+
+
 - Slowing down had two parts, left and right.
 - 減速には、左右の 2 つの部分がありました。
 
@@ -64,8 +67,7 @@ The **else** part is for when the left or right arrow key is pressed.
 The arrow keys should make us go faster. 矢印キーを使用すると、より速く進むことができます。
 Again there are 2 parts. ここでも 2 つの部分があります。
 
-#### Move right
-#### 右に動く
+#### Move right 右に動く
 
 - If we want to go faster to the right, we __add 1__ to `x speed`
 - 右に速く移動したい場合は、`x speed` に __1__ を追加します]
@@ -81,8 +83,7 @@ if <key [right arrow v] pressed> then
 end
 ~~~
 ```
-#### Move left
-#### 左に移動
+#### Move left  左に移動
 - If we want to go faster to the left, we __subtract 1__ from `x speed`
 - 左に速く移動したい場合は、`x speed` から __減算 1__ します。
 
@@ -120,12 +121,7 @@ end
 end
 ~~~
 ```
-## Test run
-## Test run
-Test run
-
-commissioning
-commissioning
+## Test run  試運転
 
 **Run the project now**. The sprite should move left and right. 
 **プロジェクトを今すぐ実行**。 ここでプロジェクトを実行すると、スプライトが左右に移動するはずです。
@@ -135,8 +131,7 @@ should do
 するはずです。
 
 
-## Slow the Sprite Down
-## スプライトを遅くする
+## Slow the Sprite Down スプライトを遅くする
 **Hitbox** moves too fast. Again there are two possibilities, left and right.
 **ヒットボックス**の動きが速すぎる。ここでも、左と右の 2 つの可能性があります。
 If the maximum speed is 4, then when we move right, the speed is 4, when we move left the speed is -4.
@@ -160,13 +155,11 @@ end
 ```
 
 
-## Falling
-## 落下
+## Falling  落下
 Next we will teach our guy to fall. 
 次に、私たちは男に落ちるように教えます。
 
-### Create a Platform
-### プラットフォームを作成する
+### Create a Platform  プラットフォームを作成する
 
 **Create a platform** (wall) for the character to fall onto.
 キャラクターが落ちるための**プラットフォーム** (壁) を作成します。
@@ -181,8 +174,7 @@ It should look like this:
 :root[dir="ltr"] .excalidraw .layer-ui__wrapper .zen-mode-transition.App-menu_bottom--transition-left {transform: none;}
 </style><script src="https://unpkg.com/react@17/umd/react.production.min.js"></script><script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script><script type="text/javascript" src="https://unpkg.com/@excalidraw/excalidraw@0.12.0/dist/excalidraw.production.min.js"></script><div id="HatlightPlatform.excalidraw.md1"></div><script>(function(){const InitialData={"type":"excalidraw","version":2,"source":"https://excalidraw.com","elements":[{"type":"rectangle","version":147,"versionNonce":2023188251,"isDeleted":false,"id":"-BhE3qjFz7EzdAMw-8k5u","fillStyle":"solid","strokeWidth":1,"strokeStyle":"solid","roughness":0,"opacity":100,"angle":0,"x":-198.8213895022215,"y":-231.31190412472455,"strokeColor":"#000000","backgroundColor":"#15aabf","width":580.8837890625,"height":391.697998046875,"seed":2096960897,"groupIds":[],"roundness":null,"boundElements":[],"updated":1669149990766,"link":null,"locked":false},{"type":"rectangle","version":141,"versionNonce":870929379,"isDeleted":false,"id":"K6F48gfgbAf7FfVEZiAFg","fillStyle":"solid","strokeWidth":1,"strokeStyle":"solid","roughness":2,"opacity":100,"angle":0,"x":-200.221923828125,"y":52.3824462890625,"strokeColor":"#000000","backgroundColor":"#fa5252","width":578.7227783203125,"height":52.170654296875,"seed":82281487,"groupIds":[],"roundness":{"type":1},"boundElements":[{"id":"9I-onR_TnxsWehH5Y7p2I","type":"arrow"},{"id":"oIGih9U9zFPPHVnpe0U7I","type":"arrow"}],"updated":1669342661397,"link":null,"locked":false},{"type":"rectangle","version":179,"versionNonce":745533753,"isDeleted":false,"id":"n2TPaNDw8CFg9ZS1F-NcI","fillStyle":"solid","strokeWidth":1,"strokeStyle":"solid","roughness":2,"opacity":100,"angle":0,"x":-131.50845336914062,"y":-49.205535888671875,"strokeColor":"#000000","backgroundColor":"#4c6ef5","width":57.265625,"height":54.74920654296875,"seed":1020124033,"groupIds":[],"roundness":{"type":1},"boundElements":[{"id":"0nTujerjs8bk4BAkzAtd5","type":"arrow"},{"id":"9I-onR_TnxsWehH5Y7p2I","type":"arrow"}],"updated":1668907730051,"link":null,"locked":false},{"type":"text","version":158,"versionNonce":1486115523,"isDeleted":false,"id":"S13IR9yP","fillStyle":"solid","strokeWidth":1,"strokeStyle":"solid","roughness":2,"opacity":100,"angle":0,"x":37.955902099609375,"y":-46.94099426269531,"strokeColor":"#000000","backgroundColor":"#4c6ef5","width":142,"height":24,"seed":78555537,"groupIds":[],"roundness":{"type":2},"boundElements":[{"id":"oIGih9U9zFPPHVnpe0U7I","type":"arrow"}],"updated":1669342670503,"link":null,"locked":false,"fontSize":20,"fontFamily":3,"text":"New Platform","rawText":"New Platform","baseline":20,"textAlign":"left","verticalAlign":"top","containerId":null,"originalText":"New Platform"},{"type":"arrow","version":471,"versionNonce":1889731171,"isDeleted":false,"id":"oIGih9U9zFPPHVnpe0U7I","fillStyle":"solid","strokeWidth":1,"strokeStyle":"solid","roughness":2,"opacity":100,"angle":0,"x":114.17423255368223,"y":-19.569026294354188,"strokeColor":"#000000","backgroundColor":"#4c6ef5","width":56.65499939963845,"height":69.81109172404169,"seed":875514001,"groupIds":[],"roundness":{"type":2},"boundElements":[],"updated":1669342670503,"link":null,"locked":false,"startBinding":{"elementId":"S13IR9yP","focus":-0.2115405083438377,"gap":3.3719679683411243},"endBinding":{"elementId":"K6F48gfgbAf7FfVEZiAFg","focus":-0.17559197508991395,"gap":2.140380859375},"lastCommittedPoint":null,"startArrowhead":null,"endArrowhead":"arrow","points":[[0,0],[-56.65499939963845,69.81109172404169]]},{"type":"text","version":315,"versionNonce":1758840217,"isDeleted":false,"id":"nqnPZZR9","fillStyle":"solid","strokeWidth":1,"strokeStyle":"solid","roughness":2,"opacity":100,"angle":0,"x":-8.20112205570581,"y":-136.19928121974326,"strokeColor":"#000000","backgroundColor":"#4c6ef5","width":130,"height":24,"seed":430884447,"groupIds":[],"roundness":{"type":2},"boundElements":[{"id":"0nTujerjs8bk4BAkzAtd5","type":"arrow"}],"updated":1673243909372,"link":null,"locked":false,"fontSize":20,"fontFamily":3,"text":"Main Sprite","rawText":"Main Sprite","baseline":20,"textAlign":"left","verticalAlign":"top","containerId":null,"originalText":"Main Sprite"},{"type":"arrow","version":840,"versionNonce":891005561,"isDeleted":false,"id":"0nTujerjs8bk4BAkzAtd5","fillStyle":"solid","strokeWidth":1,"strokeStyle":"solid","roughness":2,"opacity":100,"angle":0,"x":-14.73923481878687,"y":-103.96286750978939,"strokeColor":"#000000","backgroundColor":"#4c6ef5","width":63.52899038169615,"height":52.15573860353939,"seed":503215935,"groupIds":[],"roundness":{"type":2},"boundElements":[],"updated":1673243909373,"link":null,"locked":false,"startBinding":{"elementId":"nqnPZZR9","focus":0.5851118584451094,"gap":10.515960693359375},"endBinding":{"elementId":"n2TPaNDw8CFg9ZS1F-NcI","focus":-0.1920958528217059,"gap":2.601593017578125},"lastCommittedPoint":null,"startArrowhead":null,"endArrowhead":"arrow","points":[[0,0],[-63.52899038169615,52.15573860353939]]},{"type":"arrow","version":204,"versionNonce":579342615,"isDeleted":false,"id":"9I-onR_TnxsWehH5Y7p2I","fillStyle":"solid","strokeWidth":1,"strokeStyle":"solid","roughness":2,"opacity":100,"angle":0,"x":-89.84741210937501,"y":13.333648681640629,"strokeColor":"#000000","backgroundColor":"#4c6ef5","width":1.22406005859375,"height":35.57952880859375,"seed":470672351,"groupIds":[],"roundness":{"type":2},"boundElements":[],"updated":1668907730051,"link":null,"locked":false,"startBinding":{"elementId":"n2TPaNDw8CFg9ZS1F-NcI","focus":-0.4814271652162273,"gap":7.78997802734375},"endBinding":{"elementId":"K6F48gfgbAf7FfVEZiAFg","focus":-0.6243659421659179,"gap":3.469268798828125},"lastCommittedPoint":null,"startArrowhead":null,"endArrowhead":"arrow","points":[[0,0],[-1.22406005859375,35.57952880859375]]},{"type":"text","version":53,"versionNonce":915304409,"isDeleted":false,"id":"Wls7tnzk","fillStyle":"solid","strokeWidth":1,"strokeStyle":"solid","roughness":2,"opacity":100,"angle":0,"x":-81.95840454101562,"y":16.0592041015625,"strokeColor":"#000000","backgroundColor":"#4c6ef5","width":60,"height":24,"seed":1494065215,"groupIds":[],"roundness":{"type":2},"boundElements":[],"updated":1668907730051,"link":null,"locked":false,"fontSize":20,"fontFamily":3,"text":"fall!","rawText":"fall!","baseline":20,"textAlign":"left","verticalAlign":"top","containerId":null,"originalText":"fall!"}],"appState":{"theme":"dark","viewBackgroundColor":"transparent","currentItemStrokeColor":"#000000","currentItemBackgroundColor":"#15aabf","currentItemFillStyle":"solid","currentItemStrokeWidth":1,"currentItemStrokeStyle":"solid","currentItemRoughness":2,"currentItemOpacity":100,"currentItemFontFamily":3,"currentItemFontSize":20,"currentItemTextAlign":"left","currentItemStartArrowhead":null,"currentItemEndArrowhead":"arrow","scrollX":221.30198435614548,"scrollY":315.5844328790648,"zoom":{"value":1.8},"currentItemRoundness":"round","gridSize":null,"colorPalette":{}},"files":{}};InitialData.scrollToContent=true;App=()=>{const e=React.useRef(null),t=React.useRef(null),[n,i]=React.useState({width:void 0,height:void 0});return React.useEffect(()=>{i({width:t.current.getBoundingClientRect().width,height:t.current.getBoundingClientRect().height});const e=()=>{i({width:t.current.getBoundingClientRect().width,height:t.current.getBoundingClientRect().height})};return window.addEventListener("resize",e),()=>window.removeEventListener("resize",e)},[t]),React.createElement(React.Fragment,null,React.createElement("div",{className:"excalidraw-wrapper",ref:t},React.createElement(ExcalidrawLib.Excalidraw,{ref:e,width:n.width,height:n.height,initialData:InitialData,viewModeEnabled:!0,zenModeEnabled:!0,gridModeEnabled:!1})))},excalidrawWrapper=document.getElementById("HatlightPlatform.excalidraw.md1");ReactDOM.render(React.createElement(App),excalidrawWrapper);})();</script>
 
-### How We Fall
-### どのように私たちは落ちるか
+### How We Fall  どのように私たちは落ちるか
 
 There are 4 steps to falling.
 
@@ -209,14 +201,13 @@ In detail:
 
 <div id="Torchlight_Class_2_2023-01-10_1858.37.excalidraw.md2"></div><script>(function(){const InitialData={"type":"excalidraw","version":2,"source":"https://excalidraw.com","elements":[{"type":"rectangle","version":954,"versionNonce":1901175927,"isDeleted":false,"id":"IQ6rOFFZvMTSWgcGEyLwy","fillStyle":"solid","strokeWidth":1,"strokeStyle":"solid","roughness":0,"opacity":90,"angle":0,"x":-692.8120455347299,"y":-325.2724917758333,"strokeColor":"#000000","backgroundColor":"#15aabf","width":631.8104790581597,"height":429.9882100423177,"seed":88604805,"groupIds":[],"roundness":null,"boundElements":[],"updated":1673434917205,"link":null,"locked":false},{"type":"rectangle","version":108,"versionNonce":336157881,"isDeleted":false,"id":"poqJSmdk8S9buRCclfX3_","fillStyle":"solid","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"angle":0,"x":-668.583134831609,"y":-301.8651123046875,"strokeColor":"#000000","backgroundColor":"#fab005","width":278.25018310546875,"height":126.27056884765625,"seed":226496779,"groupIds":[],"roundness":{"type":3},"boundElements":[],"updated":1673434916281,"link":null,"locked":false},{"type":"rectangle","version":248,"versionNonce":2003915077,"isDeleted":false,"id":"Jk_6WMozSdcFwE4UfjcuV","fillStyle":"solid","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"angle":0,"x":-665.6501973470051,"y":-146.12066650390625,"strokeColor":"#000000","backgroundColor":"#fab005","width":278.25018310546875,"height":217.73073323567706,"seed":769815819,"groupIds":[],"roundness":{"type":3},"boundElements":[],"updated":1673346069724,"link":null,"locked":false},{"type":"rectangle","version":685,"versionNonce":1878725003,"isDeleted":false,"id":"4ARIsV723Ale1Hzpt-n0o","fillStyle":"solid","strokeWidth":1,"strokeStyle":"solid","roughness":2,"opacity":100,"angle":0,"x":-653.4804438235251,"y":2.4655970908437155,"strokeColor":"#000000","backgroundColor":"#fa5252","width":245.58959960937503,"height":52.170654296875,"seed":1402598987,"groupIds":[],"roundness":{"type":1},"boundElements":[],"updated":1673346069724,"link":null,"locked":false},{"type":"rectangle","version":437,"versionNonce":1847648421,"isDeleted":false,"id":"kH-TN1tiyZGaeis8QmrFk","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":2,"opacity":100,"angle":0,"x":-638.4808744604607,"y":-140.45203499698502,"strokeColor":"#000000","backgroundColor":"#4c6ef5","width":57.265625,"height":54.74920654296875,"seed":1138730981,"groupIds":[],"roundness":{"type":1},"boundElements":[{"id":"N-cHoNNujxTXZFgxEkRx0","type":"arrow"},{"id":"Rkz_objtIuEJ-PblH2lf9","type":"arrow"}],"updated":1673346069724,"link":null,"locked":false},{"type":"arrow","version":816,"versionNonce":693545003,"isDeleted":false,"id":"qscEptWjRIlFw4dWU2RoE","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"angle":0,"x":-631.3924666768735,"y":-222.43307001760124,"strokeColor":"#000000","backgroundColor":"transparent","width":49.419652491337274,"height":16.607871681258615,"seed":691729643,"groupIds":[],"roundness":{"type":2},"boundElements":[],"updated":1673346069724,"link":null,"locked":false,"startBinding":{"elementId":"Nj36U0et","focus":0.5245995326500494,"gap":1.7020313007581365},"endBinding":{"elementId":"6TKJVMlw","focus":-0.4796930032683661,"gap":8.921788794911208},"lastCommittedPoint":null,"startArrowhead":null,"endArrowhead":"arrow","points":[[0,0],[18.074332772433536,13.73910958426336],[49.419652491337274,16.607871681258615]]},{"type":"text","version":683,"versionNonce":772711690,"isDeleted":false,"id":"gxoUBJpg","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":0,"opacity":100,"angle":0,"x":-559.0685787724386,"y":-287.001566002235,"strokeColor":"#000000","backgroundColor":"transparent","width":135,"height":55,"seed":1329761291,"groupIds":["Q5-BjvZm_5sE9lBQEm7oA"],"roundness":null,"boundElements":[],"updated":1673383601958,"link":null,"locked":false,"fontSize":20,"fontFamily":1,"text":"1. Add gravity\n   追加重力","rawText":"1. Add gravity\n   追加重力","baseline":48,"textAlign":"left","verticalAlign":"top","containerId":null,"originalText":"1. Add gravity\n   追加重力"},{"type":"text","version":620,"versionNonce":1816554187,"isDeleted":false,"id":"Nj36U0et","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":0,"opacity":100,"angle":0,"x":-658.80126953125,"y":-249.13510131835938,"strokeColor":"#000000","backgroundColor":"transparent","width":73,"height":25,"seed":1410524037,"groupIds":["Sq7Hp2ej9xpHKHd2UYMeM"],"roundness":null,"boundElements":[{"id":"qscEptWjRIlFw4dWU2RoE","type":"arrow"}],"updated":1673346069724,"link":null,"locked":false,"fontSize":20,"fontFamily":1,"text":"y-speed","rawText":"y-speed","baseline":18,"textAlign":"left","verticalAlign":"top","containerId":null,"originalText":"y-speed"},{"type":"text","version":733,"versionNonce":834845541,"isDeleted":false,"id":"6TKJVMlw","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":0,"opacity":100,"angle":0,"x":-573.051025390625,"y":-219.38577270507812,"strokeColor":"#000000","backgroundColor":"transparent","width":173,"height":25,"seed":1885692811,"groupIds":["9EkArsalkhG__msVzi9pd"],"roundness":null,"boundElements":[{"id":"qscEptWjRIlFw4dWU2RoE","type":"arrow"}],"updated":1673346069724,"link":null,"locked":false,"fontSize":20,"fontFamily":1,"text":"y-speed + gravity","rawText":"y-speed + gravity","baseline":18,"textAlign":"left","verticalAlign":"top","containerId":null,"originalText":"y-speed + gravity"},{"type":"text","version":896,"versionNonce":1298454891,"isDeleted":false,"id":"PGbQoU0a","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":0,"opacity":100,"angle":0,"x":-561.703640407986,"y":-70.78773328993049,"strokeColor":"#000000","backgroundColor":"transparent","width":121,"height":38,"seed":1506928965,"groupIds":["azPgFYYkKFsJDfWnb-Bik"],"roundness":null,"boundElements":[],"updated":1673346069724,"link":null,"locked":false,"fontSize":15.080829196506082,"fontFamily":1,"text":"y-speed times\nor until touching","rawText":"y-speed times\nor until touching","baseline":33,"textAlign":"left","verticalAlign":"top","containerId":null,"originalText":"y-speed times\nor until touching"},{"type":"rectangle","version":651,"versionNonce":1258292933,"isDeleted":false,"id":"M5w74z-gCEA7IZ7EEx2YT","fillStyle":"solid","strokeWidth":1,"strokeStyle":"solid","roughness":2,"opacity":100,"angle":0,"x":-639.2559746636285,"y":-41.40579901801215,"strokeColor":"#000000","backgroundColor":"#4c6ef5","width":57.265625,"height":54.74920654296875,"seed":2124772107,"groupIds":[],"roundness":{"type":1},"boundElements":[{"id":"Rkz_objtIuEJ-PblH2lf9","type":"arrow"},{"id":"siybOWI-owhbHOHHdNYGN","type":"arrow"}],"updated":1673346069724,"link":null,"locked":false},{"type":"text","version":734,"versionNonce":576847370,"isDeleted":false,"id":"6wSdeR8Z","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":0,"opacity":100,"angle":0,"x":-539.7185124577703,"y":-137.520417084565,"strokeColor":"#000000","backgroundColor":"transparent","width":81,"height":55,"seed":126222597,"groupIds":["ljTKNwCFK053olMavlFFu"],"roundness":null,"boundElements":[],"updated":1673383638334,"link":null,"locked":false,"fontSize":20,"fontFamily":1,"text":"2. Fall \n  落ちる","rawText":"2. Fall \n  落ちる","baseline":48,"textAlign":"left","verticalAlign":"top","containerId":null,"originalText":"2. Fall \n  落ちる"},{"type":"rectangle","version":297,"versionNonce":1152260054,"isDeleted":false,"id":"MYzZO5Dt6lDp-w5prWJV9","fillStyle":"solid","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"angle":0,"x":-362.1591880271384,"y":-298.3898555658212,"strokeColor":"#000000","backgroundColor":"#fab005","width":278.25018310546875,"height":126.27056884765625,"seed":2089437573,"groupIds":[],"roundness":{"type":3},"boundElements":[],"updated":1673386310292,"link":null,"locked":false},{"type":"rectangle","version":609,"versionNonce":1376238251,"isDeleted":false,"id":"eMXy_H3SAXetnKv8J1Jg1","fillStyle":"solid","strokeWidth":1,"strokeStyle":"solid","roughness":2,"opacity":100,"angle":0,"x":-351.94194081245723,"y":-200.77798433218237,"strokeColor":"#000000","backgroundColor":"#fa5252","width":245.58959960937503,"height":52.170654296875,"seed":524074315,"groupIds":[],"roundness":{"type":1},"boundElements":[],"updated":1673346069724,"link":null,"locked":false},{"type":"arrow","version":1915,"versionNonce":2137446789,"isDeleted":false,"id":"1NnlCxxfk4ttlkO89U_So","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"angle":3.141592653589793,"x":-251.6573626159534,"y":-206.27239887499172,"strokeColor":"#000000","backgroundColor":"transparent","width":21.262150912917775,"height":21.85233881414382,"seed":585948139,"groupIds":[],"roundness":{"type":2},"boundElements":[],"updated":1673346069724,"link":null,"locked":false,"startBinding":{"elementId":"sq11EZPOH0HIE4Z57e4hq","focus":0.9878536225439541,"gap":1.0000000000001137},"endBinding":{"elementId":"N9VB5b_WfASD5hGMIIkH1","focus":0.1713089656302935,"gap":1},"lastCommittedPoint":null,"startArrowhead":null,"endArrowhead":"arrow","points":[[0,0],[-21.057432165872854,10.175077219401771],[0.20471874704492166,21.85233881414382]]},{"type":"rectangle","version":612,"versionNonce":842083659,"isDeleted":false,"id":"sq11EZPOH0HIE4Z57e4hq","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":2,"opacity":100,"angle":0,"x":-330.1132473415797,"y":-236.24544977697568,"strokeColor":"#000000","backgroundColor":"#4c6ef5","width":57.265625,"height":54.74920654296875,"seed":73410187,"groupIds":[],"roundness":{"type":1},"boundElements":[{"id":"1NnlCxxfk4ttlkO89U_So","type":"arrow"}],"updated":1673346069724,"link":null,"locked":false},{"type":"text","version":899,"versionNonce":1467339734,"isDeleted":false,"id":"6rEjge58","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":0,"opacity":100,"angle":0,"x":-263.30707621073213,"y":-280.2501271686007,"strokeColor":"#000000","backgroundColor":"transparent","width":165,"height":44,"seed":235117477,"groupIds":["pWYhEjWpBMPhp9P2taodM"],"roundness":null,"boundElements":[],"updated":1673386487948,"link":null,"locked":false,"fontSize":15.988487599815725,"fontFamily":1,"text":"3. Pull out and Stop\n引き出し、停止します","rawText":"3. Pull out and Stop\n引き出し、停止します","baseline":38,"textAlign":"left","verticalAlign":"top","containerId":null,"originalText":"3. Pull out and Stop\n引き出し、停止します"},{"type":"rectangle","version":600,"versionNonce":1037257707,"isDeleted":false,"id":"N9VB5b_WfASD5hGMIIkH1","fillStyle":"solid","strokeWidth":1,"strokeStyle":"solid","roughness":2,"opacity":100,"angle":0,"x":-330.0251193576388,"y":-255.2039693196615,"strokeColor":"#000000","backgroundColor":"#4c6ef5","width":57.265625,"height":54.74920654296875,"seed":1957829035,"groupIds":[],"roundness":{"type":1},"boundElements":[{"id":"1NnlCxxfk4ttlkO89U_So","type":"arrow"}],"updated":1673346069724,"link":null,"locked":false},{"type":"arrow","version":2010,"versionNonce":885521477,"isDeleted":false,"id":"N-cHoNNujxTXZFgxEkRx0","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"angle":0,"x":-579.2536972227203,"y":-108.1237796923203,"strokeColor":"#000000","backgroundColor":"transparent","width":13.22988649398576,"height":30.4132343941547,"seed":1332719045,"groupIds":["YEQl5zrYrDuD-N5TNySP_"],"roundness":{"type":2},"boundElements":[],"updated":1673346069724,"link":null,"locked":false,"startBinding":{"elementId":"kH-TN1tiyZGaeis8QmrFk","focus":-0.5023346710137028,"gap":1.9615522377403067},"endBinding":{"elementId":"kH-TN1tiyZGaeis8QmrFk","focus":1.1856923123622165,"gap":8.105333828593714},"lastCommittedPoint":null,"startArrowhead":null,"endArrowhead":"arrow","points":[[0,0],[13.22988649398576,15.265039097155807],[0.8943984499916269,30.4132343941547]]},{"type":"arrow","version":2076,"versionNonce":1492686475,"isDeleted":false,"id":"Rkz_objtIuEJ-PblH2lf9","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"angle":0,"x":-578.3321869372833,"y":-77.30190555291409,"strokeColor":"#000000","backgroundColor":"transparent","width":13.22988649398576,"height":30.4132343941547,"seed":1626704165,"groupIds":["YEQl5zrYrDuD-N5TNySP_"],"roundness":{"type":2},"boundElements":[],"updated":1673346069724,"link":null,"locked":false,"startBinding":{"elementId":"kH-TN1tiyZGaeis8QmrFk","focus":-0.0654729436808464,"gap":9.437998576360329},"endBinding":{"elementId":"M5w74z-gCEA7IZ7EEx2YT","focus":0.21777748572590575,"gap":8.369408930810437},"lastCommittedPoint":null,"startArrowhead":null,"endArrowhead":"arrow","points":[[0,0],[13.22988649398576,15.265039097155807],[0.8943984499916269,30.4132343941547]]},{"type":"arrow","version":2041,"versionNonce":1097477029,"isDeleted":false,"id":"siybOWI-owhbHOHHdNYGN","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"angle":0,"x":-579.2528920199978,"y":-45.99129065239545,"strokeColor":"#000000","backgroundColor":"transparent","width":13.22988649398576,"height":30.4132343941547,"seed":1593846597,"groupIds":["YEQl5zrYrDuD-N5TNySP_"],"roundness":{"type":2},"boundElements":[],"updated":1673346069724,"link":null,"locked":false,"startBinding":{"elementId":"M5w74z-gCEA7IZ7EEx2YT","focus":-1.2748889165379966,"gap":10.41843089097506},"endBinding":{"focus":1.1856923123622165,"gap":8.105333828593714,"elementId":"kH-TN1tiyZGaeis8QmrFk"},"lastCommittedPoint":null,"startArrowhead":null,"endArrowhead":"arrow","points":[[0,0],[13.22988649398576,15.265039097155807],[0.8943984499916269,30.4132343941547]]},{"type":"text","version":1038,"versionNonce":39554347,"isDeleted":false,"id":"vD6lUpAI","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":0,"opacity":100,"angle":0,"x":-249.08482649440043,"y":-201.93467203776038,"strokeColor":"#000000","backgroundColor":"transparent","width":130,"height":19,"seed":1781318475,"groupIds":["1U3lFeZvA_3wUHwOpBEJc"],"roundness":null,"boundElements":[],"updated":1673346069724,"link":null,"locked":false,"fontSize":15.080829196506082,"fontFamily":1,"text":"until not touching","rawText":"until not touching","baseline":14,"textAlign":"left","verticalAlign":"top","containerId":null,"originalText":"until not touching"},{"type":"rectangle","version":385,"versionNonce":1491364133,"isDeleted":false,"id":"yDgPDw7UbQDo2_lGPJLNW","fillStyle":"solid","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"angle":0,"x":-363.90813206456266,"y":-97.35563072791439,"strokeColor":"#000000","backgroundColor":"#fab005","width":278.25018310546875,"height":126.27056884765625,"seed":1626105387,"groupIds":[],"roundness":{"type":3},"boundElements":[],"updated":1673346757876,"link":null,"locked":false},{"type":"text","version":984,"versionNonce":377474390,"isDeleted":false,"id":"Mq2FG90g","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":0,"opacity":100,"angle":0,"x":-334.91396092198454,"y":-80.3969532241166,"strokeColor":"#000000","backgroundColor":"transparent","width":219,"height":55,"seed":939236709,"groupIds":["kY4lA0OEEtiMvCXmvI1fv"],"roundness":null,"boundElements":[],"updated":1673383894336,"link":null,"locked":false,"fontSize":20,"fontFamily":1,"text":" 4. Go to left/right\n`左右`の移動に戻ります","rawText":" 4. Go to left/right\n`左右`の移動に戻ります","baseline":48,"textAlign":"left","verticalAlign":"top","containerId":null,"originalText":" 4. Go to left/right\n`左右`の移動に戻ります"},{"type":"text","version":1024,"versionNonce":86375557,"isDeleted":false,"id":"60LsnkBs","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":0,"opacity":100,"angle":0,"x":-336.64559664330557,"y":-10.701501741530397,"strokeColor":"#087f5b","backgroundColor":"transparent","width":216,"height":19,"seed":2065542501,"groupIds":["n5w3Fm6yKOe24LtxkIG4M"],"roundness":null,"boundElements":[],"updated":1673346757876,"link":null,"locked":false,"fontSize":15.307637980486085,"fontFamily":3,"text":"broadcast [left right v]","rawText":"broadcast [left right v]","baseline":15,"textAlign":"left","verticalAlign":"top","containerId":null,"originalText":"broadcast [left right v]"}],"appState":{"theme":"dark","viewBackgroundColor":"transparent","currentItemStrokeColor":"#087f5b","currentItemBackgroundColor":"#fa5252","currentItemFillStyle":"hachure","currentItemStrokeWidth":1,"currentItemStrokeStyle":"solid","currentItemRoughness":1,"currentItemOpacity":100,"currentItemFontFamily":3,"currentItemFontSize":20,"currentItemTextAlign":"left","currentItemStartArrowhead":null,"currentItemEndArrowhead":"arrow","scrollX":713.9338330326771,"scrollY":382.82906243035006,"zoom":{"value":1.85},"currentItemRoundness":"round","gridSize":null,"colorPalette":{}},"files":{}};InitialData.scrollToContent=true;App=()=>{const e=React.useRef(null),t=React.useRef(null),[n,i]=React.useState({width:void 0,height:void 0});return React.useEffect(()=>{i({width:t.current.getBoundingClientRect().width,height:t.current.getBoundingClientRect().height});const e=()=>{i({width:t.current.getBoundingClientRect().width,height:t.current.getBoundingClientRect().height})};return window.addEventListener("resize",e),()=>window.removeEventListener("resize",e)},[t]),React.createElement(React.Fragment,null,React.createElement("div",{className:"excalidraw-wrapper",ref:t},React.createElement(ExcalidrawLib.Excalidraw,{ref:e,width:n.width,height:n.height,initialData:InitialData,viewModeEnabled:!0,zenModeEnabled:!0,gridModeEnabled:!1})))},excalidrawWrapper=document.getElementById("Torchlight_Class_2_2023-01-10_1858.37.excalidraw.md2");ReactDOM.render(React.createElement(App),excalidrawWrapper);})();</script>
 
-### Turning words into code
+### Turning words into code 言葉をコードに変える
 
 The important thing is to translate these words into things that Scratch understands. We have to turn words into code. Let's see how to do it.
 重要なことは、これらの単語を Scratch が理解できるものに翻訳することです。言葉をコードに変えなければなりません。それを行う方法を見てみましょう。
 
 
-##### Look at step 1 (add Gravity/Fall faster)
-#### ステップ1を見てください (重力を加える/より速く落ちる)
+##### Look at step 1 (add Gravity/Fall faster) ステップ1を見てください (重力を加える/より速く落ちる)
 
 Scratch doesn't know what **fall faster** means. But Scratch does understand: 
 Scratch は **速く落ちる** の意味を知りません。しかし、Scratch は次のことを理解しています。
@@ -224,8 +215,7 @@ Scratch は **速く落ちる** の意味を知りません。しかし、Scratc
 - **'y speed' を `gravity`** で変更します。これは同じことです。
 <br/>
 
-##### Look at step 2 (Move Down)
-##### ステップ 2 (Move Down) を見てください。
+##### Look at step 2 (Move Down) ステップ 2 (Move Down) を見てください。
 Again, scratch doesn't know what **move down** or **as much as we can** means. But it does understand:
 繰り返しますが、scratch は **move down** の意味を知りません。しかし、それは理解しています：
 - **Change `y position` by `y speed`**. `y speed` tells us how much to move down.
@@ -234,8 +224,7 @@ Again, scratch doesn't know what **move down** or **as much as we can** means. B
 - 「できる限り」とは、**壁に触れるまで繰り返す**、または**y の速度で移動する**ことを意味します。
 <br/>
 
-##### Look at step 3 (Pull Out and Stop)
-##### ステップ 3 (引き出して停止) を参照してください。
+##### Look at step 3 (Pull Out and Stop) ステップ 3 (引き出して停止) を参照してください。
 **Pull out** until not touching the wall and **stop** means:
 壁に触れなくなるまで**引っ張る**。**停止**とは、次のことを意味します。
 	- **If** **touching wall**, **set `y speed` to 0*** and **change y by 1** . 
@@ -259,8 +248,7 @@ Scratch は、左右に移動して **戻る** ことはできませんが、し
 ### Coding the Steps
 ### ステップのコーディング
 
-#### Add Gravity
-#### 重力を加える
+#### Add Gravity 重力を加える
 Let's make gravity just 1 step. Gravity is negative, because it pulls down.
 重力を 1 ステップだけにしましょう。重力は下に引っ張られるのでマイナスです。
 ```ad-scratch
@@ -272,15 +260,13 @@ change [y speed v] by (-1)
 ```
 
 
-#### Myblock Inputs and Booleans
-#### Myblock の入力とブール値
+#### Myblock Inputs and Booleans Myblock の入力とブール値
 
 
 We are going to use myblocks for step 2 and 3. Let's give them names and define them.
 ステップ 2 と 3 で myblocks を使用します。名前を付けて定義しましょう。
 
-##### Define a Myblock for Step 2:
-##### ステップ 2 のマイブロックを定義します。
+##### Define a Myblock for Step 2: ステップ 2 のマイブロックを定義します。
 
 - **Change** `y position` by `y speed`. Do it only **until we touch a wall**.
 - **Change** `y position` を `y speed` で。 **壁に触れるまで**だけ実行してください。
@@ -388,9 +374,7 @@ title: hitbox, define change y
 define change y by (speed) in steps. Stop at wall.::custom
 ~~~
 ```
-##### Use the myblock
-##### マイブロックを使う
-
+##### Use the change y myblock 変更 y myblock を使用する
 Go to the block area and get this block (notice the empty space).
 ブロックエリアに移動し、このブロックを取得します (空のスペースに注意してください)。
 ```ad-scratch
@@ -425,8 +409,7 @@ change y by (y speed) in steps. Stop at wall.::custom
 ```
 
 
-##### Define Myblock for Step 3
-##### ステップ 3 のマイブロックを定義する
+##### Define Myblock for Step 3 ステップ 3 のマイブロックを定義する
 
 - Pull out **if falling** and **touching wall** 
 - **落ちた場合**、**壁に触れた**場合は引き抜きます**
@@ -501,8 +484,7 @@ define pull out if touching wall and <falling?> or not
 ~~~
 ```
 
-##### Use the myblock
-##### マイブロックを使う
+##### Use the pull out myblock 引き出しマイブロックを使う
 
 Go to the block area and get this block. (notice the empty space)
 ブロックエリアに行き、このブロックを入手してください。 （空きスペースにご注意ください）
@@ -538,8 +520,7 @@ change y by (y speed) in steps. Stop at wall.::custom
 pull out if touching wall and <(y speed) \< [0]> or not?::custom
 ~~~
 ```
-#### Go to Left/Right
-#### 左右の移動に戻ります
+#### Go to Left/Right 左右の移動に戻ります
 
 Lastly, we add a **broadcast**.
 最後に、**ブロードキャスト**を追加します。
@@ -554,14 +535,12 @@ broadcast [move left / right v]
 ~~~
 ```
 
-## Falling Myblocks Code
-## 落下 Myblocks コード
+## Falling Myblocks Code 落下 Myblocks コード
 
 Now, let's make the code for the myblocks in the falling stack.
 それでは、立ち下がりスタックの myblocks のコードを作成しましょう。
 
-### Change Y: Not Big Jumps, but Single Steps
-### Change Y: 大きなジャンプではなく、1 つのステップ
+### Change Y: Not Big Jumps, but Single Steps Change Y: 大きなジャンプではなく、1 つのステップ
 
 We could change the y position by y speed in big jumps, like on the left in the diagram below, but it might turn out we would jump beyond the platform. Notice how *the jumps get bigger and bigger*. This is gravity pulling the sprite down. Instead we want to change y in **small steps** as is shown on the right. 
 下の図の左側のように、大きなジャンプでは y 速度によって y 位置を変更できますが、プラットフォームを飛び越えてしまう可能性があります。 *ジャンプがどんどん大きくなる*様子に注目してください。これは、スプライトを下に引っ張る重力です。代わりに、右側に示されているように、**小さなステップ**で y を変更したいと考えています。
@@ -575,8 +554,7 @@ Look at that more closely. Notice how we stop just inside the wall.
 
 
 
-### Define the Change Y by Y-speed in Steps Myblock
-### Steps Myblock で Change Y by Y-speed を定義する
+### Define the Change Y by Y-speed in Steps Myblock  Steps Myblock で Change Y by Y-speed を定義する
 
 Our first task is to make each __small step__ repeat *y-speed times*. Later we will make it stop.  
 最初のタスクは、各 __small step__ を *y 倍速* に繰り返すことです。後で停止させます。
@@ -624,14 +602,12 @@ end
 **This has 2 problems!**
 **これには 2 つの問題があります!**
 
-#### Problem 1: Works Only if We Are Falling
-#### 問題 1: 落ち込んでいる場合にのみ機能する
+#### Problem 1: Works Only if We Are Falling  問題 1: 落ち込んでいる場合にのみ機能する
 
 Notice that this only works if we are falling (`y speed` < 0), because y is going down. Later we will fix this so that it works even if we are moving up, in other words jumping. But remember to imagine that `y speed` could be > 0.
 y が下降しているため、これは下降している (`y speed` < 0) 場合にのみ機能することに注意してください。後でこれを修正して、上に移動しているとき、つまりジャンプしているときでも機能するようにします。しかし、`y speed` が > 0 になる可能性があることを忘れないでください。
 
-#### Problem 2: Repeat Blocks Only Take Positive Numbers
-#### 問題 2: 繰り返しブロックは正の数しかとらない
+#### Problem 2: Repeat Blocks Only Take Positive Numbers  問題 2: 繰り返しブロックは正の数しかとらない
 
 If I tell you to jump -3 times, you would be right to be puzzled. That's impossible, right?
 -3 回ジャンプするように言われたら、困惑するのは当然です。無理ですよね
@@ -648,8 +624,7 @@ But, when the sprite is __falling__, the variable `y speed`  __is__ less than ze
 To use it as the number of times to repeat in a repeat block, that -__negative__ number has to be made +__positive__.
 繰り返しブロックで繰り返す回数として使用するには、その -__negative__ 数を __positive__ にする必要があります。
 
-#### Absolute Value to the Rescue
-#### 救助への絶対的な価値
+#### Absolute Value to the Rescue 救助への絶対的な価値
 
 Luckily, in Scratch there is something that can help us, called __abs__, which is short for __absolute value__: 
 幸いなことに、Scratch には、__abs__ と呼ばれる、__absolute value__ の略で、私たちを助けることができるものがあります。
@@ -676,8 +651,7 @@ end
 ~~~
 ```
 
-#### Stopping if We Touch a Wall
-#### 壁に触れたら止まる
+#### Stopping if We Touch a Wall  壁に触れたら止まる
 
 That's pretty good. But, we also want to stop if we are touching a wall. We only want to change y by -1 __IF__ we are __not touching a wall__. In code that means:
 それはかなり良いです。しかし、壁に触れている場合も停止したいと考えています。 y を -1 だけ変更したい __IF__ __壁に触れていない__.コードでは、次のことを意味します。
@@ -705,8 +679,7 @@ How does this work? What happens when we hit a wall when falling? If we change y
 
 
 
-### Define the Pull Out if Touching Wall Myblock
-### 壁に触れた場合の引き出しを定義する Myblock
+### Define the Pull Out if Touching Wall Myblock 壁に触れた場合の引き出しを定義する Myblock
 
 Here is the pull out if touching wall myblock. Note that instead of an input field it has a boolean field with pointy edges: <>. Boolean fields just accept sensing and other logic blocks, not variables and expressions.
 壁のマイブロックに触れた場合の引き抜きはこちら。入力フィールドの代わりに、先のとがったエッジを持つブール値フィールドがあることに注意してください: <>.ブールフィールドは、変数や式ではなく、センシングやその他の論理ブロックを受け入れるだけです。
@@ -880,8 +853,7 @@ end
 
 One line version of the pull out routine is in the footnotes [^5]
 
-### Order Matters
-### 注文事項
+### Order Matters  注文事項
 Here is the diagram again. After we pull out, the speed is __0__, which means we stop falling, as we should. This is realistic. When you hit the ground, you stop moving. When we are done we are sitting on the ground and not moving, just as you would be when you land on the ground from falling.
 これが再び図です。引き抜いた後、速度は __0__ です。これは、落下を停止することを意味します。これは現実的です。地面にぶつかると動きが止まります。作業が終わると、地面に座って動かなくなります。落下して地面に着地するときと同じです。
 
@@ -908,7 +880,7 @@ define pull out if touching wall and <falling?> or not
 …まだ下ります。私たちは空中で落下し始めたところに戻ってきました。しかし、ここまで来るのに壁に触れたのか、ただ落下しただけなのかわからないので、*ここで`y speed`をゼロに変更する必要があるかどうかはまだわかりません*。試してみると、うまくいかないことがわかります。
 
 
-## Testing Jumps
+## Testing Jumps ジャンプのテスト
 
 Okay, so we are done with the full Part 1 of our Torchlight Platformer. But let's test it. 
 オーケー、Torchlight プラットフォーマーのパート 1 はこれで完了です。しかし、それをテストしましょう。
@@ -930,7 +902,7 @@ This works okay but not perfectly. For example, it doesn't work if we hit a plat
 
 ---
 
-## Footnotes
+## Footnotes 脚注
 
 [^1]: 	In the else part of the if/else block you can use this instead of the 2 if statements:
 	if/else ブロックの他の部分では、ステートメントの 2 の代わりにこれを使用できます。
