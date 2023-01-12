@@ -68,7 +68,10 @@ Again there are 2 parts. ここでも 2 つの部分があります。
 #### 右に動く
 
 - If we want to go faster to the right, we __add 1__ to `x speed`
-- 右に速く移動したい場合は、`x speed` に __1__ を追加します
+- 右に速く移動したい場合は、`x speed` に __1__ を追加します]
+- In other words, if we press the **right arrow**, we **change** `x speed` by **1** pixel
+- 言い換えると、**右矢印**を押すと、**1** ピクセルずつ `x 速度` を **変更**します
+
 
 ```ad-scratch
 title: Hitbox, set x speed
@@ -118,9 +121,18 @@ end
 ~~~
 ```
 ## Test run
+## Test run
+Test run
+
+commissioning
+commissioning
 
 **Run the project now**. The sprite should move left and right. 
 **プロジェクトを今すぐ実行**。 ここでプロジェクトを実行すると、スプライトが左右に移動するはずです。
+
+should do
+
+するはずです。
 
 
 ## Slow the Sprite Down
@@ -203,13 +215,15 @@ The important thing is to translate these words into things that Scratch underst
 重要なことは、これらの単語を Scratch が理解できるものに翻訳することです。言葉をコードに変えなければなりません。それを行う方法を見てみましょう。
 
 
-##### Look at step 1 (fall faster)
-#### ステップ1を見てください（より速く落ちる）
+##### Look at step 1 (add Gravity/Fall faster)
+#### ステップ1を見てください (重力を加える/より速く落ちる)
+
 Scratch doesn't know what **fall faster** means. But Scratch does understand: 
 Scratch は **速く落ちる** の意味を知りません。しかし、Scratch は次のことを理解しています。
 - **Change `y speed` by `gravity`**, which is the same thing.
 - **'y speed' を `gravity`** で変更します。これは同じことです。
 <br/>
+
 ##### Look at step 2 (Move Down)
 ##### ステップ 2 (Move Down) を見てください。
 Again, scratch doesn't know what **move down** or **as much as we can** means. But it does understand:
@@ -218,7 +232,7 @@ Again, scratch doesn't know what **move down** or **as much as we can** means. B
 - **`y 位置`を `y 速度`** で変更します。 `y speed` はどれだけ下に移動するかを示します。
 - "As much as we can" means **repeat until we are touching the wall** or **we have moved by y speed.**
 - 「できる限り」とは、**壁に触れるまで繰り返す**、または**y の速度で移動する**ことを意味します。
-
+<br/>
 
 ##### Look at step 3 (Pull Out and Stop)
 ##### ステップ 3 (引き出して停止) を参照してください。
@@ -233,8 +247,8 @@ Do you see how the words become code?
 ##### Look at step 4 (Go Back to Left/Right)
 ##### ステップ4を見てください (左右に戻る)
 
-Scratch can't **go back to** moving left and right, but it can
-Scratch は、左右に移動して **戻る** ことはできませんが、可能です。
+Scratch can't **go back to** moving left and right, but it can do the following:
+Scratch は、左右に移動して **戻る** ことはできませんが、しかし、それは次のことができます。
 	- **Broadcast `left/right`**. "Go to" is like **broadcast** in scratch.
 	- **放送左/右**。 「行きたい」は、スクラッチで**放送する**ようなものです。
 
