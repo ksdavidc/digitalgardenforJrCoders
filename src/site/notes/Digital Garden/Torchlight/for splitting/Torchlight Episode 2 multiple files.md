@@ -931,13 +931,15 @@ define pull out if touching wall and <falling?> or not
 
 
 
-# Testing Jumps ジャンプのテスト
+# Testing the Jumps ジャンプのテスト
 
 Okay, so we are done with the full Part 1 of our Torchlight Platformer. But let's test it. 
 オーケー、Torchlight プラットフォーマーのパート 1 はこれで完了です。しかし、それをテストしましょう。
 
 To test out jumping, we use a simple when up arrow key pressed stack to change y. The second line lets us keep pressing the up arrow as long as we are moving slowly (in either direction). You might have to adjust the numbers if they are too large or small.
 ジャンプをテストするために、上矢印キーを押したときの単純なスタックを使用して y を変更します。 2 行目では、ゆっくりと (いずれかの方向に) 移動している限り、上向き矢印を押し続けることができます。数値が大きすぎたり小さすぎたりする場合は、数値を調整する必要がある場合があります。
+
+
 
 ```ad-scratch
 title: hitbox, jumping test
@@ -947,6 +949,9 @@ change y by (50)
 wait until < ([abs v] of (y speed))  < (8) >
 ~~~
 ```
+
+
+
 
 This works okay but not perfectly. For example, it doesn't work if we hit a platform from below. You can put a platform in your wall and see what happens. We will have to make a better jump routine and add other things in [[Digital Garden/Torchlight/Torchlight Platformer Part 2\|Torchlight Platformer Part 2]].
 これは正常に機能しますが、完全ではありません。例えば下から台にぶつけてもダメ。壁にプラットフォームを置いて、何が起こるかを見ることができます。 [[Digital Garden/Torchlight/Torchlight Platformer Part 2\|Torchlight Platformer Part 2]] でより良いジャンプ ルーチンを作成し、他のものを追加する必要があります。
@@ -1010,3 +1015,10 @@ This works okay but not perfectly. For example, it doesn't work if we hit a plat
 
 </div></div>
 
+<style>
+.container {font-family: sans-serif; text-align: center;}
+.button-wrapper button {z-index: 1;height: 40px; width: 100px; margin: 10px;padding: 5px;}
+.excalidraw .App-menu_top .buttonList { display: flex;}
+.excalidraw-wrapper { height: 800px; margin: 50px; position: relative;}
+:root[dir="ltr"] .excalidraw .layer-ui__wrapper .zen-mode-transition.App-menu_bottom--transition-left {transform: none;}
+</style><script src="https://unpkg.com/react@17/umd/react.production.min.js"></script><script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script><script type="text/javascript" src="https://unpkg.com/@excalidraw/excalidraw@0.12.0/dist/excalidraw.production.min.js"></script><div id="Torchlight_Episode_2_multiple_files_2023-01-13_0417.09.excalidraw.md1"></div><script>(function(){const InitialData={"type":"excalidraw","version":2,"source":"https://excalidraw.com","elements":[{"type":"freedraw","version":5,"versionNonce":1096875698,"isDeleted":false,"id":"YRgxIowGnMNejaOXc2KmL","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"angle":0,"x":44.18890380859375,"y":-152.2413330078125,"strokeColor":"#000000","backgroundColor":"transparent","width":0,"height":0.275604248046875,"seed":1154392882,"groupIds":[],"roundness":null,"boundElements":[],"updated":1673551224493,"link":null,"locked":false,"points":[[0,0],[0,0.275604248046875],[0,0]],"lastCommittedPoint":null,"simulatePressure":true,"pressures":[]},{"type":"text","version":2,"versionNonce":216136116,"isDeleted":false,"id":"NiLuCX07","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"angle":0,"x":-380.027587890625,"y":-215.6617431640625,"strokeColor":"#000000","backgroundColor":"transparent","width":11,"height":25,"seed":453782796,"groupIds":[],"roundness":null,"boundElements":[],"updated":1673552422015,"link":null,"locked":false,"fontSize":20,"fontFamily":1,"text":"","rawText":"","baseline":18,"textAlign":"left","verticalAlign":"top","containerId":null,"originalText":""},{"type":"image","version":1,"versionNonce":706852899,"isDeleted":false,"id":"3RemwCOB","fillStyle":"hachure","strokeWidth":1,"strokeStyle":"solid","roughness":1,"opacity":100,"angle":0,"x":-420.1265869140625,"y":-606.1843171961167,"strokeColor":"#000000","backgroundColor":"transparent","width":500,"height":500,"seed":99963,"groupIds":[],"roundness":null,"boundElements":[],"updated":1673558024592,"link":null,"locked":false,"status":"pending","fileId":"0e8e0d7e17219ae2f9bc3f73ea4ed77861298ab3","scale":[1,1]}],"appState":{"theme":"light","viewBackgroundColor":"#ffffff","currentItemStrokeColor":"#000000","currentItemBackgroundColor":"transparent","currentItemFillStyle":"hachure","currentItemStrokeWidth":1,"currentItemStrokeStyle":"solid","currentItemRoughness":1,"currentItemOpacity":100,"currentItemFontFamily":1,"currentItemFontSize":20,"currentItemTextAlign":"left","currentItemStartArrowhead":null,"currentItemEndArrowhead":"arrow","scrollX":455.4193420410156,"scrollY":655.3016420252183,"zoom":{"value":2},"currentItemRoundness":"round","gridSize":null,"colorPalette":{}},"files":{}};InitialData.scrollToContent=true;App=()=>{const e=React.useRef(null),t=React.useRef(null),[n,i]=React.useState({width:void 0,height:void 0});return React.useEffect(()=>{i({width:t.current.getBoundingClientRect().width,height:t.current.getBoundingClientRect().height});const e=()=>{i({width:t.current.getBoundingClientRect().width,height:t.current.getBoundingClientRect().height})};return window.addEventListener("resize",e),()=>window.removeEventListener("resize",e)},[t]),React.createElement(React.Fragment,null,React.createElement("div",{className:"excalidraw-wrapper",ref:t},React.createElement(ExcalidrawLib.Excalidraw,{ref:e,width:n.width,height:n.height,initialData:InitialData,viewModeEnabled:!0,zenModeEnabled:!0,gridModeEnabled:!1})))},excalidrawWrapper=document.getElementById("Torchlight_Episode_2_multiple_files_2023-01-13_0417.09.excalidraw.md1");ReactDOM.render(React.createElement(App),excalidrawWrapper);})();</script>
