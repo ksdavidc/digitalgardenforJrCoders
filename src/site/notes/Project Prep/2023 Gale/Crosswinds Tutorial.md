@@ -267,13 +267,6 @@ That is a cool trick for making sure a step finishes before you continue.
 
 The values can be any two different values, like yes and no:
 ~~~scratchblock
-```ad-scratch
-title: 
-~~~scratchblock
-
-~~~
-``` 
-
 set [Am I finished? v] to [No]
 broadcast [keep doing stuff v] and wait
 wait until <(Am I finished?) = [yes]>
