@@ -259,7 +259,7 @@ hide
 
 
 ````ad-info
-title: The <u>**Set** Then **Wait**</u> Trick
+title: The <u><B>Set</b> Then ,b>Wait</b></u> Trick
 Notice how I **set** a variable, and then **waited** until that variable changed to continue? 
 
 &nbsp;
