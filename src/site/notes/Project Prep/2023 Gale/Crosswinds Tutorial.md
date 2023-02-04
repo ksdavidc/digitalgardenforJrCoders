@@ -255,7 +255,8 @@ hide
 ~~~
 ``` 
 
-````ad-info
+
+```ad-info
 title: The <u>**Set** Then **Wait**</u> Trick
 Notice how I **set** a variable, and then **waited** until that variable changed to continue? 
 
@@ -287,7 +288,7 @@ And the test can be any kind of test. Here we have to catch at least 5 animals:
 	hide  
 ~~~
 
-````
+```
 
 ## Step Back, Take a Breath.
 
