@@ -90,7 +90,7 @@ We also will need a Intro Screen Sprite. This will introduce the game and give t
 
 This sprite should be blank. It doesn't need a costume.
 
-set up a game control block
+Set up a game control block. It should have a blank costume.
 
 Right now all this has to do is start the game and call the intro screen.
 
