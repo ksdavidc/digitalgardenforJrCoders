@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/digital-garden/home/","title":"Digital Garden for Junior Coders","tags":"gardenEntry"}
+{"dg-publish":true,"permalink":"/digital-garden/home/","title":"Digital Garden for Junior Coders","tags":["gardenEntry"]}
 ---
 
 
@@ -22,7 +22,7 @@ Some temporary files for easy access during class.
 - [[Digital Garden/HOME#Miscellaneous Topics\|Miscellaneous Topics]]
 
 ## Recently added 
->[[Digital Garden/Halloween/Simple Halloween Storytelling Project Outline\|Simple Halloween Storytelling Project Outline]]
+>[[Project Prep/2023 Gale/Crosswinds Tutorial\|Crosswinds Tutorial]]
 >[[Digital Garden/Torchlight/Torchlight Episode 1\|Torchlight Episode 1]]
 >[[Digital Garden/Torchlight/Torchlight Episode 2\|Torchlight Episode 2]]
 >[[Digital Garden/Friday Class/2022 10 Student K Flappy Bird\|2022 10 Student K Flappy Bird]]
@@ -43,7 +43,7 @@ Some temporary files for easy access during class.
 
 ## Miscellaneous Topics
 
-[[Digital Garden/Research on AI/AI\|AI]]
+[[Miscellaneous KL/Research on AI/AI\|AI]]
 
 [[Digital Garden/Friday Class/For Trisha\|For Trisha]]
 
