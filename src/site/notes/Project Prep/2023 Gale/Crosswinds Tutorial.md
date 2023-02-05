@@ -3,8 +3,6 @@
 ---
 
 
-# Crosswinds Tutorial
-
 ## Game Overview
 
 When making a game it is good to break the game into smaller parts. We keep doing that until we have very small steps that are easy to code.
