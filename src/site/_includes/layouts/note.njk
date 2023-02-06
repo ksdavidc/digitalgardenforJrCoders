@@ -38,10 +38,10 @@ permalink: "notes/{{ page.fileSlug | slugify }}/"
     <!-- provides scratchblock support 
 old selectors: div.blocks pre, .scratch, pre.language-scratchblock code, pre.language-scratchblock, .language-scratchblocks, div.callout-scratch pre, div.ad-scratch pre,
 new selectors: div.blocks pre, pre code.language-scratchblock, div.language-ad-scratch pre, blockquote pre.language-scratchblock
-not working: div.language-scratchblock pre
+not working: div.language-scratchblock pre, pre code.language-scratchblock
 -->
 <script>
-scratchblocks.renderMatching('pre code.language-scratchblock', {
+scratchblocks.renderMatching('pre.language-scratchblock code', {
   style:     'scratch3',   // Optional, defaults to 'scratch2'.
   scale: 1,                // Optional, defaults to 1
 });
