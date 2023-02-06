@@ -253,7 +253,7 @@ hide
 
 ````ad-info
 title: The <u><B>Set</b> Then <b>Wait</b></u> Trick
-collapse: true
+collapse: 
 
 Notice how I **set** a variable, and then **waited** until that variable changed to continue? 
 
@@ -293,7 +293,7 @@ title:
 
 ## Test
 
-> [!FAQ]- wow
+> [!hint]- wow
 > you betcha
 
 
