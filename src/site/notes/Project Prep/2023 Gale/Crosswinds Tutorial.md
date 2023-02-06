@@ -296,4 +296,4 @@ title:
 You've come a long way. 
 
 
-[^1]: here's a hint: the current player is different.
+[^1]: Here's a hint: the current player is different. 
