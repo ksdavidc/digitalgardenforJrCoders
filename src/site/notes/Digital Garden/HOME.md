@@ -23,10 +23,7 @@ Some temporary files for easy access during class.
 
 ## Recently added 
 >[[Project Prep/2023 Gale/Crosswinds Tutorial\|Crosswinds Tutorial]]
->[[Digital Garden/Torchlight/Torchlight Episode 1\|Torchlight Episode 1]]
->[[Digital Garden/Torchlight/Torchlight Episode 2\|Torchlight Episode 2]]
->[[Digital Garden/Friday Class/2022 10 Student K Flappy Bird\|2022 10 Student K Flappy Bird]]
-
+>
 ## Instructions for students
 
 ### Monday
