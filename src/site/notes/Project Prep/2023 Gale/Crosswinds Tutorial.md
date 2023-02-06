@@ -16,7 +16,7 @@ We will put the code for these in a sprite called the control sprite. This sprit
 
 ### Setting up the Game
 
-Now we break these up into 5 smaller steps:
+Now we can break these up into 5 smaller steps:
 
 1) First we __delete any clones__ left over from the last time the game was played. This is especially important if someone stopped the game without finishing.
 2) The we draw the __dots__ that make the game.
