@@ -30,25 +30,19 @@ Some temporary files for easy access during class.
 ## Instructions for students
 
 ### Monday
-[[Digital Garden/Halloween/This week Halloween Review, Images, Transitions\|This week Halloween Review, Images, Transitions]]
-[[Digital Garden/Monday Class/TSU\|TSU]]
-[[Digital Garden/Monday Class/2022 Monday Student H\|2022 Monday Student H]]
+
 
 ### Friday
-[[Digital Garden/Halloween/Simple Halloween Storytelling Project Outline\|Simple Halloween Storytelling Project Outline]]
+
 
 ### Saturday
 
-[[Digital Garden/Halloween/Simple Halloween Storytelling Project Outline\|Simple Halloween Storytelling Project Outline]]
+
 
 
 ## Miscellaneous Topics
 
-[[Miscellaneous KL/Research on AI/AI\|AI]]
 
-[[Digital Garden/Friday Class/For Trisha\|For Trisha]]
-
-[[Digital Garden/Halloween/Simple Halloween Storytelling Project Outline\|Simple Halloween Storytelling Project Outline]]
 
 ## Torchlight
 
@@ -59,48 +53,4 @@ Some temporary files for easy access during class.
 [[Digital Garden/Miscellaneous/Extension Activities\|Extension Activities]]
 
 
-
-## Test
-
-> [!hint]- wow
-> you betcha
-
-
-
-
-```scratchblock
-set [test v] to (0)
-
-```
-
-> [!hint]- The <u><B>Set</b> Then <b>Wait</b></u> Trick
-> Notice how I **set** a variable, and then **waited** until that variable changed to continue?
-> 
-> &nbsp;
-> 
-> That is a cool trick for making sure a step finishes before you continue.
-> 
-> &nbsp;
-> 
-> The values can be any two different values, like yes and no:
-> 
-> ```scratchblock
-> set [Am I finished? v] to [No]
-> broadcast [keep doing stuff v] and wait
-> wait until <(Am I finished?) = [yes]>
-> hide
-> ```
-> 
-> &nbsp;
-> 
-> And the test can be any kind of test. Here we have to catch at least 5 animals:
-> ~~~scratchblock
-> set [number of cats v] to [0]
-> set [number of dogs v] to [0]
-> broadcast [catch animals v] and wait
-> wait until <((number of cats) + (number of dogs)) > [5]>
-> hide
-> ~~~
-
-
-
+[[Digital Garden/Test of scratchblocks\|Test of scratchblocks]]
