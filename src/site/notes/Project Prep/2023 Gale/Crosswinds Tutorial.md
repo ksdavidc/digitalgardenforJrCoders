@@ -250,7 +250,7 @@ hide
 ~~~
 ``` 
 
-> [!NOTE]- The <u><B>Set</b> Then <b>Wait</b></u> Trick
+> [!FAQ]- The <u><B>Set</b> Then <b>Wait</b></u> Trick
 > Notice how I **set** a variable, and then **waited** until that variable changed to continue?
 > 
 > &nbsp;
@@ -261,12 +261,12 @@ hide
 > 
 > The values can be any two different values, like yes and no:
 > 
-> ~~~scratchblock
+> ```scratchblock
 > set [Am I finished? v] to [No]
 > broadcast [keep doing stuff v] and wait
 > wait until <(Am I finished?) = [yes]>
 > hide
-> ~~~
+> ```
 > 
 > &nbsp;
 > 
