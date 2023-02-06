@@ -250,6 +250,11 @@ hide
 ~~~
 ``` 
 
+```scratchblock
+set [test v] to (0)
+
+```
+
 > [!FAQ]- The <u><B>Set</b> Then <b>Wait</b></u> Trick
 > Notice how I **set** a variable, and then **waited** until that variable changed to continue?
 > 
