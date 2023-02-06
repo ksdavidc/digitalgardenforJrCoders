@@ -293,6 +293,11 @@ title:
 
 ## Test
 
+> [!FAQ]- wow
+> you betcha
+
+
+
 
 ```scratchblock
 set [test v] to (0)
