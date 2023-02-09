@@ -226,7 +226,7 @@ show
 
 ## Choosing the Player
 
-The next event in our game is that the players chooses who will go first.  
+The next event in our game is that the players choose who will go first.  
 私たちのゲームの次のイベントは、プレイヤーが誰が先に行くかを選択することです。
 
 They do this by:
@@ -350,6 +350,11 @@ title:
 
 ## Step Back, Take a Breath.
 
-You've come a long way. 
+You've come a long way. Take a break. When you are ready, move on to [[Project Prep/2023 Spring Showcase/2023 Crosswinds (Gale)/Crosswinds - Making Dots\| step 2, making the dots]].
+
+
+---
+
+## Footnotes
 
 [^1]: Here's a hint: the current player is different. 
