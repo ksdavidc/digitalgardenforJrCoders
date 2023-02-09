@@ -271,7 +271,7 @@ Player 2's dots are almost the same. To start, just **duplicate the entire sprit
 
 But we have to make some changes. Here are the differences:
 
-* This time the costume is a down arrow::small_red_triangle_down: 
+* This time the costume is a down arrow   :small_red_triangle_down: 
 * Make it a different color.
 * 4 columns of dots per row, and 5 rows! 
 * The start x and y values are different:
