@@ -224,7 +224,7 @@ show
 ~~~
 ``` 
 
-## ChPoosing the Player
+## Choosing the Player
 
 The next event in our game is that the players chooses who will go first.  
 私たちのゲームの次のイベントは、プレイヤーが誰が先に行くかを選択することです。
