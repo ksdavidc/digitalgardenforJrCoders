@@ -266,3 +266,11 @@ div.content.cm-s-obsidian .admonition li {
     line-height: 1.3em;
 }
 
+.markdown-preview-view .hasInlineScratch .scratchblocks {
+    display: inline;
+}
+
+.markdown-preview-view .hasInlineScratch code {
+    top: 32px;
+    position: relative;
+}
