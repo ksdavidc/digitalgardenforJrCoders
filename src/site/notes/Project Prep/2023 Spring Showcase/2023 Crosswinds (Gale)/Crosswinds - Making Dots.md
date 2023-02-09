@@ -178,7 +178,7 @@ end
 ~~~
 ``` 
 
-And last, at the bottom of the repeat loop, change `(y value)``.
+And last, at the bottom of the repeat loop, change `(y value)`.
 { .hasInlineScratch }
 
 ```ad-scratch
