@@ -9,8 +9,10 @@ Make a dots sprite. This will be for the first player, who is trying to make lin
 
 A good costume for this is a triangle going right like this "🚩". It should be pretty small, say about 10 x 10 pixels. 
 
+`class: hasInlineScratch`
 When we receive the `make dots` broadcast, we will "make" the dots. There will be 4 rows and 5 columns of dots.
 { .hasInlineScratch }
+
 
 ## Creating the Dot Clones
 
