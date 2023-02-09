@@ -103,7 +103,8 @@ end
 ``` 
 
 
-So far this doesn't help us. But, at the end of the loop, we can change `x value` after creating the clone. Now each time through the repeat loop, the `x value` changes. 
+So far this doesn't help us. But, at the end of the loop, we can change `(x value)` after creating the clone. Now each time through the repeat loop, the `(x value)` changes.
+{ .hasInlineScratch }
 
 
 ```ad-scratch
@@ -123,7 +124,7 @@ The first time it is -100, then -50, then 0, then 50, then 100. This is what we 
 
 Why do we do this? 
 1. The code is shorter. If there is a lot of code in the loop, this can make it much shorter.
-2. The code is easier to adjust. For example, if we decide we want 6 columns, we just have to change the number 5 to 6 (and maybe adjust the starting `x value` or the amount of change). 
+2. The code is easier to adjust. For example, if we decide we want 6 columns, we just have to change the number 5 to 6 (and maybe adjust the starting `(x value)` or the amount of change). { .hasInlineScratch }
 
 ### Row 2
 Can you make the next row? Again, we want to create 5 more clones the same way, but make y = 75. Use a repeat loop if you can.
@@ -135,7 +136,8 @@ You should now have 4 rows of 5 dots each.
 
 ### A Better Way: A Loop for Rows
 
-Did you notice that when we created the four rows we had another example of **repeating something with a small change**. This time `y value` changes. If you want to make your code better, you could use the same trick above. The first step is to make a variable called `y value`, and set it to its starting value, -125. Again, make sure it is a **for this sprite only** variable.
+Did you notice that when we created the four rows we had another example of **repeating something with a small change**. This time `(y value)` changes. If you want to make your code better, you could use the same trick above. The first step is to make a variable called  `(y value)`, and set it to its starting value, -125. Again, make sure it is a **for this sprite only** variable.
+{ .hasInlineScratch }
 
 ```ad-scratch
 title: Dots 1
@@ -161,27 +163,29 @@ end
 ~~~
 ``` 
 
-Then, we use the variable in the places where  `y value` appears.
+Then, we use the variable in the places where  `(y value)` appears.
+{ .hasInlineScratch }
 
 
 ```ad-scratch
 title: Dots 1
 ~~~scratchblock
 when I receive [make dots v]
-set (y value) to 125) 
+set [y value v] to (125) 
 repeat (4)
 the code for the FIRST ROW with (y value) ::custom #F00
 end
 ~~~
 ``` 
 
-And last, at the bottom of the repeat loop, change `y value`.
+And last, at the bottom of the repeat loop, change `(y value)``.
+{ .hasInlineScratch }
 
 ```ad-scratch
 title: Dots 1
 ~~~scratchblock
 when I receive [make dots v]
-set (y value) to (-150) 
+set (y value) to (-125) 
 repeat (4)
 the code for the FIRST ROW with (y value) ::custom #F00
 change [y value v] by (-50)
@@ -271,8 +275,8 @@ But we have to make some changes. Here are the differences:
 * Make it a different color.
 * 4 columns of dots per row, and 5 rows! 
 * The start x and y values are different:
-	* `x value` = -75
-	* `y value` = 150
+	* `(x value)` = -75 { .hasInlineScratch }
+	* `(y value)` = 150 { .hasInlineScratch }
 
 If you used repeat loops, it will be quick and easy. If not, not so quick and easy.
 
