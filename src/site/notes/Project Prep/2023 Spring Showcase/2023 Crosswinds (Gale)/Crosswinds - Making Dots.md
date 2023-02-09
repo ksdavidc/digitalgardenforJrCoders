@@ -10,11 +10,12 @@ Make a dots sprite. This will be for the first player, who is trying to make lin
 A good costume for this is a triangle going right like this "🚩". It should be pretty small, say about 10 x 10 pixels. 
 
 When we receive the `make dots` broadcast, we will "make" the dots. There will be 4 rows and 5 columns of dots.
+{ .hasInlineScratch }
 
 ## Creating the Dot Clones
 
 ### Row 1
-Let's make the first row. We go to the position of the first dot. In this case it will be `go to x: (-100) y: (125)`.
+Let's make the first row. We go to the position of the first dot. In this case it will be `x: (-100) y: (125)`.
 
 Then we make a copy of the sprite, a **clone**. Think of these as *baby* sprites, and our normal sprite is the *mother* sprite. It will show up right there (though it will cover our mother sprite.)
 
