@@ -14,7 +14,7 @@ When we receive the `make dots` broadcast, we will "make" the dots. There will b
 ## Creating the Dot Clones
 
 ### Row 1
-Let's make the first row. We go to the position of the first dot. In this case it will be `x: (-100) y: (125)`.
+Let's make the first row. We go to the position of the first dot. In this case it will be `go to x: (-100) y: (125)`.
 
 Then we make a copy of the sprite, a **clone**. Think of these as *baby* sprites, and our normal sprite is the *mother* sprite. It will show up right there (though it will cover our mother sprite.)
 
