@@ -9,9 +9,8 @@ Make a dots sprite. This will be for the first player, who is trying to make lin
 
 A good costume for this is a triangle going right like this "🚩". It should be pretty small, say about 10 x 10 pixels. 
 
-`class: hasInlineScratch`
 When we receive the `make dots` broadcast, we will "make" the dots. There will be 4 rows and 5 columns of dots.
-{ .hasInlineScratch }
+
 
 
 ## Creating the Dot Clones
@@ -72,7 +71,8 @@ Luckily, there's a trick that will help us.
 
 If you have a number in your code, you can replace that number with a variable. In this case, the number is -100. That's the number that changes in the repeat loop. 
 
-Create a variable called `x value`. Make sure it is a **for this sprite only** variable. This will make sure only this sprite uses these variables.
+Create a variable called `(x value)`. Make sure it is a **for this sprite only** variable. This will make sure only this sprite uses these variables.
+{ .hasInlineScratch }
 
 The first thing we do is set the variable to the starting number.
 
