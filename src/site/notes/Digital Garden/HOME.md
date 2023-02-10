@@ -22,7 +22,7 @@ Some temporary files for easy access during class.
 - [[Digital Garden/HOME#Miscellaneous Topics\|Miscellaneous Topics]]
 
 ## Recently added 
->[[Project Prep/2023 Spring Showcase/2023 Crosswinds (Gale)/Crosswinds Tutorial with overview\|Crosswinds Tutorial with overview]]
+>[[Digital Garden/Crosswinds Tutorial with overview\|Crosswinds Tutorial with overview]]
 >
 ## Instructions for students
 
