@@ -13,6 +13,7 @@ This is set inline: `set [test v] to (0)`
 - in a list `set [test v] to (0)` { .hasInlineScratch }
 
 ## Admonition with code block
+works
 $$
 $$
 $$
@@ -30,16 +31,16 @@ set [test v] to (0)
 
 
 > [!hint]- wow
-> you betcha
+> set [test v] to (0)
 
 ## simple scratchblocks callout with admonition-scratch
+works on site. not collapse
 
-
-> [!scratchblocks]- this has scratchblocks
+> [!scratch]- this has scratchblocks
 >set [test v] to (0)
 
 # simple code block
-
+not working on site
 
 ```scratchblock
 set [test v] to (0)
@@ -47,6 +48,7 @@ set [test v] to (0)
 ```
 
 # code block within collapsible callout block
+doesn't work on site, somehow?
 
 > [!hint]- The <u><B>Set</b> Then <b>Wait</b></u> Trick
 > Notice how I **set** a variable, and then **waited** until that variable changed to continue?
