@@ -36,7 +36,7 @@ set [test v] to (0)
 ## simple scratchblocks callout with admonition-scratch
 works on site.
 
-> [!scratchblocks]- this has scratchblocks
+> [!scratch]- this has scratchblocks
 >set [test v] to (0)
 
 # simple code block
