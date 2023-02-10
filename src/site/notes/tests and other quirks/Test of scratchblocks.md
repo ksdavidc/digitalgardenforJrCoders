@@ -8,9 +8,23 @@
 uses the custom classes plugin
 
 This is set inline: `set [test v] to (0)`
-{ .hasInlineScratch }
+{ .hasInlineScratch .scratcblocks ad-scratch}
 
 - in a list `set [test v] to (0)` { .hasInlineScratch }
+
+## Admonition with code block
+$$
+$$
+$$
+$$
+```ad-scratch
+title: admonition with code block
+~~~scratchblock
+set [test v] to (0)
+~~~
+``` 
+
+
 
 ## simple callout
 
@@ -26,7 +40,7 @@ set [test v] to (0)
 
 ```
 
-# collapsible code block
+# code block within collapsible callout block
 
 > [!hint]- The <u><B>Set</b> Then <b>Wait</b></u> Trick
 > Notice how I **set** a variable, and then **waited** until that variable changed to continue?
