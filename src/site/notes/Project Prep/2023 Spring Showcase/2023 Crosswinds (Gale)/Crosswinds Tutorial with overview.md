@@ -134,7 +134,8 @@ when they click, the intro screen is done.
 
 ### Start Game Loop
 
-Go to the Game Controller. After the intro ends we broadcast the `START GAME LOOP`.
+Go to the Game Controller. After the intro ends we  `broadcast [START GAME LOOP v] and wait`.
+{ .hasInlineScratch }
 
 ```ad-scratch
 title:
