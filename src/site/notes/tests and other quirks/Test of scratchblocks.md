@@ -19,7 +19,6 @@ $$
 $$
 ```ad-scratch
 title: admonition with code block
-collapse: 
 ~~~scratchblock
 set [test v] to (0)
 ~~~
@@ -33,11 +32,11 @@ set [test v] to (0)
 > [!hint]- wow
 > you betcha
 
-## simple callout with admonition-scratch
+## simple scratchblocks callout with admonition-scratch
 
 
-> [!scratch]- wow
-> you betcha
+> [!scratchblocks]- this has scratchblocks
+>set [test v] to (0)
 
 # simple code block
 
