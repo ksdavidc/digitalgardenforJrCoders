@@ -50,4 +50,4 @@ Some temporary files for easy access during class.
 [[Digital Garden/Miscellaneous/Extension Activities\|Extension Activities]]
 
 
-[[Digital Garden/Test of scratchblocks\|Test of scratchblocks]]
+[[tests and other quirks/Test of scratchblocks\|Test of scratchblocks]]
