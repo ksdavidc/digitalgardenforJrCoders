@@ -34,7 +34,7 @@ set [test v] to (0)
 > set [test v] to (0)
 
 ## simple scratchblocks callout with admonition-scratch
-works on site.
+works on site. not collapse
 
 > [!scratch]- this has scratchblocks
 >set [test v] to (0)
