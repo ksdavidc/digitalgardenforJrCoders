@@ -31,7 +31,7 @@ set [test v] to (0)
 
 
 > [!hint]- wow
-> you betcha
+> set [test v] to (0)
 
 ## simple scratchblocks callout with admonition-scratch
 works on site.
