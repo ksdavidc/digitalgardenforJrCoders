@@ -42,6 +42,7 @@ works on site not here. not collapse
 
 
 > [!scratch]+ as codeblock
+> this is regular text
 >`set [test2 v] to (0)`
 
 
