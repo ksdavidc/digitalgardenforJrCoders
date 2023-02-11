@@ -58,7 +58,10 @@ not working on site
 
 ```scratchblock
 set [test v] to (0)
+```
 
+```scratchblocks
+set [test v] to (0)
 ```
 
 # code block within collapsible callout block
