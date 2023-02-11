@@ -47,7 +47,7 @@ works on site not here. not collapse
 
 not working anywhere
 > [!scratch]+ this has scratchblocks
->```scractchblock
+>```scratchblock
 set [test3 v] to (0)
 >```
 
