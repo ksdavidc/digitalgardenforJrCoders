@@ -33,11 +33,25 @@ set [test v] to (0)
 > [!hint]- wow
 > set [test v] to (0)
 
-## simple scratchblocks callout with admonition-scratch
-works on site. not collapse
+## simple scratch callout with .callout-scratch
+works on site not here. not collapse
 
 > [!scratch]- this has scratchblocks
 >set [test v] to (0)
+
+
+
+> [!scratch]- this has scratchblocks
+>`set [test v] to (0)`
+
+
+
+> [!scratch]- this has scratchblocks
+>```scractchblocks
+set [test v] to (0)
+>```
+
+
 
 # simple code block
 not working on site
