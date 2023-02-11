@@ -36,7 +36,7 @@ not working
 
 ## Simple Scratch Callout with .callout-scratch
 
-works on site not here. not collapse using detection:  `.callout-scratch`
+works on site not here. not collapsing. using detection:  `.callout-scratch`
 
 > [!scratch]- as plain text  
 >set [test1 v] to (0)
