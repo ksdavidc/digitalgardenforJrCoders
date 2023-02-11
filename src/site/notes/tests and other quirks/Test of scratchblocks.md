@@ -3,21 +3,23 @@
 ---
 
 
-## Inline Using .hasInlineScratch and code
+## Inline Using .hasInlineScratch and Code
 
 uses the custom classes plugin
 
-This is set inline: `set [test v] to (0)`
+This is set inline: `set [test v] to (0)`  
 { .hasInlineScratch .scratcblocks ad-scratch}
 
 - in a list `set [test v] to (0)` { .hasInlineScratch }
 
-## Admonition with code block
+## Admonition with Code Block
+
 works
 $$
 $$
 $$
 $$
+
 ```ad-scratch
 title: admonition with code block
 ~~~scratchblock
@@ -25,39 +27,41 @@ set [test v] to (0)
 ~~~
 ``` 
 
+## Simple Callout
 
+not working
 
-## simple callout
-
-
-> [!hint]- wow
+> [!hint]- wow  
 > set [test v] to (0)
 
-## simple scratch callout with .callout-scratch
-works on site not here. not collapse
+## Simple Scratch Callout with .callout-scratch
+
+works on site not here. not collapse  
  `.callout-scratch`
 
-> [!scratch]- as plain text
->set [test 1v] to (0)
+> [!scratch]- as plain text  
+>set [test1 v] to (0)
 
-
-
-> [!scratch]+ as codeblock
-> this is regular text
+> [!scratch]+ as codeblock  
+> this is regular text  
 >`set [test2 v] to (0)`
-
 
 not working on site, but works here
 
 > [!scratch]+ this has scratchblocks
+>
 >```scratchblock
+>
+
 set [test3 v] to (0)
+
+>
 >```
+>
 
+# Simple Code Block
 
-
-# simple code block
-not working on site
+works here, but not on site
 
 ```scratchblock
 set [test v] to (0)
@@ -67,11 +71,12 @@ set [test v] to (0)
 set [test4 v] to (0)
 ```
 
-# code block within collapsible callout block
-works with `div[class*=callout-] ` but does everything
+# Code Block Within Collapsible Callout Block
+
+works with `div[class*=callout-] ` but does everything  
 works with `div[class*=callout-] pre.language-scratchblock`
 
-> [!hint]- The <u><B>Set</b> Then <b>Wait</b></u> Trick
+> [!hint]- The <u><B>Set</b> Then <b>Wait</b></u> Trick  
 > Notice how I **set** a variable, and then **waited** until that variable changed to continue?
 > 
 > &nbsp;
@@ -81,14 +86,14 @@ works with `div[class*=callout-] pre.language-scratchblock`
 > &nbsp;
 > 
 > The values can be any two different values, like yes and no:
-> 
+>
 > ```scratchblock
 > set [Am I finished? v] to [No]
 > broadcast [keep doing stuff v] and wait
 > wait until <(Am I finished?) = [yes]>
 > hide
 > ```
-> 
+>
 > &nbsp;
 > 
 > And the test can be any kind of test. Here we have to catch at least 5 animals:
@@ -100,10 +105,7 @@ works with `div[class*=callout-] pre.language-scratchblock`
 > hide
 > ~~~
 
-
-
-
-> [!hint]- The <u><B>Set</b> Then <b>Wait</b></u> Trick
+> [!hint]- The <u><B>Set</b> Then <b>Wait</b></u> Trick  
 > Notice how I **set** a variable, and then **waited** until that variable changed to continue?
 > 
 > &nbsp;
@@ -112,25 +114,36 @@ works with `div[class*=callout-] pre.language-scratchblock`
 > 
 > &nbsp;
 > 
-> The values can be any two different values, like yes and no:
-> 
+> callout-scratch
+>
 > ```callout-scratch
 > set [Am I finished? v] to [No]
 > broadcast [keep doing stuff v] and wait
 > wait until <(Am I finished?) = [yes]>
 > hide
 > ```
-> 
+>
 > &nbsp;
 > 
-> And the test can be any kind of test. Here we have to catch at least 5 animals:
+> this uses ~ ~ ~
 > ~~~scratchblock
 > set [number of cats v] to [0]
 > set [number of dogs v] to [0]
 > broadcast [catch animals v] and wait
 > wait until <((number of cats) + (number of dogs)) > [5]>
 > hide
+> 
 > ~~~
+> 
+> this uses backticks
+> 
+>```scratchblock
+> set [number of cats v] to [0]
+> set [number of dogs v] to [0]
+> broadcast [catch animals v] and wait
+> wait until <((number of cats) + (number of dogs)) > [5]>
+> hide
+>```
 
 
 
