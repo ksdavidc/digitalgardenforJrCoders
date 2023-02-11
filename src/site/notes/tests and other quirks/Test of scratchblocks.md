@@ -36,18 +36,18 @@ set [test v] to (0)
 ## simple scratch callout with .callout-scratch
 works on site not here. not collapse
 
-> [!scratch]- this has scratchblocks
+> [!scratch]- as plain text
 >set [test v] to (0)
 
 
 
-> [!scratch]- this has scratchblocks
+> [!scratch]- as codeblock
 >`set [test v] to (0)`
 
 
-
+not working anywhere
 > [!scratch]- this has scratchblocks
->```scractchblocks
+>```scractchblock
 set [test v] to (0)
 >```
 
