@@ -79,8 +79,6 @@ works with `div[class*=callout-] ` but does everything
 
 
 > [!hint]- title
-
-
 > `scratchblock`
 >
 > ```scratchblock
