@@ -6,6 +6,7 @@
 ## Inline Using .hasInlineScratch and Code
 
 uses the custom classes plugin
+and detects `.hasInlineScratch code`
 
 This is set inline: `set [test v] to (0)`  
 { .hasInlineScratch .scratcblocks ad-scratch}
@@ -14,11 +15,8 @@ This is set inline: `set [test v] to (0)`
 
 ## Admonition with Code Block
 
-works
-$$
-$$
-$$
-$$
+works well for multiline:
+
 
 ```ad-scratch
 title: admonition with code block
@@ -38,8 +36,7 @@ not working
 
 ## Simple Scratch Callout with .callout-scratch
 
-works on site not here. not collapse  
- `.callout-scratch`
+works on site not here. not collapse using detection:  `.callout-scratch`
 
 > [!scratch]- as plain text  
 >set [test1 v] to (0)
@@ -53,11 +50,7 @@ not working on site, but works here
 > [!scratch]+ this has scratchblocks
 >
 >```scratchblock
->
-
-set [test3 v] to (0)
-
->
+>set [test3 v] to (0)
 >```
 >
 
