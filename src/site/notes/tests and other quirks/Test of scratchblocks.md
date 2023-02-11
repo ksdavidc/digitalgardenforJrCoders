@@ -55,14 +55,29 @@ Works on site and here, regular text gets converted.
 >
 
 ### trying to capture just the subcodeblocks
-using detection:  `.callout-scratch2`. Works on site not here, but can get it to convert the scratchblock!?
+using detection:  `.callout-scratch2 code`. Works on site not here, but can get it to convert the scratchblock!?
 
+
+`class:scratchblocks` 
 > [!scratch2]+ this is a scratch2 callout
 >below is a scratchblock codeblock.
 >```scratchblock
 >set [test3 v] to (0)
 >```
->
+>{ .hasInlineScratch }
+
+
+
+
+`class:scratchblocks`
+test
+
+
+
+
+`class:scratchblock`
+test
+
 
 # Simple Code Block
 
