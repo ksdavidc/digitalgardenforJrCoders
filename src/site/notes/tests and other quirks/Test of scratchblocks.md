@@ -35,6 +35,7 @@ set [test v] to (0)
 
 ## simple scratch callout with .callout-scratch
 works on site not here. not collapse
+ `.callout-scratch`
 
 > [!scratch]- as plain text
 >set [test 1v] to (0)
@@ -46,7 +47,8 @@ works on site not here. not collapse
 >`set [test2 v] to (0)`
 
 
-not working anywhere
+not working on site, but works here
+
 > [!scratch]+ this has scratchblocks
 >```scratchblock
 set [test3 v] to (0)
