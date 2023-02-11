@@ -76,18 +76,12 @@ set [test4 v] to (0)
 # Code Block Within Collapsible Callout Block
 
 works with `div[class*=callout-] ` but does everything  
-works with `div[class*=callout-] pre.language-scratchblock`
 
-> [!hint]- The <u><B>Set</b> Then <b>Wait</b></u> Trick  
-> Notice how I **set** a variable, and then **waited** until that variable changed to continue?
-> 
-> &nbsp;
-> 
-> That is a cool trick for making sure a step finishes before you continue.
-> 
-> &nbsp;
-> 
-> The values can be any two different values, like yes and no:
+
+> [!hint]- title
+
+
+> `scratchblock`
 >
 > ```scratchblock
 > set [Am I finished? v] to [No]
@@ -98,7 +92,7 @@ works with `div[class*=callout-] pre.language-scratchblock`
 >
 > &nbsp;
 > 
-> And the test can be any kind of test. Here we have to catch at least 5 animals:
+> backticks
 > ~~~scratchblock
 > set [number of cats v] to [0]
 > set [number of dogs v] to [0]
@@ -107,15 +101,7 @@ works with `div[class*=callout-] pre.language-scratchblock`
 > hide
 > ~~~
 
-> [!hint]- The <u><B>Set</b> Then <b>Wait</b></u> Trick  
-> Notice how I **set** a variable, and then **waited** until that variable changed to continue?
-> 
-> &nbsp;
-> 
-> That is a cool trick for making sure a step finishes before you continue.
-> 
-> &nbsp;
-> 
+> [!hint]- another
 > callout-scratch
 >
 > ```callout-scratch
@@ -128,7 +114,7 @@ works with `div[class*=callout-] pre.language-scratchblock`
 > &nbsp;
 > 
 > this uses ~ ~ ~
-> ~~~scratchblock
+> ~~~callout-scratch
 > set [number of cats v] to [0]
 > set [number of dogs v] to [0]
 > broadcast [catch animals v] and wait
@@ -139,13 +125,13 @@ works with `div[class*=callout-] pre.language-scratchblock`
 > { .hasInlineScratch }
 > this uses backticks
 > 
->```scratchblock
+>```callout-scratch
 > set [number of cats v] to [0]
 > set [number of dogs v] to [0]
 > broadcast [catch animals v] and wait
 > wait until <((number of cats) + (number of dogs)) > [5]>
 > hide
 >```
-
+{ .hasInlineScratch }
 
 
