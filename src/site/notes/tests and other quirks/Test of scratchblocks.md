@@ -65,7 +65,7 @@ set [test4 v] to (0)
 ```
 
 # code block within collapsible callout block
-doesn't work on site, somehow?
+works with div[class*=callout-]
 
 > [!hint]- The <u><B>Set</b> Then <b>Wait</b></u> Trick
 > Notice how I **set** a variable, and then **waited** until that variable changed to continue?
