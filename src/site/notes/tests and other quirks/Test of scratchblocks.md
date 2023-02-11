@@ -68,7 +68,7 @@ set [test4 v] to (0)
 
 # Code Block Within Collapsible Callout Block
 
-works with `div[class*=callout-] ` but does everything  
+works with `div[class*=callout-] ` but this converts all text. The problem is getting it to convert only the code blocks or language-scratchblock  blocks  
 
 
 > [!hint]- title
