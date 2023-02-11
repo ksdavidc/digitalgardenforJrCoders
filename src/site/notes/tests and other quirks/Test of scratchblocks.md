@@ -45,10 +45,10 @@ works on site not here. not collapse using detection:  `.callout-scratch`
 > this is regular text  
 >`set [test2 v] to (0)`
 
-not working on site, but works here
+Also working on site
 
 > [!scratch]+ this has scratchblocks
->
+>this has a scratchblock codeblock.
 >```scratchblock
 >set [test3 v] to (0)
 >```
