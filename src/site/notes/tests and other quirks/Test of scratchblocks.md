@@ -36,7 +36,7 @@ not working
 
 ## Simple Scratch Callout with .callout-scratch
 
-works on site not here. not collapsing. using detection:  `.callout-scratch`
+using detection:  `.callout-scratch`. Works on site not here, but converts all text. not collapsing. 
 
 > [!scratch]- as plain text  
 >set [test1 v] to (0)
@@ -45,9 +45,20 @@ works on site not here. not collapsing. using detection:  `.callout-scratch`
 > this is regular text  
 >`set [test2 v] to (0)`
 
-Also working on site
+Works on site and here, regular text gets converted.
 
-> [!scratch]+ this has scratchblocks
+> [!scratch]+ this has code.scratchblock
+>this has a scratchblock codeblock.
+>```scratchblock
+>set [test3 v] to (0)
+>```
+>
+
+using detection:  `.callout-scratch2`. Works on site not here, but can get it to convert the scratchblock!?
+
+Works on site and here, regular text gets converted.
+
+> [!scratch2]+ this has code.scratchblock
 >this has a scratchblock codeblock.
 >```scratchblock
 >set [test3 v] to (0)
