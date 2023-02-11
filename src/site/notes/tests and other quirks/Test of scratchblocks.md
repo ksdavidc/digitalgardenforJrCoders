@@ -134,7 +134,7 @@ works with `div[class*=callout-] pre.language-scratchblock`
 > hide
 > 
 > ~~~
-> 
+> { .hasInlineScratch }
 > this uses backticks
 > 
 >```scratchblock
