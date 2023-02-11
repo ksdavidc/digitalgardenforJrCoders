@@ -37,18 +37,18 @@ set [test v] to (0)
 works on site not here. not collapse
 
 > [!scratch]- as plain text
->set [test v] to (0)
+>set [test 1v] to (0)
 
 
 
-> [!scratch]- as codeblock
->`set [test v] to (0)`
+> [!scratch]+ as codeblock
+>`set [test2 v] to (0)`
 
 
 not working anywhere
-> [!scratch]- this has scratchblocks
+> [!scratch]+ this has scratchblocks
 >```scractchblock
-set [test v] to (0)
+set [test3 v] to (0)
 >```
 
 
@@ -61,7 +61,7 @@ set [test v] to (0)
 ```
 
 ```scratchblocks
-set [test v] to (0)
+set [test4 v] to (0)
 ```
 
 # code block within collapsible callout block
