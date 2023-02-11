@@ -22,6 +22,8 @@ $$
 
 ```ad-scratch
 title: admonition with code block
+
+This is an admonition.
 ~~~scratchblock
 set [test v] to (0)
 ~~~
