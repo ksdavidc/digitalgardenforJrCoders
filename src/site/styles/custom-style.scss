@@ -200,6 +200,8 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 
+
+
 /* END SCROLLBAR SECTION  */
 
 
@@ -274,4 +276,12 @@ div.content.cm-s-obsidian .admonition li {
     top: 16px;
     position: relative;
     background-color: transparent!important;
+}
+
+
+/* */
+path.sb-diff.sb-diff-del {
+    /* color: red;
+    /* fill: red; */
+    stroke: red;
 }
